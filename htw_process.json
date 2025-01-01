@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "date": "2025-01-01T17:04:10.630406+00:00",
+    "website": "https://www.htw-dresden.de/en/international/coming-to-htwd/exchange-programmes"
+  },
+  "phases": [
+    {
+      "name": "Application",
+      "steps": [
+        {
+          "name": "Letter of admission",
+          "requires": [
+            "Application submission",
+            "Academic coordinator approval"
+          ],
+          "enables": [
+            "Visa application"
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "approval",
+          "description": "Academic coordinator approval required",
+          "next_step": "Letter of admission issuance"
+        }
+      ],
+      "required_documents": [
+        "15 June for the winter semester (end of September - end of\n                            February)",
+        "15 November of the previous year for the summer semester\n                            (beginning of March - mid July)"
+      ]
+    },
+    {
+      "name": "Visa",
+      "requirements": [],
+      "dependencies": [
+        {
+          "type": "document",
+          "description": "Letter of admission required for visa application",
+          "previous_step": "Application phase completion"
+        }
+      ]
+    }
+  ]
+}
