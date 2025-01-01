@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "date": "2025-01-01T14:11:40Z",
+    "website": "https://www.htw-dresden.de/en/international/coming-to-htwd/exchange-programmes"
+  },
+  "phases": [
+    {
+      "name": "Application",
+      "steps": [
+        {
+          "name": "Nomination",
+          "description": "Get nominated by home university via email to international@htw-dresden.de",
+          "requires": [],
+          "enables": ["Document Submission"],
+          "deadline": null
+        },
+        {
+          "name": "Document Submission",
+          "description": "Submit all required application documents",
+          "requires": ["Nomination"],
+          "enables": ["Academic Coordinator Review"],
+          "deadline": {
+            "winter_semester": "June 15",
+            "summer_semester": "November 15"
+          }
+        },
+        {
+          "name": "Academic Coordinator Review",
+          "description": "Application review and approval by academic coordinator",
+          "requires": ["Document Submission"],
+          "enables": ["Letter of Admission"]
+        },
+        {
+          "name": "Letter of Admission",
+          "description": "Official admission letter issuance",
+          "requires": ["Academic Coordinator Review"],
+          "enables": ["Visa Application", "Insurance Registration", "Accommodation Application"]
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "approval",
+          "description": "Home university nomination required",
+          "previous_step": null,
+          "next_step": "Document Submission"
+        },
+        {
+          "type": "approval",
+          "description": "Academic coordinator approval required",
+          "previous_step": "Document Submission",
+          "next_step": "Letter of Admission"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Application Form",
+          "description": "Signed by student and home university coordinator",
+          "deadline": "With initial application"
+        },
+        {
+          "name": "Learning Agreement",
+          "description": "Course selection approved by both universities",
+          "deadline": "With initial application"
+        },
+        {
+          "name": "CV/Resume",
+          "description": "In English or German",
+          "deadline": "With initial application"
+        }
+      ]
+    }
+  ]
+}
