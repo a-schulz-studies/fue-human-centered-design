@@ -2,6 +2,8 @@ import datetime
 import json
 from typing import Dict
 
+import groq
+import json_repair
 import openai
 from bs4 import BeautifulSoup
 from groq import Groq
@@ -84,13 +86,12 @@ class ProcessExtractorOpenAI:
             text = content.get_text(separator='\n', strip=True)
 
             # Process specific sections based on title
-            if any(keyword in title.lower() for keyword in ['application', 'admission', 'visa', 'accommodation', 'insurance']):
-                phase_info = self._analyze_text(text, title)
+            phase_info = self._analyze_text(text, title)
 
-                process["phases"].append({
-                    "name": title,
-                    **phase_info
-                })
+            process["phases"].append({
+                "name": title,
+                **phase_info
+            })
 
         return process
 
@@ -146,12 +147,20 @@ class ProcessExtractorGroq():
 
         response = self.client.chat.completions.create(
             model="llama3-groq-8b-8192-tool-use-preview",
+            seed=42,
             messages=[{"role": "user", "content": prompt}],
             # response_format={"type": "json_object"}
         )
-        print(response.choices[0].message.content)
 
-        return json.loads(response.choices[0].message.content)
+        if(response.choices[0].message.content == "I'm sorry but I do not have the capability to perform this task for you, I am happy to help you with any other queries you may have."):
+            return {
+                "steps": [],
+                "dependencies": [],
+                "required_documents": []
+            }
+
+        return json_repair.loads(response.choices[0].message.content)
+
 
     def extract_process(self, html_content: str) -> Dict:
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -176,12 +185,11 @@ class ProcessExtractorGroq():
             text = content.get_text(separator='\n', strip=True)
 
             # Process specific sections based on title
-            if any(keyword in title.lower() for keyword in ['application', 'admission', 'visa', 'accommodation', 'insurance']):
-                phase_info = self._analyze_text(text, title)
+            phase_info = self._analyze_text(text, title)
 
-                process["phases"].append({
-                    "name": title,
-                    **phase_info
-                })
+            process["phases"].append({
+                "name": title,
+                **phase_info
+            })
 
         return process

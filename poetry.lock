@@ -261,6 +261,17 @@ files = [
 ]
 
 [[package]]
+name = "json-repair"
+version = "0.35.0"
+description = "A package to repair broken json strings"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "json_repair-0.35.0-py3-none-any.whl", hash = "sha256:1d429407158474d28a996e745b8f8f7dc78957cb2cfbc92120b9f580b5230a9e"},
+    {file = "json_repair-0.35.0.tar.gz", hash = "sha256:e70f834865a4ae5fe64352c23c1c16d3b70c5dd62dc544a169d8b0932bdbdcaa"},
+]
+
+[[package]]
 name = "openai"
 version = "1.58.1"
 description = "The official Python library for the openai API"
@@ -485,4 +496,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "8c4d6a4f53efe5cf3fe8a438dbde2fbc1c6d0d26982d654c676c4f0168479fc7"
+content-hash = "d8da8f1fc1583de445c6e2467c7979cdee57fd8dc1d1c9faf034fe01361e97b4"

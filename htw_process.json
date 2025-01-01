@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2025-01-01T18:49:33.262153+00:00",
+    "date": "2025-01-01T19:21:32.117566+00:00",
     "website": "https://www.htw-dresden.de/en/international/coming-to-htwd/exchange-programmes"
   },
   "phases": [
@@ -14,7 +14,7 @@
           "enables": [
             "Application Review"
           ],
-          "deadline": "15 June for winter semester, 15 November for summer semester"
+          "deadline": "15 June for winter semester and 15 November for summer semester"
         },
         {
           "name": "Application Review",
@@ -29,7 +29,7 @@
         },
         {
           "name": "Letter of Admission",
-          "description": "Issue of Letter of Admission by HTW Dresden",
+          "description": "Issue of letter of admission by HTW Dresden",
           "requires": [
             "Application Review"
           ],
@@ -42,7 +42,7 @@
       "dependencies": [
         {
           "type": "document",
-          "description": "Application documents",
+          "description": "Application documents required",
           "previous_step": "Application Submission",
           "next_step": "Application Review"
         }
@@ -50,10 +50,159 @@
       "required_documents": [
         {
           "name": "Application for Admission",
-          "description": "Signed by you and your home university coordinator",
-          "deadline": "15 June for winter semester, 15 November for summer semester"
+          "description": "Signed by you and your home university coordinator"
         }
       ]
+    },
+    {
+      "name": "Course selection",
+      "steps": [
+        {
+          "name": "Course Selection Phase",
+          "description": "Select courses from the provided list",
+          "requires": [],
+          "enables": [
+            "Registration for selected courses"
+          ],
+          "deadline": "Before the start of the semester"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Academic Coordinator / Learning Agreement / study schedule",
+      "steps": [
+        {
+          "name": "Receive Academic Coordinator",
+          "description": "Meet your supervising professor during the Welcome Week",
+          "requires": [],
+          "enables": [
+            "Discuss Learning Agreement"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Create Learning Agreement",
+          "description": "List courses you'd like to attend via Online Learning Agreement (OLA)",
+          "requires": [
+            "Receive Academic Coordinator"
+          ],
+          "enables": [
+            "Submit Learning Agreement"
+          ],
+          "deadline": "Before the start of the academic year"
+        },
+        {
+          "name": "Submit Learning Agreement",
+          "description": "Sign the Learning Agreement with your home university and HTWD",
+          "requires": [
+            "Create Learning Agreement"
+          ],
+          "enables": [
+            "Create Study Schedule"
+          ],
+          "deadline": "Before the start of the academic year"
+        },
+        {
+          "name": "Create Study Schedule",
+          "description": "Plan your courses and timetable with your Academic Coordinator",
+          "requires": [
+            "Submit Learning Agreement"
+          ],
+          "enables": [],
+          "deadline": "First weeks of your study visit"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Signing the Learning Agreement",
+          "previous_step": "Create Learning Agreement",
+          "next_step": "Submit Learning Agreement"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Learning Agreement",
+          "description": "Signed agreement between you, your home university, and HTWD",
+          "deadline": "Before the start of the academic year"
+        }
+      ]
+    },
+    {
+      "name": "Semester dates / Academic calendar",
+      "steps": [
+        {
+          "name": "Welcome Week",
+          "description": "Welcome activities for new students",
+          "requires": [],
+          "enables": [
+            "Lecture period"
+          ],
+          "deadline": "none"
+        },
+        {
+          "name": "Lecture period",
+          "description": "Regular lectures for all courses",
+          "requires": [
+            "Welcome Week"
+          ],
+          "enables": [
+            "Examination period"
+          ],
+          "deadline": "none"
+        },
+        {
+          "name": "Examination period",
+          "description": "Final exams for all courses",
+          "requires": [
+            "Lecture period"
+          ],
+          "enables": [],
+          "deadline": "none"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Language courses",
+      "steps": [
+        {
+          "name": "Attend Information Sessions",
+          "description": "Attend the information sessions during the Welcome Week.",
+          "requires": [],
+          "enables": [
+            "Enroll in Language Courses"
+          ],
+          "deadline": "Welcome Week"
+        },
+        {
+          "name": "Enroll in Language Courses",
+          "description": "Enroll in the language courses offered by the Language Center or TUDIAS.",
+          "requires": [
+            "Attend Information Sessions"
+          ],
+          "enables": [
+            "Start Language Course"
+          ],
+          "deadline": "End of Registration Period"
+        },
+        {
+          "name": "Start Language Course",
+          "description": "Begin the language course.",
+          "requires": [
+            "Enroll in Language Courses"
+          ],
+          "enables": [
+            "Complete Language Course"
+          ],
+          "deadline": "End of Semester"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
     },
     {
       "name": "Health Insurance",
@@ -63,56 +212,34 @@
           "description": "Students from outside EU or EEA countries must take out a German health insurance.",
           "requires": [],
           "enables": [
-            "Enrollment"
+            "Enroll at HTW Dresden"
           ],
           "deadline": "Before coming to Dresden"
         },
         {
           "name": "Prove Statutory Health Insurance",
-          "description": "Students from EU or EEA countries, Switzerland, Bosnia and Herzegovina, Montenegro, North Macedonia, Serbia, Turkey, Tunisia, or the United Kingdom must show their European Health Insurance Card or Global Health Insurance Card.",
+          "description": "Students from EU or EEA countries, Switzerland, Bosnia and Herzegovina, Montenegro, North Macedonia, Serbia, Turkey, Tunisia, or the United Kingdom must show their European Health Insurance Card (EHIC), Global Health Insurance Card (from the UK) or Eligibility (from a treaty country).",
           "requires": [
-            "Obtain Health Insurance"
+            "Step 1: Obtain Health Insurance"
           ],
           "enables": [
-            "Enrollment"
+            "Enroll at HTW Dresden"
           ],
-          "deadline": "Before coming to Dresden"
-        },
-        {
-          "name": "Register with Statutory Health Insurance Provider",
-          "description": "Students under the age of 30 can register with a statutory health insurance provider.",
-          "requires": [
-            "Obtain Health Insurance"
-          ],
-          "enables": [
-            "Enrollment"
-          ],
-          "deadline": "Before coming to Dresden"
-        },
-        {
-          "name": "Obtain Exemption for Private Health Insurance",
-          "description": "Students under the age of 30 who have private health insurance must obtain an exemption from the statutory health insurance obligation.",
-          "requires": [
-            "Obtain Health Insurance"
-          ],
-          "enables": [
-            "Enrollment"
-          ],
-          "deadline": "Before coming to Dresden"
+          "deadline": "Before entering Germany"
         }
       ],
       "dependencies": [
         {
           "type": "document/approval/other",
-          "description": "Letter of Admission from HTW Dresden is required for registration with a statutory health insurance provider.",
-          "previous_step": "Obtain Health Insurance",
-          "next_step": "Register with Statutory Health Insurance Provider"
+          "description": "Letter of Admission from HTW Dresden is required for registration with a statutory health insurance.",
+          "previous_step": "Step 1: Obtain Health Insurance",
+          "next_step": "Step 2: Prove Statutory Health Insurance"
         }
       ],
       "required_documents": [
         {
           "name": "Letter of Admission",
-          "description": "Required for registration with a statutory health insurance provider.",
+          "description": "Required for registration with a statutory health insurance.",
           "deadline": "Before coming to Dresden"
         }
       ]
@@ -125,14 +252,14 @@
           "description": "Check the immigration formalities available from the Federal Foreign Office and the German missions in your home country.",
           "requires": [],
           "enables": [
-            "Obtain passport",
+            "Obtain a passport",
             "Arrange insurance and permits"
           ],
           "deadline": "Before leaving your home country"
         },
         {
           "name": "Obtain a passport",
-          "description": "Obtain a passport if you do not already have one.",
+          "description": "Obtain a passport if you don't have one.",
           "requires": [
             "Check immigration formalities"
           ],
@@ -148,29 +275,29 @@
             "Obtain a passport"
           ],
           "enables": [
-            "Apply for visa (if required)"
+            "Apply for a student visa"
           ],
           "deadline": "Before leaving your home country"
         },
         {
-          "name": "Apply for visa (if required)",
-          "description": "Apply for a student visa at the German embassy in your home country if you are a non-EU citizen and plan to stay in Germany for more than three months.",
+          "name": "Apply for a student visa",
+          "description": "Apply for a student visa at the German embassy in your home country if you are not an EU citizen and plan to stay in Germany for more than three months.",
           "requires": [
             "Arrange insurance and permits"
           ],
           "enables": [
-            "Apply for residence permit (if required)"
+            "Apply for residence permit"
           ],
           "deadline": "Several weeks/month before your planned entry to Germany"
         },
         {
-          "name": "Apply for residence permit (if required)",
-          "description": "Apply for a residence permit at the Dresden Immigration Office if you are an EU citizen or if you are a non-EU citizen staying in Germany for less than 360 days.",
+          "name": "Apply for residence permit",
+          "description": "Apply for a residence permit at the Dresden Immigration Office if you are an EU citizen or if you are a non-EU citizen who plans to stay in Germany for less than 360 days.",
           "requires": [
-            "Apply for visa (if required)"
+            "Apply for a student visa"
           ],
           "enables": [
-            "Start studies"
+            "Start your studies"
           ],
           "deadline": "Within three months after entry in Germany"
         }
@@ -178,16 +305,16 @@
       "dependencies": [
         {
           "type": "document/approval/other",
-          "description": "Application for mobility to the Federal Office for Migration and Refugees (BAMF) must be submitted by the host university.",
-          "previous_step": "Apply for visa (if required)",
-          "next_step": "Apply for residence permit (if required)"
+          "description": "Notification to BAMF",
+          "previous_step": "Apply for a student visa",
+          "next_step": "Apply for residence permit"
         }
       ],
       "required_documents": [
         {
           "name": "Residence permit for study purposes from the first EU Member State",
-          "description": "Valid passport, Declaration on securing livelihood, Declaration of sufficient health insurance cover.",
-          "deadline": "Before applying for visa or residence permit"
+          "description": "Valid passport, Declaration on securing livelihood, Declaration of sufficient health insurance cover",
+          "deadline": "Before applying for a student visa"
         }
       ]
     },
@@ -195,55 +322,853 @@
       "name": "Accommodation",
       "steps": [
         {
-          "name": "Register at Studentenwerk Dresden",
-          "description": "Use the online application procedure to register for a student residence.",
+          "name": "Apply for student residence",
+          "description": "Register directly at the Studentenwerk Dresden using the online application procedure.",
           "requires": [],
           "enables": [
-            "Apply for accommodation"
+            "Get admission letter"
           ],
-          "deadline": "No specific deadline mentioned"
+          "deadline": "Not specified"
         },
         {
-          "name": "Apply for accommodation",
-          "description": "Submit the application with a copy of the admission letter from HTW Dresden.",
+          "name": "Get admission letter",
+          "description": "Obtain a copy of the admission letter from HTW Dresden.",
           "requires": [
-            "Register at Studentenwerk Dresden"
+            "Apply for student residence"
           ],
           "enables": [
-            "Wait for confirmation"
+            "Apply for student residence"
           ],
-          "deadline": "No specific deadline mentioned"
+          "deadline": "Not specified"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Semester contribution / living expenses",
+      "steps": [
+        {
+          "name": "Pay semester contribution",
+          "description": "Exchange students need to pay the semester contribution by bank transfer from their home country before entering the country.",
+          "requires": [],
+          "enables": [
+            "Activate German semester ticket"
+          ],
+          "deadline": "Before entering the country"
         },
         {
-          "name": "Wait for confirmation",
-          "description": "Receive confirmation from Studentenwerk Dresden regarding your accommodation application.",
+          "name": "Activate German semester ticket",
+          "description": "After paying the semester contribution, students can activate their German semester ticket via a cell phone app.",
           "requires": [
-            "Apply for accommodation"
+            "Pay semester contribution"
           ],
           "enables": [
-            "Check for alternative options"
+            "Start living in Dresden"
           ],
-          "deadline": "No specific deadline mentioned"
+          "deadline": "During Welcome Week"
         },
         {
-          "name": "Check for alternative options",
-          "description": "Look for other accommodation options if the student residence application is unsuccessful.",
+          "name": "Start living in Dresden",
+          "description": "Students can start living in Dresden after activating their German semester ticket.",
           "requires": [
-            "Wait for confirmation"
+            "Activate German semester ticket"
           ],
           "enables": [
-            "Finalize arrangements"
+            "Plan living expenses"
           ],
-          "deadline": "No specific deadline mentioned"
+          "deadline": "At the start of the semester"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Bank transfer confirmation",
+          "previous_step": "Pay semester contribution",
+          "next_step": "Activate German semester ticket"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Bank transfer confirmation",
+          "description": "Confirmation of the bank transfer showing the amount and date of transfer.",
+          "deadline": "Before entering the country"
+        }
+      ]
+    },
+    {
+      "name": "Arrival",
+      "steps": [],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Welcome Week and Buddy Programme",
+      "steps": [
+        {
+          "name": "Welcome Week Preparation",
+          "description": "Organize the Welcome Week in cooperation with faranto e.V.",
+          "requires": [],
+          "enables": [
+            "Welcome Week"
+          ],
+          "deadline": "10th of March 2025"
         },
         {
-          "name": "Finalize arrangements",
-          "description": "Secure your chosen accommodation and complete any necessary paperwork.",
+          "name": "Welcome Week",
+          "description": "Include activities such as campus tour, registration at the International Office, and information sessions.",
           "requires": [
-            "Check for alternative options"
+            "Welcome Week Preparation"
+          ],
+          "enables": [
+            "Buddy Programme"
+          ],
+          "deadline": "15th of March 2025"
+        },
+        {
+          "name": "Buddy Programme",
+          "description": "Organize the buddy programme through faranto e.V.",
+          "requires": [
+            "Welcome Week"
           ],
           "enables": [],
-          "deadline": "No specific deadline mentioned"
+          "deadline": "29th of September 2025"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Enrolment",
+      "steps": [
+        {
+          "name": "Enrolment Phase",
+          "description": "Enrolment process for exchange students",
+          "requires": [],
+          "enables": [
+            "Next Steps"
+          ],
+          "deadline": "During Welcome Week"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": [
+        {
+          "name": "Valid Passport or Identity Card",
+          "description": "Must be presented for enrolment",
+          "deadline": "During Welcome Week"
+        },
+        {
+          "name": "Valid Visa for Study Purposes",
+          "description": "Required for non-EU students",
+          "deadline": "During Welcome Week"
+        },
+        {
+          "name": "Proof of Health Insurance Recognized in Germany",
+          "description": "Must be presented for enrolment",
+          "deadline": "During Welcome Week"
+        },
+        {
+          "name": "Payment of the Semester Contribution",
+          "Description": "Must be made before enrolment",
+          "deadline": "Before Welcome Week"
+        }
+      ]
+    },
+    {
+      "name": "HTWD student card / semester ticket",
+      "steps": [
+        {
+          "name": "Receive Student Card",
+          "description": "Get the student card at the beginning of studies",
+          "requires": [],
+          "enables": [
+            "Apply for Semester Ticket"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Apply for Semester Ticket",
+          "description": "Apply for the semester ticket through the university login platform",
+          "requires": [
+            "Receive Student Card"
+          ],
+          "enables": [
+            "Access Digital Ticket"
+          ],
+          "deadline": "01.09. for winter semester and 01.03. for summer semester"
+        },
+        {
+          "name": "Access Digital Ticket",
+          "description": "Log in to the platform to access the digital ticket",
+          "requires": [
+            "Apply for Semester Ticket"
+          ],
+          "enables": [
+            "Use Semester Ticket"
+          ],
+          "deadline": ""
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "University login required for digital ticket access",
+          "previous_step": "Apply for Semester Ticket",
+          "next_step": "Access Digital Ticket"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "University Login",
+          "description": "Required for accessing the digital ticket platform",
+          "deadline": ""
+        }
+      ]
+    },
+    {
+      "name": "Registration at the Citizens’ Office Dresden",
+      "steps": [
+        {
+          "name": "Make an appointment",
+          "description": "Schedule an appointment at the Citizens' Office Dresden",
+          "requires": [],
+          "enables": [
+            "Visit the Citizens' Office"
+          ],
+          "deadline": "within two weeks"
+        },
+        {
+          "name": "Visit the Citizens' Office",
+          "description": "Register at the local Citizens' Office Dresden",
+          "requires": [
+            "Make an appointment"
+          ],
+          "enables": [],
+          "deadline": "within two weeks"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": [
+        {
+          "name": "Passport or identification card",
+          "description": "Document required for registration",
+          "deadline": "within two weeks"
+        },
+        {
+          "name": "Rental contract",
+          "description": "Document required for registration",
+          "deadline": "within two weeks"
+        },
+        {
+          "name": "Landlord's certificate/housing confirmation",
+          "description": "Document required for registration",
+          "deadline": "within two weeks"
+        }
+      ]
+    },
+    {
+      "name": "Registration at the Immigration Office (\"Ausländerbehörde\")",
+      "steps": [
+        {
+          "name": "Make an appointment",
+          "description": "Send required information to the Immigration Office Dresden for an appointment.",
+          "requires": [],
+          "enables": [
+            "Submit application and documents"
+          ],
+          "deadline": "Before visiting the office"
+        },
+        {
+          "name": "Submit application and documents",
+          "description": "Hand in the residence permit application and required documents at the Immigration Authority.",
+          "requires": [
+            "Make an appointment"
+          ],
+          "enables": [
+            "Wait for processing"
+          ],
+          "deadline": "Within the first three months after entering Germany"
+        },
+        {
+          "name": "Wait for processing",
+          "description": "Wait for the Immigration Office Dresden to process your application and documents.",
+          "requires": [
+            "Submit application and documents"
+          ],
+          "enables": [
+            "Receive decision"
+          ],
+          "deadline": "No specific deadline"
+        },
+        {
+          "name": "Receive decision",
+          "description": "Get the decision on your residence permit application from the Immigration Office Dresden.",
+          "requires": [
+            "Wait for processing"
+          ],
+          "enables": [
+            "Start studies or work"
+          ],
+          "deadline": "No specific deadline"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Required documents for the application.",
+          "previous_step": "Make an appointment",
+          "next_step": "Submit application and documents"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Fully completed application form",
+          "description": "Must be submitted with the application.",
+          "deadline": "Within the first three months after entering Germany"
+        }
+      ]
+    },
+    {
+      "name": "Canteens and Cafeterias",
+      "steps": [
+        {
+          "name": "Obtain MensaCard Emeal",
+          "description": "Get the MensaCard Emeal by depositing 5 EUR and presenting your HTW student ID and ID card/passport at the cash desks.",
+          "requires": [],
+          "enables": [
+            "Use of canteens and cafeterias"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Check website for locations and menus",
+          "description": "Find information about locations of canteens, cafeterias, and menus on the website of the Studentenwerk Dresden.",
+          "requires": [
+            "Obtain MensaCard Emeal"
+          ],
+          "enables": [
+            "Plan meals"
+          ],
+          "deadline": ""
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Bank account",
+      "steps": [
+        {
+          "name": "Open a German bank account",
+          "description": "To open an account at a bank, you will need passport or national ID card for identification, confirmation of registration from the Resident Registration Office in Dresden, German tax identification number, and enrolment certificate from HTW Dresden.",
+          "requires": [],
+          "enables": [
+            "Receive a debit card"
+          ],
+          "deadline": null
+        },
+        {
+          "name": "Receive a debit card",
+          "description": "Once you have opened a bank account you will receive a debit card, or cash card (EC-Karte).",
+          "requires": [
+            "Open a German bank account"
+          ],
+          "enables": [
+            "Use the debit card for transactions"
+          ],
+          "deadline": null
+        }
+      ],
+      "dependencies": [],
+      "required_documents": [
+        {
+          "name": "Passport or national ID card",
+          "description": "For identification",
+          "deadline": null
+        },
+        {
+          "name": "Confirmation of registration from the Resident Registration Office in Dresden",
+          "description": "For identification",
+          "deadline": null
+        },
+        {
+          "name": "German tax identification number",
+          "description": "For identification",
+          "deadline": null
+        },
+        {
+          "name": "Enrolment certificate from HTW Dresden",
+          "description": "For identification",
+          "deadline": null
+        }
+      ]
+    },
+    {
+      "name": "Timetable / start of the lecture period",
+      "steps": [
+        {
+          "name": "Publish Timetable",
+          "description": "Publish the timetable for the upcoming semester",
+          "requires": [],
+          "enables": [
+            "Access to Timetable"
+          ],
+          "deadline": "mid September for winter semester, beginning of March for summer semester"
+        },
+        {
+          "name": "Check Timetable",
+          "description": "Students check the published timetable for their courses",
+          "requires": [
+            "Access to Timetable"
+          ],
+          "enables": [
+            "Course Planning"
+          ],
+          "deadline": "first few weeks of the semester"
+        },
+        {
+          "name": "Plan Individual Timetable",
+          "description": "Students plan their individual timetable for the semester",
+          "requires": [
+            "Course Planning"
+          ],
+          "enables": [
+            "Finalized Timetable"
+          ],
+          "deadline": "first few weeks of the semester"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "HTWD student Login and digital tools (eduroam, OPAL, HTW email...)",
+      "steps": [
+        {
+          "name": "Enroll at the International Office",
+          "description": "Receive your personal HTWD Login",
+          "requires": [],
+          "enables": [
+            "Access to student account"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Access student account",
+          "description": "Log in to student computers, student web, library's resources, and HTWD email account",
+          "requires": [
+            "Enroll at the International Office"
+          ],
+          "enables": [
+            "Access to digital tools"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Access digital tools",
+          "description": "Use digital tools, systems, and programs for studies",
+          "requires": [
+            "Access student account"
+          ],
+          "enables": [
+            "Familiarization with digital tools"
+          ],
+          "deadline": "Before the course starts"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Timetable (start / end of the course / break times)",
+      "steps": [
+        {
+          "name": "Determine time options for 3rd double period",
+          "description": "Choose between two time options for the 3rd double period",
+          "requires": [],
+          "enables": [
+            "Select lunch break time"
+          ],
+          "deadline": "Before the start of the course"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Room names and locations on the HTWD campus",
+      "steps": [
+        {
+          "name": "Determine Room Name",
+          "description": "Extract the letter indicating the location and the three digits indicating the floor and room number from the room name.",
+          "requires": [],
+          "enables": [
+            "Find Location and Floor"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Find Location and Floor",
+          "description": "Use the letter and digits to determine the location and floor of the room.",
+          "requires": [
+            "Determine Room Name"
+          ],
+          "enables": [
+            "Get Room Details"
+          ],
+          "deadline": ""
+        },
+        "dependencies",
+        [],
+        "required_documents",
+        []
+      ]
+    },
+    {
+      "name": "Examinations",
+      "steps": [
+        {
+          "name": "Examination Registration",
+          "description": "Register for exams by sending the current learning agreement to the International Office.",
+          "requires": [],
+          "enables": [
+            "Exam Registration Confirmation"
+          ],
+          "deadline": "Registration period announced by email"
+        },
+        {
+          "name": "Exam Registration Confirmation",
+          "description": "Receive confirmation of exam registration from the International Office.",
+          "requires": [
+            "Examination Registration"
+          ],
+          "enables": [
+            "Exam Deregistration"
+          ],
+          "deadline": "One week before the examination"
+        },
+        {
+          "name": "Exam Deregistration",
+          "description": "Deregister from the examination up to one week before the examination date.",
+          "requires": [
+            "Exam Registration Confirmation"
+          ],
+          "enables": [
+            "Medical Certificate Submission"
+          ],
+          "deadline": "One week before the examination"
+        },
+        {
+          "name": "Medical Certificate Submission",
+          "description": "Submit a medical certificate for withdrawal from an examination after the deregistration period.",
+          "requires": [
+            "Exam Deregistration"
+          ],
+          "enables": [
+            "Retake Examination Arrangement"
+          ],
+          "deadline": "3 working days after the examination"
+        },
+        {
+          "name": "Retake Examination Arrangement",
+          "description": "Make arrangements for a retake examination date with the examiner.",
+          "requires": [
+            "Medical Certificate Submission"
+          ],
+          "enables": [
+            "View Examination Results"
+          ],
+          "deadline": "After the retake examination"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Submit the current version of the learning agreement to register for exams.",
+          "previous_step": "Examination Registration",
+          "next_step": "Exam Registration Confirmation"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Learning Agreement",
+          "description": "Current version of the learning agreement",
+          "deadline": "Registration period announced by email"
+        }
+      ]
+    },
+    {
+      "name": "Transcript of Records",
+      "steps": [
+        {
+          "name": "Wait for grades to be reported",
+          "description": "Wait for all grades to be reported by professors/lecturers",
+          "requires": [],
+          "enables": [
+            "Request Transcript of Records"
+          ],
+          "deadline": "4 weeks after the official end of the examination period"
+        },
+        "dependencies",
+        [],
+        "required_documents",
+        []
+      ]
+    },
+    {
+      "name": "Prolongation of matriculation at HTWD",
+      "steps": [
+        {
+          "name": "Confer with home university and Academic Coordinator",
+          "description": "Discuss prolongation of matriculation",
+          "requires": [],
+          "enables": [
+            "Submit prolongation of matriculation form"
+          ],
+          "deadline": "Not specified"
+        },
+        {
+          "name": "Submit prolongation of matriculation form",
+          "description": "Hand in signed form at the International Office",
+          "requires": [
+            "Confer with home university and Academic Coordinator"
+          ],
+          "enables": [
+            "Receive letter of admission"
+          ],
+          "deadline": "Not specified"
+        },
+        {
+          "name": "Pay semester contribution for re-registration",
+          "description": "Pay within the re-registration period",
+          "requires": [
+            "Submit prolongation of matriculation form"
+          ],
+          "enables": [
+            "Re-register for the next semester"
+          ],
+          "deadline": "Re-registration period"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Complete new Learning Agreement",
+          "previous_step": "Submit prolongation of matriculation form",
+          "next_step": "Pay semester contribution for re-registration"
+        }
+      ],
+      "required_documents": []
+    },
+    {
+      "name": "Re-registration for the next semester",
+      "steps": [
+        {
+          "name": "Re-register for the next semester",
+          "description": "Pay the semester contribution and update the student ID card",
+          "requires": [
+            "Previous semester registration"
+          ],
+          "enables": [
+            "Next semester enrollment"
+          ],
+          "deadline": "End of re-registration period"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Payment confirmation and student ID update",
+          "previous_step": "Re-register for the next semester",
+          "next_step": "Next semester enrollment"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Payment confirmation",
+          "description": "Confirmation of payment received by HTWD",
+          "deadline": "End of re-registration period"
+        }
+      ]
+    },
+    {
+      "name": "Culture and sport",
+      "steps": [],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Public Transport",
+      "steps": [],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Career Service at HTWD - Scouting SN",
+      "steps": [
+        {
+          "name": "Scouting SN Phase",
+          "description": "Supports international students in application procedures, job search, and internship search.",
+          "requires": [],
+          "enables": [
+            "Application Process Coaching",
+            "Job Search Assistance",
+            "Internship Search Support"
+          ],
+          "deadline": "Ongoing"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Part-time jobs",
+      "steps": [
+        {
+          "name": "Determine country of origin",
+          "description": "Check if you are from the EU, Iceland, Liechtenstein, Norway, or Switzerland",
+          "requires": [],
+          "enables": [
+            "Check working hours"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Check working hours",
+          "description": "Determine if you can work more than 20 hours a week or need special permission",
+          "requires": [
+            "Determine country of origin"
+          ],
+          "enables": [
+            "Apply for permission if necessary"
+          ],
+          "deadline": ""
+        },
+        "dependencies",
+        [],
+        "required_documents",
+        []
+      ]
+    },
+    {
+      "name": "First Aid / Medical care",
+      "steps": [
+        {
+          "name": "Find a doctor",
+          "description": "Search for a doctor who speaks your language in Dresden.",
+          "requires": [],
+          "enables": [
+            "Visit the doctor"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Visit the doctor",
+          "description": "Go to the doctor's office with your health insurance card.",
+          "requires": [
+            "Find a doctor"
+          ],
+          "enables": [
+            "Get a prescription"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Get a prescription",
+          "description": "Receive a prescription from the doctor.",
+          "requires": [
+            "Visit the doctor"
+          ],
+          "enables": [
+            "Visit the pharmacy"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Visit the pharmacy",
+          "description": "Hand in your prescription at the pharmacy to get the medicine.",
+          "requires": [
+            "Get a prescription"
+          ],
+          "enables": [
+            "Emergency services"
+          ],
+          "deadline": ""
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Room of Silence",
+      "steps": [],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Exmatriculation",
+      "steps": [
+        {
+          "name": "Submit Exmatriculation Form",
+          "description": "Submit the completed form to the Student Office during office hours.",
+          "requires": [],
+          "enables": [
+            "Exmatriculation"
+          ],
+          "deadline": "End of semester or earlier if advised"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
+    },
+    {
+      "name": "Deregistration",
+      "steps": [
+        {
+          "name": "Close German bank account",
+          "description": "Close your German bank account if you have one.",
+          "requires": [],
+          "enables": [
+            "Return borrowed books",
+            "Deregister from German Health Insurance",
+            "Deregister from Citizens' Office Dresden"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Return borrowed books",
+          "description": "Return any books you have borrowed to the university library.",
+          "requires": [
+            "Close German bank account"
+          ],
+          "enables": [
+            "Deregister from German Health Insurance",
+            "Deregister from Citizens' Office Dresden"
+          ],
+          "deadline": ""
+        },
+        {
+          "name": "Deregister from German Health Insurance",
+          "description": "Deregister from the German Health Insurance with the deregistration certificate from HTW Dresden and the deregistration certificate from the Bürgerbüro (Resident Registration Office Dresden).",
+          "requires": [
+            "Close German bank account",
+            "Return borrowed books"
+          ],
+          "enables": [
+            "Deregister from Citizens' Office Dresden"
+          ],
+          "deadline": "De-registration is possible at the earliest one week before moving out or within two weeks after moving out."
+        },
+        {
+          "name": "Deregister from Citizens' Office Dresden",
+          "description": "De-register from the Citizens' Office Dresden.",
+          "requires": [
+            "Close German bank account",
+            "Return borrowed books",
+            "Deregister from German Health Insurance"
+          ],
+          "deadline": "De-registration is possible at the earliest one week before moving out or within two weeks after moving out."
         }
       ],
       "dependencies": [],
