@@ -1,45 +1,253 @@
 {
   "meta": {
-    "date": "2025-01-01T17:04:10.630406+00:00",
+    "date": "2025-01-01T18:49:33.262153+00:00",
     "website": "https://www.htw-dresden.de/en/international/coming-to-htwd/exchange-programmes"
   },
   "phases": [
     {
-      "name": "Application",
+      "name": "Application and admission procedures",
       "steps": [
         {
-          "name": "Letter of admission",
+          "name": "Application Submission",
+          "description": "Submit application documents to HTW Dresden",
+          "requires": [],
+          "enables": [
+            "Application Review"
+          ],
+          "deadline": "15 June for winter semester, 15 November for summer semester"
+        },
+        {
+          "name": "Application Review",
+          "description": "Review of application documents by HTW Dresden",
           "requires": [
-            "Application submission",
-            "Academic coordinator approval"
+            "Application Submission"
           ],
           "enables": [
-            "Visa application"
-          ]
+            "Letter of Admission"
+          ],
+          "deadline": null
+        },
+        {
+          "name": "Letter of Admission",
+          "description": "Issue of Letter of Admission by HTW Dresden",
+          "requires": [
+            "Application Review"
+          ],
+          "enables": [
+            "Visa Application"
+          ],
+          "deadline": null
         }
       ],
       "dependencies": [
         {
-          "type": "approval",
-          "description": "Academic coordinator approval required",
-          "next_step": "Letter of admission issuance"
+          "type": "document",
+          "description": "Application documents",
+          "previous_step": "Application Submission",
+          "next_step": "Application Review"
         }
       ],
       "required_documents": [
-        "15 June for the winter semester (end of September - end of\n                            February)",
-        "15 November of the previous year for the summer semester\n                            (beginning of March - mid July)"
+        {
+          "name": "Application for Admission",
+          "description": "Signed by you and your home university coordinator",
+          "deadline": "15 June for winter semester, 15 November for summer semester"
+        }
+      ]
+    },
+    {
+      "name": "Health Insurance",
+      "steps": [
+        {
+          "name": "Obtain Health Insurance",
+          "description": "Students from outside EU or EEA countries must take out a German health insurance.",
+          "requires": [],
+          "enables": [
+            "Enrollment"
+          ],
+          "deadline": "Before coming to Dresden"
+        },
+        {
+          "name": "Prove Statutory Health Insurance",
+          "description": "Students from EU or EEA countries, Switzerland, Bosnia and Herzegovina, Montenegro, North Macedonia, Serbia, Turkey, Tunisia, or the United Kingdom must show their European Health Insurance Card or Global Health Insurance Card.",
+          "requires": [
+            "Obtain Health Insurance"
+          ],
+          "enables": [
+            "Enrollment"
+          ],
+          "deadline": "Before coming to Dresden"
+        },
+        {
+          "name": "Register with Statutory Health Insurance Provider",
+          "description": "Students under the age of 30 can register with a statutory health insurance provider.",
+          "requires": [
+            "Obtain Health Insurance"
+          ],
+          "enables": [
+            "Enrollment"
+          ],
+          "deadline": "Before coming to Dresden"
+        },
+        {
+          "name": "Obtain Exemption for Private Health Insurance",
+          "description": "Students under the age of 30 who have private health insurance must obtain an exemption from the statutory health insurance obligation.",
+          "requires": [
+            "Obtain Health Insurance"
+          ],
+          "enables": [
+            "Enrollment"
+          ],
+          "deadline": "Before coming to Dresden"
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "document/approval/other",
+          "description": "Letter of Admission from HTW Dresden is required for registration with a statutory health insurance provider.",
+          "previous_step": "Obtain Health Insurance",
+          "next_step": "Register with Statutory Health Insurance Provider"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Letter of Admission",
+          "description": "Required for registration with a statutory health insurance provider.",
+          "deadline": "Before coming to Dresden"
+        }
       ]
     },
     {
       "name": "Visa",
-      "requirements": [],
+      "steps": [
+        {
+          "name": "Check immigration formalities",
+          "description": "Check the immigration formalities available from the Federal Foreign Office and the German missions in your home country.",
+          "requires": [],
+          "enables": [
+            "Obtain passport",
+            "Arrange insurance and permits"
+          ],
+          "deadline": "Before leaving your home country"
+        },
+        {
+          "name": "Obtain a passport",
+          "description": "Obtain a passport if you do not already have one.",
+          "requires": [
+            "Check immigration formalities"
+          ],
+          "enables": [
+            "Arrange insurance and permits"
+          ],
+          "deadline": "Before leaving your home country"
+        },
+        {
+          "name": "Arrange insurance and permits",
+          "description": "Arrange insurance and the necessary permits before leaving your home country.",
+          "requires": [
+            "Obtain a passport"
+          ],
+          "enables": [
+            "Apply for visa (if required)"
+          ],
+          "deadline": "Before leaving your home country"
+        },
+        {
+          "name": "Apply for visa (if required)",
+          "description": "Apply for a student visa at the German embassy in your home country if you are a non-EU citizen and plan to stay in Germany for more than three months.",
+          "requires": [
+            "Arrange insurance and permits"
+          ],
+          "enables": [
+            "Apply for residence permit (if required)"
+          ],
+          "deadline": "Several weeks/month before your planned entry to Germany"
+        },
+        {
+          "name": "Apply for residence permit (if required)",
+          "description": "Apply for a residence permit at the Dresden Immigration Office if you are an EU citizen or if you are a non-EU citizen staying in Germany for less than 360 days.",
+          "requires": [
+            "Apply for visa (if required)"
+          ],
+          "enables": [
+            "Start studies"
+          ],
+          "deadline": "Within three months after entry in Germany"
+        }
+      ],
       "dependencies": [
         {
-          "type": "document",
-          "description": "Letter of admission required for visa application",
-          "previous_step": "Application phase completion"
+          "type": "document/approval/other",
+          "description": "Application for mobility to the Federal Office for Migration and Refugees (BAMF) must be submitted by the host university.",
+          "previous_step": "Apply for visa (if required)",
+          "next_step": "Apply for residence permit (if required)"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": "Residence permit for study purposes from the first EU Member State",
+          "description": "Valid passport, Declaration on securing livelihood, Declaration of sufficient health insurance cover.",
+          "deadline": "Before applying for visa or residence permit"
         }
       ]
+    },
+    {
+      "name": "Accommodation",
+      "steps": [
+        {
+          "name": "Register at Studentenwerk Dresden",
+          "description": "Use the online application procedure to register for a student residence.",
+          "requires": [],
+          "enables": [
+            "Apply for accommodation"
+          ],
+          "deadline": "No specific deadline mentioned"
+        },
+        {
+          "name": "Apply for accommodation",
+          "description": "Submit the application with a copy of the admission letter from HTW Dresden.",
+          "requires": [
+            "Register at Studentenwerk Dresden"
+          ],
+          "enables": [
+            "Wait for confirmation"
+          ],
+          "deadline": "No specific deadline mentioned"
+        },
+        {
+          "name": "Wait for confirmation",
+          "description": "Receive confirmation from Studentenwerk Dresden regarding your accommodation application.",
+          "requires": [
+            "Apply for accommodation"
+          ],
+          "enables": [
+            "Check for alternative options"
+          ],
+          "deadline": "No specific deadline mentioned"
+        },
+        {
+          "name": "Check for alternative options",
+          "description": "Look for other accommodation options if the student residence application is unsuccessful.",
+          "requires": [
+            "Wait for confirmation"
+          ],
+          "enables": [
+            "Finalize arrangements"
+          ],
+          "deadline": "No specific deadline mentioned"
+        },
+        {
+          "name": "Finalize arrangements",
+          "description": "Secure your chosen accommodation and complete any necessary paperwork.",
+          "requires": [
+            "Check for alternative options"
+          ],
+          "enables": [],
+          "deadline": "No specific deadline mentioned"
+        }
+      ],
+      "dependencies": [],
+      "required_documents": []
     }
   ]
 }
