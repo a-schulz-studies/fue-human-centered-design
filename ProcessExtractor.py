@@ -110,6 +110,8 @@ class ProcessExtractorGroq():
         3. Required documents
         4. Time constraints or deadlines
         
+        Only include steps that are carried out by students.
+        
         Format the response as JSON with this structure:
         {{
             "steps": [
