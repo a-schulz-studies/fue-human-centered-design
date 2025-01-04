@@ -45,18 +45,15 @@
       "required_documents": [
         {
           "name": "Application for admission to studies",
-          "description": "Signed by you and your home university coordinator",
-          "deadline": "15 June for winter semester and 15 November for summer semester"
+          "description": "Signed by you and your home university coordinator"
         },
         {
           "name": "(Online) Learning Agreement",
-          "description": "Your course selection approved and signed by your and your home university coordinator",
-          "deadline": "15 June for winter semester and 15 November for summer semester"
+          "description": "Your course selection approved and signed by your and your home university coordinator"
         },
         {
           "name": "Resume/CV",
-          "description": "In English or German",
-          "deadline": "15 June for winter semester and 15 November for summer semester"
+          "description": "In English or German"
         },
         {
           "name": "Transcript of Records",
@@ -90,7 +87,10 @@
         }
       ],
       "received_documents": [
-        "Letter of Admission"
+        {
+          "name": "Letter of Admission",
+          "description": "Official letter of admission from HTW Dresden"
+        }
       ]
     },
     {
@@ -153,7 +153,10 @@
       "dependencies": [],
       "required_documents": [],
       "received_documents": [
-        "(Online) Learning Agreement"
+        {
+          "name": "(Online) Learning Agreement",
+          "description": "Your course selection approved and signed by your and your home university coordinator"
+        }
       ]
     },
     {
@@ -218,14 +221,55 @@
       ],
       "dependencies": [],
       "required_documents": [
-        "Passport",
-        "Letter of Admission from HTW Dresden"
+        {
+          "name": "Passport",
+          "description": "Valid passport required for health insurance application"
+        },
+        {
+          "name": "Letter of Admission from HTW Dresden",
+          "description": "Official letter of admission from HTW Dresden"
+        }
       ],
       "received_documents": [
-        "Proof of adequate health insurance"
+        {
+          "name": "Proof of adequate health insurance",
+          "description": "Proof of adequate health insurance required for enrollment"
+        }
       ],
       "required_by": [
         "Students except when from European Union or EEA countries, Switzerland, Bosnia and Herzegovina, Montenegro, North Macedonia, Serbia, Turkey, Tunisia or the United Kingdom"
+      ]
+    },
+    {
+      "name": "Residence permit for study purposes to apply for visa",
+      "steps": [
+        {
+          "name": "Apply for residence permit",
+          "description": "Apply for a residence permit for study purposes see: https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/MobilitaetEU/MobilitaetStudent/mobilitaet-student-node.html;jsessionid=0B177C50DD5B17BFE9B34D95459902F3.internet282",
+          "requires": [],
+          "enables": [
+            "Wait for residence permit approval"
+          ],
+          "deadline": "Before leaving your home country"
+        },
+        {
+          "name": "Wait for residence permit approval",
+          "description": "Wait for the residence permit approval from the German embassy.",
+          "requires": [
+            "Apply for residence permit"
+          ],
+          "enables": [
+            "Apply for visa"
+          ]
+        }
+      ],
+      "dependencies": [],
+      "required_documents": [],
+      "received_documents": [
+        {
+          "name": "Residence permit for study purposes",
+          "description": "Official residence permit for study purposes"
+        }
       ]
     },
     {
@@ -290,48 +334,43 @@
       "dependencies": [],
       "required_documents": [
         {
-          "name": "Residence permit application",
-          "description": "Fully completed application form.",
-          "deadline": "Before submitting"
+          "name": "Residence permit for study purposes",
+          "description": "Must be valid for the entire duration of stay in Germany."
         },
         {
           "name": "Administrative charge",
-          "description": "110 EUR in cash or ec-cash",
-          "deadline": "At the time of the appointment"
+          "description": "110 EUR in cash or ec-cash"
         },
         {
           "name": "Rental Agreement",
-          "description": "Original and Copy",
-          "deadline": "At the time of the appointment"
+          "description": "Original and Copy"
         },
         {
           "name": "Proof of adequate health insurance",
-          "description": "Original and copy",
-          "deadline": "At the time of the appointment"
+          "description": "Original and copy"
         },
         {
           "name": "Proof of secured livelihood",
-          "description": "For example scholarship or private savings",
-          "deadline": "At the time of the appointment"
+          "description": "For example scholarship or private savings"
         },
         {
-          "name": "Certificate of enrollment",
-          "description": "Enrollment or admission letter of HTW Dresden, with copy",
-          "deadline": "At the time of the appointment"
+          "name": "Letter of Admission",
+          "description": "Enrollment or admission letter of HTW Dresden, with copy"
         },
         {
           "name": "Current biometric photo",
-          "description": "Not older than 6 months",
-          "deadline": "At the time of the appointment"
+          "description": "Not older than 6 months"
         },
         {
           "name": "Current valid/new passport or passport replacement document",
-          "description": "With copy",
-          "deadline": "At the time of the appointment"
+          "description": "With copy"
         }
       ],
       "received_documents": [
-        "Visa for study purposes"
+        {
+          "name": "Visa for study purposes",
+          "description": "Official visa for study purposes"
+        }
       ],
       "required_by": [
         "Students from all countries except USA, Australia, Israel, Japan, Canada, Korea, New Zealand, Switzerland"
@@ -349,6 +388,12 @@
       ],
       "required_by": [
         "Andorra, Australia, Brazil, El Salvador, Great Britain and Honduras, Iceland, Israel, Japan, Canada, the Republic of Korea, Liechtenstein, Monaco, New Zealand, Northern Ireland, Norway, San Marino, Switzerland and the USA"
+      ],
+      "received_documents": [
+        {
+          "name": "Residence permit for study purposes",
+          "description": "Official residence permit for study purposes"
+        }
       ]
     },
     {
@@ -377,7 +422,10 @@
       ],
       "dependencies": [],
       "required_documents": [
-        "Letter of Admission"
+       {
+  "name": "Letter of Admission",
+  "description": "Official letter of admission from HTW Dresden"
+}
       ],
       "received_documents": []
     },
@@ -442,26 +490,30 @@
       "required_documents": [
         {
           "name": "Valid Passport or Identity Card",
-          "description": "Must be valid",
-          "deadline": "During Welcome Week"
+          "description": "Must be valid"
         },
         {
           "name": "Valid Visa for Study Purposes",
-          "description": "If required for non-EU students",
-          "deadline": "During Welcome Week"
+          "description": "If required for non-EU students"
         },
         {
           "name": "Proof of Health Insurance Recognized in Germany",
-          "deadline": "During Welcome Week"
+            "description": "Proof of adequate health insurance"
         },
         {
           "name": "Payment of the Semester Contribution",
-          "deadline": "During Welcome Week"
+            "description": "Proof of payment of the semester contribution"
         }
       ],
       "received_documents": [
-        "Personal HTWD Login",
-        "Proof of a valid study visa"
+        {
+          "name": "Personal HTWD Login",
+          "description": "Personal login credentials for HTWD systems"
+        },
+        {
+          "name": "Proof of a valid study visa",
+          "description": "Proof of a valid study visa required for enrollment"
+        }
       ]
     },
     {
@@ -691,7 +743,10 @@
       "dependencies": [],
       "required_documents": [],
       "received_documents": [
-        "Transcript of Records"
+        {
+          "name": "Transcript of Records",
+          "description": "Official transcript of records from HTW Dresden"
+        }
       ]
     },
     {
