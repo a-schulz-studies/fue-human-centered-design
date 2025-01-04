@@ -31,7 +31,7 @@
           "name": "Letter of Admission",
           "description": "Receive Letter of Admission from HTW Dresden",
           "requires": [
-            "Application Review"
+            "Wait for application Review"
           ],
           "enables": [
             "Apply for visa",
@@ -88,6 +88,9 @@
           "description": "Can be submitted later upon entry",
           "deadline": null
         }
+      ],
+      "received_documents": [
+        "Letter of Admission"
       ]
     },
     {
@@ -109,14 +112,16 @@
             "Research English taught courses"
           ],
           "enables": [
-            "Register for courses"
+            "Create Learning Agreement"
           ],
           "deadline": "End of registration period"
         },
         {
           "name": "Create Learning Agreement",
           "description": "Fill out the Learning Agreement digitally via https://learning-agreement.eu or use the template for non-Erasmus+ students.",
-          "requires": [],
+          "requires": [
+            "Select courses"
+          ],
           "enables": [
             "Submit Learning Agreement for approval"
           ],
@@ -165,7 +170,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Language courses",
@@ -192,7 +198,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Health Insurance",
@@ -200,7 +207,9 @@
         {
           "name": "Obtain Health Insurance",
           "description": "Students from outside EU or EEA countries must take out a German health insurance.",
-          "requires": [],
+          "requires": [
+            "Letter of Admission"
+          ],
           "enables": [
             "Enroll at HTW Dresden"
           ],
@@ -338,7 +347,7 @@
           "deadline": "within three months after entry in Germany"
         }
       ],
-      "required_by":[
+      "required_by": [
         "Andorra, Australia, Brazil, El Salvador, Great Britain and Honduras, Iceland, Israel, Japan, Canada, the Republic of Korea, Liechtenstein, Monaco, New Zealand, Northern Ireland, Norway, San Marino, Switzerland and the USA"
       ]
     },
@@ -369,7 +378,8 @@
       "dependencies": [],
       "required_documents": [
         "Letter of Admission"
-      ]
+      ],
+      "received_documents": []
     },
     {
       "name": "Semester contribution / living expenses",
@@ -385,13 +395,15 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Arrival",
       "steps": [],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Welcome Week and Buddy Programme",
@@ -407,7 +419,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Enrolment",
@@ -415,7 +428,10 @@
         {
           "name": "Enrolment",
           "description": "Enrol at the International Office",
-          "requires": [],
+          "requires": [
+            "Obtain Health Insurance",
+            "Wait for visa approval"
+          ],
           "enables": [
             "Next Steps"
           ],
@@ -444,7 +460,8 @@
         }
       ],
       "received_documents": [
-        "Personal HTWD Login"
+        "Personal HTWD Login",
+        "Proof of a valid study visa"
       ]
     },
     {
@@ -483,7 +500,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Registration at the Immigration Office (\"Ausländerbehörde\")",
@@ -523,7 +541,8 @@
           "description": "Fully completed application form.",
           "deadline": "Before submitting"
         }
-      ]
+      ],
+      "received_documents": []
     },
     {
       "name": "Bank account",
@@ -544,7 +563,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Timetable / start of the lecture period",
@@ -591,7 +611,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Examinations",
@@ -631,7 +652,7 @@
           "name": "Take Exam",
           "description": "Take the exam.",
           "requires": [
-            "Register for Exams"
+            "Deregister from Exam"
           ],
           "enables": [
             "Wait for grades to be reported"
@@ -640,7 +661,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Transcript of Records",
@@ -667,7 +689,10 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": [
+        "Transcript of Records"
+      ]
     },
     {
       "name": "Prolongation of matriculation at HTWD",
@@ -728,7 +753,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Prolongation of study visa",
@@ -757,7 +783,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Re-registration for the next semester",
@@ -766,7 +793,7 @@
           "name": "Re-register for the next semester",
           "description": "Pay the semester contribution and update the student ID card",
           "requires": [
-            "Prolongation of study visa"
+            "Extend study visa"
           ],
           "enables": [
             "Update student ID card"
@@ -775,7 +802,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Exmatriculation",
@@ -784,12 +812,13 @@
           "name": "Nothing",
           "description": "As an exchange student you will automatically be exmatriculated at the end of the semester. You don't have to do anything.",
           "requires": [],
-          "enables": [          ],
+          "enables": [],
           "deadline": ""
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     },
     {
       "name": "Deregistration",
@@ -821,7 +850,6 @@
           "name": "Deregister from German Health Insurance",
           "description": "Deregister from the German Health Insurance with the deregistration certificate from HTW Dresden and the deregistration certificate from the Bürgerbüro (Resident Registration Office Dresden).",
           "requires": [
-            "Close German bank account",
             "Return borrowed books"
           ],
           "enables": [
@@ -833,8 +861,6 @@
           "name": "Deregister from Citizens' Office Dresden",
           "description": "De-register from the Citizens' Office Dresden.",
           "requires": [
-            "Close German bank account",
-            "Return borrowed books",
             "Deregister from German Health Insurance"
           ],
           "enables": [],
@@ -842,7 +868,8 @@
         }
       ],
       "dependencies": [],
-      "required_documents": []
+      "required_documents": [],
+      "received_documents": []
     }
   ]
 }
