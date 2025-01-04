@@ -2,7 +2,6 @@ import datetime
 import json
 from typing import Dict
 
-import groq
 import json_repair
 import openai
 from bs4 import BeautifulSoup
@@ -63,6 +62,31 @@ class ProcessExtractorOpenAI:
 
         return json.loads(response.choices[0].message.content)
 
+
+    def _fix_dependencies(self, content, process):
+        prompt = f"""
+        Add missing requirements and dependencies to the process information extracted from the following text about the process at HTW Dresden.
+        Identify:
+        1. Add missing steps
+        2. Add missing dependencies between steps
+        3. Add missing required documents
+        4. Add missing time constraints or deadlines
+        
+        Text to analyze:
+        {content}
+        
+        Process to add missing elements:
+        {json.dumps(process, indent=2)}
+        """
+
+        response = self.client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+        )
+
+        return json_repair.loads(response.choices[0].message.content)
+
+
     def extract_process(self, html_content: str) -> Dict:
         soup = BeautifulSoup(html_content, 'html.parser')
         accordion_items = soup.find_all('div', class_='htw_accordion__item')
@@ -75,6 +99,7 @@ class ProcessExtractorOpenAI:
             "phases": []
         }
 
+        all_content = ""
         for item in accordion_items:
             title = item.find('button', class_='htw_accordion__button').text.strip()
             content = item.find('div', class_='htw_accordion__body')
@@ -84,6 +109,7 @@ class ProcessExtractorOpenAI:
 
             # Extract text from content
             text = content.get_text(separator='\n', strip=True)
+            all_content += "\n" + text
 
             # Process specific sections based on title
             phase_info = self._analyze_text(text, title)
@@ -92,6 +118,9 @@ class ProcessExtractorOpenAI:
                 "name": title,
                 **phase_info
             })
+
+        # Fixup dependencies
+        process = self._fix_dependencies(all_content, process)
 
         return process
 
@@ -148,7 +177,7 @@ class ProcessExtractorGroq():
         """
 
         response = self.client.chat.completions.create(
-            model="llama3-groq-8b-8192-tool-use-preview",
+            model="llama-3.3-70b-versatile",
             seed=42,
             messages=[{"role": "user", "content": prompt}],
             # response_format={"type": "json_object"}
@@ -164,6 +193,32 @@ class ProcessExtractorGroq():
         return json_repair.loads(response.choices[0].message.content)
 
 
+    def _fix_dependencies(self, content, process):
+        prompt = f"""
+        Add missing requirements and dependencies to the process information extracted from the following text about the process at HTW Dresden.
+        Identify:
+        1. Add missing steps
+        2. Add missing dependencies between steps
+        3. Add missing required documents
+        4. Add missing time constraints or deadlines
+        
+        Text to analyze:
+        {content}
+        
+        Process to add missing elements:
+        {json.dumps(process, indent=2)}
+        """
+
+        response = self.client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            seed=42,
+            messages=[{"role": "user", "content": prompt}],
+        )
+
+        return json_repair.loads(response.choices[0].message.content)
+
+
+
     def extract_process(self, html_content: str) -> Dict:
         soup = BeautifulSoup(html_content, 'html.parser')
         accordion_items = soup.find_all('div', class_='htw_accordion__item')
@@ -176,6 +231,7 @@ class ProcessExtractorGroq():
             "phases": []
         }
 
+        all_content = ""
         for item in accordion_items:
             title = item.find('button', class_='htw_accordion__button').text.strip()
             content = item.find('div', class_='htw_accordion__body')
@@ -185,6 +241,7 @@ class ProcessExtractorGroq():
 
             # Extract text from content
             text = content.get_text(separator='\n', strip=True)
+            all_content += "\n" + text
 
             # Process specific sections based on title
             phase_info = self._analyze_text(text, title)
@@ -193,5 +250,8 @@ class ProcessExtractorGroq():
                 "name": title,
                 **phase_info
             })
+
+        # Fixup dependencies
+        process = self._fix_dependencies(all_content, process)
 
         return process
