@@ -62,31 +62,6 @@ class ProcessExtractorOpenAI:
 
         return json.loads(response.choices[0].message.content)
 
-
-    def _fix_dependencies(self, content, process):
-        prompt = f"""
-        Add missing requirements and dependencies to the process information extracted from the following text about the process at HTW Dresden.
-        Identify:
-        1. Add missing steps
-        2. Add missing dependencies between steps
-        3. Add missing required documents
-        4. Add missing time constraints or deadlines
-        
-        Text to analyze:
-        {content}
-        
-        Process to add missing elements:
-        {json.dumps(process, indent=2)}
-        """
-
-        response = self.client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-        )
-
-        return json_repair.loads(response.choices[0].message.content)
-
-
     def extract_process(self, html_content: str) -> Dict:
         soup = BeautifulSoup(html_content, 'html.parser')
         accordion_items = soup.find_all('div', class_='htw_accordion__item')
@@ -119,15 +94,12 @@ class ProcessExtractorOpenAI:
                 **phase_info
             })
 
-        # Fixup dependencies
-        process = self._fix_dependencies(all_content, process)
-
         return process
+
 
 class ProcessExtractorGroq():
     def __init__(self, api_key: str):
         self.client = Groq(api_key=api_key)
-
 
     def _analyze_text(self, text: str, phase_name: str) -> Dict:
         """Use LLM to analyze text and extract structured process information"""
@@ -183,7 +155,8 @@ class ProcessExtractorGroq():
             # response_format={"type": "json_object"}
         )
 
-        if(response.choices[0].message.content == "I'm sorry but I do not have the capability to perform this task for you, I am happy to help you with any other queries you may have."):
+        if (response.choices[
+            0].message.content == "I'm sorry but I do not have the capability to perform this task for you, I am happy to help you with any other queries you may have."):
             return {
                 "steps": [],
                 "dependencies": [],
@@ -191,33 +164,6 @@ class ProcessExtractorGroq():
             }
 
         return json_repair.loads(response.choices[0].message.content)
-
-
-    def _fix_dependencies(self, content, process):
-        prompt = f"""
-        Add missing requirements and dependencies to the process information extracted from the following text about the process at HTW Dresden.
-        Identify:
-        1. Add missing steps
-        2. Add missing dependencies between steps
-        3. Add missing required documents
-        4. Add missing time constraints or deadlines
-        
-        Text to analyze:
-        {content}
-        
-        Process to add missing elements:
-        {json.dumps(process, indent=2)}
-        """
-
-        response = self.client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            seed=42,
-            messages=[{"role": "user", "content": prompt}],
-        )
-
-        return json_repair.loads(response.choices[0].message.content)
-
-
 
     def extract_process(self, html_content: str) -> Dict:
         soup = BeautifulSoup(html_content, 'html.parser')
@@ -250,8 +196,5 @@ class ProcessExtractorGroq():
                 "name": title,
                 **phase_info
             })
-
-        # Fixup dependencies
-        process = self._fix_dependencies(all_content, process)
 
         return process
