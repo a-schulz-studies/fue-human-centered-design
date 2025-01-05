@@ -21,7 +21,7 @@ class ProcessFlowGenerator:
         if display_name:
             self.nodes.add(f'{node_id}["{display_name.replace("\"", "")}"]')
         else:
-            self.nodes.add(f'{node_id}["{name}"]')
+            self.nodes.add(f'{node_id}["{name.replace("\"", "")}"]')
         return node_id
 
     def add_document_node(self, doc_name: str, doc_info: dict = None) -> str:
@@ -116,9 +116,9 @@ class ProcessFlowGenerator:
         # Add styling
         mermaid.extend([
             "    %% Styling",
-            "    classDef process fill:#f9f,stroke:#333,stroke-width:2px",
-            "    classDef document fill:#cef,stroke:#333,stroke-width:1px",
-            "    classDef step fill:#fce,stroke:#333,stroke-width:1px",
+            "    classDef process fill:#b40200,stroke:#333,stroke-width:2px",
+            "    classDef document fill:#006680,stroke:#333,stroke-width:1px",
+            "    classDef step fill:#00b45c,stroke:#333,stroke-width:1px",
             f"    class {','.join(node.split('[')[0] for node in self.nodes if '_' not in node)} process",
             f"    class {','.join(self.document_nodes.values())} document",
             f"    class {','.join(node.split('[')[0] for node in self.nodes if '_' in node)} step"
