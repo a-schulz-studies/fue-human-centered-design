@@ -119,48 +119,33 @@ graph TD
     CopyofpassportorID -->|requires| Applicationandadmissionprocedures
     Proofofavalidstudyvisa -->|requires| Applicationandadmissionprocedures
     Applicationandadmissionprocedures -->|enables| LetterofAdmission
-    Applicationandadmissionprocedures_ApplicationSubmission -->|enables| WaitforapplicationReview
-    Applicationandadmissionprocedures_ApplicationSubmission --> Applicationandadmissionprocedures_WaitforapplicationReview
-    ApplicationSubmission -->|requires| Applicationandadmissionprocedures_WaitforapplicationReview
+    Applicationandadmissionprocedures_ApplicationSubmission -->|enables| Applicationandadmissionprocedures_WaitforapplicationReview
+    Applicationandadmissionprocedures_ApplicationSubmission -->|requires| Applicationandadmissionprocedures_WaitforapplicationReview
     Applicationandadmissionprocedures_WaitforapplicationReview -->|enables| LetterofAdmission
-    Applicationandadmissionprocedures_WaitforapplicationReview --> Applicationandadmissionprocedures_LetterofAdmission
-    WaitforapplicationReview -->|requires| Applicationandadmissionprocedures_LetterofAdmission
-    Applicationandadmissionprocedures_LetterofAdmission -->|enables| Applyforvisa
-    Applicationandadmissionprocedures_LetterofAdmission -->|enables| Registerforstudentresidence
-    Applicationandadmissionprocedures_LetterofAdmission -->|enables| ObtainHealthInsurance
+    Applicationandadmissionprocedures_WaitforapplicationReview -->|requires| Applicationandadmissionprocedures_LetterofAdmission
     Start --> Applicationandadmissionprocedures
     LearningAgreementstudyscheduleCourseselection -->|enables| OnlineLearningAgreement
-    LearningAgreementstudyscheduleCourseselection_ResearchEnglishtaughtcourses -->|enables| Selectcourses
-    LearningAgreementstudyscheduleCourseselection_ResearchEnglishtaughtcourses --> LearningAgreementstudyscheduleCourseselection_Selectcourses
-    ResearchEnglishtaughtcourses -->|requires| LearningAgreementstudyscheduleCourseselection_Selectcourses
-    LearningAgreementstudyscheduleCourseselection_Selectcourses -->|enables| CreateLearningAgreement
-    LearningAgreementstudyscheduleCourseselection_Selectcourses --> LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement
-    Selectcourses -->|requires| LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement
-    LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement -->|enables| SubmitLearningAgreementforapproval
-    LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement --> LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval
-    CreateLearningAgreement -->|requires| LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval
-    LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval -->|enables| Receiveapprovalconfirmation
-    LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval --> LearningAgreementstudyscheduleCourseselection_Receiveapprovalconfirmation
-    SubmitLearningAgreementforapproval -->|requires| LearningAgreementstudyscheduleCourseselection_Receiveapprovalconfirmation
-    LearningAgreementstudyscheduleCourseselection_Receiveapprovalconfirmation -->|enables| Createstudyschedule
+    LearningAgreementstudyscheduleCourseselection_ResearchEnglishtaughtcourses -->|enables| LearningAgreementstudyscheduleCourseselection_Selectcourses
+    LearningAgreementstudyscheduleCourseselection_ResearchEnglishtaughtcourses -->|requires| LearningAgreementstudyscheduleCourseselection_Selectcourses
+    LearningAgreementstudyscheduleCourseselection_Selectcourses -->|enables| LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement
+    LearningAgreementstudyscheduleCourseselection_Selectcourses -->|requires| LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement
+    LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement -->|enables| LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval
+    LearningAgreementstudyscheduleCourseselection_CreateLearningAgreement -->|requires| LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval
+    LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval -->|enables| LearningAgreementstudyscheduleCourseselection_Receiveapprovalconfirmation
+    LearningAgreementstudyscheduleCourseselection_SubmitLearningAgreementforapproval -->|requires| LearningAgreementstudyscheduleCourseselection_Receiveapprovalconfirmation
     Applicationandadmissionprocedures --> LearningAgreementstudyscheduleCourseselection
     LearningAgreementstudyscheduleCourseselection --> SemesterdatesAcademiccalendar
-    Languagecourses_AttendInformationSessions -->|enables| EnrollinLanguageCourse
-    Languagecourses_AttendInformationSessions --> Languagecourses_EnrollinLanguageCourse
-    AttendInformationSessions -->|requires| Languagecourses_EnrollinLanguageCourse
-    Languagecourses_EnrollinLanguageCourse -->|enables| StartLanguageCourse
+    Languagecourses_AttendInformationSessions -->|enables| Languagecourses_EnrollinLanguageCourse
+    Languagecourses_AttendInformationSessions -->|requires| Languagecourses_EnrollinLanguageCourse
     SemesterdatesAcademiccalendar --> Languagecourses
     Passport -->|requires| HealthInsurance
     LetterofAdmissionfromHTWDresden -->|requires| HealthInsurance
     HealthInsurance -->|enables| Proofofadequatehealthinsurance
     LetterofAdmission -->|requires| HealthInsurance_ObtainHealthInsurance
-    HealthInsurance_ObtainHealthInsurance -->|enables| EnrollatHTWDresden
     Languagecourses --> HealthInsurance
     Residencepermitforstudypurposestoapplyforvisa -->|enables| Residencepermitforstudypurposes
-    Residencepermitforstudypurposestoapplyforvisa_Applyforresidencepermit -->|enables| Waitforresidencepermitapproval
-    Residencepermitforstudypurposestoapplyforvisa_Applyforresidencepermit --> Residencepermitforstudypurposestoapplyforvisa_Waitforresidencepermitapproval
-    Applyforresidencepermit -->|requires| Residencepermitforstudypurposestoapplyforvisa_Waitforresidencepermitapproval
-    Residencepermitforstudypurposestoapplyforvisa_Waitforresidencepermitapproval -->|enables| Applyforvisa
+    Residencepermitforstudypurposestoapplyforvisa_Applyforresidencepermit -->|enables| Residencepermitforstudypurposestoapplyforvisa_Waitforresidencepermitapproval
+    Residencepermitforstudypurposestoapplyforvisa_Applyforresidencepermit -->|requires| Residencepermitforstudypurposestoapplyforvisa_Waitforresidencepermitapproval
     HealthInsurance --> Residencepermitforstudypurposestoapplyforvisa
     Residencepermitforstudypurposes -->|requires| Visa
     Administrativecharge -->|requires| Visa
@@ -171,34 +156,26 @@ graph TD
     Currentbiometricphoto -->|requires| Visa
     Currentvalidnewpassportorpassportreplacementdocument -->|requires| Visa
     Visa -->|enables| Visaforstudypurposes
-    Visa_Checkimmigrationformalities -->|enables| Obtainpassport
-    Visa_Checkimmigrationformalities -->|enables| Arrangeinsuranceandpermits
-    Visa_Checkimmigrationformalities --> Visa_Obtainpassport
-    Checkimmigrationformalities -->|requires| Visa_Obtainpassport
-    Visa_Obtainpassport -->|enables| Arrangeinsuranceandpermits
-    Visa_Obtainpassport --> Visa_Arrangeinsuranceandpermits
-    Obtainpassport -->|requires| Visa_Arrangeinsuranceandpermits
+    Visa_Checkimmigrationformalities -->|enables| Visa_Obtainpassport
+    Visa_Checkimmigrationformalities -->|enables| Visa_Arrangeinsuranceandpermits
+    Visa_Checkimmigrationformalities -->|requires| Visa_Obtainpassport
+    Visa_Obtainpassport -->|enables| Visa_Arrangeinsuranceandpermits
+    Visa_Obtainpassport -->|requires| Visa_Arrangeinsuranceandpermits
     LetterofAdmission -->|requires| Visa_Arrangeinsuranceandpermits
-    Visa_Arrangeinsuranceandpermits -->|enables| Applyforvisa
-    Visa_Arrangeinsuranceandpermits --> Visa_Applyforvisa
-    Arrangeinsuranceandpermits -->|requires| Visa_Applyforvisa
-    Visa_Applyforvisa -->|enables| Waitforvisaapproval
-    Visa_Applyforvisa --> Visa_Waitforvisaapproval
-    Applyforvisa -->|requires| Visa_Waitforvisaapproval
-    Visa_Waitforvisaapproval -->|enables| Enrolment
+    Visa_Arrangeinsuranceandpermits -->|enables| Visa_Applyforvisa
+    Visa_Arrangeinsuranceandpermits -->|requires| Visa_Applyforvisa
+    Visa_Applyforvisa -->|enables| Visa_Waitforvisaapproval
+    Visa_Applyforvisa -->|requires| Visa_Waitforvisaapproval
     Residencepermitforstudypurposestoapplyforvisa --> Visa
     Acquireresidencepermitforstudypurposesinsteadofvisa -->|enables| Residencepermitforstudypurposes
     Visa --> Acquireresidencepermitforstudypurposesinsteadofvisa
     LetterofAdmission -->|requires| Accommodation
     LetterofAdmission -->|requires| Accommodation_Registerforstudentresidence
-    Accommodation_Registerforstudentresidence -->|enables| Receiveadmissionletter
-    Accommodation_Registerforstudentresidence --> Accommodation_Receiveadmissionletter
-    Registerforstudentresidence -->|requires| Accommodation_Receiveadmissionletter
+    Accommodation_Registerforstudentresidence -->|enables| Accommodation_Receiveadmissionletter
+    Accommodation_Registerforstudentresidence -->|requires| Accommodation_Receiveadmissionletter
     Acquireresidencepermitforstudypurposesinsteadofvisa --> Accommodation
-    Semestercontributionlivingexpenses_PaySemesterContribution -->|enables| ReceiveHTWstudentcardandHTWLogin
     Accommodation --> Semestercontributionlivingexpenses
     Semestercontributionlivingexpenses --> Arrival
-    WelcomeWeekandBuddyProgramme_RegistrationattheInternationalOffice -->|enables| Informationsessionontheorganisationofyourstudiesandtheselectionofyourcourses
     Arrival --> WelcomeWeekandBuddyProgramme
     ValidPassportorIdentityCard -->|requires| Enrolment
     ValidVisaforStudyPurposes -->|requires| Enrolment
@@ -206,93 +183,58 @@ graph TD
     PaymentoftheSemesterContribution -->|requires| Enrolment
     Enrolment -->|enables| PersonalHTWDLogin
     Enrolment -->|enables| Proofofavalidstudyvisa
-    ObtainHealthInsurance -->|requires| Enrolment_Enrolment
-    Waitforvisaapproval -->|requires| Enrolment_Enrolment
     WelcomeWeekandBuddyProgramme --> Enrolment
-    RegistrationattheCitizensOfficeDresden_Makeanonlineappointment -->|enables| VisittheCitizensOffice
-    RegistrationattheCitizensOfficeDresden_Makeanonlineappointment --> RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice
-    Makeanonlineappointment -->|requires| RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice
-    RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice -->|enables| Submitrequireddocuments
-    RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice --> RegistrationattheCitizensOfficeDresden_Submitrequireddocuments
-    VisittheCitizensOffice -->|requires| RegistrationattheCitizensOfficeDresden_Submitrequireddocuments
-    RegistrationattheCitizensOfficeDresden_Submitrequireddocuments -->|enables| Completeregistration
+    RegistrationattheCitizensOfficeDresden_Makeanonlineappointment -->|enables| RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice
+    RegistrationattheCitizensOfficeDresden_Makeanonlineappointment -->|requires| RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice
+    RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice -->|enables| RegistrationattheCitizensOfficeDresden_Submitrequireddocuments
+    RegistrationattheCitizensOfficeDresden_VisittheCitizensOffice -->|requires| RegistrationattheCitizensOfficeDresden_Submitrequireddocuments
     Enrolment --> RegistrationattheCitizensOfficeDresden
     Residencepermitapplication -->|requires| RegistrationattheImmigrationOfficeAusländerbehörde
-    RegistrationattheImmigrationOfficeAusländerbehörde_Makeanappointment -->|enables| Submitapplicationanddocuments
-    RegistrationattheImmigrationOfficeAusländerbehörde_Makeanappointment --> RegistrationattheImmigrationOfficeAusländerbehörde_Submitapplicationanddocuments
-    Makeanappointment -->|requires| RegistrationattheImmigrationOfficeAusländerbehörde_Submitapplicationanddocuments
-    RegistrationattheImmigrationOfficeAusländerbehörde_Submitapplicationanddocuments -->|enables| Waitforprocessing
+    RegistrationattheImmigrationOfficeAusländerbehörde_Makeanappointment -->|enables| RegistrationattheImmigrationOfficeAusländerbehörde_Submitapplicationanddocuments
+    RegistrationattheImmigrationOfficeAusländerbehörde_Makeanappointment -->|requires| RegistrationattheImmigrationOfficeAusländerbehörde_Submitapplicationanddocuments
     RegistrationattheCitizensOfficeDresden --> RegistrationattheImmigrationOfficeAusländerbehörde
-    passportornationalIDcard -->|requires| Bankaccount_OpenaGermanbankaccount
-    confirmationofregistration -->|requires| Bankaccount_OpenaGermanbankaccount
-    Germantaxidentificationnumber -->|requires| Bankaccount_OpenaGermanbankaccount
-    enrolmentcertificatefromHTWDresden -->|requires| Bankaccount_OpenaGermanbankaccount
-    Bankaccount_OpenaGermanbankaccount -->|enables| Receiveadebitcardandcashcard
     RegistrationattheImmigrationOfficeAusländerbehörde --> Bankaccount
-    Timetablestartofthelectureperiod_CheckTimetable -->|enables| PlanLectures
-    Timetablestartofthelectureperiod_CheckTimetable --> Timetablestartofthelectureperiod_PlanLectures
-    CheckTimetable -->|requires| Timetablestartofthelectureperiod_PlanLectures
-    Timetablestartofthelectureperiod_PlanLectures -->|enables| EnterCourseCode
-    Timetablestartofthelectureperiod_PlanLectures --> Timetablestartofthelectureperiod_EnterCourseCode
-    PlanLectures -->|requires| Timetablestartofthelectureperiod_EnterCourseCode
-    Timetablestartofthelectureperiod_EnterCourseCode -->|enables| GetIndividualTimetable
-    Timetablestartofthelectureperiod_EnterCourseCode --> Timetablestartofthelectureperiod_GetIndividualTimetable
-    EnterCourseCode -->|requires| Timetablestartofthelectureperiod_GetIndividualTimetable
+    Timetablestartofthelectureperiod_CheckTimetable -->|enables| Timetablestartofthelectureperiod_PlanLectures
+    Timetablestartofthelectureperiod_CheckTimetable -->|requires| Timetablestartofthelectureperiod_PlanLectures
+    Timetablestartofthelectureperiod_PlanLectures -->|enables| Timetablestartofthelectureperiod_EnterCourseCode
+    Timetablestartofthelectureperiod_PlanLectures -->|requires| Timetablestartofthelectureperiod_EnterCourseCode
+    Timetablestartofthelectureperiod_EnterCourseCode -->|enables| Timetablestartofthelectureperiod_GetIndividualTimetable
+    Timetablestartofthelectureperiod_EnterCourseCode -->|requires| Timetablestartofthelectureperiod_GetIndividualTimetable
     Bankaccount --> Timetablestartofthelectureperiod
-    Examinations_RegisterforExams -->|enables| GetExamDates
-    Examinations_RegisterforExams --> Examinations_GetExamDates
-    RegisterforExams -->|requires| Examinations_GetExamDates
-    Examinations_GetExamDates -->|enables| DeregisterfromExam
-    Examinations_GetExamDates --> Examinations_DeregisterfromExam
-    GetExamDates -->|requires| Examinations_DeregisterfromExam
-    Examinations_DeregisterfromExam -->|enables| TakeExam
-    Examinations_DeregisterfromExam --> Examinations_TakeExam
-    DeregisterfromExam -->|requires| Examinations_TakeExam
-    Examinations_TakeExam -->|enables| Waitforgradestobereported
+    Examinations_RegisterforExams -->|enables| Examinations_GetExamDates
+    Examinations_RegisterforExams -->|requires| Examinations_GetExamDates
+    Examinations_GetExamDates -->|enables| Examinations_DeregisterfromExam
+    Examinations_GetExamDates -->|requires| Examinations_DeregisterfromExam
+    Examinations_DeregisterfromExam -->|enables| Examinations_TakeExam
+    Examinations_DeregisterfromExam -->|requires| Examinations_TakeExam
     Timetablestartofthelectureperiod --> Examinations
     TranscriptofRecords -->|enables| TranscriptofRecords
-    TakeExam -->|requires| TranscriptofRecords_Waitforgradestobereported
-    TranscriptofRecords_Waitforgradestobereported -->|enables| RequestTranscriptofRecords
-    TranscriptofRecords_Waitforgradestobereported --> TranscriptofRecords_RequestTranscriptofRecords
-    Waitforgradestobereported -->|requires| TranscriptofRecords_RequestTranscriptofRecords
+    TranscriptofRecords_Waitforgradestobereported -->|enables| TranscriptofRecords_RequestTranscriptofRecords
+    TranscriptofRecords_Waitforgradestobereported -->|requires| TranscriptofRecords_RequestTranscriptofRecords
     Examinations --> TranscriptofRecords
-    ProlongationofmatriculationatHTWD_ConferwithhomeuniversityandAcademicCoordinator -->|enables| Obtaintheformforprolongationofmatriculation
-    ProlongationofmatriculationatHTWD_ConferwithhomeuniversityandAcademicCoordinator --> ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation
-    ConferwithhomeuniversityandAcademicCoordinator -->|requires| ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation
-    ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation -->|enables| Signtheform
-    ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation --> ProlongationofmatriculationatHTWD_Signtheform
-    Obtaintheformforprolongationofmatriculation -->|requires| ProlongationofmatriculationatHTWD_Signtheform
-    ProlongationofmatriculationatHTWD_Signtheform -->|enables| CompleteanewLearningAgreement
-    ProlongationofmatriculationatHTWD_Signtheform --> ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement
-    Signtheform -->|requires| ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement
-    ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement -->|enables| Handinthesignedprolongationofmatriculation
-    ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement --> ProlongationofmatriculationatHTWD_Handinthesignedprolongationofmatriculation
-    CompleteanewLearningAgreement -->|requires| ProlongationofmatriculationatHTWD_Handinthesignedprolongationofmatriculation
-    ProlongationofmatriculationatHTWD_Handinthesignedprolongationofmatriculation -->|enables| Getaletterofadmissionforthefollowingsemester
-    ProlongationofmatriculationatHTWD_Handinthesignedprolongationofmatriculation -->|enables| Prolongationofstudyvisa
+    ProlongationofmatriculationatHTWD_ConferwithhomeuniversityandAcademicCoordinator -->|enables| ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation
+    ProlongationofmatriculationatHTWD_ConferwithhomeuniversityandAcademicCoordinator -->|requires| ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation
+    ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation -->|enables| ProlongationofmatriculationatHTWD_Signtheform
+    ProlongationofmatriculationatHTWD_Obtaintheformforprolongationofmatriculation -->|requires| ProlongationofmatriculationatHTWD_Signtheform
+    ProlongationofmatriculationatHTWD_Signtheform -->|enables| ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement
+    ProlongationofmatriculationatHTWD_Signtheform -->|requires| ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement
+    ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement -->|enables| ProlongationofmatriculationatHTWD_Handinthesignedprolongationofmatriculation
+    ProlongationofmatriculationatHTWD_CompleteanewLearningAgreement -->|requires| ProlongationofmatriculationatHTWD_Handinthesignedprolongationofmatriculation
     TranscriptofRecords --> ProlongationofmatriculationatHTWD
-    Handinthesignedprolongationofmatriculation -->|requires| Prolongationofstudyvisa_Scheduleanappointment
-    Prolongationofstudyvisa_Scheduleanappointment -->|enables| Extendstudyvisa
-    Prolongationofstudyvisa_Scheduleanappointment --> Prolongationofstudyvisa_Extendstudyvisa
-    Scheduleanappointment -->|requires| Prolongationofstudyvisa_Extendstudyvisa
-    Prolongationofstudyvisa_Extendstudyvisa -->|enables| Reregistrationforthenextsemester
+    Prolongationofstudyvisa_Scheduleanappointment -->|enables| Prolongationofstudyvisa_Extendstudyvisa
+    Prolongationofstudyvisa_Scheduleanappointment -->|requires| Prolongationofstudyvisa_Extendstudyvisa
     ProlongationofmatriculationatHTWD --> Prolongationofstudyvisa
-    Extendstudyvisa -->|requires| Reregistrationforthenextsemester_Reregisterforthenextsemester
-    Reregistrationforthenextsemester_Reregisterforthenextsemester -->|enables| UpdatestudentIDcard
     Prolongationofstudyvisa --> Reregistrationforthenextsemester
     Reregistrationforthenextsemester --> Exmatriculation
-    Deregistration_CloseGermanbankaccount -->|enables| Returnborrowedbooks
-    Deregistration_CloseGermanbankaccount -->|enables| DeregisterfromGermanHealthInsurance
-    Deregistration_CloseGermanbankaccount -->|enables| DeregisterfromCitizensOfficeDresden
-    Deregistration_CloseGermanbankaccount --> Deregistration_Returnborrowedbooks
-    CloseGermanbankaccount -->|requires| Deregistration_Returnborrowedbooks
-    Deregistration_Returnborrowedbooks -->|enables| DeregisterfromGermanHealthInsurance
-    Deregistration_Returnborrowedbooks -->|enables| DeregisterfromCitizensOfficeDresden
-    Deregistration_Returnborrowedbooks --> Deregistration_DeregisterfromGermanHealthInsurance
-    Returnborrowedbooks -->|requires| Deregistration_DeregisterfromGermanHealthInsurance
-    Deregistration_DeregisterfromGermanHealthInsurance -->|enables| DeregisterfromCitizensOfficeDresden
-    Deregistration_DeregisterfromGermanHealthInsurance --> Deregistration_DeregisterfromCitizensOfficeDresden
-    DeregisterfromGermanHealthInsurance -->|requires| Deregistration_DeregisterfromCitizensOfficeDresden
+    Deregistration_CloseGermanbankaccount -->|enables| Deregistration_Returnborrowedbooks
+    Deregistration_CloseGermanbankaccount -->|enables| Deregistration_DeregisterfromGermanHealthInsurance
+    Deregistration_CloseGermanbankaccount -->|enables| Deregistration_DeregisterfromCitizensOfficeDresden
+    Deregistration_CloseGermanbankaccount -->|requires| Deregistration_Returnborrowedbooks
+    Deregistration_Returnborrowedbooks -->|enables| Deregistration_DeregisterfromGermanHealthInsurance
+    Deregistration_Returnborrowedbooks -->|enables| Deregistration_DeregisterfromCitizensOfficeDresden
+    Deregistration_Returnborrowedbooks -->|requires| Deregistration_DeregisterfromGermanHealthInsurance
+    Deregistration_DeregisterfromGermanHealthInsurance -->|enables| Deregistration_DeregisterfromCitizensOfficeDresden
+    Deregistration_DeregisterfromGermanHealthInsurance -->|requires| Deregistration_DeregisterfromCitizensOfficeDresden
     Exmatriculation --> Deregistration
     Applicationandadmissionprocedures -->|provides document| LearningAgreementstudyscheduleCourseselection
     Applicationandadmissionprocedures -->|provides document| TranscriptofRecords
@@ -303,7 +245,7 @@ graph TD
     Residencepermitforstudypurposestoapplyforvisa -->|provides document| Visa
     Visa -->|provides document| Acquireresidencepermitforstudypurposesinsteadofvisa
     %% Styling
-    classDef process fill:#408000,stroke:#333,stroke-width:2px
+    classDef process fill:#b40200,stroke:#333,stroke-width:2px
     classDef document fill:#006680,stroke:#333,stroke-width:1px
     classDef step fill:#00b45c,stroke:#333,stroke-width:1px
     class LearningAgreementstudyscheduleCourseselection,Visaforstudypurposes,Administrativecharge,RegistrationattheCitizensOfficeDresden,Visa,WelcomeWeekandBuddyProgramme,Proofofavalidstudyvisa,Arrival,PaymentoftheSemesterContribution,Acquireresidencepermitforstudypurposesinsteadofvisa,Residencepermitforstudypurposes,Applicationandadmissionprocedures,Applicationforadmissiontostudies,Proofoflanguageproficiency,RegistrationattheImmigrationOfficeAusländerbehörde,ValidVisaforStudyPurposes,Start,Residencepermitapplication,SignedrequestforHTWlogin,LetterofAdmission,OnlineLearningAgreement,ValidPassportorIdentityCard,Currentvalidnewpassportorpassportreplacementdocument,HealthInsurance,Examinations,Residencepermitforstudypurposes,TranscriptofRecords,Languagecourses,ProofofHealthInsuranceRecognizedinGermany,PersonalHTWDLogin,CopyofpassportorID,RentalAgreement,SemesterdatesAcademiccalendar,Semestercontributionlivingexpenses,Timetablestartofthelectureperiod,ProlongationofmatriculationatHTWD,TranscriptofRecords,ResumeCV,TranscriptofRecords,Uptodatepassportphoto,Passport,Residencepermitforstudypurposestoapplyforvisa,LetterofAdmissionfromHTWDresden,Deregistration,Proofofadequatehealthinsurance,Accommodation,Reregistrationforthenextsemester,Prolongationofstudyvisa,Enrolment,Proofofavalidstudyvisa,LetterofAdmission,Currentbiometricphoto,Bankaccount,Exmatriculation,Proofofsecuredlivelihood,Proofofadequatehealthinsurance process

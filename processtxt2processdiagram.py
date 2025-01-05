@@ -50,32 +50,35 @@ class ProcessFlowGenerator:
             self.document_phase_map[doc['name']].append(phase_id)
             self.connections.append((phase_id, doc_id, "enables"))
 
-        # Process steps within the phase
-        prev_step_id = None
+        # Create a map of step names to their IDs for this phase
+        step_id_map = {}
+
+        # First pass: create all step nodes
         for step in phase.get('steps', []):
             step_id = self.add_node(f"{phase_id}_{self.sanitize_node_id(step['name'])}", step['name'])
+            step_id_map[step['name']] = step_id
 
-            # Connect steps in sequence
-            if prev_step_id:
-                self.connections.append((prev_step_id, step_id, ""))
-            prev_step_id = step_id
+        # Second pass: process connections between steps
+        for step in phase.get('steps', []):
+            current_step_id = step_id_map[step['name']]
 
             # Process requirements
             for req in step.get('requires', []):
-                # Check if requirement is a document
                 if req in self.document_nodes:
-                    self.connections.append((self.document_nodes[req], step_id, "requires"))
-                else:
-                    req_id = self.sanitize_node_id(req)
-                    self.connections.append((req_id, step_id, "requires"))
+                    # It's a document requirement
+                    self.connections.append((self.document_nodes[req], current_step_id, "requires"))
+                elif req in step_id_map:
+                    # It's a step requirement within the same phase
+                    self.connections.append((step_id_map[req], current_step_id, "requires"))
 
             # Process enables
             for enabled in step.get('enables', []):
                 if enabled in self.document_nodes:
-                    self.connections.append((step_id, self.document_nodes[enabled], "enables"))
-                elif enabled != "TBD":  # ToDo: Skip placeholder enables
-                    enabled_id = self.sanitize_node_id(enabled)
-                    self.connections.append((step_id, enabled_id, "enables"))
+                    # It's a document that this step enables
+                    self.connections.append((current_step_id, self.document_nodes[enabled], "enables"))
+                elif enabled != "TBD" and enabled in step_id_map:
+                    # It's a step within the same phase that this step enables
+                    self.connections.append((current_step_id, step_id_map[enabled], "enables"))
 
         return phase_id
 
