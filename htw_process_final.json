@@ -326,7 +326,7 @@
             "Apply for visa"
           ],
           "next_steps": [
-            "Enrolment"
+            "Enroll at HTW Dresden"
           ],
           "deadline": "Before Arrival",
           "required_documents": [
@@ -457,32 +457,16 @@
       "name": "Welcome Week and Buddy Programme",
       "steps": [
         {
-          "name": "Registration at the International Office",
-          "description": "Students need to register at the International Office.",
-          "required_steps": [],
-          "next_steps": [
-            "Information session on the organisation of your studies and the selection of your courses"
-          ],
-          "deadline": "During the Welcome Week",
-          "required_documents": [],
-          "received_documents": []
-        }
-      ]
-    },
-    {
-      "name": "Enrolment",
-      "steps": [
-        {
-          "name": "Enrolment",
+          "name": "Enroll at HTW Dresden",
           "description": "Enrol at the International Office",
           "required_steps": [
             "Obtain Health Insurance",
             "Wait for visa approval"
           ],
           "next_steps": [
-            "TBD"
+            "Information session on the organisation of your studies and the selection of your courses"
           ],
-          "deadline": "During Welcome Week",
+          "deadline": "During the Welcome Week",
           "required_documents": [
             {
               "name": "Valid Passport or Identity Card",
@@ -511,6 +495,18 @@
               "description": "Proof of a valid study visa required for enrollment"
             }
           ]
+        },
+        {
+          "name": "Information session on the organisation of your studies and the selection of your courses",
+          "description": "Attend the information session on the organisation of your studies and the selection of your courses.",
+            "required_steps": [
+                "Enroll at HTW Dresden"
+            ],
+            "next_steps": [
+            ],
+            "deadline": "During the Welcome Week",
+            "required_documents": [],
+            "received_documents": []
         }
       ]
     },
@@ -561,7 +557,7 @@
       "steps": [
         {
           "name": "Make an appointment",
-          "description": "Send required information to the Immigration Office Dresden to schedule an appointment.",
+          "description": "Send required information to the Immigration Office Dresden to Schedule an appointment for prolongation of study visa.",
           "required_steps": [],
           "next_steps": [
             "Submit application and documents"
@@ -890,8 +886,8 @@
       "name": "Prolongation of study visa",
       "steps": [
         {
-          "name": "Schedule an appointment",
-          "description": "Schedule an appointment with the Immigration Office to extend the study visa.",
+          "name": "Schedule an appointment for prolongation of study visa",
+          "description": "Schedule an appointment for prolongation of study visa with the Immigration Office to extend the study visa.",
           "required_steps": [
             "Hand in the signed prolongation of matriculation"
           ],
@@ -906,7 +902,7 @@
           "name": "Extend study visa",
           "description": "Extend the study visa at the Immigration Office.",
           "required_steps": [
-            "Schedule an appointment"
+            "Schedule an appointment for prolongation of study visa"
           ],
           "next_steps": [
             "Re-registration for the next semester"
