@@ -16,18 +16,44 @@
           ],
           "deadline": "15 June for winter semester and 15 November for summer semester",
           "required_documents": [
-            "Application for admission to studies",
-            "(Online) Learning Agreement",
-            "Resume/CV",
-            "Transcript of Records",
-            "Proof of language proficiency",
-            "Signed request for HTW login",
-            "Up-to-date passport photo",
-            "Copy of passport or ID",
-            "Proof of a valid study visa"
+            {
+              "name": "Application for admission to studies",
+              "description": "Signed by you and your home university coordinator"
+            },
+            {
+              "name": "(Online) Learning Agreement",
+              "description": "Your course selection approved and signed by your and your home university coordinator"
+            },
+            {
+              "name": "Resume/CV",
+              "description": "In English or German"
+            },
+            {
+              "name": "Transcript of Records",
+              "description": "Overview of your grades, issued by your home university, in English or German"
+            },
+            {
+              "name": "Proof of language proficiency",
+              "description": "Proof the language you will be studying in, English and/or German at level B1/B2"
+            },
+            {
+              "name": "Signed request for HTW login",
+              "description": "The document will be sent to you via email"
+            },
+            {
+              "name": "Up-to-date passport photo",
+              "description": "For your HTWD student ID card, minimum size of 180x240 pixels in JPEG, PNG or GIF format, view from the front, neutral background"
+            },
+            {
+              "name": "Copy of passport or ID",
+              "description": null
+            },
+            {
+              "name": "Proof of a valid study visa",
+              "description": "Can be submitted later upon entry"
+            }
           ],
-          "received_documents": [
-          ]
+          "received_documents": []
         },
         {
           "name": "Wait for application Review",
@@ -43,7 +69,10 @@
           "deadline": null,
           "required_documents": [],
           "received_documents": [
-            "Letter of Admission"
+            {
+              "name": "Letter of Admission",
+              "description": "Official letter of admission from HTW Dresden"
+            }
           ]
         }
       ]
@@ -58,7 +87,9 @@
           "next_steps": [
             "Select courses"
           ],
-          "deadline": null
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Select courses",
@@ -69,7 +100,9 @@
           "next_steps": [
             "Create Learning Agreement"
           ],
-          "deadline": "End of registration period"
+          "deadline": "End of registration period",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Create Learning Agreement",
@@ -80,7 +113,9 @@
           "next_steps": [
             "Submit Learning Agreement for approval"
           ],
-          "deadline": "Before the start of the academic year"
+          "deadline": "Before the start of the academic year",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Submit Learning Agreement for approval",
@@ -91,7 +126,9 @@
           "next_steps": [
             "Receive approval confirmation"
           ],
-          "deadline": "Before the start of the academic year"
+          "deadline": "Before the start of the academic year",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Receive approval confirmation",
@@ -102,15 +139,14 @@
           "next_steps": [
             "Create study schedule"
           ],
-          "deadline": "Before the start of the academic year"
-        }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": [
-        {
-          "name": "(Online) Learning Agreement",
-          "description": "Your course selection approved and signed by your and your home university coordinator"
+          "deadline": "Before the start of the academic year",
+          "required_documents": [],
+          "received_documents": [
+            {
+              "name": "(Online) Learning Agreement",
+              "description": "Your course selection approved and signed by your and your home university coordinator"
+            }
+          ]
         }
       ]
     },
@@ -124,12 +160,11 @@
           "next_steps": [
             "TBD"
           ],
-          "deadline": null
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Language courses",
@@ -141,7 +176,9 @@
           "next_steps": [
             "Enroll in Language Course"
           ],
-          "deadline": "Welcome Week"
+          "deadline": "Welcome Week",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Enroll in Language Course",
@@ -152,12 +189,11 @@
           "next_steps": [
             "Start Language Course"
           ],
-          "deadline": "End of Welcome Week"
+          "deadline": "End of Welcome Week",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Health Insurance",
@@ -171,28 +207,27 @@
           "next_steps": [
             "Enroll at HTW Dresden"
           ],
-          "deadline": "Before arriving in Dresden"
+          "deadline": "Before arriving in Dresden",
+          "required_documents": [
+            {
+              "name": "Passport",
+              "description": "Valid passport required for health insurance application"
+            },
+            {
+              "name": "Letter of Admission from HTW Dresden",
+              "description": "Official letter of admission from HTW Dresden"
+            }
+          ],
+          "received_documents": [
+            {
+              "name": "Proof of adequate health insurance",
+              "description": "Proof of adequate health insurance required for enrollment"
+            }
+          ],
+          "required_by": [
+            "Students except when from European Union or EEA countries, Switzerland, Bosnia and Herzegovina, Montenegro, North Macedonia, Serbia, Turkey, Tunisia or the United Kingdom"
+          ]
         }
-      ],
-      "dependencies": [],
-      "required_documents": [
-        {
-          "name": "Passport",
-          "description": "Valid passport required for health insurance application"
-        },
-        {
-          "name": "Letter of Admission from HTW Dresden",
-          "description": "Official letter of admission from HTW Dresden"
-        }
-      ],
-      "received_documents": [
-        {
-          "name": "Proof of adequate health insurance",
-          "description": "Proof of adequate health insurance required for enrollment"
-        }
-      ],
-      "required_by": [
-        "Students except when from European Union or EEA countries, Switzerland, Bosnia and Herzegovina, Montenegro, North Macedonia, Serbia, Turkey, Tunisia or the United Kingdom"
       ]
     },
     {
@@ -205,7 +240,9 @@
           "next_steps": [
             "Wait for residence permit approval"
           ],
-          "deadline": "Before leaving your home country"
+          "deadline": "Before leaving your home country",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Wait for residence permit approval",
@@ -215,15 +252,15 @@
           ],
           "next_steps": [
             "Apply for visa"
+          ],
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": [
+            {
+              "name": "Residence permit for study purposes",
+              "description": "Official residence permit for study purposes"
+            }
           ]
-        }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": [
-        {
-          "name": "Residence permit for study purposes",
-          "description": "Official residence permit for study purposes"
         }
       ]
     },
@@ -238,7 +275,9 @@
             "Obtain passport",
             "Arrange insurance and permits"
           ],
-          "deadline": "Before leaving your home country"
+          "deadline": "Before leaving your home country",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Obtain passport",
@@ -249,7 +288,9 @@
           "next_steps": [
             "Arrange insurance and permits"
           ],
-          "deadline": "Before leaving your home country"
+          "deadline": "Before leaving your home country",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Arrange insurance and permits",
@@ -261,7 +302,9 @@
           "next_steps": [
             "Apply for visa"
           ],
-          "deadline": "Before leaving your home country"
+          "deadline": "Before leaving your home country",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Apply for visa",
@@ -272,7 +315,9 @@
           "next_steps": [
             "Wait for visa approval"
           ],
-          "deadline": "Several weeks/month before your planned departure"
+          "deadline": "Several weeks/month before your planned departure",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Wait for visa approval",
@@ -283,48 +328,47 @@
           "next_steps": [
             "Enrolment"
           ],
-          "deadline": "Before Arrival"
-        }
-      ],
-      "dependencies": [],
-      "required_documents": [
-        {
-          "name": "Residence permit for study purposes",
-          "description": "Must be valid for the entire duration of stay in Germany."
-        },
-        {
-          "name": "Administrative charge",
-          "description": "110 EUR in cash or ec-cash"
-        },
-        {
-          "name": "Rental Agreement",
-          "description": "Original and Copy"
-        },
-        {
-          "name": "Proof of adequate health insurance",
-          "description": "Original and copy"
-        },
-        {
-          "name": "Proof of secured livelihood",
-          "description": "For example scholarship or private savings"
-        },
-        {
-          "name": "Letter of Admission",
-          "description": "Enrollment or admission letter of HTW Dresden, with copy"
-        },
-        {
-          "name": "Current biometric photo",
-          "description": "Not older than 6 months"
-        },
-        {
-          "name": "Current valid/new passport or passport replacement document",
-          "description": "With copy"
-        }
-      ],
-      "received_documents": [
-        {
-          "name": "Visa for study purposes",
-          "description": "Official visa for study purposes"
+          "deadline": "Before Arrival",
+          "required_documents": [
+            {
+              "name": "Residence permit for study purposes",
+              "description": "Must be valid for the entire duration of stay in Germany."
+            },
+            {
+              "name": "Administrative charge",
+              "description": "110 EUR in cash or ec-cash"
+            },
+            {
+              "name": "Rental Agreement",
+              "description": "Original and Copy"
+            },
+            {
+              "name": "Proof of adequate health insurance",
+              "description": "Original and copy"
+            },
+            {
+              "name": "Proof of secured livelihood",
+              "description": "For example scholarship or private savings"
+            },
+            {
+              "name": "Letter of Admission",
+              "description": "Enrollment or admission letter of HTW Dresden, with copy"
+            },
+            {
+              "name": "Current biometric photo",
+              "description": "Not older than 6 months"
+            },
+            {
+              "name": "Current valid/new passport or passport replacement document",
+              "description": "With copy"
+            }
+          ],
+          "received_documents": [
+            {
+              "name": "Visa for study purposes",
+              "description": "Official visa for study purposes"
+            }
+          ]
         }
       ],
       "required_by": [
@@ -338,7 +382,9 @@
         {
           "name": "Apply for residence permit",
           "description": "You have to apply for this residence permit at the Dresden Immigration Office.",
-          "deadline": "within three months after entry in Germany"
+          "deadline": "within three months after entry in Germany",
+          "required_documents": [],
+          "received_documents": []
         }
       ],
       "required_by": [
@@ -363,7 +409,14 @@
           "next_steps": [
             "Receive admission letter"
           ],
-          "deadline": "Not specified"
+          "deadline": "Not specified",
+          "required_documents": [
+            {
+              "name": "Letter of Admission",
+              "description": "Official letter of admission from HTW Dresden"
+            }
+          ],
+          "received_documents": []
         },
         {
           "name": "Receive admission letter",
@@ -372,17 +425,11 @@
             "Register for student residence"
           ],
           "next_steps": [],
-          "deadline": "Not specified"
+          "deadline": "Not specified",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [
-        {
-          "name": "Letter of Admission",
-          "description": "Official letter of admission from HTW Dresden"
-        }
-      ],
-      "received_documents": []
+      ]
     },
     {
       "name": "Semester contribution / living expenses",
@@ -394,17 +441,15 @@
           "next_steps": [
             "Receive HTW student card and HTW-Login"
           ],
-          "deadline": "Before entering the country"
+          "deadline": "Before entering the country",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Arrival",
       "steps": [],
-      "dependencies": [],
       "required_documents": [],
       "received_documents": []
     },
@@ -418,12 +463,11 @@
           "next_steps": [
             "Information session on the organisation of your studies and the selection of your courses"
           ],
-          "deadline": "During the Welcome Week"
+          "deadline": "During the Welcome Week",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Enrolment",
@@ -438,36 +482,35 @@
           "next_steps": [
             "TBD"
           ],
-          "deadline": "During Welcome Week"
-        }
-      ],
-      "dependencies": [],
-      "required_documents": [
-        {
-          "name": "Valid Passport or Identity Card",
-          "description": "Must be valid"
-        },
-        {
-          "name": "Valid Visa for Study Purposes",
-          "description": "If required for non-EU students"
-        },
-        {
-          "name": "Proof of Health Insurance Recognized in Germany",
-          "description": "Proof of adequate health insurance"
-        },
-        {
-          "name": "Payment of the Semester Contribution",
-          "description": "Proof of payment of the semester contribution"
-        }
-      ],
-      "received_documents": [
-        {
-          "name": "Personal HTWD Login",
-          "description": "Personal login credentials for HTWD systems"
-        },
-        {
-          "name": "Proof of a valid study visa",
-          "description": "Proof of a valid study visa required for enrollment"
+          "deadline": "During Welcome Week",
+          "required_documents": [
+            {
+              "name": "Valid Passport or Identity Card",
+              "description": "Must be valid"
+            },
+            {
+              "name": "Valid Visa for Study Purposes",
+              "description": "If required for non-EU students"
+            },
+            {
+              "name": "Proof of Health Insurance Recognized in Germany",
+              "description": "Proof of adequate health insurance"
+            },
+            {
+              "name": "Payment of the Semester Contribution",
+              "description": "Proof of payment of the semester contribution"
+            }
+          ],
+          "received_documents": [
+            {
+              "name": "Personal HTWD Login",
+              "description": "Personal login credentials for HTWD systems"
+            },
+            {
+              "name": "Proof of a valid study visa",
+              "description": "Proof of a valid study visa required for enrollment"
+            }
+          ]
         }
       ]
     },
@@ -481,7 +524,9 @@
           "next_steps": [
             "Visit the Citizens' Office"
           ],
-          "deadline": "Not applicable"
+          "deadline": "Not applicable",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Visit the Citizens' Office",
@@ -492,7 +537,9 @@
           "next_steps": [
             "Submit required documents"
           ],
-          "deadline": "Within two weeks if staying longer than 3 months"
+          "deadline": "Within two weeks if staying longer than 3 months",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Submit required documents",
@@ -503,12 +550,11 @@
           "next_steps": [
             "Complete registration"
           ],
-          "deadline": "At the time of registration"
+          "deadline": "At the time of registration",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Registration at the Immigration Office (\"Ausländerbehörde\")",
@@ -520,7 +566,9 @@
           "next_steps": [
             "Submit application and documents"
           ],
-          "deadline": "Before visiting the office"
+          "deadline": "Before visiting the office",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Submit application and documents",
@@ -529,27 +577,65 @@
             "Make an appointment"
           ],
           "next_steps": [
-            "Wait for processing"
+            "Wait for processing of Immigration Office"
           ],
-          "deadline": "Within the first three months after entering Germany"
-        }
-      ],
-      "dependencies": [
+          "deadline": "Within the first three months after entering Germany",
+          "required_documents": [
+            {
+              "name": "Residence permit application",
+              "description": "Fully completed application form."
+            },
+            {
+              "name": "Administrative charge",
+              "description": "110 EUR in cash or ec-cash"
+            },
+            {
+              "name": "Rental Agreement",
+              "description": "Original and Copy"
+            },
+            {
+              "name": "Proof of adequate health insurance",
+              "description": "Original and copy"
+            },
+            {
+              "name": "Proof of secured livelihood",
+              "description": "For example scholarship or private savings"
+            },
+            {
+              "name": "Letter of Admission",
+              "description": "Enrollment or admission letter of HTW Dresden, with copy"
+            },
+            {
+              "name": "Current biometric photo",
+              "description": "Not older than 6 months"
+            },
+            {
+              "name": "Current valid/new passport or passport replacement document",
+              "description": "With copy"
+            },
+            {
+              "name": "Visa for study purposes",
+              "description": "Official visa for study purposes"
+            }
+          ],
+          "received_documents": []
+        },
         {
-          "type": "document/approval/other",
-          "description": "Required documents and information for the application.",
-          "previous_step": "Make an appointment",
-          "next_step": "Submit application and documents"
+          "name": "Wait for processing of Immigration Office",
+          "description": "Wait till you get a response",
+          "required_steps": ["Submit application and documents"],
+          "next_steps": [],
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": [
+            {
+              "name": "Residency permit for academic purposes",
+              "description": "Residency permit for academic purposes"
+            }
+          ]
         }
       ],
-      "required_documents": [
-        {
-          "name": "Residence permit application",
-          "description": "Fully completed application form.",
-          "deadline": "Before submitting"
-        }
-      ],
-      "received_documents": []
+      "required_by": "Non-EU citizens"
     },
     {
       "name": "Bank account",
@@ -566,12 +652,28 @@
           "next_steps": [
             "Receive a debit card and cash card"
           ],
-          "deadline": null
+          "deadline": null,
+          "required_documents": [
+            {
+              "name": "passport or national ID card",
+              "description": null
+            },
+            {
+              "name": "confirmation of registration",
+              "description": null
+            },
+            {
+              "name": "German tax identification number",
+              "description": null
+            },
+            {
+              "name": "enrolment certificate from HTW Dresden",
+              "description": null
+            }
+          ],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Timetable / start of the lecture period",
@@ -583,7 +685,9 @@
           "next_steps": [
             "Plan Lectures"
           ],
-          "deadline": "Beginning of March for summer semester, mid September for winter semester"
+          "deadline": "Beginning of March for summer semester, mid September for winter semester",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Plan Lectures",
@@ -594,7 +698,9 @@
           "next_steps": [
             "Enter Course Code"
           ],
-          "deadline": "Before the start of the semester"
+          "deadline": "Before the start of the semester",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Enter Course Code",
@@ -605,7 +711,9 @@
           "next_steps": [
             "Get Individual Timetable"
           ],
-          "deadline": "Before the start of the semester"
+          "deadline": "Before the start of the semester",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Get Individual Timetable",
@@ -614,12 +722,11 @@
             "Enter Course Code"
           ],
           "next_steps": [],
-          "deadline": "Before the start of the semester"
+          "deadline": "Before the start of the semester",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Examinations",
@@ -631,7 +738,9 @@
           "next_steps": [
             "Get Exam Dates"
           ],
-          "deadline": "Registration period"
+          "deadline": "Registration period",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Get Exam Dates",
@@ -642,7 +751,9 @@
           "next_steps": [
             "Deregister from Exam"
           ],
-          "deadline": "One month before the start of the respective examination section"
+          "deadline": "One month before the start of the respective examination section",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Deregister from Exam",
@@ -653,7 +764,9 @@
           "next_steps": [
             "Take Exam"
           ],
-          "deadline": "One week before the examination"
+          "deadline": "One week before the examination",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Take Exam",
@@ -664,12 +777,11 @@
           "next_steps": [
             "Wait for grades to be reported"
           ],
-          "deadline": "As scheduled"
+          "deadline": "As scheduled",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Transcript of Records",
@@ -683,7 +795,9 @@
           "next_steps": [
             "Request Transcript of Records"
           ],
-          "deadline": "4 weeks after the official end of the examination period"
+          "deadline": "4 weeks after the official end of the examination period",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Request Transcript of Records",
@@ -692,15 +806,14 @@
             "Wait for grades to be reported"
           ],
           "next_steps": [],
-          "deadline": null
-        }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": [
-        {
-          "name": "Transcript of Records",
-          "description": "Official transcript of records from HTW Dresden"
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": [
+            {
+              "name": "Transcript of Records",
+              "description": "Official transcript of records from HTW Dresden"
+            }
+          ]
         }
       ]
     },
@@ -714,7 +827,9 @@
           "next_steps": [
             "Obtain the form for prolongation of matriculation"
           ],
-          "deadline": ""
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Obtain the form for prolongation of matriculation",
@@ -725,7 +840,9 @@
           "next_steps": [
             "Sign the form"
           ],
-          "deadline": ""
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Sign the form",
@@ -736,7 +853,9 @@
           "next_steps": [
             "Complete a new Learning Agreement"
           ],
-          "deadline": ""
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Complete a new Learning Agreement",
@@ -747,7 +866,9 @@
           "next_steps": [
             "Hand in the signed prolongation of matriculation"
           ],
-          "deadline": ""
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Hand in the signed prolongation of matriculation",
@@ -759,12 +880,11 @@
             "Get a letter of admission for the following semester",
             "Prolongation of study visa"
           ],
-          "deadline": ""
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Prolongation of study visa",
@@ -778,7 +898,9 @@
           "next_steps": [
             "Extend study visa"
           ],
-          "deadline": "Before the current visa expires"
+          "deadline": "Before the current visa expires",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Extend study visa",
@@ -789,12 +911,11 @@
           "next_steps": [
             "Re-registration for the next semester"
           ],
-          "deadline": "Before the current visa expires"
+          "deadline": "Before the current visa expires",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Re-registration for the next semester",
@@ -808,12 +929,11 @@
           "next_steps": [
             "Update student ID card"
           ],
-          "deadline": "End of re-registration period"
+          "deadline": "End of re-registration period",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Exmatriculation",
@@ -823,12 +943,11 @@
           "description": "As an exchange student you will automatically be exmatriculated at the end of the semester. You don't have to do anything.",
           "required_steps": [],
           "next_steps": [],
-          "deadline": ""
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     },
     {
       "name": "Deregistration",
@@ -842,7 +961,9 @@
             "Deregister from German Health Insurance",
             "Deregister from Citizens' Office Dresden"
           ],
-          "deadline": "Before departure"
+          "deadline": "Before departure",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Return borrowed books",
@@ -854,7 +975,9 @@
             "Deregister from German Health Insurance",
             "Deregister from Citizens' Office Dresden"
           ],
-          "deadline": "Before departure"
+          "deadline": "Before departure",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Deregister from German Health Insurance",
@@ -865,7 +988,9 @@
           "next_steps": [
             "Deregister from Citizens' Office Dresden"
           ],
-          "deadline": "Before departure"
+          "deadline": "Before departure",
+          "required_documents": [],
+          "received_documents": []
         },
         {
           "name": "Deregister from Citizens' Office Dresden",
@@ -874,12 +999,11 @@
             "Deregister from German Health Insurance"
           ],
           "next_steps": [],
-          "deadline": "Within two weeks after moving out"
+          "deadline": "Within two weeks after moving out",
+          "required_documents": [],
+          "received_documents": []
         }
-      ],
-      "dependencies": [],
-      "required_documents": [],
-      "received_documents": []
+      ]
     }
   ],
   "documents": [
