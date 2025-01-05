@@ -1,29 +1,54 @@
 import json
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Tuple
+from collections import defaultdict
 
 class ProcessFlowGenerator:
     def __init__(self, json_data: dict):
         self.data = json_data
         self.nodes: Set[str] = set()
-        self.connections: List[tuple] = []
-        self.subgraphs: Dict[str, List[str]] = {}
+        self.connections: List[Tuple[str, str, str]] = []  # (source, target, label)
+        self.subgraphs: Dict[str, Dict] = {}
+        self.document_nodes: Dict[str, str] = {}  # document_name -> node_id
+        self.document_phase_map: Dict[str, List[str]] = defaultdict(list)  # document_name -> [phase_ids]
 
     def sanitize_node_id(self, name: str) -> str:
         """Convert a name into a valid Mermaid node ID."""
         return ''.join(c for c in name if c.isalnum() or c == '_').strip()
 
-    def add_node(self, name: str, display_name: str = None) -> str:
+    def add_node(self, name: str, display_name: str = None, node_type: str = "process") -> str:
         """Add a node and return its ID."""
         node_id = self.sanitize_node_id(name)
         if display_name:
-            self.nodes.add(f'{node_id}["{display_name}"]')
+            self.nodes.add(f'{node_id}["{display_name.replace("\"", "")}"]')
         else:
             self.nodes.add(f'{node_id}["{name}"]')
         return node_id
 
+    def add_document_node(self, doc_name: str, doc_info: dict = None) -> str:
+        """Add a document node and track it."""
+        doc_id = self.sanitize_node_id(doc_name)
+        if doc_id not in self.document_nodes:
+            display_name = doc_name
+            if doc_info and doc_info.get('description'):
+                display_name += f"<br/>({doc_info['description']})"
+            self.document_nodes[doc_name] = self.add_node(doc_id, display_name, "document")
+        return self.document_nodes[doc_name]
+
     def process_phase(self, phase: dict) -> str:
-        """Process a phase and its steps, returning the phase node ID."""
+        """Process a phase and its steps, documents, and dependencies."""
         phase_id = self.add_node(phase['name'])
+
+        # Track required documents
+        for doc in phase.get('required_documents', []):
+            doc_id = self.add_document_node(doc['name'], doc)
+            self.document_phase_map[doc['name']].append(phase_id)
+            self.connections.append((doc_id, phase_id, "requires"))
+
+        # Track received documents
+        for doc in phase.get('received_documents', []):
+            doc_id = self.add_document_node(doc['name'], doc)
+            self.document_phase_map[doc['name']].append(phase_id)
+            self.connections.append((phase_id, doc_id, "enables"))
 
         # Process steps within the phase
         prev_step_id = None
@@ -32,30 +57,34 @@ class ProcessFlowGenerator:
 
             # Connect steps in sequence
             if prev_step_id:
-                self.connections.append((prev_step_id, step_id))
+                self.connections.append((prev_step_id, step_id, ""))
             prev_step_id = step_id
 
             # Process requirements
             for req in step.get('requires', []):
-                req_id = self.sanitize_node_id(req)
-                self.connections.append((req_id, step_id))
+                # Check if requirement is a document
+                if req in self.document_nodes:
+                    self.connections.append((self.document_nodes[req], step_id, "requires"))
+                else:
+                    req_id = self.sanitize_node_id(req)
+                    self.connections.append((req_id, step_id, "requires"))
 
-        # Process required documents as a subgraph
-        if phase.get('required_documents'):
-            doc_items = []
-            for doc in phase['required_documents']:
-                doc_text = f"- {doc['name']}"
-                if doc.get('deadline'):
-                    doc_text += f" (Due: {doc['deadline']})"
-                doc_items.append(doc_text)
-
-            if doc_items:
-                self.subgraphs[f"docs_{phase_id}"] = {
-                    'title': f"{phase['name']} Documents",
-                    'items': doc_items
-                }
+            # Process enables
+            for enabled in step.get('enables', []):
+                if enabled in self.document_nodes:
+                    self.connections.append((step_id, self.document_nodes[enabled], "enables"))
+                elif enabled != "TBD":  # ToDo: Skip placeholder enables
+                    enabled_id = self.sanitize_node_id(enabled)
+                    self.connections.append((step_id, enabled_id, "enables"))
 
         return phase_id
+
+    def connect_document_dependencies(self):
+        """Connect documents between phases based on requirements and outputs."""
+        for doc_name, phases in self.document_phase_map.items():
+            if len(phases) > 1:
+                for i in range(len(phases) - 1):
+                    self.connections.append((phases[i], phases[i + 1], "provides document"))
 
     def generate_mermaid(self) -> str:
         """Generate the complete Mermaid diagram markup."""
@@ -68,31 +97,31 @@ class ProcessFlowGenerator:
         prev_phase_id = start_id
         for phase in self.data['phases']:
             phase_id = self.process_phase(phase)
-            self.connections.append((prev_phase_id, phase_id))
+            self.connections.append((prev_phase_id, phase_id, ""))
             prev_phase_id = phase_id
+
+        # Connect document dependencies
+        self.connect_document_dependencies()
 
         # Add all nodes
         mermaid.extend([f"    {node}" for node in sorted(self.nodes)])
 
-        # Add all connections
-        for source, target in self.connections:
-            mermaid.append(f"    {source} --> {target}")
-
-        # Add subgraphs for document requirements
-        for subgraph_id, content in self.subgraphs.items():
-            mermaid.append(f"    subgraph {subgraph_id}[\"{content['title']}\"]")
-            doc_node_id = f"docs_{subgraph_id}"
-            doc_content = "<br/>".join(content['items'])
-            mermaid.append(f"        {doc_node_id}[\"{doc_content}\"]")
-            mermaid.append("    end")
+        # Add all connections with labels
+        for source, target, label in self.connections:
+            if label:
+                mermaid.append(f"    {source} -->|{label}| {target}")
+            else:
+                mermaid.append(f"    {source} --> {target}")
 
         # Add styling
         mermaid.extend([
             "    %% Styling",
             "    classDef process fill:#f9f,stroke:#333,stroke-width:2px",
-            "    classDef docs fill:#fcf,stroke:#333,stroke-width:1px",
-            "    class " + ",".join(node.split('[')[0] for node in self.nodes) + " process",
-            "    class " + ",".join(f"docs_{sg_id}" for sg_id in self.subgraphs.keys()) + " docs"
+            "    classDef document fill:#cef,stroke:#333,stroke-width:1px",
+            "    classDef step fill:#fce,stroke:#333,stroke-width:1px",
+            f"    class {','.join(node.split('[')[0] for node in self.nodes if '_' not in node)} process",
+            f"    class {','.join(self.document_nodes.values())} document",
+            f"    class {','.join(node.split('[')[0] for node in self.nodes if '_' in node)} step"
         ])
 
         return "\n".join(mermaid)
@@ -107,7 +136,6 @@ def generate_process_flow(json_file_path: str) -> str:
 
 # Example usage:
 if __name__ == "__main__":
-    # Assuming the JSON file is named 'htw_process_final.json'
     mermaid_markup = generate_process_flow('htw_process_final.json')
     print(mermaid_markup)
 
