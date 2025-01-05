@@ -22,9 +22,11 @@ def create_mermaid_diagram(data):
     mermaid = ["flowchart TD"]
 
     # Add document nodes
+    mermaid.append('    subgraph Documents')
     for doc in unique_docs:
         safe_id = f"doc_{doc.replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
         mermaid.append(f'    {safe_id}["Document: {doc}"]')
+    mermaid.append('    end')
 
     # Add step nodes
     for step in steps:
@@ -47,19 +49,19 @@ def create_mermaid_diagram(data):
                 safe_next_id = f"step_{next_step.replace(' ', '_')}"
                 mermaid.append(f'    {current_step_id} --> {safe_next_id}')
 
-        # # Connect required documents
-        # for doc in step.get('required_documents', []):
-        #     if doc.get('name'):
-        #         safe_doc_id = f"doc_{doc['name'].replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
-        #         mermaid.append(f'    direction LR')
-        #         mermaid.append(f'    {safe_doc_id} -- required --> {current_step_id}')
-        #
-        # # Connect received documents
-        # for doc in step.get('received_documents', []):
-        #     if doc.get('name'):
-        #         safe_doc_id = f"doc_{doc['name'].replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
-        #         mermaid.append(f'    direction LR')
-        #         mermaid.append(f'    {current_step_id} -- received --> {safe_doc_id}')
+        # Connect required documents
+        for doc in step.get('required_documents', []):
+            if doc.get('name'):
+                safe_doc_id = f"doc_{doc['name'].replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
+                mermaid.append(f'    direction LR')
+                mermaid.append(f'    {safe_doc_id} -- required --> {current_step_id}')
+
+        # Connect received documents
+        for doc in step.get('received_documents', []):
+            if doc.get('name'):
+                safe_doc_id = f"doc_{doc['name'].replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
+                mermaid.append(f'    direction LR')
+                mermaid.append(f'    {current_step_id} -- received --> {safe_doc_id}')
 
     return "\n".join(mermaid)
 

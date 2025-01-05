@@ -1,4 +1,5 @@
 flowchart TD
+    subgraph Documents
     doc_Residence_permit_for_study_purposes["Document: Residence permit for study purposes"]
     doc_Visa_for_study_purposes["Document: Visa for study purposes"]
     doc_Transcript_of_Records["Document: Transcript of Records"]
@@ -30,6 +31,7 @@ flowchart TD
     doc_Signed_request_for_HTW_login["Document: Signed request for HTW login"]
     doc_Valid_Visa_for_Study_Purposes["Document: Valid Visa for Study Purposes"]
     doc_Proof_of_language_proficiency["Document: Proof of language proficiency"]
+    end
     step_Application_Submission["Application Submission"]
     step_Wait_for_application_Review["Wait for application Review"]
     step_Research_English_taught_courses["Research English taught courses"]
@@ -85,10 +87,30 @@ flowchart TD
     step_Deregister_from_German_Health_Insurance["Deregister from German Health Insurance"]
     step_Deregister_from_Citizens'_Office_Dresden["Deregister from Citizens' Office Dresden"]
     step_Application_Submission --> step_Wait_for_application_Review
+    direction LR
+    doc_Application_for_admission_to_studies -- required --> step_Application_Submission
+    direction LR
+    doc_Online_Learning_Agreement -- required --> step_Application_Submission
+    direction LR
+    doc_Resume_CV -- required --> step_Application_Submission
+    direction LR
+    doc_Transcript_of_Records -- required --> step_Application_Submission
+    direction LR
+    doc_Proof_of_language_proficiency -- required --> step_Application_Submission
+    direction LR
+    doc_Signed_request_for_HTW_login -- required --> step_Application_Submission
+    direction LR
+    doc_Up-to-date_passport_photo -- required --> step_Application_Submission
+    direction LR
+    doc_Copy_of_passport_or_ID -- required --> step_Application_Submission
+    direction LR
+    doc_Proof_of_a_valid_study_visa -- required --> step_Application_Submission
     step_Application_Submission --> step_Wait_for_application_Review
     step_Wait_for_application_Review --> step_Apply_for_visa
     step_Wait_for_application_Review --> step_Register_for_student_residence
     step_Wait_for_application_Review --> step_Obtain_Health_Insurance
+    direction LR
+    step_Wait_for_application_Review -- received --> doc_Letter_of_Admission
     step_Research_English_taught_courses --> step_Select_courses
     step_Research_English_taught_courses --> step_Select_courses
     step_Select_courses --> step_Create_Learning_Agreement
@@ -98,13 +120,23 @@ flowchart TD
     step_Submit_Learning_Agreement_for_approval --> step_Receive_approval_confirmation
     step_Submit_Learning_Agreement_for_approval --> step_Receive_approval_confirmation
     step_Receive_approval_confirmation --> step_Create_study_schedule
+    direction LR
+    step_Receive_approval_confirmation -- received --> doc_Online_Learning_Agreement
     step_Attend_Information_Sessions --> step_Enroll_in_Language_Course
     step_Attend_Information_Sessions --> step_Enroll_in_Language_Course
     step_Enroll_in_Language_Course --> step_Start_Language_Course
     step_Obtain_Health_Insurance --> step_Enroll_at_HTW_Dresden
+    direction LR
+    doc_Passport -- required --> step_Obtain_Health_Insurance
+    direction LR
+    doc_Letter_of_Admission_from_HTW_Dresden -- required --> step_Obtain_Health_Insurance
+    direction LR
+    step_Obtain_Health_Insurance -- received --> doc_Proof_of_adequate_health_insurance
     step_Apply_for_residence_permit --> step_Wait_for_residence_permit_approval
     step_Apply_for_residence_permit --> step_Wait_for_residence_permit_approval
     step_Wait_for_residence_permit_approval --> step_Apply_for_visa
+    direction LR
+    step_Wait_for_residence_permit_approval -- received --> doc_Residence_permit_for_study_purposes
     step_Check_immigration_formalities --> step_Obtain_passport
     step_Check_immigration_formalities --> step_Arrange_insurance_and_permits
     step_Check_immigration_formalities --> step_Obtain_passport
@@ -115,12 +147,44 @@ flowchart TD
     step_Apply_for_visa --> step_Wait_for_visa_approval
     step_Apply_for_visa --> step_Wait_for_visa_approval
     step_Wait_for_visa_approval --> step_Enroll_at_HTW_Dresden
+    direction LR
+    doc_Residence_permit_for_study_purposes -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Administrative_charge -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Rental_Agreement -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Proof_of_adequate_health_insurance -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Proof_of_secured_livelihood -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Letter_of_Admission -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Current_biometric_photo -- required --> step_Wait_for_visa_approval
+    direction LR
+    doc_Current_valid_new_passport_or_passport_replacement_document -- required --> step_Wait_for_visa_approval
+    direction LR
+    step_Wait_for_visa_approval -- received --> doc_Visa_for_study_purposes
     step_Register_for_student_residence --> step_Receive_admission_letter
+    direction LR
+    doc_Letter_of_Admission -- required --> step_Register_for_student_residence
     step_Register_for_student_residence --> step_Receive_admission_letter
     step_Pay_Semester_Contribution --> step_Receive_HTW_student_card_and_HTW-Login
     step_Obtain_Health_Insurance --> step_Enroll_at_HTW_Dresden
     step_Wait_for_visa_approval --> step_Enroll_at_HTW_Dresden
     step_Enroll_at_HTW_Dresden --> step_Information_session_on_the_organisation_of_your_studies_and_the_selection_of_your_courses
+    direction LR
+    doc_Valid_Passport_or_Identity_Card -- required --> step_Enroll_at_HTW_Dresden
+    direction LR
+    doc_Valid_Visa_for_Study_Purposes -- required --> step_Enroll_at_HTW_Dresden
+    direction LR
+    doc_Proof_of_Health_Insurance_Recognized_in_Germany -- required --> step_Enroll_at_HTW_Dresden
+    direction LR
+    doc_Payment_of_the_Semester_Contribution -- required --> step_Enroll_at_HTW_Dresden
+    direction LR
+    step_Enroll_at_HTW_Dresden -- received --> doc_Personal_HTWD_Login
+    direction LR
+    step_Enroll_at_HTW_Dresden -- received --> doc_Proof_of_a_valid_study_visa
     step_Enroll_at_HTW_Dresden --> step_Information_session_on_the_organisation_of_your_studies_and_the_selection_of_your_courses
     step_Make_an_online_appointment --> step_Visit_the_Citizens'_Office
     step_Make_an_online_appointment --> step_Visit_the_Citizens'_Office
@@ -130,12 +194,40 @@ flowchart TD
     step_Make_an_appointment --> step_Submit_application_and_documents
     step_Make_an_appointment --> step_Submit_application_and_documents
     step_Submit_application_and_documents --> step_Wait_for_processing_of_Immigration_Office
+    direction LR
+    doc_Residence_permit_application -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Administrative_charge -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Rental_Agreement -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Proof_of_adequate_health_insurance -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Proof_of_secured_livelihood -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Letter_of_Admission -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Current_biometric_photo -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Current_valid_new_passport_or_passport_replacement_document -- required --> step_Submit_application_and_documents
+    direction LR
+    doc_Visa_for_study_purposes -- required --> step_Submit_application_and_documents
     step_Submit_application_and_documents --> step_Wait_for_processing_of_Immigration_Office
+    direction LR
+    step_Wait_for_processing_of_Immigration_Office -- received --> doc_Residency_permit_for_academic_purposes
     step_passport_or_national_ID_card --> step_Open_a_German_bank_account
     step_confirmation_of_registration --> step_Open_a_German_bank_account
     step_German_tax_identification_number --> step_Open_a_German_bank_account
     step_enrolment_certificate_from_HTW_Dresden --> step_Open_a_German_bank_account
     step_Open_a_German_bank_account --> step_Receive_a_debit_card_and_cash_card
+    direction LR
+    doc_passport_or_national_ID_card -- required --> step_Open_a_German_bank_account
+    direction LR
+    doc_confirmation_of_registration -- required --> step_Open_a_German_bank_account
+    direction LR
+    doc_German_tax_identification_number -- required --> step_Open_a_German_bank_account
+    direction LR
+    doc_enrolment_certificate_from_HTW_Dresden -- required --> step_Open_a_German_bank_account
     step_Check_Timetable --> step_Plan_Lectures
     step_Check_Timetable --> step_Plan_Lectures
     step_Plan_Lectures --> step_Enter_Course_Code
@@ -152,6 +244,8 @@ flowchart TD
     step_Take_Exam --> step_Wait_for_grades_to_be_reported
     step_Wait_for_grades_to_be_reported --> step_Request_Transcript_of_Records
     step_Wait_for_grades_to_be_reported --> step_Request_Transcript_of_Records
+    direction LR
+    step_Request_Transcript_of_Records -- received --> doc_Transcript_of_Records
     step_Confer_with_home_university_and_Academic_Coordinator --> step_Obtain_the_form_for_prolongation_of_matriculation
     step_Confer_with_home_university_and_Academic_Coordinator --> step_Obtain_the_form_for_prolongation_of_matriculation
     step_Obtain_the_form_for_prolongation_of_matriculation --> step_Sign_the_form
