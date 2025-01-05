@@ -91,7 +91,7 @@ class ProcessFlowGenerator:
             "    %% Styling",
             "    classDef process fill:#f9f,stroke:#333,stroke-width:2px",
             "    classDef docs fill:#fcf,stroke:#333,stroke-width:1px",
-            "    class " + ",".join(self.nodes) + " process",
+            "    class " + ",".join(node.split('[')[0] for node in self.nodes) + " process",
             "    class " + ",".join(f"docs_{sg_id}" for sg_id in self.subgraphs.keys()) + " docs"
         ])
 
