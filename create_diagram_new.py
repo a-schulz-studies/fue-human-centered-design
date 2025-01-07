@@ -1,5 +1,9 @@
 import json
 
+def sanitize_node_id(name: str) -> str:
+    """Convert a name into a valid Mermaid node ID."""
+    return ''.join(c for c in name if c.isalnum() or c == '_').strip()
+
 def create_mermaid_diagram(data):
     # Initialize sets to track unique documents and steps
     unique_docs = set()
@@ -22,46 +26,50 @@ def create_mermaid_diagram(data):
     mermaid = ["flowchart TD"]
 
     # Add document nodes
-    mermaid.append('    subgraph Documents')
+    # mermaid.append('    subgraph Documents')
     for doc in unique_docs:
-        safe_id = f"doc_{doc.replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
+        safe_id = f"doc_{sanitize_node_id(doc)}"
         mermaid.append(f'    {safe_id}["Document: {doc}"]')
-    mermaid.append('    end')
+    # mermaid.append('    end')
 
     # Add step nodes
     for step in steps:
-        safe_id = f"step_{step['name'].replace(' ', '_')}"
+        safe_id = f"step_{sanitize_node_id(step['name'])}"
         mermaid.append(f'    {safe_id}["{step["name"]}"]')
 
     # Add connections between steps
     for step in steps:
-        current_step_id = f"step_{step['name'].replace(' ', '_')}"
-
+        current_step_id = f"step_{sanitize_node_id(step['name'])}"
         # Connect required steps
         for req_step in step.get('required_steps', []):
-            if req_step != "Letter of Admission":  # Special case handling
-                safe_req_id = f"step_{req_step.replace(' ', '_')}"
-                mermaid.append(f'    {safe_req_id} --> {current_step_id}')
+            safe_req_id = f"step_{sanitize_node_id(req_step)}"
+            mermaid.append(f'    {safe_req_id} --> {current_step_id}')
 
         # Connect next steps
-        for next_step in step.get('next_steps', []):
-            if next_step != "TBD":  # Skip TBD connections
-                safe_next_id = f"step_{next_step.replace(' ', '_')}"
-                mermaid.append(f'    {current_step_id} --> {safe_next_id}')
+        # for next_step in step.get('next_steps', []):
+        #     if next_step != "TBD":  # Skip TBD connections
+        #         safe_next_id = f"step_{next_step.replace(' ', '_')}"
+        #         mermaid.append(f'    {current_step_id} --> {safe_next_id}')
 
         # Connect required documents
         for doc in step.get('required_documents', []):
             if doc.get('name'):
-                safe_doc_id = f"doc_{doc['name'].replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
-                mermaid.append(f'    direction LR')
+                safe_doc_id = f"doc_{sanitize_node_id(doc['name'])}"
+                # mermaid.append(f'    direction LR')
                 mermaid.append(f'    {safe_doc_id} -- required --> {current_step_id}')
 
         # Connect received documents
         for doc in step.get('received_documents', []):
             if doc.get('name'):
-                safe_doc_id = f"doc_{doc['name'].replace(' ', '_').replace('/', '_').replace('(', '').replace(')', '')}"
-                mermaid.append(f'    direction LR')
+                safe_doc_id = f"doc_{sanitize_node_id(doc['name'])}"
+                # mermaid.append(f'    direction LR')
                 mermaid.append(f'    {current_step_id} -- received --> {safe_doc_id}')
+    # Add styling
+    mermaid.extend([
+        "    %% Styling",
+        "    classDef document fill:#006680,stroke:#333,stroke-width:1px",
+        f"    class {','.join(f"doc_{sanitize_node_id(doc)}" for doc in unique_docs)} document",
+    ])
 
     return "\n".join(mermaid)
 

@@ -1,0 +1,159 @@
+flowchart TD
+    subgraph Documents
+    doc_Residence_permit_for_study_purposes["Document: Residence permit for study purposes"]
+    doc_Visa_for_study_purposes["Document: Visa for study purposes"]
+    doc_Transcript_of_Records["Document: Transcript of Records"]
+    doc_Residency_permit_for_academic_purposes["Document: Residency permit for academic purposes"]
+    doc_Proof_of_a_valid_study_visa["Document: Proof of a valid study visa"]
+    doc_Confirmation_of_payment_of_the_administrative_charge_at_the_immigration_office["Document: Confirmation of payment of the administrative charge at the immigration office"]
+    doc_Proof_of_Health_Insurance_Recognized_in_Germany["Document: Proof of Health Insurance Recognized in Germany"]
+    doc_Application_for_admission_to_studies["Document: Application for admission to studies"]
+    doc_Confirmation_of_payment_of_the_Semester_Contribution["Document: Confirmation of payment of the Semester Contribution"]
+    doc_Personal_HTWD_Login["Document: Personal HTWD Login"]
+    doc_Residence_permit_application["Document: Residence permit application"]
+    doc_Copy_of_passport_or_ID["Document: Copy of passport or ID"]
+    doc_Letter_of_Admission["Document: Letter of Admission"]
+    doc_Current_biometric_photo["Document: Current biometric photo"]
+    doc_Resume_CV["Document: Resume/CV"]
+    doc_Rental_Agreement["Document: Rental Agreement"]
+    doc_German_tax_identification_number["Document: German tax identification number"]
+    doc_Enrolment_certificate_from_HTW_Dresden["Document: Enrolment certificate from HTW Dresden"]
+    doc_Registration_Certificate:_Citizens'_Office_Dresden["Document: Registration Certificate: Citizens' Office Dresden"]
+    doc_Proof_of_secured_livelihood["Document: Proof of secured livelihood"]
+    doc_Online_Learning_Agreement["Document: (Online) Learning Agreement"]
+    doc_Signed_request_for_HTW_login["Document: Signed request for HTW login"]
+    doc_Proof_of_language_proficiency["Document: Proof of language proficiency"]
+    doc_Confirmation_of_payment_of_the_administrative_charge_for_visa["Document: Confirmation of payment of the administrative charge for visa"]
+    end
+    step_Application_Submission["Application Submission"]
+    step_Wait_for_application_Review["Wait for application Review"]
+    step_Research_English_taught_courses["Research English taught courses"]
+    step_Select_courses["Select courses"]
+    step_Create_Learning_Agreement["Create Learning Agreement"]
+    step_Submit_Learning_Agreement_for_approval["Submit Learning Agreement for approval"]
+    step_Receive_approval_confirmation["Receive approval confirmation"]
+    step_Check_Academic_Calendar["Check Academic Calendar"]
+    step_Attend_Information_Sessions["Attend Information Sessions"]
+    step_Enroll_in_Language_Course["Enroll in Language Course"]
+    step_Obtain_Health_Insurance["Obtain Health Insurance"]
+    step_Apply_for_residence_permit["Apply for residence permit"]
+    step_Wait_for_residence_permit_approval["Wait for residence permit approval"]
+    step_Check_immigration_formalities["Check immigration formalities"]
+    step_Obtain_passport["Obtain passport"]
+    step_Arrange_insurance_and_permits["Arrange insurance and permits"]
+    step_Apply_for_visa["Apply for visa"]
+    step_Wait_for_visa_approval["Wait for visa approval"]
+    step_Apply_for_residence_permit["Apply for residence permit"]
+    step_Register_for_student_residence["Register for student residence"]
+    step_Receive_admission_letter["Receive admission letter"]
+    step_Pay_Semester_Contribution["Pay Semester Contribution"]
+    step_Enroll_at_HTW_Dresden["Enroll at HTW Dresden"]
+    step_Information_session_on_the_organisation_of_your_studies_and_the_selection_of_your_courses["Information session on the organisation of your studies and the selection of your courses"]
+    step_Make_an_online_appointment["Make an online appointment"]
+    step_Visit_the_Citizens'_Office["Visit the Citizens' Office"]
+    step_Submit_required_documents["Submit required documents"]
+    step_Make_an_appointment["Make an appointment"]
+    step_Submit_application_and_documents["Submit application and documents"]
+    step_Wait_for_processing_of_Immigration_Office["Wait for processing of Immigration Office"]
+    step_Open_a_German_bank_account["Open a German bank account"]
+    step_Check_Timetable["Check Timetable"]
+    step_Plan_Lectures["Plan Lectures"]
+    step_Enter_Course_Code["Enter Course Code"]
+    step_Get_Individual_Timetable["Get Individual Timetable"]
+    step_Register_for_Exams["Register for Exams"]
+    step_Get_Exam_Dates["Get Exam Dates"]
+    step_Deregister_from_Exam["Deregister from Exam"]
+    step_Take_Exam["Take Exam"]
+    step_Wait_for_grades_to_be_reported["Wait for grades to be reported"]
+    step_Request_Transcript_of_Records["Request Transcript of Records"]
+    step_Confer_with_home_university_and_Academic_Coordinator["Confer with home university and Academic Coordinator"]
+    step_Obtain_the_form_for_prolongation_of_matriculation["Obtain the form for prolongation of matriculation"]
+    step_Sign_the_form["Sign the form"]
+    step_Complete_a_new_Learning_Agreement["Complete a new Learning Agreement"]
+    step_Hand_in_the_signed_prolongation_of_matriculation["Hand in the signed prolongation of matriculation"]
+    step_Schedule_an_appointment_for_prolongation_of_study_visa["Schedule an appointment for prolongation of study visa"]
+    step_Extend_study_visa["Extend study visa"]
+    step_Re-register_for_the_next_semester["Re-register for the next semester"]
+    step_Nothing["Nothing"]
+    step_Close_German_bank_account["Close German bank account"]
+    step_Return_borrowed_books["Return borrowed books"]
+    step_Deregister_from_German_Health_Insurance["Deregister from German Health Insurance"]
+    step_Deregister_from_Citizens'_Office_Dresden["Deregister from Citizens' Office Dresden"]
+    step_Application_Submission --> step_Wait_for_application_Review
+    step_Wait_for_application_Review --> step_Apply_for_visa
+    step_Wait_for_application_Review --> step_Register_for_student_residence
+    step_Wait_for_application_Review --> step_Obtain_Health_Insurance
+    direction LR
+    step_Wait_for_application_Review -- received --> doc_Letter_of_Admission
+    step_Research_English_taught_courses --> step_Select_courses
+    step_Select_courses --> step_Create_Learning_Agreement
+    step_Create_Learning_Agreement --> step_Submit_Learning_Agreement_for_approval
+    step_Submit_Learning_Agreement_for_approval --> step_Receive_approval_confirmation
+    step_Receive_approval_confirmation --> step_Create_study_schedule
+    direction LR
+    step_Receive_approval_confirmation -- received --> doc_Online_Learning_Agreement
+    step_Attend_Information_Sessions --> step_Enroll_in_Language_Course
+    step_Enroll_in_Language_Course --> step_Start_Language_Course
+    step_Obtain_Health_Insurance --> step_Enroll_at_HTW_Dresden
+    direction LR
+    step_Obtain_Health_Insurance -- received --> doc_Proof_of_Health_Insurance_Recognized_in_Germany
+    step_Apply_for_residence_permit --> step_Wait_for_residence_permit_approval
+    step_Wait_for_residence_permit_approval --> step_Apply_for_visa
+    direction LR
+    step_Wait_for_residence_permit_approval -- received --> doc_Residence_permit_for_study_purposes
+    step_Check_immigration_formalities --> step_Obtain_passport
+    step_Check_immigration_formalities --> step_Arrange_insurance_and_permits
+    step_Obtain_passport --> step_Arrange_insurance_and_permits
+    direction LR
+    step_Obtain_passport -- received --> doc_Copy_of_passport_or_ID
+    step_Arrange_insurance_and_permits --> step_Apply_for_visa
+    step_Apply_for_visa --> step_Wait_for_visa_approval
+    step_Wait_for_visa_approval --> step_Enroll_at_HTW_Dresden
+    direction LR
+    step_Wait_for_visa_approval -- received --> doc_Visa_for_study_purposes
+    step_Register_for_student_residence --> step_Receive_admission_letter
+    direction LR
+    step_Receive_admission_letter -- received --> doc_Rental_Agreement
+    step_Pay_Semester_Contribution --> step_Receive_HTW_student_card_and_HTW-Login
+    step_Enroll_at_HTW_Dresden --> step_Information_session_on_the_organisation_of_your_studies_and_the_selection_of_your_courses
+    direction LR
+    step_Enroll_at_HTW_Dresden -- received --> doc_Personal_HTWD_Login
+    direction LR
+    step_Enroll_at_HTW_Dresden -- received --> doc_Proof_of_a_valid_study_visa
+    direction LR
+    step_Enroll_at_HTW_Dresden -- received --> doc_Enrolment_certificate_from_HTW_Dresden
+    step_Make_an_online_appointment --> step_Visit_the_Citizens'_Office
+    step_Visit_the_Citizens'_Office --> step_Submit_required_documents
+    step_Submit_required_documents --> step_Complete_registration
+    direction LR
+    step_Submit_required_documents -- received --> doc_Registration_Certificate:_Citizens'_Office_Dresden
+    step_Make_an_appointment --> step_Submit_application_and_documents
+    step_Submit_application_and_documents --> step_Wait_for_processing_of_Immigration_Office
+    direction LR
+    step_Wait_for_processing_of_Immigration_Office -- received --> doc_Residency_permit_for_academic_purposes
+    step_Open_a_German_bank_account --> step_Receive_a_debit_card_and_cash_card
+    step_Check_Timetable --> step_Plan_Lectures
+    step_Plan_Lectures --> step_Enter_Course_Code
+    step_Enter_Course_Code --> step_Get_Individual_Timetable
+    step_Register_for_Exams --> step_Get_Exam_Dates
+    step_Get_Exam_Dates --> step_Deregister_from_Exam
+    step_Deregister_from_Exam --> step_Take_Exam
+    step_Take_Exam --> step_Wait_for_grades_to_be_reported
+    step_Wait_for_grades_to_be_reported --> step_Request_Transcript_of_Records
+    direction LR
+    step_Request_Transcript_of_Records -- received --> doc_Transcript_of_Records
+    step_Confer_with_home_university_and_Academic_Coordinator --> step_Obtain_the_form_for_prolongation_of_matriculation
+    step_Obtain_the_form_for_prolongation_of_matriculation --> step_Sign_the_form
+    step_Sign_the_form --> step_Complete_a_new_Learning_Agreement
+    step_Complete_a_new_Learning_Agreement --> step_Hand_in_the_signed_prolongation_of_matriculation
+    step_Hand_in_the_signed_prolongation_of_matriculation --> step_Get_a_letter_of_admission_for_the_following_semester
+    step_Hand_in_the_signed_prolongation_of_matriculation --> step_Prolongation_of_study_visa
+    step_Schedule_an_appointment_for_prolongation_of_study_visa --> step_Extend_study_visa
+    step_Extend_study_visa --> step_Re-registration_for_the_next_semester
+    step_Re-register_for_the_next_semester --> step_Update_student_ID_card
+    step_Close_German_bank_account --> step_Return_borrowed_books
+    step_Close_German_bank_account --> step_Deregister_from_German_Health_Insurance
+    step_Close_German_bank_account --> step_Deregister_from_Citizens'_Office_Dresden
+    step_Return_borrowed_books --> step_Deregister_from_German_Health_Insurance
+    step_Return_borrowed_books --> step_Deregister_from_Citizens'_Office_Dresden
+    step_Deregister_from_German_Health_Insurance --> step_Deregister_from_Citizens'_Office_Dresden
