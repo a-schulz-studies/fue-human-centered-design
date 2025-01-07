@@ -41,8 +41,8 @@
               "description": "The document will be sent to you via email"
             },
             {
-              "name": "Up-to-date passport photo",
-              "description": "For your HTWD student ID card, minimum size of 180x240 pixels in JPEG, PNG or GIF format, view from the front, neutral background"
+              "name": "Current biometric photo",
+              "description": "Not older than 6 months"
             },
             {
               "name": "Copy of passport or ID",
@@ -71,7 +71,7 @@
           "received_documents": [
             {
               "name": "Letter of Admission",
-              "description": "Official letter of admission from HTW Dresden"
+              "description": "Official Letter of Admission"
             }
           ]
         }
@@ -210,18 +210,18 @@
           "deadline": "Before arriving in Dresden",
           "required_documents": [
             {
-              "name": "Passport",
+              "name": "Copy of passport or ID",
               "description": "Valid passport required for health insurance application"
             },
             {
-              "name": "Letter of Admission from HTW Dresden",
-              "description": "Official letter of admission from HTW Dresden"
+              "name": "Letter of Admission",
+              "description": "Official Letter of Admission"
             }
           ],
           "received_documents": [
             {
-              "name": "Proof of adequate health insurance",
-              "description": "Proof of adequate health insurance required for enrollment"
+              "name": "Proof of Health Insurance Recognized in Germany",
+              "description": "Proof of Health Insurance Recognized in Germany required for enrollment"
             }
           ],
           "required_by": [
@@ -290,7 +290,12 @@
           ],
           "deadline": "Before leaving your home country",
           "required_documents": [],
-          "received_documents": []
+          "received_documents": [
+            {
+              "name": "Copy of passport or ID",
+              "description": null
+            }
+          ]
         },
         {
           "name": "Arrange insurance and permits",
@@ -335,7 +340,7 @@
               "description": "Must be valid for the entire duration of stay in Germany."
             },
             {
-              "name": "Administrative charge",
+              "name": "Confirmation of payment of the administrative charge for visa",
               "description": "110 EUR in cash or ec-cash"
             },
             {
@@ -343,7 +348,7 @@
               "description": "Original and Copy"
             },
             {
-              "name": "Proof of adequate health insurance",
+              "name": "Proof of Health Insurance Recognized in Germany",
               "description": "Original and copy"
             },
             {
@@ -359,8 +364,8 @@
               "description": "Not older than 6 months"
             },
             {
-              "name": "Current valid/new passport or passport replacement document",
-              "description": "With copy"
+              "name": "Copy of passport or ID",
+              "description": null
             }
           ],
           "received_documents": [
@@ -413,7 +418,7 @@
           "required_documents": [
             {
               "name": "Letter of Admission",
-              "description": "Official letter of admission from HTW Dresden"
+              "description": "Official Letter of Admission"
             }
           ],
           "received_documents": []
@@ -427,7 +432,12 @@
           "next_steps": [],
           "deadline": "Not specified",
           "required_documents": [],
-          "received_documents": []
+          "received_documents": [
+            {
+              "name": "Rental Agreement",
+              "description": "Original and Copy"
+            }
+          ]
         }
       ]
     },
@@ -469,19 +479,19 @@
           "deadline": "During the Welcome Week",
           "required_documents": [
             {
-              "name": "Valid Passport or Identity Card",
-              "description": "Must be valid"
+              "name": "Copy of passport or ID",
+              "description": null
             },
             {
-              "name": "Valid Visa for Study Purposes",
-              "description": "If required for non-EU students"
+              "name": "Visa for study purposes",
+              "description": "Official visa for study purposes"
             },
             {
               "name": "Proof of Health Insurance Recognized in Germany",
-              "description": "Proof of adequate health insurance"
+              "description": "Proof of Health Insurance Recognized in Germany"
             },
             {
-              "name": "Payment of the Semester Contribution",
+              "name": "Confirmation of payment of the Semester Contribution",
               "description": "Proof of payment of the semester contribution"
             }
           ],
@@ -493,20 +503,24 @@
             {
               "name": "Proof of a valid study visa",
               "description": "Proof of a valid study visa required for enrollment"
+            },
+            {
+              "name": "Enrolment certificate from HTW Dresden",
+              "description": null
             }
           ]
         },
         {
           "name": "Information session on the organisation of your studies and the selection of your courses",
           "description": "Attend the information session on the organisation of your studies and the selection of your courses.",
-            "required_steps": [
-                "Enroll at HTW Dresden"
-            ],
-            "next_steps": [
-            ],
-            "deadline": "During the Welcome Week",
-            "required_documents": [],
-            "received_documents": []
+          "required_steps": [
+            "Enroll at HTW Dresden"
+          ],
+          "next_steps": [
+          ],
+          "deadline": "During the Welcome Week",
+          "required_documents": [],
+          "received_documents": []
         }
       ]
     },
@@ -548,7 +562,12 @@
           ],
           "deadline": "At the time of registration",
           "required_documents": [],
-          "received_documents": []
+          "received_documents": [
+            {
+              "name": "Registration Certificate: Citizens' Office Dresden",
+              "description": "Registration Certificate from the Citizens' Office Dresden"
+            }
+          ]
         }
       ]
     },
@@ -582,7 +601,7 @@
               "description": "Fully completed application form."
             },
             {
-              "name": "Administrative charge",
+              "name": "Confirmation of payment of the administrative charge at the immigration office",
               "description": "110 EUR in cash or ec-cash"
             },
             {
@@ -590,7 +609,7 @@
               "description": "Original and Copy"
             },
             {
-              "name": "Proof of adequate health insurance",
+              "name": "Proof of Health Insurance Recognized in Germany",
               "description": "Original and copy"
             },
             {
@@ -606,8 +625,8 @@
               "description": "Not older than 6 months"
             },
             {
-              "name": "Current valid/new passport or passport replacement document",
-              "description": "With copy"
+              "name": "Copy of passport or ID",
+              "description": null
             },
             {
               "name": "Visa for study purposes",
@@ -619,7 +638,9 @@
         {
           "name": "Wait for processing of Immigration Office",
           "description": "Wait till you get a response",
-          "required_steps": ["Submit application and documents"],
+          "required_steps": [
+            "Submit application and documents"
+          ],
           "next_steps": [],
           "deadline": null,
           "required_documents": [],
@@ -640,10 +661,6 @@
           "name": "Open a German bank account",
           "description": "Students need to open a German bank account to debit the rent.",
           "required_steps": [
-            "passport or national ID card",
-            "confirmation of registration",
-            "German tax identification number",
-            "enrolment certificate from HTW Dresden"
           ],
           "next_steps": [
             "Receive a debit card and cash card"
@@ -651,19 +668,19 @@
           "deadline": null,
           "required_documents": [
             {
-              "name": "passport or national ID card",
+              "name": "Copy of passport or ID",
               "description": null
             },
             {
-              "name": "confirmation of registration",
-              "description": null
+              "name": "Registration Certificate: Citizens' Office Dresden",
+              "description": "Registration Certificate from the Citizens' Office Dresden"
             },
             {
               "name": "German tax identification number",
               "description": null
             },
             {
-              "name": "enrolment certificate from HTW Dresden",
+              "name": "Enrolment certificate from HTW Dresden",
               "description": null
             }
           ],
@@ -1002,158 +1019,5 @@
       ]
     }
   ],
-  "documents": [
-    {
-      "name": "Application for admission to studies",
-      "description": "Signed by you and your home university coordinator"
-    },
-    {
-      "name": "(Online) Learning Agreement",
-      "description": "Your course selection approved and signed by your and your home university coordinator"
-    },
-    {
-      "name": "Resume/CV",
-      "description": "In English or German"
-    },
-    {
-      "name": "Transcript of Records",
-      "description": "Overview of your grades, issued by your home university, in English or German"
-    },
-    {
-      "name": "Proof of language proficiency",
-      "description": "Proof the language you will be studying in, English and/or German at level B1/B2"
-    },
-    {
-      "name": "Signed request for HTW login",
-      "description": "The document will be sent to you via email"
-    },
-    {
-      "name": "Up-to-date passport photo",
-      "description": "For your HTWD student ID card, minimum size of 180x240 pixels in JPEG, PNG or GIF format, view from the front, neutral background"
-    },
-    {
-      "name": "Copy of passport or ID",
-      "description": null
-    },
-    {
-      "name": "Proof of a valid study visa",
-      "description": "Can be submitted later upon entry"
-    },
-    {
-      "name": "Letter of Admission",
-      "description": "Official letter of admission from HTW Dresden"
-    },
-    {
-      "name": "(Online) Learning Agreement",
-      "description": "Your course selection approved and signed by your and your home university coordinator"
-    },
-    {
-      "name": "Proof of adequate health insurance",
-      "description": "Proof of adequate health insurance required for enrollment"
-    },
-    {
-      "name": "Passport",
-      "description": "Valid passport required for health insurance application"
-    },
-    {
-      "name": "Letter of Admission from HTW Dresden",
-      "description": "Official letter of admission from HTW Dresden"
-    },
-    {
-      "name": "Residence permit for study purposes",
-      "description": "Official residence permit for study purposes"
-    },
-    {
-      "name": "Residence permit for study purposes",
-      "description": "Must be valid for the entire duration of stay in Germany."
-    },
-    {
-      "name": "Administrative charge",
-      "description": "110 EUR in cash or ec-cash"
-    },
-    {
-      "name": "Rental Agreement",
-      "description": "Original and Copy"
-    },
-    {
-      "name": "Proof of adequate health insurance",
-      "description": "Original and copy"
-    },
-    {
-      "name": "Proof of secured livelihood",
-      "description": "For example scholarship or private savings"
-    },
-    {
-      "name": "Letter of Admission",
-      "description": "Enrollment or admission letter of HTW Dresden, with copy"
-    },
-    {
-      "name": "Current biometric photo",
-      "description": "Not older than 6 months"
-    },
-    {
-      "name": "Current valid/new passport or passport replacement document",
-      "description": "With copy"
-    },
-    {
-      "name": "Visa for study purposes",
-      "description": "Official visa for study purposes"
-    },
-    {
-      "name": "Residence permit for study purposes",
-      "description": "Official residence permit for study purposes"
-    },
-    {
-      "name": "Letter of Admission",
-      "description": "Official letter of admission from HTW Dresden"
-    },
-    {
-      "name": "Valid Passport or Identity Card",
-      "description": "Must be valid"
-    },
-    {
-      "name": "Valid Visa for Study Purposes",
-      "description": "If required for non-EU students"
-    },
-    {
-      "name": "Proof of Health Insurance Recognized in Germany",
-      "description": "Proof of adequate health insurance"
-    },
-    {
-      "name": "Payment of the Semester Contribution",
-      "description": "Proof of payment of the semester contribution"
-    },
-    {
-      "name": "Personal HTWD Login",
-      "description": "Personal login credentials for HTWD systems"
-    },
-    {
-      "name": "Proof of a valid study visa",
-      "description": "Proof of a valid study visa required for enrollment"
-    },
-    {
-      "name": "Residence permit application",
-      "description": "Fully completed application form."
-    },
-    {
-      "name": "passport or national ID card",
-      "description": null
-    },
-    {
-      "name": "confirmation of registration",
-      "description": null
-    },
-    {
-      "name": "German tax identification number",
-      "description": null
-    },
-    {
-      "name": "enrolment certificate from HTW Dresden",
-      "description": null
-    },
-    {
-      "name": "Transcript of Records",
-      "description": "Official transcript of records from HTW Dresden"
-    }
-  ]
+  "documents": []
 }

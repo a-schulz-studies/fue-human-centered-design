@@ -48,3 +48,6 @@ change json to include: requires, enables, produces at step level rather than pr
 
 
 received_documents können nur einmal auftreten, ansonsten gibt es inkonsistenzen
+
+
+meistens sind nicht required steps sondern documente, die für den weiteren prozess benötigt werden
