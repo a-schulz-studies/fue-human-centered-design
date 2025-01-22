@@ -1,6 +1,10 @@
 # fue-human-centered-design
 Goal: Develop a prototype to help international students with bureaucratic processes in Germany. The prototype should be developped using human centered design.
 
+ToDo:
+- [ ] Fix and update Readme
+- [ ] Delete old files
+- 
 
 The current process extraction is not 100% accurate due to the reason that the steps are submitted to the AI split into separated parts. Thud it is impossible to extract all dependencies to other steps. To solve this issue I extracted the whole text describing the whole process.
 The extracted text is saved as `process.txt`.

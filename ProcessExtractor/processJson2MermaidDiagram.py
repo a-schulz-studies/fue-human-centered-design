@@ -75,11 +75,11 @@ def create_mermaid_diagram(data):
 
 if __name__ == "__main__":
     # Read and parse the JSON
-    with open('htw_process_final.json', 'r') as file:
+    with open('htw_process.json', 'r') as file:
         data = json.loads(file.read())
 
     # Generate and print the Mermaid diagram
     diagram = create_mermaid_diagram(data)
     print(diagram)
-    with open('simple_process_tmp.mmd', 'w') as f:
+    with open('process_diagram.mmd', 'w') as f:
         f.write(diagram)

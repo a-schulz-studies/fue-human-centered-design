@@ -2,7 +2,7 @@ import json
 from typing import Dict
 
 from ProcessExtractor import ProcessExtractorOpenAI, ProcessExtractorGroq
-from config import config
+from config import settings
 
 def save_process(process: str | Dict, filename: str = 'process'):
     if isinstance(process, str):
@@ -14,8 +14,8 @@ def save_process(process: str | Dict, filename: str = 'process'):
 
 if __name__ == "__main__":
     # extractor = ProcessExtractorOpenAI(config.openai_key)
-    extractor = ProcessExtractorGroq(config.groq_key)
-    with open('website_data.html', 'r', encoding='utf-8') as f:
+    extractor = ProcessExtractorGroq(settings.groq_key)
+    with open('website_data_cleaned.html', 'r', encoding='utf-8') as f:
         html_content = f.read()
     
     process = extractor.extract_process(html_content)
