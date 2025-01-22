@@ -29,7 +29,7 @@
               "description": "In English or German"
             },
             {
-              "name": "Transcript of Records",
+              "name": "Transcript of Records of your home university",
               "description": "Overview of your grades, issued by your home university, in English or German"
             },
             {
@@ -301,14 +301,21 @@
           "name": "Arrange insurance and permits",
           "description": "Arrange insurance and the necessary permits before leaving your home country.",
           "required_steps": [
-            "Obtain passport",
-            "Letter of Admission"
           ],
           "next_steps": [
             "Apply for visa"
           ],
           "deadline": "Before leaving your home country",
-          "required_documents": [],
+          "required_documents": [
+            {
+              "name": "Letter of Admission",
+              "description": "Official Letter of Admission"
+            },
+            {
+              "name": "Copy of passport or ID",
+              "description": null
+            }
+          ],
           "received_documents": []
         },
         {
@@ -408,9 +415,7 @@
         {
           "name": "Register for student residence",
           "description": "Use the online application procedure to register for a student residence.",
-          "required_steps": [
-            "Letter of Admission"
-          ],
+          "required_steps": [          ],
           "next_steps": [
             "Receive admission letter"
           ],
@@ -823,7 +828,7 @@
           "required_documents": [],
           "received_documents": [
             {
-              "name": "Transcript of Records",
+              "name": "Transcript of Records of HTW Dresden",
               "description": "Official transcript of records from HTW Dresden"
             }
           ]

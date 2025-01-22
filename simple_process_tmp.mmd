@@ -1,28 +1,29 @@
 flowchart TD
-    doc_Residencepermitforstudypurposes["Document: Residence permit for study purposes"]
-    doc_Visaforstudypurposes["Document: Visa for study purposes"]
-    doc_TranscriptofRecords["Document: Transcript of Records"]
-    doc_Residencypermitforacademicpurposes["Document: Residency permit for academic purposes"]
-    doc_Proofofavalidstudyvisa["Document: Proof of a valid study visa"]
-    doc_Confirmationofpaymentoftheadministrativechargeattheimmigrationoffice["Document: Confirmation of payment of the administrative charge at the immigration office"]
-    doc_ProofofHealthInsuranceRecognizedinGermany["Document: Proof of Health Insurance Recognized in Germany"]
+    doc_TranscriptofRecordsofyourhomeuniversity["Document: Transcript of Records of your home university"]
     doc_Applicationforadmissiontostudies["Document: Application for admission to studies"]
-    doc_ConfirmationofpaymentoftheSemesterContribution["Document: Confirmation of payment of the Semester Contribution"]
-    doc_PersonalHTWDLogin["Document: Personal HTWD Login"]
+    doc_OnlineLearningAgreement["Document: (Online) Learning Agreement"]
     doc_Residencepermitapplication["Document: Residence permit application"]
-    doc_CopyofpassportorID["Document: Copy of passport or ID"]
+    doc_RegistrationCertificateCitizensOfficeDresden["Document: Registration Certificate: Citizens' Office Dresden"]
+    doc_ResumeCV["Document: Resume/CV"]
+    doc_Proofofavalidstudyvisa["Document: Proof of a valid study visa"]
+    doc_ProofofHealthInsuranceRecognizedinGermany["Document: Proof of Health Insurance Recognized in Germany"]
+    doc_Proofofsecuredlivelihood["Document: Proof of secured livelihood"]
+    doc_SignedrequestforHTWlogin["Document: Signed request for HTW login"]
+    doc_RentalAgreement["Document: Rental Agreement"]
     doc_LetterofAdmission["Document: Letter of Admission"]
     doc_Currentbiometricphoto["Document: Current biometric photo"]
-    doc_ResumeCV["Document: Resume/CV"]
-    doc_RentalAgreement["Document: Rental Agreement"]
+    doc_Confirmationofpaymentoftheadministrativechargeattheimmigrationoffice["Document: Confirmation of payment of the administrative charge at the immigration office"]
     doc_Germantaxidentificationnumber["Document: German tax identification number"]
-    doc_EnrolmentcertificatefromHTWDresden["Document: Enrolment certificate from HTW Dresden"]
-    doc_RegistrationCertificateCitizensOfficeDresden["Document: Registration Certificate: Citizens' Office Dresden"]
-    doc_Proofofsecuredlivelihood["Document: Proof of secured livelihood"]
-    doc_OnlineLearningAgreement["Document: (Online) Learning Agreement"]
-    doc_SignedrequestforHTWlogin["Document: Signed request for HTW login"]
     doc_Proofoflanguageproficiency["Document: Proof of language proficiency"]
+    doc_Visaforstudypurposes["Document: Visa for study purposes"]
+    doc_ConfirmationofpaymentoftheSemesterContribution["Document: Confirmation of payment of the Semester Contribution"]
+    doc_PersonalHTWDLogin["Document: Personal HTWD Login"]
+    doc_EnrolmentcertificatefromHTWDresden["Document: Enrolment certificate from HTW Dresden"]
+    doc_Residencepermitforstudypurposes["Document: Residence permit for study purposes"]
+    doc_CopyofpassportorID["Document: Copy of passport or ID"]
     doc_Confirmationofpaymentoftheadministrativechargeforvisa["Document: Confirmation of payment of the administrative charge for visa"]
+    doc_Residencypermitforacademicpurposes["Document: Residency permit for academic purposes"]
+    doc_TranscriptofRecordsofHTWDresden["Document: Transcript of Records of HTW Dresden"]
     step_ApplicationSubmission["Application Submission"]
     step_WaitforapplicationReview["Wait for application Review"]
     step_ResearchEnglishtaughtcourses["Research English taught courses"]
@@ -80,7 +81,7 @@ flowchart TD
     doc_Applicationforadmissiontostudies -- required --> step_ApplicationSubmission
     doc_OnlineLearningAgreement -- required --> step_ApplicationSubmission
     doc_ResumeCV -- required --> step_ApplicationSubmission
-    doc_TranscriptofRecords -- required --> step_ApplicationSubmission
+    doc_TranscriptofRecordsofyourhomeuniversity -- required --> step_ApplicationSubmission
     doc_Proofoflanguageproficiency -- required --> step_ApplicationSubmission
     doc_SignedrequestforHTWlogin -- required --> step_ApplicationSubmission
     doc_Currentbiometricphoto -- required --> step_ApplicationSubmission
@@ -102,8 +103,8 @@ flowchart TD
     step_Waitforresidencepermitapproval -- received --> doc_Residencepermitforstudypurposes
     step_Checkimmigrationformalities --> step_Obtainpassport
     step_Obtainpassport -- received --> doc_CopyofpassportorID
-    step_Obtainpassport --> step_Arrangeinsuranceandpermits
-    step_LetterofAdmission --> step_Arrangeinsuranceandpermits
+    doc_LetterofAdmission -- required --> step_Arrangeinsuranceandpermits
+    doc_CopyofpassportorID -- required --> step_Arrangeinsuranceandpermits
     step_Arrangeinsuranceandpermits --> step_Applyforvisa
     step_Applyforvisa --> step_Waitforvisaapproval
     doc_Residencepermitforstudypurposes -- required --> step_Waitforvisaapproval
@@ -115,7 +116,6 @@ flowchart TD
     doc_Currentbiometricphoto -- required --> step_Waitforvisaapproval
     doc_CopyofpassportorID -- required --> step_Waitforvisaapproval
     step_Waitforvisaapproval -- received --> doc_Visaforstudypurposes
-    step_LetterofAdmission --> step_Registerforstudentresidence
     doc_LetterofAdmission -- required --> step_Registerforstudentresidence
     step_Registerforstudentresidence --> step_Receiveadmissionletter
     step_Receiveadmissionletter -- received --> doc_RentalAgreement
@@ -156,7 +156,7 @@ flowchart TD
     step_DeregisterfromExam --> step_TakeExam
     step_TakeExam --> step_Waitforgradestobereported
     step_Waitforgradestobereported --> step_RequestTranscriptofRecords
-    step_RequestTranscriptofRecords -- received --> doc_TranscriptofRecords
+    step_RequestTranscriptofRecords -- received --> doc_TranscriptofRecordsofHTWDresden
     step_ConferwithhomeuniversityandAcademicCoordinator --> step_Obtaintheformforprolongationofmatriculation
     step_Obtaintheformforprolongationofmatriculation --> step_Signtheform
     step_Signtheform --> step_CompleteanewLearningAgreement
@@ -169,4 +169,4 @@ flowchart TD
     step_DeregisterfromGermanHealthInsurance --> step_DeregisterfromCitizensOfficeDresden
     %% Styling
     classDef document fill:#006680,stroke:#333,stroke-width:1px
-    class doc_Residencepermitforstudypurposes,doc_Visaforstudypurposes,doc_TranscriptofRecords,doc_Residencypermitforacademicpurposes,doc_Proofofavalidstudyvisa,doc_Confirmationofpaymentoftheadministrativechargeattheimmigrationoffice,doc_ProofofHealthInsuranceRecognizedinGermany,doc_Applicationforadmissiontostudies,doc_ConfirmationofpaymentoftheSemesterContribution,doc_PersonalHTWDLogin,doc_Residencepermitapplication,doc_CopyofpassportorID,doc_LetterofAdmission,doc_Currentbiometricphoto,doc_ResumeCV,doc_RentalAgreement,doc_Germantaxidentificationnumber,doc_EnrolmentcertificatefromHTWDresden,doc_RegistrationCertificateCitizensOfficeDresden,doc_Proofofsecuredlivelihood,doc_OnlineLearningAgreement,doc_SignedrequestforHTWlogin,doc_Proofoflanguageproficiency,doc_Confirmationofpaymentoftheadministrativechargeforvisa document
+    class doc_TranscriptofRecordsofyourhomeuniversity,doc_Applicationforadmissiontostudies,doc_OnlineLearningAgreement,doc_Residencepermitapplication,doc_RegistrationCertificateCitizensOfficeDresden,doc_ResumeCV,doc_Proofofavalidstudyvisa,doc_ProofofHealthInsuranceRecognizedinGermany,doc_Proofofsecuredlivelihood,doc_SignedrequestforHTWlogin,doc_RentalAgreement,doc_LetterofAdmission,doc_Currentbiometricphoto,doc_Confirmationofpaymentoftheadministrativechargeattheimmigrationoffice,doc_Germantaxidentificationnumber,doc_Proofoflanguageproficiency,doc_Visaforstudypurposes,doc_ConfirmationofpaymentoftheSemesterContribution,doc_PersonalHTWDLogin,doc_EnrolmentcertificatefromHTWDresden,doc_Residencepermitforstudypurposes,doc_CopyofpassportorID,doc_Confirmationofpaymentoftheadministrativechargeforvisa,doc_Residencypermitforacademicpurposes,doc_TranscriptofRecordsofHTWDresden document
