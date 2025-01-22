@@ -21,37 +21,39 @@ class ProcessExtractorOpenAI:
         2. Dependencies between steps
         3. Required documents
         4. Time constraints or deadlines
-        
+
+        Only include steps that are carried out by students.
+
         Format the response as JSON with this structure:
         {{
             "steps": [
                 {{
                     "name": "step name",
                     "description": "what needs to be done",
-                    "requires": ["prerequisite steps"],
-                    "enables": ["next possible steps"],
-                    "deadline": "if applicable"
-                }}
-            ],
-            "dependencies": [
-                {{
-                    "type": "document/approval/other",
-                    "description": "what is required",
-                    "previous_step": "step that must be completed",
-                    "next_step": "step that becomes possible"
-                }}
-            ],
-            "required_documents": [
-                {{
-                    "name": "document name",
-                    "description": "document details",
-                    "deadline": "if applicable"
+                    "required_steps": ["prerequisite steps"],
+                    "next_steps": ["next possible steps"],
+                    "deadline": "if applicable",
+                    "required_documents": [
+                        {{
+                            "name": "Document name",
+                            "description": "Document description"
+                        }},
+                    ],
+                    "received_documents": [
+                        {{
+                            "name": "Document name",
+                            "description": "Document description"
+                        }},
+                    ]
                 }}
             ]
         }}
 
         Text to analyze:
         {text}
+
+        Response format: json_object
+        ONLY RETURN THE JSON OBJECT
         """
 
         response = self.client.chat.completions.create(
@@ -110,40 +112,37 @@ class ProcessExtractorGroq():
         2. Dependencies between steps
         3. Required documents
         4. Time constraints or deadlines
-        
+
         Only include steps that are carried out by students.
-        
+
         Format the response as JSON with this structure:
         {{
             "steps": [
                 {{
                     "name": "step name",
                     "description": "what needs to be done",
-                    "requires": ["prerequisite steps"],
-                    "enables": ["next possible steps"],
-                    "deadline": "if applicable"
-                }}
-            ],
-            "dependencies": [
-                {{
-                    "type": "document/approval/other",
-                    "description": "what is required",
-                    "previous_step": "step that must be completed",
-                    "next_step": "step that becomes possible"
-                }}
-            ],
-            "required_documents": [
-                {{
-                    "name": "document name",
-                    "description": "document details",
-                    "deadline": "if applicable"
+                    "required_steps": ["prerequisite steps"],
+                    "next_steps": ["next possible steps"],
+                    "deadline": "if applicable",
+                    "required_documents": [
+                        {{
+                            "name": "Document name",
+                            "description": "Document description"
+                        }},
+                    ],
+                    "received_documents": [
+                        {{
+                            "name": "Document name",
+                            "description": "Document description"
+                        }},
+                    ]
                 }}
             ]
         }}
 
         Text to analyze:
         {text}
-        
+
         Response format: json_object
         ONLY RETURN THE JSON OBJECT
         """
@@ -158,9 +157,7 @@ class ProcessExtractorGroq():
         if (response.choices[
             0].message.content == "I'm sorry but I do not have the capability to perform this task for you, I am happy to help you with any other queries you may have."):
             return {
-                "steps": [],
-                "dependencies": [],
-                "required_documents": []
+                "steps": []
             }
 
         return json_repair.loads(response.choices[0].message.content)
