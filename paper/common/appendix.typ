@@ -9,3 +9,12 @@
 #pagebreak()
 = Ergänzendes Material zur Analyse des Ist-Prozesses
 == Ist-Prozess
+
+#pagebreak()
+= Ergänzendes Material zur User Journey
+== Personas
+== User Journey
+
+#pagebreak()
+= Ergänzendes Material zum Prototypen
+== Screenshots des Prototypen
