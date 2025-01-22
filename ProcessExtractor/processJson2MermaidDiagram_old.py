@@ -143,5 +143,5 @@ if __name__ == "__main__":
     print(mermaid_markup)
 
     # Optionally save to file
-    with open('process_flow_other.mmd', 'w') as f:
+    with open('process_flow.mmd', 'w') as f:
         f.write(mermaid_markup)
