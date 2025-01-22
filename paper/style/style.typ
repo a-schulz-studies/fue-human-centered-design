@@ -214,11 +214,6 @@
 
   body
 
-  // Appendix.
-  pagebreak()
-  heading(numbering: none)[Anhang A: Supplementary Material]
-  include ("../common/appendix.typ")
-
   pagebreak()
   heading(numbering: none)[Literaturverzeichnis]
   bibliography(
@@ -241,6 +236,9 @@
     line(length: 100%), [], line(length: 100%),
     [Datum, Ort], [], [#authors.first().first()],
   )
+
+    // Appendix.
+    include ("../common/appendix.typ")
 }
 #let apos(text) = {
   [\"] + text + [\"]
