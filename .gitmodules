@@ -1,0 +1,3 @@
+[submodule "TranscriptEditor"]
+	path = TranscriptEditor
+	url = git@github.com:a-schulz/TranscriptEditor.git
