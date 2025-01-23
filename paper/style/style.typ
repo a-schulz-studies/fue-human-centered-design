@@ -237,8 +237,8 @@
     [Datum, Ort], [], [#authors.first().first()],
   )
 
-    // Appendix.
-    include ("../common/appendix.typ")
+  // Appendix.
+  include ("../common/appendix.typ")
 }
 #let apos(text) = {
   [\"] + text + [\"]

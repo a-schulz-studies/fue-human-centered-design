@@ -5,6 +5,7 @@
 = Ergänzendes Material zu den Interviews
 == Interviewleitfaden
 == Transkripte der Interviews
+== Zusammenfassung der wichtigsten Punkte aus den Interviews
 
 #pagebreak()
 = Ergänzendes Material zur Analyse des Ist-Prozesses
