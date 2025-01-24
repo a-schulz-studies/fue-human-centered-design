@@ -17,159 +17,160 @@
   title: title,
   authors: authors,
 )
+= Glossar
+
+- *Proaktive Dienstleistungen:* Verwaltungshandlungen sollen möglichst frühzeitig und automatisiert angeboten werden, um Studierende zu unterstützen.
+- *Lebenslagen:* Personalisierung von Dienstleistungen basierend auf der individuellen Situation der Nutzer.
+
 
 = Einleitung
-// Wichtigkeit, Schilderung des Problems, Forschungsfrage, Ziel der Entwicklung eines Prototypen erklären
-// jeweils einzelne Abschnitte zu den unten gelisteten Themen
-Hintergrund des Themas
-Austauschstudierende wollen sich nicht großartig mit den bürokratischen Prozessen in Detschland beschäftigen.
-Am liebsten hätten sie so wenig Kontakt wie möglich mit den Behörden.
-Sie wollen nur eine sehr gute Ausbildung hier in Deutschland haben.
-// Suche Quelle mit Gründen für ein Studium in Deutschland
 
-Bürokratische Prozesse sollten keine Hürde sein.
-Analyse der bürokratische Hürden für Austauschstudenten in Dresden
+*Hintergrund und Motivation*
 
-Problemstellung: Studierende sind häufig mit den bürokratischen Prozessen in Deutschland überfordert und schaffen es nicht immer diese in der geplanten Zeit durchzuführen, weshalb sich dann der Start des Studiums verzögert.
-im Detail müssen dafür erstmal die Prozesse verstanden werden, die konkreten Herausforderungen und die Pain Points identifiziert werden
+Austauschstudierende in Deutschland stehen oft vor komplexen bürokratischen Prozessen. Sie möchten sich in erster Linie auf ihre akademische Ausbildung konzentrieren und möglichst wenig Zeit mit administrativen Aufgaben verbringen. Verzögerungen oder Fehler im Prozess können jedoch dazu führen, dass der Studienstart verschoben wird oder zusätzliche Herausforderungen entstehen. Gründe für ein Studium in Deutschland sind unter anderem die hohe Qualität der Ausbildung, attraktive Studiengänge und internationale Anerkennung. #highlight[Quellen]
 
+*Problemstellung*
+Studierende sind häufig mit den bürokratischen Prozessen in Deutschland #highlight[überfordert] und schaffen es nicht immer, diese rechtzeitig abzuschließen. Dies führt zu Verzögerungen beim Studienstart und erschwert ihre Integration. Insbesondere fehlende Rückmeldefristen und Schwierigkeiten bei der Wohnungssuche führen zu Frust im Prozess.
 
-Ziel der Arbeit: Entwicklung eines Prototyps zur Unterstützung für ausländische Studierende bei den administrativen/bürokratischen Prozessen.
-Prototypen zu entwickeln, der diese Herausforderungen adressiert und den Studierenden hilft, sich in Deutschland besser zurechtzufinden
+*Zielsetzung*
+Ziel ist die Entwicklung eines Prototyps, der ausländische Studierende bei bürokratischen Prozessen unterstützt, diese vereinfacht. Der Prototyp soll auf die Bedürfnisse der Studierenden ausgerichtet sein und durch klare Anleitungen, Feedback und Unterstützung eine rechtzeitige Durchführung der Prozesse ermöglichen.
 
-Forschungsfrage: "Wie könnte ein Prototyp aussehen, der ausländische Studierende bei den bürokratischen Prozessen in Deutschland unterstützt?"
+*Forschungsfrage*
+"Wie kann ein Prototyp gestaltet werden, der ausländische Studierende bei den bürokratischen Prozessen in Deutschland unterstützt?"
 
-Um für die Studierenden eine möglichst gute Lösung zu entwickeln wird die Methode des Human Centered Design verwendet.
+*Vorgehensweise*
+Die Arbeit basiert auf der Methode des Human-Centered Design (HCD), um die Bedürfnisse der Zielgruppe zu analysieren und schrittweise Lösungen zu entwickeln. Nutzerfeedback spielt dabei eine zentrale Rolle, um den Prototyp iterativ zu verbessern.
 
-= Theoretische Grundlagen
+= Methode des Human-Centered Design (HCD)
 
-Human-Centered Design (HCD): Erläuterung des HCD-Ansatzes und seiner Bedeutung für die Entwicklung des Prototyps.
-Unterschied zwischen HCD und User-Centered Design (UCD).
-Die Bedeutung der Einbeziehung der Nutzer in den Designprozess und deren Bedürfnisse.
-Was ist Human-centered design?
-Fokus auf Menschen:
-Lösungen basieren auf Nutzerbedürfnissen und -fähigkeiten
-Partizipation:
-Nutzerinnen gestalten aktiv mit; Feedback ist zentral
-Iterativer Ansatz:
-Beobachten, Entwickeln, Testen, Verbessern
-Kontext:
-Kulturelle und technische Faktoren zählen
+*Human-Centered Design (HCD)*
+Human-Centered Design ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Die Prinzipien von HCD umfassen:
+- *Fokus auf Menschen:* Lösungen basieren auf Nutzerbedürfnissen und -fähigkeiten.
+- *Partizipation:* Nutzer*innen gestalten aktiv mit, Feedback ist zentral.
+- *Iterativer Ansatz:* Beobachten, Entwickeln, Testen und Verbessern in Zyklen.
+- *Kontext:* Soziale, kulturelle und technische Faktoren werden berücksichtigt.
 
-Relevante Konzepte:
-Proaktive Dienstleistungen im Kontext der öffentlichen Verwaltung.
-Bedeutung der Bereitstellung von Informationen zur richtigen Zeit und am richtigen Ort.
-Lebenslagen und deren Bedeutung für die Personalisierung von Dienstleistungen.
-Bestehende Angebote und Forschung: Analyse von bestehenden Unterstützungsangeboten (z.B. Welcome Center Dresden, Entdecker App Leipzig) und deren Vor- und Nachteile.
-
-Human centered design (nicht im Detail erklären sondern eher auf andere verweisen)
-
-Interviews und weitere Nachfragen als teil des HCD Prozesses
-Informationen von der Stabsstelle Internationales -> Prozessverständnis Ist-Prozess-Analyse
-
+Im Vergleich zu User-Centered Design (UCD) legt HCD einen stärkeren Fokus auf die sozialen und kulturellen Aspekte des Designs und auf die langfristige Einbindung der Nutzer.
+#highlight[Personalisierung der Anwendung?]
 
 = Analyse der Nutzerbedürfnisse
 
-Zielgruppe: Neue Austauschstudenten an der HTWD
+*Personas:* Personas wurden erstellt, um die unterschiedlichen Bedürfnisse und Herausforderungen der Studierenden zu repräsentieren. Diese unterstützen die Entwicklung eines Prototyps, der auf spezifische Nutzergruppen eingeht.
 
-Interviews: Detaillierte Beschreibung der durchgeführten Interviews mit ausländischen Studierenden und die dabei gewonnenen Erkenntnisse
-Interviewleitfaden und verwendete Fragen
-Identifizierung von Pain Points: Zusammenfassung der häufigsten Probleme und Herausforderungen, die von den Studierenden genannt wurden
+Zu Analyse der Nutzerbedürfnisse werden im Rahmen des HCD Interviews mit Austauschstudierenden durchgeführt, um ihre Herausforderungen, Motivationen und Ziele besser zu verstehen. Dadurch können gezielt Nachfragen zu den Problemen und aktuellen Hürden gestellt und erläutert werden.
 
-Motivationen und Ziele: Darstellung der Motivationen und Ziele der Studierenden, die eine wesentliche Grundlage für die Gestaltung des Prototyps sind
-Erstellung von Personas (sollte ich die Personas mit rein bringen)
-- welchen Nutzen bringen die Personas für die Entwicklung des Prototyps
-User Journey -> Miro Board (ganz oder teilweise .... in den Anhang?)
+*Zielgruppe*
+Die Zielgruppe umfasst neue Austauschstudierende an der HTW Dresden, da diese sich noch besonders gut an die vor kurzem durchlaufenden Prozesse erinnern.
 
+*Schwerpunkte der Interviews*
+Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Themen waren unter anderem:
+#highlight[Fragen nicht nur auf die bürokratischen Prozesse abzielten, sondern auch auf die Motivationen, Ziele und persönlichen Interessen]
 
-Besprochene Themen:
 - Aktivitäten zur Vorbereitung
 - Visa Prozess
 - Krankenversicherung
 - Wohnungssuche
 - Aktivitäten nach der Ankunft
-Ergebnisse:
+
+*Ergebnisse*
+- *Pain Points:* Häufige Probleme sind lange Bearbeitungszeiten, fehlende Rückmeldungen und Unsicherheiten im Prozess. 
+- *Motivationen und Ziele:* Studierende möchten sich auf ihr Studium konzentrieren und eine hochwertige und international anerkannte Ausbildung genießen.
 - Kontaktpunkte und Informationsquellen
 - Herausforderungen und Probleme
 - verwendete Geräte
 - Umstände / Umgebung (mobile Recherche, Desktop)
-=> User journey
 
+*User Journey*
+Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dokumentiert Kontaktpunkte und Herausforderungen während des Prozesses. Sie wird vollständig im Anhang bereitgestellt. Mithilfe der User Journey ist es möglich die Emotionen und die Situation der Nutzer zu bestimmten Zeiten und bei bestimmten Aktionen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten.
+#highlight[Verweis auf den Anhang, Bild einfügen?]
 
-== Herausforderungen und aktuelle Probleme
+*Herausforderungen und aktuelle Probleme*
 
-Abhängigkeit im Prozess
-keine Rückmeldung/Antwortzeiten
-kritischer Pfad
-kein Gefühl wie und wo man im Prozess steht und ob alles zeitlich noch gut passt
-schwierigkeiten bei der Wohnungsuche seriöse Angebote zu finden
+- *Abhängigkeiten:* Prozesse wie die Visabeantragung sind stark von der Zulassung abhängig und können auch nicht vorher begonnen werden.
+- *Keine Rückmeldungen:* Universitäten antworten oft nicht rechtzeitig und geben keine Informationen darüber, wie lange auf eine Antwort gewartet werden muss.
+- *Kritischer Pfad:* Prozesse wie das Visum sind zeitkritisch und beeinflussen andere Aufgaben. Ein verspätetes Durchführen von bestimmten Prozessen führt fast ausschließlich zu einem verspäteten Studienstart.
+- *Orientierungslosigkeit:* Studierende wissen oft nicht, wie gut sie im Zeitplan sind.
+- *Wohnungssuche:* Schwierigkeit, seriöse Angebote zu finden.
+#highlight[Siehe Interview Output]
 
+*Verbesserungsideen*
 
-== Verbesserungsideen
+#highlight[Siehe Interview Output]
 
-siehe Interview Output/Followup Questions
+- *Indikatoren:* Fortschrittsbalken und Ampelsystem zur Anzeige des Status.
+- *Prozessbegleitung:* Schritt-für-Schritt-Anleitungen mit Erinnerungen.
+- *Dokumentenverwaltung:* Zentralisierte Verwaltung und einfache Einreichung.
+- *Mehrsprachigkeit:* Unterstützung in Englisch und Deutsch.
 
-== Wichtigste Punkte -> Kein Gefühl, wie gut man im Prozess steht
-Es ist egal, ob der Visaprozess lang dauert, solange man trotzdem pünklich mit dem Studium beginnen kann
-= Analyse des Ist-Prozesses laut der Stabstelle
+= Ist-Prozess Analyse
 
-Process Mining / Knowledge Graph
+Die Prozesse wurden mithilfe von Process Mining analysiert, um Engpässe, Abhängigkeiten und notwendige Dokuemnte zu identifizieren. Ein Knowledge Graph wurde erstellt, um die Verbindungen zwischen einzelnen Schritten zu visualisieren.
 
+Der extrahierte und strukturierte Prozess sollte gleichzeitig als Input für die Anwendung verwendet werden, damit diese noch im zeitlichen Rahmen mit den Interviewpartnern evaluiert werden kann.
 
-
+#highlight[Kann ich diesen Punkt noch mit zu einem anderden zusammenfassen?]
 
 = Konzeption und Design des Prototyps
 
-Erfassung der Lebenslage
-Welche Informationen sind notwendig, um ein personalisiertes Erlebnis zu schaﬀen?
-Bereitstellen der richtigen Informationen zum richtigen Zeitpunkt.
+Die Funktionen des Prototypen beruhen auf den Erkenntnissen aus den Interviews aus #highlight[Kreuzverweis] Erkenntnissen der Interviews.
 
-wie unterstützt welche Ansicht den Studenten
-Funktionen und Features:
-Beschreibung der wichtigsten Funktionen des Prototyps, basierend auf den Ergebnissen der Nutzerbedarfsanalyse
 Priorisierung der Features nach Wichtigkeit für die Studierenden
-Wichtige Funktionen wie eine Dokumenten-Checkliste, Erinnerungsfunktion für Deadlines, mehrsprachige Unterstützung, Schritt-für-Schritt-Anleitungen für bürokratische Prozesse, Informationen zum Visumprozess und Krankenversicherung
 
-Erklärung, wie der Prototyp auf die spezifischen Bedürfnisse der verschiedenen Personas eingeht
-Berücksichtigung von Nutzungskontexten: Beschreibung, wie die responsive Gestaltung und die einfache Handhabung den Nutzern entgegenkommen
-- Mobile Anwendung vs Desktopanwendung
+*Funktionen und Features*
+Die wichtigsten Funktionen des Prototyps umfassen:
+- *Dokumenten-Checkliste*: Alle benötigten Unterlagen auf einen Blick.
+- *Erinnerungsfunktion*: Warnungen bei nahenden Deadlines.
+- *Mehrsprachige Unterstützung*: Englisch und Deutsch als Grundsprachen.
+- *Schritt-für-Schritt-Anleitungen*: Klare Anweisungen für komplexe Prozesse ohne überfordernd zu wirken.
+- *Indikator für den Fortschritt:* Ampelsystem und Fortschrittsbalken zur Übersicht.
 
-Entwicklung eines detaillierten User Flows herausgelassen um Zeit zu sparen und weil nicht genügend Gesprächspartner zum validieren des Flows vorhanden wären
+*Berücksichtigung von Nutzungskontexten*
+Der Prototyp ist responsiv und sowohl für mobile Geräte als auch Desktopanwendungen optimiert.
 
-Low-Fidelity Prototyp: Beschreibung der ersten Prototypen und wie diese in Miro oder FigJam entwickelt wurden
+*Erfassung der Lebenslage*
+Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
 
-Klarer Indikator in Form einer Ampel und mit Fortschrittsbalken, damit die Studenten schon von Anfang an wissen ob sie zeitlich im Plan sind.
-Erinnerungsfunktion für Deadlines
-Dokumentenverwaltung
-Detailinformationen
+Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
+
+*Low-Fidelity Prototyp*
+Erste Designs wurden in Miro entwickelt. Diese enthalten Wireframes und einfache Abläufe.
+
+Wie unterstützt welche Ansicht den Studenten
+
 Kalenderansicht
 Graphenansicht
-Studierende sollen nicht gleich mit allen Aufgaben überschüttet werden, sondern Schritt für Schritt durch den Prozess geleitet werden.
-Mehrsprachige Unterstützung
 
+Sind einfacher zu verstehen als ein riesiger Text.
 
+#highlight[Einfügen einiger Screenshots des finalen Wireframes]
 
 = Diskussion und Ausblick
 
-Ausblick und Fazit
-Validierung:
-- Funktionen und UI des Prototypen müssen noch
-validiert werden
-Datenanalyse:
-- Durch die Anwendung kann gezielt zu den einzelnen
-Prozessschritten Feedback eingeholt werden
+*Zusammenfassung der Ergebnisse*
+Der Prototyp adressiert die Pain Points der Studierenden und bietet personalisierte, proaktive Unterstützung. 
+
+*Validierung und Iterationen*
+Die Funktionen und das Design müssen durch Nutzerfeedback validiert und iterativ verbessert werden.
+
+*Potenzial*
+Der Prototyp könnte die Grundlage für die Entwicklung proaktiver Verwaltungsdienstleistungen bilden und auf andere Hochschulen übertragen werden.
+
+*Ausblick*
+Zukünftige Arbeiten umfassen die technische Implementierung, Validierung und Vernetzung mit Behörden sowie die Anpassung der unterstützenden Prozesse.
+
+*Weitere Features der Anwendung*
+- Anpassung des Unterstützungsgrads
+- Sammeln von weiterem Feedback durch so eine App
+- Ermitteln von Prozesszeiten durch Nutzerdaten
+
+= Fazit
+Ein nutzerzentrierter Prototyp kann die bürokratischen Hürden für ausländische Studierende in Deutschland erheblich reduzieren.
+
 Symptombehandlung oder Ursachenforschung:
 - Anwendung hilft bei der Durchführung des Prozesses
 - Anpassungen am Prozess (Antwortzeiten, Vernetzung
 der Behörden)
 
-Beantwortung der Forschungsfrage: Prototyp muss auf die Ziele der Studierenden ausgerichtet sein und kann dadurch die Probleme der Studierenden lösen. Kontinuierliches Feedback und Anpassung des Prototypen ist, in Absprache mit den Studierenden, notwendig.
+Übertragbarkeit: Diskutieren Sie, inwiefern der Prototyp auch für andere Hochschulen oder Städte genutzt werden könnte
 
-Validierung und weitere Iterationen mit Interviewpartnern
-Implementierung
-Vernetzen mit den Behörden und anderen Institutionen
-Anpassung des Unterstützungsgrads
-sammeln von weiterem Feedback durch so eine App
-Ermitteln von Prozesszeiten durch Nutzerdaten
-
-Potenzial für proaktive Dienstleistungen: Betrachtung, inwiefern der Prototyp die Entwicklung proaktiver Verwaltungsdienstleistungen vorantreiben kann
+der Prototyp einen Beitrag zur Vereinfachung der bürokratischen Prozesse für ausländische Studierende leisten kann.
