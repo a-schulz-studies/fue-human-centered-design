@@ -16,23 +16,24 @@
   authors: authors,
 )
 
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+
 = Einleitung
 
 *Hintergrund und Motivation*
 
-Pro Semester studieren über 400.000 ausländische Studierende an deutschen Hochschulen @statistischesbundesamtdestatisStudierendeDeutschlandSemester2025. Ihr Hauptfokus liegt auf der akademischen Ausbildung, doch Verzögerungen oder Fehler in administrativen Vorgängen können dazu führen, dass der Studienstart erschwert wird. Austauschstudierende stehen häufig vor komplexen bürokratischen Prozessen, die sie zusätzlich belasten. Deutschland bietet eine hohe Ausbildungsqualität, attraktive Studiengänge und internationale Anerkennung, was es zu einem bevorzugten Ziel für Studierende weltweit macht.
-
-Aktuelle Probleme der Austauschstudierenden umfassen Themen wie die Wohnungssuche, Sprachbarrieren, finanzielle Herausforderungen, Orientierung im Studiensystem sowie soziale und kulturelle Integration. So haben 47 % der ausländischen Studierenden (sehr) große Schwierigkeiten bei der Wohnungssuche, und 34 % berichten von erheblichen Sprachproblemen. Auch der Kontakt zur deutschen Bevölkerung und die Anerkennung von Vorleistungen stellen häufige Herausforderungen dar @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
-
-Neben studienbezogenen Motiven wie besseren Berufschancen, interessanten Studienangeboten und guten Studienbedingungen spielen auch landesbezogene Faktoren wie die Lebensqualität und Berufsperspektiven in Deutschland eine entscheidende Rolle. Trotz der vielfältigen Anreize zeigen sich regionale und finanzielle Unterschiede in den Beweggründen sowie Herausforderungen der Studierenden. Diese Probleme beeinträchtigen nicht nur den Studienerfolg, sondern auch die soziale Integration der Studierenden.
+Pro Semester studieren über 400.000 ausländische Studierende an deutschen Hochschulen @statistischesbundesamtdestatisStudierendeDeutschlandSemester2025. Die Attraktivität Deutschlands als Studienstandort liegt vor allem in der hohen Qualität der Ausbildung, einer breiten Auswahl an Studiengängen sowie der internationalen Anerkennung. Dennoch sehen sich viele Austauschstudierende mit erheblichen bürokratischen Hürden konfrontiert, die sie von ihrem eigentlichen Ziel – der akademischen Ausbildung – ablenken. Fehler oder Verzögerungen in administrativen Prozessen können den Studienstart erheblich beeinträchtigen und stellen eine zusätzliche Belastung dar @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
 
 *Problemstellung*
 
-Viele Studierende sind mit den bürokratischen Prozessen in Deutschland überfordert. Schwierigkeiten wie das Einhalten von Rückmeldefristen oder die Suche nach einer passenden Unterkunft führen zu Frustration und Verzögerungen beim Studienstart. Auch das Verständnis für den Ablauf von Visa- und Anmeldeprozessen ist oft lückenhaft. 
+Die bürokratischen Prozesse in Deutschland sind für viele ausländische Studierende schwer verständlich und oftmals nicht rechtzeitig zu bewältigen. Probleme wie fehlende Transparenz bei Antragsverfahren, das Einhalten von Fristen oder die Organisation von Unterkünften führen häufig zu Frustration, Stress und Verzögerungen. Ohne angemessene Unterstützung bleibt für die Studierenden weniger Zeit, sich auf ihr Studium zu konzentrieren.
 
 *Zielsetzung*
 
-Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studierende bei bürokratischen Prozessen unterstützt und diese vereinfacht. Der Prototyp soll sich an den spezifischen Bedürfnissen der Studierenden orientieren und durch klare Anleitungen, Feedback und Unterstützung eine rechtzeitige Durchführung der notwendigen Prozesse ermöglichen.
+Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studierende bei bürokratischen Prozessen unterstützt und diese vereinfacht. Der Prototyp soll individuelle Bedürfnisse berücksichtigen und durch klare Anleitungen, gezieltes Feedback sowie hilfreiche Funktionen den Studierenden dabei helfen, die administrativen Anforderungen effizient und rechtzeitig zu bewältigen.
 
 *Forschungsfrage*
 
@@ -40,8 +41,12 @@ Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studieren
 
 *Vorgehensweise*
 
-Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD) angewandt, um die Bedürfnisse der Zielgruppe umfassend zu analysieren und nutzerzentrierte Lösungen zu entwickeln. Nutzerfeedback wird systematisch einbezogen, um den Prototyp iterativ zu verbessern und praxisnah zu gestalten.
+Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD), um die Perspektiven und Bedürfnisse der Zielgruppe in den Mittelpunkt zu stellen. Durch die iterative Einbindung von Nutzerfeedback wird ein praxisnaher und bedarfsgerechter Prototyp entwickelt. Dieser Ansatz gewährleistet, dass die erarbeiteten Lösungen den realen Anforderungen der Studierenden gerecht werden und ihnen die bürokratischen Abläufe erleichtern.
 
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
 
 = Methode des Human-Centered Design (HCD)
 
@@ -55,14 +60,24 @@ Human-Centered Design ist ein nutzerzentrierter Ansatz, der den Menschen und sei
 Im Vergleich zu User-Centered Design (UCD) legt HCD einen stärkeren Fokus auf die sozialen und kulturellen Aspekte des Designs und auf die langfristige Einbindung der Nutzer.
 #highlight[Personalisierung der Anwendung?]
 
-= Analyse der Nutzerbedürfnisse
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
 
-*Personas:* Personas wurden erstellt, um die unterschiedlichen Bedürfnisse und Herausforderungen der Studierenden zu repräsentieren. Diese unterstützen die Entwicklung eines Prototyps, der auf spezifische Nutzergruppen eingeht.
+= Analyse der Nutzerbedürfnisse
 
 Zu Analyse der Nutzerbedürfnisse werden im Rahmen des HCD Interviews mit Austauschstudierenden durchgeführt, um ihre Herausforderungen, Motivationen und Ziele besser zu verstehen. Dadurch können gezielt Nachfragen zu den Problemen und aktuellen Hürden gestellt und erläutert werden.
 
 *Zielgruppe*
 Die Zielgruppe umfasst neue Austauschstudierende an der HTW Dresden, da diese sich noch besonders gut an die vor kurzem durchlaufenden Prozesse erinnern.
+
+Interviews dienen dazu Bedürfnisse zu verstehen und Qualitätsziele abzuleiten. Außerdem können im Vorfeld und durch die Interviews
+
+*Personas:* Personas wurden erstellt, um die unterschiedlichen Bedürfnisse und Herausforderungen der Studierenden zu repräsentieren. Diese unterstützen die Entwicklung eines Prototyps, der auf spezifische Nutzergruppen eingeht.
+
+Diese können grundlegend in zwei Benutzergruppenprofile unterschieden werden: Austauschstudierende aus EU und Nicht-EU Ländern
+
 
 *Schwerpunkte der Interviews*
 Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Themen waren unter anderem:
@@ -82,6 +97,9 @@ Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Them
 - verwendete Geräte
 - Umstände / Umgebung (mobile Recherche, Desktop)
 
+Während studienbezogene Gründe wie bessere Berufschancen, interessante Studienangebote und forschungsorientierte Lehrformen eine zentrale Rolle bei der Entscheidung für ein Studium in Deutschland spielen, tragen auch landesbezogene Aspekte wie die hohe Lebensqualität und finanzielle Erschwinglichkeit dazu bei. Jedoch variieren die Beweggründe und Schwierigkeiten stark je nach Herkunftsregion und finanziellen Möglichkeiten der Studierenden. Diese Herausforderungen beeinträchtigen nicht nur den Studienerfolg, sondern erschweren auch die soziale und kulturelle Integration.
+
+
 *User Journey*
 Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dokumentiert Kontaktpunkte und Herausforderungen während des Prozesses. Sie wird vollständig im Anhang bereitgestellt. Mithilfe der User Journey ist es möglich die Emotionen und die Situation der Nutzer zu bestimmten Zeiten und bei bestimmten Aktionen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten.
 #highlight[Verweis auf den Anhang, Bild einfügen?]
@@ -94,7 +112,9 @@ Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die Use
 - *Orientierungslosigkeit:* Studierende wissen oft nicht, wie gut sie im Zeitplan sind.
 - *Wohnungssuche:* Schwierigkeit, seriöse Angebote zu finden.
 #highlight[Siehe Interview Output]
-@beateapolinarskiAuslaendischeStudierendeDeutschland2018
+
+Zu den häufigsten Herausforderungen zählen die Wohnungssuche, Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie die Orientierung im deutschen Studiensystem. Beispielsweise haben 47 % der ausländischen Studierenden große Probleme, eine passende Unterkunft zu finden, und 34 % kämpfen mit erheblichen Sprachproblemen. Auch die Anerkennung von Vorleistungen sowie bürokratische Prozesse wie Visa- und Anmeldeverfahren erschweren den Studierenden den Einstieg in das Studium @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
+
 
 *Verbesserungsideen*
 
@@ -104,6 +124,12 @@ Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die Use
 - *Prozessbegleitung:* Schritt-für-Schritt-Anleitungen mit Erinnerungen.
 - *Dokumentenverwaltung:* Zentralisierte Verwaltung und einfache Einreichung.
 - *Mehrsprachigkeit:* Unterstützung in Englisch und Deutsch.
+
+
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
 
 = Ist-Prozess Analyse
 
@@ -147,6 +173,12 @@ Sind einfacher zu verstehen als ein riesiger Text.
 
 #highlight[Einfügen einiger Screenshots des finalen Wireframes]
 
+
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+
 = Diskussion und Ausblick
 
 *Zusammenfassung der Ergebnisse*
@@ -168,7 +200,7 @@ Zukünftige Arbeiten umfassen die technische Implementierung, Validierung und Ve
 - Sammeln von weiterem Feedback durch so eine App
 - Ermitteln von Prozesszeiten durch Nutzerdaten
 
-= Fazit
+*Fazit*
 Ein nutzerzentrierter Prototyp kann die bürokratischen Hürden für ausländische Studierende in Deutschland erheblich reduzieren.
 
 Symptombehandlung oder Ursachenforschung:
