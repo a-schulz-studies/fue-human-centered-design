@@ -50,15 +50,32 @@ Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD), um die Pe
 
 = Methode des Human-Centered Design (HCD)
 
-*Human-Centered Design (HCD)*
-Human-Centered Design ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Die Prinzipien von HCD umfassen:
-- *Fokus auf Menschen:* Lösungen basieren auf Nutzerbedürfnissen und -fähigkeiten.
-- *Partizipation:* Nutzer*innen gestalten aktiv mit, Feedback ist zentral.
-- *Iterativer Ansatz:* Beobachten, Entwickeln, Testen und Verbessern in Zyklen.
+*Human-Centered Design (HCD)* ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Ziel ist es, benutzerfreundliche Lösungen zu schaffen, die effizient und effektiv sind. HCD basiert auf den Prinzipien @farooquiImpactHumanCenteredDesign2019:
+- *Fokus auf Menschen:* Nutzerbedürfnisse stehen im Vordergrund.
+- *Partizipation:* Nutzer*innen sind aktiv am Designprozess beteiligt.
+- *Iterativer Ansatz:* Entwicklung in Zyklen von Beobachten, Testen und Verbessern.
 - *Kontext:* Soziale, kulturelle und technische Faktoren werden berücksichtigt.
 
-Im Vergleich zu User-Centered Design (UCD) legt HCD einen stärkeren Fokus auf die sozialen und kulturellen Aspekte des Designs und auf die langfristige Einbindung der Nutzer.
-#highlight[Personalisierung der Anwendung?]
+*Der HCD-Prozess*
+
+Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
+- *Planung:* Definition von Zielen und Einbindung der Stakeholder.
+- *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
+- *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
+- *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low- und High-Fidelity.
+- *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.
+
+Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nutzer und ihrer Anforderungen, um Designentscheidungen zu unterstützen. Hier kommen Werkzeuge wie Personas, Benutzergruppenprofile und User Journey Maps zum Einsatz:
+
+- *Personas:* Personas sind fiktive, datenbasierte Profile typischer Nutzer, die die wichtigsten Merkmale, Bedürfnisse und Ziele der Zielgruppe repräsentieren. Sie helfen, ein klares Bild der Zielgruppe zu entwickeln und unterstützen Designer dabei, nutzerzentrierte Lösungen zu gestalten.
+
+- *Benutzergruppenprofile:* Diese Profile beschreiben spezifische Gruppen von Nutzern, die ähnliche Verhaltensmuster, Ziele und Herausforderungen teilen. Sie ergänzen Personas, indem sie breitere Trends und Gemeinsamkeiten zwischen den Nutzern aufzeigen und so die Segmentierung und Priorisierung der Anforderungen erleichtern.
+
+- *User Journey Maps:* User Journey Maps visualisieren die Schritte, die Nutzer durchlaufen, um ein bestimmtes Ziel zu erreichen. Sie erfassen die Erfahrungen, Herausforderungen und Emotionen der Nutzer entlang ihres Weges. Dieses Werkzeug hilft, kritische Berührungspunkte zu identifizieren und Optimierungsmöglichkeiten aufzudecken.
+
+Durch die Kombination dieser Werkzeuge wird ein umfassendes Verständnis der Nutzerperspektive geschaffen, das die Grundlage für effektive und benutzerfreundliche Designlösungen bildet.
+
+Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nutzerakzeptanz zu steigern. Besonders wichtig ist dies bei Werkzeugen, die von Entwicklern genutzt werden, um Effizienz und Benutzerfreundlichkeit sicherzustellen @farooquiImpactHumanCenteredDesign2019.
 
 // ###############################################################################
 // ###############################################################################
