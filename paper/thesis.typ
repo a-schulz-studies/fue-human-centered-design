@@ -16,17 +16,15 @@
   authors: authors,
 )
 
-// Auf ein Glossar kann verzichtet werden, wenn die wenigen Begriffe in den Fußnoten erklärt werden.
-// = Glossar
-
-// - *Proaktive Dienstleistungen:* Verwaltungshandlungen sollen möglichst frühzeitig und automatisiert angeboten werden, um Studierende zu unterstützen.
-// - *Lebenslagen:* Personalisierung von Dienstleistungen basierend auf der individuellen Situation der Nutzer.
-
 = Einleitung
 
 *Hintergrund und Motivation*
 
+
+
+
 Austauschstudierende in Deutschland stehen oft vor komplexen bürokratischen Prozessen. Sie möchten sich in erster Linie auf ihre akademische Ausbildung konzentrieren und möglichst wenig Zeit mit administrativen Aufgaben verbringen. Verzögerungen oder Fehler im Prozess können jedoch dazu führen, dass der Studienstart verschoben wird oder zusätzliche Herausforderungen entstehen. Gründe für ein Studium in Deutschland sind unter anderem die hohe Qualität der Ausbildung, attraktive Studiengänge und internationale Anerkennung. #highlight[Quellen]
+@beateapolinarskiAuslaendischeStudierendeDeutschland2018
 
 *Problemstellung*
 Studierende sind häufig mit den bürokratischen Prozessen in Deutschland #highlight[überfordert] und schaffen es nicht immer, diese rechtzeitig abzuschließen. Dies führt zu Verzögerungen beim Studienstart und erschwert ihre Integration. Insbesondere fehlende Rückmeldefristen und Schwierigkeiten bei der Wohnungssuche führen zu Frust im Prozess.
@@ -91,6 +89,7 @@ Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die Use
 - *Orientierungslosigkeit:* Studierende wissen oft nicht, wie gut sie im Zeitplan sind.
 - *Wohnungssuche:* Schwierigkeit, seriöse Angebote zu finden.
 #highlight[Siehe Interview Output]
+@beateapolinarskiAuslaendischeStudierendeDeutschland2018
 
 *Verbesserungsideen*
 
@@ -126,7 +125,7 @@ Die wichtigsten Funktionen des Prototyps umfassen:
 *Berücksichtigung von Nutzungskontexten*
 Der Prototyp ist responsiv und sowohl für mobile Geräte als auch Desktopanwendungen optimiert.
 
-*Erfassung der Lebenslage*
+*Erfassung der Lebenslage #footnote[Individuellen Situation der Nutzer.]*
 Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
 
 Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
@@ -152,7 +151,9 @@ Der Prototyp adressiert die Pain Points der Studierenden und bietet personalisie
 Die Funktionen und das Design müssen durch Nutzerfeedback validiert und iterativ verbessert werden.
 
 *Potenzial*
-Der Prototyp könnte die Grundlage für die Entwicklung proaktiver Verwaltungsdienstleistungen bilden und auf andere Hochschulen übertragen werden.
+Der Prototyp könnte die Grundlage für die Entwicklung proaktiver Verwaltungsdienstleistungen
+#footnote[Eine proaktive Verwaltungsleistung ist eine Verwaltungsleistung, die die Verwaltung vollständig oder teilweise erbringt, ohne dass Bürger*innen dies erbitten. @pawlowskiTaxonomyProactivePublic2023]
+bilden und auf andere Hochschulen übertragen werden.
 
 *Ausblick*
 Zukünftige Arbeiten umfassen die technische Implementierung, Validierung und Vernetzung mit Behörden sowie die Anpassung der unterstützenden Prozesse.
