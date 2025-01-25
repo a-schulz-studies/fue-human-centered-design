@@ -1,3 +1,6 @@
+// Weitere Packages: https://typst.app/universe/package/abbr/
+// https://github.com/Ciolv/typst-template-bachelor-thesis/blob/main/acronyms.typs
+
 //source: https://github.com/typst/typst/issues/659
 //Dictionary with acronyms
 #let acronyms = (

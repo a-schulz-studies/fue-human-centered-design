@@ -1,6 +1,5 @@
-#import "../common/acronyms.typ": usedAcronyms, acronyms
-//#import "../common/acronyms.typ": *
 #import "@preview/hydra:0.2.0": hydra
+#import "@preview/abbr:0.1.1"
 
 #let style(
   title: "",
@@ -133,20 +132,20 @@
   //v(2.4fr)
 
   //List of acronyms
-  pagebreak()
-  heading(numbering: none)[Abkürzungsverzeichnis]
-  locate(loc => usedAcronyms
-    .final(loc)
-    .pairs()
-    .filter(x => x.last())
-    .map(pair => pair.first())
-    .sorted()
-    .map(key => grid(
-        columns: (auto, auto, auto),
-        gutter: 0em,
-        strong(key), repeat([.]), acronyms.at(key),
-      ))
-    .join())
+  //pagebreak()
+  //heading(numbering: none)[Abkürzungsverzeichnis]
+  //locate(loc => usedAcronyms
+//    .final(loc)
+//    .pairs()
+//    .filter(x => x.last())
+//    //.map(pair => pair.first())
+//    //.sorted()
+//    //.map(key => grid(
+//        columns: (auto, auto, auto),
+//        gutter: 0em,
+//        strong(key), repeat([.]), acronyms.at(key),
+//      ))
+//    .join())
 
   // List of figures.
   pagebreak()

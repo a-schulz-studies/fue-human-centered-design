@@ -1,8 +1,6 @@
 #import "common/titlepage.typ": *
 #import "common/metadata.typ": *
 #import "style/style.typ": *
-#import "common/acronyms.typ": acro
-//#import "common/acronyms.typ": *
 
 #titlepage(
   title: title,
@@ -17,11 +15,12 @@
   title: title,
   authors: authors,
 )
-= Glossar
 
-- *Proaktive Dienstleistungen:* Verwaltungshandlungen sollen möglichst frühzeitig und automatisiert angeboten werden, um Studierende zu unterstützen.
-- *Lebenslagen:* Personalisierung von Dienstleistungen basierend auf der individuellen Situation der Nutzer.
+// Auf ein Glossar kann verzichtet werden, wenn die wenigen Begriffe in den Fußnoten erklärt werden.
+// = Glossar
 
+// - *Proaktive Dienstleistungen:* Verwaltungshandlungen sollen möglichst frühzeitig und automatisiert angeboten werden, um Studierende zu unterstützen.
+// - *Lebenslagen:* Personalisierung von Dienstleistungen basierend auf der individuellen Situation der Nutzer.
 
 = Einleitung
 
