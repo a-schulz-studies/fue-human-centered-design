@@ -1,3 +1,77 @@
+# Process extractor
+
+The scripts in this directory are used to extract the process from a downloaded html file to a json file with the help of LLMs.
+The extracted json process was also used to generate a mermaid diagram to visualize the process.
+
+## Outcome
+
+![Mermaid_process.png](Mermaid_process.png)
+_Visualized with https://mermaid.live/_
+
+```json
+"phases": [
+    {
+      "name": "Application and admission procedures",
+      "steps": [
+        {
+          "name": "Application Submission",
+          "description": "Submit application documents to HTW Dresden",
+          "required_steps": [],
+          "next_steps": [
+            "Wait for application Review"
+          ],
+          "deadline": "15 June for winter semester and 15 November for summer semester",
+          "required_documents": [
+            {
+              "name": "Application for admission to studies",
+              "description": "Signed by you and your home university coordinator"
+            },
+            {
+              "name": "(Online) Learning Agreement",
+              "description": "Your course selection approved and signed by your and your home university coordinator"
+            },
+            ...
+          ],
+          "received_documents": []
+        },
+        {
+          "name": "Wait for application Review",
+          "description": "Wait for reviewing of application documents by HTW Dresden",
+          "required_steps": [
+            "Application Submission"
+          ],
+          "next_steps": [
+            "Apply for visa",
+            "Register for student residence",
+            "Obtain Health Insurance"
+          ],
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": [
+            {
+              "name": "Letter of Admission",
+              "description": "Official Letter of Admission"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Learning Agreement / study schedule / Course selection",
+      "steps": [
+        {
+          "name": "Research English taught courses",
+          "description": "Browse the HTW Dresden website for English taught courses",
+          "required_steps": [],
+          "next_steps": [
+            "Select courses"
+          ],
+          "deadline": null,
+          "required_documents": [],
+          "received_documents": []
+        },
+```
+
 ## Getting started
 
 1. Set your environment variables in a `.env` file. E.g. `cp example.env .env` and fill in the values.
