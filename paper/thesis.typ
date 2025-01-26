@@ -1,6 +1,8 @@
 #import "common/titlepage.typ": *
 #import "common/metadata.typ": *
 #import "style/style.typ": *
+#import "@preview/oasis-align:0.2.0": *
+
 
 #titlepage(
   title: title,
@@ -57,18 +59,23 @@ Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen u
 - *Kontext:* Soziale, kulturelle und technische Faktoren werden berücksichtigt.
 \
 *HCD-Prozess*
+#oasis-align(
+int-dir:-1,
+[Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
+ - *Planung:* Definition von Zielen und Einbindung der Stakeholder.
+ - *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
+ - *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
+ - *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
+ #footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
+  und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
+ - *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.],
+  figure(image("images/HCD-Prozess.png", width: 95%),
+  caption: [
+    HCD-Prozess nach Farooqui et al. 2019
+  ],
+))
 
-Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
-- *Planung:* Definition von Zielen und Einbindung der Stakeholder.
-- *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
-- *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
-- *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
-#footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
- und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
-- *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.
-
-\
-
+#pagebreak()
 Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nutzer und ihrer Anforderungen, um Designentscheidungen zu unterstützen. Hier kommen Werkzeuge wie Personas, Benutzergruppenprofile und User Journey Maps zum Einsatz:
 
 - *Personas:* Personas sind fiktive, datenbasierte Profile typischer Nutzer, die die wichtigsten Merkmale, Bedürfnisse und Ziele der Zielgruppe repräsentieren. Sie helfen, ein klares Bild der Zielgruppe zu entwickeln und unterstützen Designer dabei, nutzerzentrierte Lösungen zu gestalten.
@@ -88,31 +95,31 @@ Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nut
 
 = Analyse der Nutzerbedürfnisse
 
+Die Analyse der Nutzerbedürfnisse ist ein zentraler Bestandteil des Designprozesses, um eine benutzerfreundliche und effektive Lösung für internationale Studierende in Deutschland zu entwickeln.
 Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU und Nicht-EU Ländern. Diese Profile wurden durch Interviews mit Austauschstudierenden weiter verfeinert, um die spezifischen Bedürfnisse, Herausforderungen und Ziele der Nutzer zu verstehen.
+Zusätzlich wurden Personas erstellt, um die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp zu konkretisieren. Die Personas repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
 
-Zusätzlich wurden Personas erstellt, um die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp zu konkretisieren. Die Personas repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten. Personas wurden erstellt, um die unterschiedlichen Bedürfnisse und Herausforderungen der Studierenden zu repräsentieren. Diese unterstützen die Entwicklung eines Prototyps, der auf spezifische Nutzergruppen eingeht.
-
-Zur Analyse der Nutzerbedürfnisse werden im Rahmen des HCD-Prozess Interviews mit Austauschstudierenden durchgeführt, um ihre Herausforderungen, Motivationen und Ziele besser zu verstehen.
-Erläutere die Vorteile von Interviews:
-Dadurch können gezielt Nachfragen zu den Problemen und aktuellen Hürden gestellt und erläutert werden. ...
-Interviews dienen dazu Bedürfnisse zu verstehen und Qualitätsziele abzuleiten.
+Der Hauptteil der Analyse basiert auf Interviews mit Austauschstudierenden, um die spezifischen Bedürfnisse, Herausforderungen und Ziele dieser Zielgruppe zu verstehen. Die folgenden Abschnitte fassen die wichtigsten Erkenntnisse aus diesen Analysen zusammen und strukturieren diese für einen klaren Überblick.
 
 *Zielgruppe*
-Die Zielgruppe umfasst neue Austauschstudierende an der HTW Dresden, da diese sich noch besonders gut an die vor kurzem durchlaufenden Prozesse erinnern.
+
+Die primäre Zielgruppe dieser Analyse umfasst vorrangig neue Austauschstudierende Austauschstudierende aus EU- und Nicht-EU-Ländern, da diese sich noch besonders gut an die vor kurzem durchlaufenden Prozesse erinnern.
 
 
 *Schwerpunkte der Interviews*
-Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Themen waren unter anderem:
-#highlight[Fragen nicht nur auf die bürokratischen Prozesse abzielten, sondern auch auf die Motivationen, Ziele und persönlichen Interessen]
+
+Ein semistrukturierter Interviewleitfaden wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden umfassend zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten:
 
 - Aktivitäten zur Vorbereitung
 - Visa Prozess
 - Krankenversicherung
 - Wohnungssuche
 - Aktivitäten nach der Ankunft
+- Persönliche Interessen und Ziele mit dem Auslandsstudium
+- Umstände und Umgebung während den Schritten
+- Verbesserungsideen
 
 *Ergebnisse*
-- *Pain Points:* Häufige Probleme sind lange Bearbeitungszeiten, fehlende Rückmeldungen und Unsicherheiten im Prozess.
 - *Motivationen und Ziele:* Studierende möchten sich auf ihr Studium konzentrieren und eine hochwertige und international anerkannte Ausbildung genießen.
 - Kontaktpunkte und Informationsquellen
 - Herausforderungen und Probleme
@@ -122,11 +129,8 @@ Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Them
 Während studienbezogene Gründe wie bessere Berufschancen, interessante Studienangebote und forschungsorientierte Lehrformen eine zentrale Rolle bei der Entscheidung für ein Studium in Deutschland spielen, tragen auch landesbezogene Aspekte wie die hohe Lebensqualität und finanzielle Erschwinglichkeit dazu bei. Jedoch variieren die Beweggründe und Schwierigkeiten stark je nach Herkunftsregion und finanziellen Möglichkeiten der Studierenden. Diese Herausforderungen beeinträchtigen nicht nur den Studienerfolg, sondern erschweren auch die soziale und kulturelle Integration @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
 
 
-*User Journey*
-Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dokumentiert Kontaktpunkte und Herausforderungen während des Prozesses. Sie wird vollständig im Anhang bereitgestellt. Mithilfe der User Journey ist es möglich die Emotionen und die Situation der Nutzer zu bestimmten Zeiten und bei bestimmten Aktionen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten.
-#highlight[Verweis auf den Anhang, Bild einfügen?]
-
 *Herausforderungen und aktuelle Probleme*
+- *Pain Points:* Häufige Probleme sind lange Bearbeitungszeiten, fehlende Rückmeldungen und Unsicherheiten im Prozess.
 
 - *Abhängigkeiten:* Prozesse wie die Visabeantragung sind stark von der Zulassung abhängig und können auch nicht vorher begonnen werden.
 - *Keine Rückmeldungen:* Universitäten antworten oft nicht rechtzeitig und geben keine Informationen darüber, wie lange auf eine Antwort gewartet werden muss.
@@ -146,6 +150,13 @@ Zu den häufigsten Herausforderungen zählen die Wohnungssuche, Sprachbarrieren,
 - *Prozessbegleitung:* Schritt-für-Schritt-Anleitungen mit Erinnerungen.
 - *Dokumentenverwaltung:* Zentralisierte Verwaltung und einfache Einreichung.
 - *Mehrsprachigkeit:* Unterstützung in Englisch und Deutsch.
+
+#highlight[Es wurden gesamt nur 2 Interviews mit Studierenden aus der Nicht-EU durchgeführt.]
+
+*User Journey*
+Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. Dies ermöglichte es, die Emotionen und Situationen der Nutzer in bestimmten Phasen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten. Sie wird vollständig im Anhang bereitgestellt. #highlight[Verweis auf den Anhang -> Link]
+
+#highlight[Ausschnitt einer Phase mit Erklärung zu den Inhalten aus der User Journey]
 
 
 // ###############################################################################
