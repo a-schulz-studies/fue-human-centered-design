@@ -60,20 +60,22 @@ Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen u
 \
 *HCD-Prozess*
 #oasis-align(
-int-dir:-1,
-[Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
- - *Planung:* Definition von Zielen und Einbindung der Stakeholder.
- - *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
- - *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
- - *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
- #footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
-  und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
- - *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.],
-  figure(image("images/HCD-Prozess.png", width: 95%),
-  caption: [
-    HCD-Prozess nach Farooqui et al. 2019
-  ],
-))
+  int-dir: -1,
+  [Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
+    - *Planung:* Definition von Zielen und Einbindung der Stakeholder.
+    - *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
+    - *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
+    - *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
+    #footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
+    und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
+    - *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.],
+  figure(
+    image("images/HCD-Prozess.png", width: 95%),
+    caption: [
+      HCD-Prozess nach Farooqui et al. 2019
+    ],
+  ),
+)
 
 #pagebreak()
 Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nutzer und ihrer Anforderungen, um Designentscheidungen zu unterstützen. Hier kommen Werkzeuge wie Personas, Benutzergruppenprofile und User Journey Maps zum Einsatz:
@@ -94,6 +96,8 @@ Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nut
 // ###############################################################################
 
 = Analyse der Nutzerbedürfnisse
+
+#highlight[Es wurden gesamt nur 2 Interviews mit Studierenden aus der Nicht-EU durchgeführt.]
 
 Die Analyse der Nutzerbedürfnisse ist ein zentraler Bestandteil des Designprozesses, um eine benutzerfreundliche und effektive Lösung für internationale Studierende in Deutschland zu entwickeln.
 Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU und Nicht-EU Ländern. Diese Profile wurden durch Interviews mit Austauschstudierenden weiter verfeinert, um die spezifischen Bedürfnisse, Herausforderungen und Ziele der Nutzer zu verstehen.
@@ -119,27 +123,63 @@ Ein semistrukturierter Interviewleitfaden wurde entwickelt, um die Erfahrungen, 
 - Umstände und Umgebung während den Schritten
 - Verbesserungsideen
 
-*Ergebnisse*
-- *Motivationen und Ziele:* Studierende möchten sich auf ihr Studium konzentrieren und eine hochwertige und international anerkannte Ausbildung genießen.
-- Kontaktpunkte und Informationsquellen
-- Herausforderungen und Probleme
-- verwendete Geräte
-- Umstände / Umgebung (mobile Recherche, Desktop)
+== Motivationen und Ziele
 
-Während studienbezogene Gründe wie bessere Berufschancen, interessante Studienangebote und forschungsorientierte Lehrformen eine zentrale Rolle bei der Entscheidung für ein Studium in Deutschland spielen, tragen auch landesbezogene Aspekte wie die hohe Lebensqualität und finanzielle Erschwinglichkeit dazu bei. Jedoch variieren die Beweggründe und Schwierigkeiten stark je nach Herkunftsregion und finanziellen Möglichkeiten der Studierenden. Diese Herausforderungen beeinträchtigen nicht nur den Studienerfolg, sondern erschweren auch die soziale und kulturelle Integration @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
+Die Interviews mit Austauschstudierenden haben eine Vielzahl von Motivationen und Zielen aufgezeigt, die ihre Entscheidung für ein Studium in Deutschland beeinflussen. Diese lassen sich wie folgt zusammenfassen:
+
+- *Hochwertige Ausbildung:* Deutschland wird aufgrund seiner international anerkannten, qualitativ hochwertigen und zugleich erschwinglichen Ausbildung geschätzt.
+- *Praxisorientierter Ansatz:* Deutsche Hochschulen bieten praxisnahe Lehrkonzepte, die von den Studierenden als Vorteil gegenüber rein theoretischen Ansätzen wahrgenommen werden.
+- *Bessere Berufsaussichten:* Ein deutscher Abschluss gilt als Karrieresprungbrett, da er international hohe Anerkennung genießt und die Chancen auf dem Arbeitsmarkt verbessert.
+- *Kultureller Austausch:* Viele Studierende sind motiviert, die deutsche Kultur kennenzulernen und Kontakte zu anderen internationalen Studierenden zu knüpfen.
+- *Persönliche Weiterentwicklung:* Das Auslandsstudium wird als Möglichkeit gesehen, neue Erfahrungen zu sammeln, Herausforderungen zu meistern und sich persönlich weiterzuentwickeln.
+- *Reisen:* Die zentrale Lage Deutschlands in Europa bietet die Gelegenheit, während des Studiums andere europäische Länder zu bereisen.
+- *Erfolgreicher Studienabschluss:* Im Mittelpunkt der Ziele steht für die meisten Studierenden der erfolgreiche Abschluss ihres Studiums.
+- *Verbesserung der Sprachkenntnisse:* Viele Studierende streben an, ihre Deutschkenntnisse während ihres Aufenthalts zu vertiefen und somit ihre Integration und beruflichen Perspektiven zu fördern.
+
+Diese Erkenntnisse stimmen mit den Ergebnissen aus der Literatur überein: Studienbezogene Gründe wie bessere Berufsaussichten, innovative Studienangebote und forschungsorientierte Lehrmethoden sind zentrale Entscheidungskriterien für ein Studium in Deutschland @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen. Ebenso tragen landesbezogene Faktoren wie die hohe Lebensqualität, Sicherheit und finanzielle Erschwinglichkeit dazu bei, dass Deutschland ein attraktives Ziel für Studierende weltweit ist.
 
 
-*Herausforderungen und aktuelle Probleme*
-- *Pain Points:* Häufige Probleme sind lange Bearbeitungszeiten, fehlende Rückmeldungen und Unsicherheiten im Prozess.
 
-- *Abhängigkeiten:* Prozesse wie die Visabeantragung sind stark von der Zulassung abhängig und können auch nicht vorher begonnen werden.
-- *Keine Rückmeldungen:* Universitäten antworten oft nicht rechtzeitig und geben keine Informationen darüber, wie lange auf eine Antwort gewartet werden muss.
-- *Kritischer Pfad:* Prozesse wie das Visum sind zeitkritisch und beeinflussen andere Aufgaben. Ein verspätetes Durchführen von bestimmten Prozessen führt fast ausschließlich zu einem verspäteten Studienstart.
-- *Orientierungslosigkeit:* Studierende wissen oft nicht, wie gut sie im Zeitplan sind.
-- *Wohnungssuche:* Schwierigkeit, seriöse Angebote zu finden.
-#highlight[Siehe Interview Output]
+== Herausforderungen und aktuelle Probleme
 
-Zu den häufigsten Herausforderungen zählen die Wohnungssuche, Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie die Orientierung im deutschen Studiensystem. Beispielsweise haben 47 % der ausländischen Studierenden große Probleme, eine passende Unterkunft zu finden, und 34 % kämpfen mit erheblichen Sprachproblemen. Auch die Anerkennung von Vorleistungen sowie bürokratische Prozesse wie Visa- und Anmeldeverfahren erschweren den Studierenden den Einstieg in das Studium @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
+Der Übergang in ein Studium in Deutschland ist für viele internationale Studierende mit zahlreichen Herausforderungen verbunden. Die Interviews haben gezeigt, dass die Schwierigkeiten in verschiedenen Bereichen auftreten:
+
+*Bewerbungsprozess:*
+- Verzögerungen bei Rückmeldungen der Universitäten führen zu Unsicherheiten und Ängsten.
+- Die Handhabung und Einreichung physischer Dokumente wird als unnötig kompliziert und zeitaufwändig empfunden, wobei auch die Sorge vor dem Verlust originaler Unterlagen besteht.
+- Der Bewerbungsprozess umfasst viele Schritte und erfordert einen erheblichen Zeitaufwand.
+
+*Visaprozess:*
+- Lange Bearbeitungszeiten und unklare Verzögerungen im System erschweren die Visumerteilung.
+- Schwierigkeiten bei der Terminvereinbarung und bürokratische Hindernisse wie das neue APS-Verfahren erhöhen die Komplexität.
+- Probleme entstehen, wenn das Visum an den falschen Aufenthaltsort gebunden ist.
+
+*Unterkunft:*
+- Die Wohnungssuche gestaltet sich als große Herausforderung, insbesondere durch die begrenzte Verfügbarkeit von Wohnheimen und die Unsicherheit bei der Verifizierung von Angeboten.
+- Studierende mit einem zweiten Master stehen vor zusätzlichen Hindernissen bei der Wohnraumbeschaffung.
+
+*Kulturelle und bürokratische Hürden:*
+- Sprachbarrieren in Ämtern und im Alltag erschweren die Kommunikation, da Englisch oft nicht ausreichend unterstützt wird.
+- Unübersichtliche und sich ändernde Vorschriften, insbesondere bei der Stadtregistrierung, führen zu Verwirrung.
+- Soziale Integration bleibt schwierig, da Kontakte zu deutschen Kommilitonen oft limitiert sind.
+- Es fehlt an klaren Informationen über Vergünstigungen oder Anmeldeverfahren.
+
+*Finanzielle Aspekte:*
+- Hohe Vorauszahlungen für Vermittler, Visa und Unterkünfte belasten viele Studierende finanziell.
+- Einschränkungen im finanziellen Spielraum stellen für einige eine erhebliche Hürde dar.
+
+*Orientierung und Information:*
+- Viele Studierende fühlen sich nach der Ankunft orientierungslos und erhalten unzureichende Informationen über die nächsten Schritte.
+- Prozesse und Zeitpläne sind oft unübersichtlich, was zu Unsicherheiten führt.
+
+*Weitere Herausforderungen:*
+- Die Anerkennung von Vorleistungen und Probleme bei der Konvertierung von ECTS-Punkten erschweren den akademischen Einstieg.
+- Jobmöglichkeiten sind aufgrund von Visabestimmungen stark eingeschränkt.
+
+*Ergebnisse aus der Literatur*
+Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut @beateapolinarskiAuslaendischeStudierendeDeutschland2018 und @morris2019demografischen zählen Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie Orientierung im deutschen Studiensystem zu den häufigsten Problemen. Besonders die Wohnungssuche gestaltet sich problematisch – 47 % der Studierenden berichten von großen Schwierigkeiten, eine Unterkunft zu finden, während 34 % erhebliche Sprachprobleme angeben. Auch bürokratische Prozesse, wie die Visa- und Anmeldeverfahren, und die Anerkennung von Vorleistungen gehören zu den häufigsten Hindernissen.
+
+Diese Erkenntnisse zeigen, dass die Optimierung bürokratischer Prozesse und die Bereitstellung klarer Informationen entscheidend sind, um den Studierenden den Übergang zu erleichtern.
 
 
 *Verbesserungsideen*
@@ -151,14 +191,21 @@ Zu den häufigsten Herausforderungen zählen die Wohnungssuche, Sprachbarrieren,
 - *Dokumentenverwaltung:* Zentralisierte Verwaltung und einfache Einreichung.
 - *Mehrsprachigkeit:* Unterstützung in Englisch und Deutsch.
 
-#highlight[Es wurden gesamt nur 2 Interviews mit Studierenden aus der Nicht-EU durchgeführt.]
 
 *User Journey*
 Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. Dies ermöglichte es, die Emotionen und Situationen der Nutzer in bestimmten Phasen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten. Sie wird vollständig im Anhang bereitgestellt. #highlight[Verweis auf den Anhang -> Link]
 
 #highlight[Ausschnitt einer Phase mit Erklärung zu den Inhalten aus der User Journey]
 
+#highlight[
+  - Kontaktpunkte und Informationsquellen
+  - Herausforderungen und Probleme
+  - verwendete Geräte
+  - Umstände / Umgebung (mobile Recherche, Desktop)
+]
 
+
+#highlight[Verweis ich kann nichts am Prozess ändern und der lange Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 // ###############################################################################
 // ###############################################################################
 // ###############################################################################

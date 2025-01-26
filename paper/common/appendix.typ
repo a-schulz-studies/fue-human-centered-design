@@ -16,6 +16,15 @@
 == Personas
 == User Journey
 
+*Kontaktpunkte und Informationsquellen:*
+- Universitätsportale
+- DAAD
+- Uni-Assist
+- Websites wie mastersportal.com, studying-in-germany.org
+- Persönliche Kontakte und WG-Mitbewohner
+- Studentenorganisationen
+- Webseite der Landeshauptstadt Dresden
+
 #pagebreak()
 = Ergänzendes Material zum Prototypen
 == Screenshots des Prototypen
