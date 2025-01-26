@@ -88,16 +88,17 @@ Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nut
 
 = Analyse der Nutzerbedürfnisse
 
-Zu Analyse der Nutzerbedürfnisse werden im Rahmen des HCD Interviews mit Austauschstudierenden durchgeführt, um ihre Herausforderungen, Motivationen und Ziele besser zu verstehen. Dadurch können gezielt Nachfragen zu den Problemen und aktuellen Hürden gestellt und erläutert werden.
+Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU und Nicht-EU Ländern. Diese Profile wurden durch Interviews mit Austauschstudierenden weiter verfeinert, um die spezifischen Bedürfnisse, Herausforderungen und Ziele der Nutzer zu verstehen.
+
+Zusätzlich wurden Personas erstellt, um die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp zu konkretisieren. Die Personas repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten. Personas wurden erstellt, um die unterschiedlichen Bedürfnisse und Herausforderungen der Studierenden zu repräsentieren. Diese unterstützen die Entwicklung eines Prototyps, der auf spezifische Nutzergruppen eingeht.
+
+Zur Analyse der Nutzerbedürfnisse werden im Rahmen des HCD-Prozess Interviews mit Austauschstudierenden durchgeführt, um ihre Herausforderungen, Motivationen und Ziele besser zu verstehen.
+Erläutere die Vorteile von Interviews:
+Dadurch können gezielt Nachfragen zu den Problemen und aktuellen Hürden gestellt und erläutert werden. ...
+Interviews dienen dazu Bedürfnisse zu verstehen und Qualitätsziele abzuleiten.
 
 *Zielgruppe*
 Die Zielgruppe umfasst neue Austauschstudierende an der HTW Dresden, da diese sich noch besonders gut an die vor kurzem durchlaufenden Prozesse erinnern.
-
-Interviews dienen dazu Bedürfnisse zu verstehen und Qualitätsziele abzuleiten. Außerdem können im Vorfeld und durch die Interviews
-
-*Personas:* Personas wurden erstellt, um die unterschiedlichen Bedürfnisse und Herausforderungen der Studierenden zu repräsentieren. Diese unterstützen die Entwicklung eines Prototyps, der auf spezifische Nutzergruppen eingeht.
-
-Diese können grundlegend in zwei Benutzergruppenprofile unterschieden werden: Austauschstudierende aus EU und Nicht-EU Ländern
 
 
 *Schwerpunkte der Interviews*
@@ -118,7 +119,7 @@ Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Them
 - verwendete Geräte
 - Umstände / Umgebung (mobile Recherche, Desktop)
 
-Während studienbezogene Gründe wie bessere Berufschancen, interessante Studienangebote und forschungsorientierte Lehrformen eine zentrale Rolle bei der Entscheidung für ein Studium in Deutschland spielen, tragen auch landesbezogene Aspekte wie die hohe Lebensqualität und finanzielle Erschwinglichkeit dazu bei. Jedoch variieren die Beweggründe und Schwierigkeiten stark je nach Herkunftsregion und finanziellen Möglichkeiten der Studierenden. Diese Herausforderungen beeinträchtigen nicht nur den Studienerfolg, sondern erschweren auch die soziale und kulturelle Integration.
+Während studienbezogene Gründe wie bessere Berufschancen, interessante Studienangebote und forschungsorientierte Lehrformen eine zentrale Rolle bei der Entscheidung für ein Studium in Deutschland spielen, tragen auch landesbezogene Aspekte wie die hohe Lebensqualität und finanzielle Erschwinglichkeit dazu bei. Jedoch variieren die Beweggründe und Schwierigkeiten stark je nach Herkunftsregion und finanziellen Möglichkeiten der Studierenden. Diese Herausforderungen beeinträchtigen nicht nur den Studienerfolg, sondern erschweren auch die soziale und kulturelle Integration @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
 
 
 *User Journey*
@@ -154,11 +155,14 @@ Zu den häufigsten Herausforderungen zählen die Wohnungssuche, Sprachbarrieren,
 
 = Ist-Prozess Analyse
 
+Ist Prozess Analyse zum Abgleich mit dem wahrgenommenen Prozess und um den Prototypen sowohl an den Nutzerbedürfnissen auszurichten als auch den konkreten Inhalt des Prozesses zu erfassen, damit eine zugeschnittene und keine generische Lösung entsteht.
+
 Die Prozesse wurden mithilfe von Process Mining analysiert, um Engpässe, Abhängigkeiten und notwendige Dokuemnte zu identifizieren. Ein Knowledge Graph wurde erstellt, um die Verbindungen zwischen einzelnen Schritten zu visualisieren.
 
 Der extrahierte und strukturierte Prozess sollte gleichzeitig als Input für die Anwendung verwendet werden, damit diese noch im zeitlichen Rahmen mit den Interviewpartnern evaluiert werden kann.
 
 #highlight[Kann ich diesen Punkt noch mit zu einem anderden zusammenfassen?]
+#highlight[Verweis auf den Anhang, Bild einfügen?]
 
 = Konzeption und Design des Prototyps
 
