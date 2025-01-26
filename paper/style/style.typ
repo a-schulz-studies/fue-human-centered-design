@@ -20,7 +20,7 @@
     ),
     numbering: "I",
     number-align: right,
-    header: {
+    header: context {
       set align(right)
       set text(style: "italic") //should be size 10pt but looks shitty
       hydra(fallback-next: true, top-margin: 3cm)
@@ -135,17 +135,17 @@
   //pagebreak()
   //heading(numbering: none)[Abkürzungsverzeichnis]
   //locate(loc => usedAcronyms
-//    .final(loc)
-//    .pairs()
-//    .filter(x => x.last())
-//    //.map(pair => pair.first())
-//    //.sorted()
-//    //.map(key => grid(
-//        columns: (auto, auto, auto),
-//        gutter: 0em,
-//        strong(key), repeat([.]), acronyms.at(key),
-//      ))
-//    .join())
+  //    .final(loc)
+  //    .pairs()
+  //    .filter(x => x.last())
+  //    //.map(pair => pair.first())
+  //    //.sorted()
+  //    //.map(key => grid(
+  //        columns: (auto, auto, auto),
+  //        gutter: 0em,
+  //        strong(key), repeat([.]), acronyms.at(key),
+  //      ))
+  //    .join())
 
   // List of figures.
   pagebreak()

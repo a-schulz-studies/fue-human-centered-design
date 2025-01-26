@@ -41,7 +41,7 @@ Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studieren
 
 *Vorgehensweise*
 
-Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD), um die Perspektiven und Bedürfnisse der Zielgruppe in den Mittelpunkt zu stellen. Durch die iterative Einbindung von Nutzerfeedback wird ein praxisnaher und bedarfsgerechter Prototyp entwickelt. Dieser Ansatz gewährleistet, dass die erarbeiteten Lösungen den realen Anforderungen der Studierenden gerecht werden und ihnen die bürokratischen Abläufe erleichtern.
+Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD) angewandt, um die Perspektiven und Bedürfnisse der Zielgruppe in den Mittelpunkt zu stellen. Durch die iterative Einbindung von Nutzerfeedback wird ein praxisnaher und bedarfsgerechter Prototyp entwickelt. Dieser Ansatz gewährleistet, dass die erarbeiteten Lösungen den realen Anforderungen der Studierenden gerecht werden und ihnen die bürokratischen Abläufe erleichtern.
 
 // ###############################################################################
 // ###############################################################################
@@ -50,20 +50,24 @@ Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD), um die Pe
 
 = Methode des Human-Centered Design (HCD)
 
-*Human-Centered Design (HCD)* ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Ziel ist es, benutzerfreundliche Lösungen zu schaffen, die effizient und effektiv sind. HCD basiert auf den Prinzipien @farooquiImpactHumanCenteredDesign2019:
+Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Ziel ist es, benutzerfreundliche Lösungen zu schaffen, die effizient und effektiv sind. HCD basiert auf den Prinzipien @farooquiImpactHumanCenteredDesign2019:
 - *Fokus auf Menschen:* Nutzerbedürfnisse stehen im Vordergrund.
 - *Partizipation:* Nutzer*innen sind aktiv am Designprozess beteiligt.
 - *Iterativer Ansatz:* Entwicklung in Zyklen von Beobachten, Testen und Verbessern.
 - *Kontext:* Soziale, kulturelle und technische Faktoren werden berücksichtigt.
-
-*Der HCD-Prozess*
+\
+*HCD-Prozess*
 
 Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
 - *Planung:* Definition von Zielen und Einbindung der Stakeholder.
 - *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
 - *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
-- *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low- und High-Fidelity.
+- *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
+#footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
+ und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
 - *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.
+
+\
 
 Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nutzer und ihrer Anforderungen, um Designentscheidungen zu unterstützen. Hier kommen Werkzeuge wie Personas, Benutzergruppenprofile und User Journey Maps zum Einsatz:
 
@@ -107,7 +111,7 @@ Ein semistrukturierter Interviewleitfaden wurde verwendet, die besprochenen Them
 - Aktivitäten nach der Ankunft
 
 *Ergebnisse*
-- *Pain Points:* Häufige Probleme sind lange Bearbeitungszeiten, fehlende Rückmeldungen und Unsicherheiten im Prozess. 
+- *Pain Points:* Häufige Probleme sind lange Bearbeitungszeiten, fehlende Rückmeldungen und Unsicherheiten im Prozess.
 - *Motivationen und Ziele:* Studierende möchten sich auf ihr Studium konzentrieren und eine hochwertige und international anerkannte Ausbildung genießen.
 - Kontaktpunkte und Informationsquellen
 - Herausforderungen und Probleme
@@ -199,7 +203,7 @@ Sind einfacher zu verstehen als ein riesiger Text.
 = Diskussion und Ausblick
 
 *Zusammenfassung der Ergebnisse*
-Der Prototyp adressiert die Pain Points der Studierenden und bietet personalisierte, proaktive Unterstützung. 
+Der Prototyp adressiert die Pain Points der Studierenden und bietet personalisierte, proaktive Unterstützung.
 
 *Validierung und Iterationen*
 Die Funktionen und das Design müssen durch Nutzerfeedback validiert und iterativ verbessert werden.
