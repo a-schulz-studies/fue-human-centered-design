@@ -108,7 +108,7 @@
   // --- Table of Contents ---
   show outline.entry.where(level: 1): it => {
     //if outline.entry != image and it.kind != table{
-    show: strong
+    //show: strong
     v(1pt, weak: false)
     let params = it.fields()
     //if-condition to prevent recursion
@@ -149,37 +149,6 @@
 
   // List of figures.
   pagebreak()
-
-  //   show outline.entry: it => {
-  //   if it.at("label", default: none) == <modified-entry> {
-  //     it // prevent infinite recursion
-  //   } else {
-  //     let caption = it.body
-  //     let elem-label = it.element.at("label", default: none)
-  //     if elem-label != none {
-  //       let caption-label = label(repr(elem-label).slice(1, -1) + "-caption")
-  //       caption = locate(loc => {
-  //         let q = query(selector(metadata).and(selector(caption-label)), loc)
-  //         if q.len() > 0 {
-  //           let short-caption = q.first().value
-  //           let figure-number = numbering("1", ..it.element.counter.at(it.element.caption.location))
-  //           [#it.element.supplement #figure-number: #short-caption]
-  //         } else {
-  //           it.body
-  //         }
-  //       })
-  //     }
-  //     [#outline.entry(
-  //         it.level,
-  //         it.element,
-  //         caption,
-  //         it.fill,
-  //         it.page,
-  //       ) <modified-entry>
-  //     ]
-  //   }
-  // }
-
   heading(numbering: none)[Abbildungsverzeichnis]
   outline(
     title: none,
