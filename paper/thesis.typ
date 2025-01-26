@@ -138,8 +138,6 @@ Die Interviews mit Austauschstudierenden haben eine Vielzahl von Motivationen un
 
 Diese Erkenntnisse stimmen mit den Ergebnissen aus der Literatur überein: Studienbezogene Gründe wie bessere Berufsaussichten, innovative Studienangebote und forschungsorientierte Lehrmethoden sind zentrale Entscheidungskriterien für ein Studium in Deutschland @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen. Ebenso tragen landesbezogene Faktoren wie die hohe Lebensqualität, Sicherheit und finanzielle Erschwinglichkeit dazu bei, dass Deutschland ein attraktives Ziel für Studierende weltweit ist.
 
-
-
 == Herausforderungen und aktuelle Probleme
 
 Der Übergang in ein Studium in Deutschland ist für viele internationale Studierende mit zahlreichen Herausforderungen verbunden. Die Interviews haben gezeigt, dass die Schwierigkeiten in verschiedenen Bereichen auftreten:
@@ -177,23 +175,67 @@ Der Übergang in ein Studium in Deutschland ist für viele internationale Studie
 - Jobmöglichkeiten sind aufgrund von Visabestimmungen stark eingeschränkt.
 
 *Ergebnisse aus der Literatur*
-Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut @beateapolinarskiAuslaendischeStudierendeDeutschland2018 und @morris2019demografischen zählen Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie Orientierung im deutschen Studiensystem zu den häufigsten Problemen. Besonders die Wohnungssuche gestaltet sich problematisch – 47 % der Studierenden berichten von großen Schwierigkeiten, eine Unterkunft zu finden, während 34 % erhebliche Sprachprobleme angeben. Auch bürokratische Prozesse, wie die Visa- und Anmeldeverfahren, und die Anerkennung von Vorleistungen gehören zu den häufigsten Hindernissen.
 
+Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut Beate Apolinarski und Tasso Brandt (2018) und Morris-Lange (2019) zählen Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie Orientierung im deutschen Studiensystem zu den häufigsten Problemen. Besonders die Wohnungssuche gestaltet sich problematisch – 47 % der Studierenden berichten von großen Schwierigkeiten, eine Unterkunft zu finden, während 34 % erhebliche Sprachprobleme angeben. Auch bürokratische Prozesse, wie die Visa- und Anmeldeverfahren, und die Anerkennung von Vorleistungen gehören zu den häufigsten Hindernissen @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
+
+\
 Diese Erkenntnisse zeigen, dass die Optimierung bürokratischer Prozesse und die Bereitstellung klarer Informationen entscheidend sind, um den Studierenden den Übergang zu erleichtern.
 
+== Weitere Erkenntnisse aus der Analyse der Nutzerbedürfnisse
 
-*Verbesserungsideen*
+Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sowohl die genutzten Geräte als auch konkrete Probleme und mögliche Verbesserungsideen betreffen:
 
-#highlight[Siehe Interview Output]
+*Verwendete Geräte:*
+- Laptops sind das bevorzugte Gerät für Recherchen, insbesondere bei komplexeren Aufgaben.
+- Mobilgeräte werden ergänzend genutzt, um mobil kleinere Recherchen durchzuführen.
 
-- *Indikatoren:* Fortschrittsbalken und Ampelsystem zur Anzeige des Status.
-- *Prozessbegleitung:* Schritt-für-Schritt-Anleitungen mit Erinnerungen.
-- *Dokumentenverwaltung:* Zentralisierte Verwaltung und einfache Einreichung.
-- *Mehrsprachigkeit:* Unterstützung in Englisch und Deutsch.
+//*Konkrete Beispiele:*
+//  - Schwierigkeiten bei der Umrechnung von ECTS-Punkten stellen eine Herausforderung dar.
+//  - Das APS-Verfahren, insbesondere für Masterstudierende aus Indien, führt zu erheblichen Verzögerungen.
+\
+*Verbesserungsideen:*
+
+Auf Nachfrage wurden in den Interviews konkrete Verbesserungsvorschläge genannt, um die bürokratischen Prozesse für internationale Studierende zu erleichtern:
+
+*Optimierung des Visa-Prozesses:*
+- Regelmäßige Verfügbarkeit von Visum-Slots, um Wartezeiten zu minimieren.
+- Vereinfachte und klarere Prozesse für die Beantragung von Visa, mit Fokus auf schnellere Bearbeitung und Terminvergabe.
+
+*Frühzeitige Zulassungsbenachrichtigungen:*
+- Universitäten sollten die Ergebnisse von Zulassungen oder Ablehnungen schneller bereitstellen, idealerweise innerhalb kürzerer Fristen (statt 2-3 Monate), um Studierenden mehr Zeit für die weiteren Schritte wie Visum, Unterkunft und Reisevorbereitungen zu geben.
+
+*Digitalisierung der Prozesse:*
+- Ersetzung physischer Dokumenteneinreichungen durch vollständig digitale Prozesse zur Reduzierung von Redundanzen und Steigerung der Effizienz.
+- Entwicklung zentraler Plattformen für die Verwaltung und Einreichung aller notwendigen Dokumente.
+
+*Schritt-für-Schritt-Unterstützung:*
+- Bereitstellung eines digitalen Tools mit:
+  - *Dokumentenchecklisten* für Visa, Krankenversicherung und Aufenthaltsanmeldung.
+  - *Schritt-für-Schritt-Anleitungen* für wichtige Prozesse wie Anmeldung und Aufenthaltsgenehmigungen.
+  - *Erinnerungen und Benachrichtigungen* zu Fristen und Terminen.
+
+*Mehrsprachige Unterstützung:*
+- Tools und Webseiten sollten sowohl in Deutsch als auch Englisch verfügbar sein, um Sprachbarrieren zu überwinden.
+
+*Integration hilfreicher Funktionen:*
+- *Kostenkalkulatoren* zur Budgetplanung.
+- *Terminbuchungs-Tools* für Behörden.
+- Unterstützung bei der Übersetzung von Dokumenten.
+- *Vernetzungsmöglichkeiten* mit anderen internationalen Studierenden.
+- *Notfallkontakte* und Informationen zu Arbeitsmöglichkeiten sowie Karriere- und Aufenthaltsgenehmigungen.
+
+Diese Maßnahmen würden nicht nur die Bürokratie vereinfachen, sondern auch eine effizientere Planung und Integration der Studierenden in Deutschland ermöglichen.
+
 
 
 *User Journey*
-Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. Dies ermöglichte es, die Emotionen und Situationen der Nutzer in bestimmten Phasen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten. Sie wird vollständig im Anhang bereitgestellt. #highlight[Verweis auf den Anhang -> Link]
+Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. Dies ermöglichte es, die Emotionen und Situationen der Nutzer in bestimmten Phasen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten. Sie wird vollständig im Anhang bereitgestellt.
+
+\
+Die Analyse der Nutzerbedürfnisse hat gezeigt, dass internationale Studierende mit einer Vielzahl von Herausforderungen konfrontiert sind, die von bürokratischen Hürden über sprachliche Barrieren bis hin zu sozialen Integrationsschwierigkeiten reichen. Die Entwicklung einer App mit den genannten Features kann dazu beitragen, diese Herausforderungen zu minimieren und den Studierenden einen erfolgreichen und angenehmen Aufenthalt in Deutschland zu ermöglichen.
+
+
+#highlight[Verweis auf den Anhang -> Link]
 
 #highlight[Ausschnitt einer Phase mit Erklärung zu den Inhalten aus der User Journey]
 
@@ -223,6 +265,73 @@ Der extrahierte und strukturierte Prozess sollte gleichzeitig als Input für die
 #highlight[Verweis auf den Anhang, Bild einfügen?]
 
 = Konzeption und Design des Prototyps
+
+Die Entwicklung einer App sollte folgende Ziele verfolgen:
+Schnelle und einfache Orientierung in Deutschland und Bewältigung bürokratischer Prozesse
+Einfacher Zugang zu relevanten Informationen und Ressourcen
+Austausch mit anderen Studenten und Aufbau eines Netzwerks
+Optimale Nutzung des Aufenthalts und der Möglichkeiten des kulturellen Austauschs
+Berücksichtigung der persönlichen Bedürfnisse und Interessen der Studenten
+Wichtige Features für eine App== Basierend auf den Ergebnissen der Analyse wurden folgende Features als besonders wichtig identifiziert:
+Priorität 1 (Unmittelbar wichtig):
+Dokumenten-Checkliste mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung
+Erinnerung an Deadlines
+Mehrsprachige Unterstützung (Englisch, Deutsch)
+Schritt-für-Schritt-Anleitungen für Visum, Anmeldung, Aufenthaltserlaubnis
+Erasmus-spezifische Informationen
+Informationen zum Visumprozess mit allen wichtigen Dokumenten
+
+Informationen zur Krankenversicherung mit Vergleich gesetzlicher und privater Optionen
+. *   Rechner für ECTS-Konvertierung. * Informationen zum Sperrkonto
+
+Priorität 2 (Planung und Sicherheit):
+◦
+Informationen zu Kultur und Orientierung (ÖPNV, Unterschiede)
+Integration studentischer Hilfsorganisationen mit Kontaktdaten
+Notfallkontakte wie Polizei, Krankenwagen, Botschaften
+Seriöse Links zu Wohnungsportalen
+
+Priorität 3 (Soziale und berufliche Integration):
+◦
+Kostenrechner zur Planung von Semestergebühren, Miete und Versicherungen
+Terminbuchungsfunktion für Behörden
+Vernetzungsfunktionen für Studenten
+Dokumentenübersetzung für behördliche Kommunikation
+Feedback-Funktion für Verbesserungsvorschläge
+Informationen zu Teilzeitjobs
+Unterstützung bei der Arbeitserlaubnis
+
+Priorität 4 (Erweiterte Funktionen):
+◦
+Integration von Behörden-APIs zur Abfrage des Antragsstatus
+
+Priorität 5 (Zusätzliche Funktionen):
+•
+Reduzierung von Papierkram durch digitale Dokumenteneinreichung
+
+Multi-Language Support
+
+Netzwerk Möglichkeiten
+. * Notfallkontakte. * Karriere und Arbeitserlaubnisberatung
+.
+==Nicht-Funktionale Anforderungen==
+•
+Mobile Nutzung: Die App sollte responsiv und für die mobile Nutzung optimiert sein, mit weniger Text und der Möglichkeit, Sitzungen zu unterbrechen
+
+Benutzerfreundlichkeit: Die App sollte intuitiv und einfach zu bedienen sein.
+
+
+| **Priorität** | **Beschreibung** | **Nutzergruppe** |
+| ------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| **1** | **Dokumenten-Checkliste** mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung etc. | Alle Austauschstudenten |
+| **1** | **Erinnerung an Deadlines** um wichtige Termine nicht zu verpassen | Alle Austauschstudenten |
+| **1** | **Mehrsprachige Unterstützung**, mindestens in Englisch und Deutsch, für sprachliche Barrieren. | Alle Austauschstudenten |
+| **1** | **Schritt-für-Schritt-Anleitungen** für Visum, Anmeldung, Aufenthaltserlaubnis und andere Prozesse. | Alle Austauschstudenten |
+| **1.1** | **Erasmus-spezifische Informationen** zu Programmen und Schritten. | Erasmus-Studenten |
+| **1.2** | **Informationen zum Visumprozess** mit allen wichtigen Dokumenten | Nicht EU Austauschstudenten |
+| **1.2** | **Informationen zur Krankenversicherung**, mit Vergleich gesetzlicher und privater Optionen. | Nicht EU Austauschstudenten |
+| **1.2** | **Rechner zum Konvertieren von ECTs** um zu prüfen, ob die Anforderungen an den Universitäten erfüllt werden. | Nicht EU Austauschstudenten |
+
 
 Die Funktionen des Prototypen beruhen auf den Erkenntnissen aus den Interviews aus #highlight[Kreuzverweis] Erkenntnissen der Interviews.
 
