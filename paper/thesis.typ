@@ -36,7 +36,7 @@ Die bürokratischen Prozesse in Deutschland sind für viele ausländische Studie
 
 *Zielsetzung*
 
-Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studierende bei bürokratischen Prozessen unterstützt und diese vereinfacht. Der Prototyp soll individuelle Bedürfnisse berücksichtigen und durch klare Anleitungen, gezieltes Feedback sowie hilfreiche Funktionen den Studierenden dabei helfen, die administrativen Anforderungen effizient und rechtzeitig zu bewältigen.
+Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studierende bei bürokratischen Prozessen unterstützt und diese vereinfacht. Der Prototyp soll individuelle Bedürfnisse berücksichtigen und durch klare Anleitungen, gezieltes Feedback sowie hilfreiche Funktionen den Studierenden dabei helfen, die administrativen Anforderungen effizient und rechtzeitig zu bewältigen. Eine Veränderung oder Optimierung der Prozesse selbst, liegt nicht im Rahmen dieser Arbeit.
 
 *Forschungsfrage*
 
@@ -121,7 +121,7 @@ Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"
 
 Die Interviews wurden transkribiert #footnote[#link(label("interviewtranscripts"))[Anhang], @interviewtranscripts] und analysiert, um die wichtigsten Erkenntnisse zu identifizieren und die Bedürfnisse der Studierenden zu verstehen.
 
-== Motivationen und Ziele
+== Motivationen und Ziele der Studierenden
 
 Die Interviews mit Austauschstudierenden haben eine Vielzahl von Motivationen und Zielen aufgezeigt, die ihre Entscheidung für ein Studium in Deutschland beeinflussen. Diese lassen sich wie folgt zusammenfassen:
 
@@ -136,7 +136,7 @@ Die Interviews mit Austauschstudierenden haben eine Vielzahl von Motivationen un
 
 Diese Erkenntnisse stimmen mit den Ergebnissen aus der Literatur überein: Studienbezogene Gründe wie bessere Berufsaussichten, innovative Studienangebote und forschungsorientierte Lehrmethoden sind zentrale Entscheidungskriterien für ein Studium in Deutschland @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen. Ebenso tragen landesbezogene Faktoren wie die hohe Lebensqualität, Sicherheit und finanzielle Erschwinglichkeit dazu bei, dass Deutschland ein attraktives Ziel für Studierende weltweit ist.
 
-== Herausforderungen und aktuelle Probleme
+== Herausforderungen und aktuelle Probleme der Studierenden
 
 Der Übergang in ein Studium in Deutschland ist für viele internationale Studierende mit zahlreichen Herausforderungen verbunden. Die Interviews haben gezeigt, dass die Schwierigkeiten in verschiedenen Bereichen auftreten:
 
@@ -224,22 +224,19 @@ Diese Maßnahmen würden nicht nur die Bürokratie vereinfachen, sondern auch ei
 == Strukturierung der Erkenntnisse als User Journey Map
 
 #figure(
-    image("images/User_Journey_Map_excerpt.png"),
-    caption: [
-      Auschnitt der User Journey Map
-    ],
-  )<userjourneyexcerpt>
+  image("images/User_Journey_Map_excerpt.png"),
+  caption: [
+    Auschnitt der User Journey Map
+  ],
+)<userjourneyexcerpt>
 
-Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. kritische Berührungspunkte zu identifizieren und Optimierungsmöglichkeiten aufzudecken.
+Auf Basis der Interviewergebnisse wurde eine User Journey erstellt, die den gesamten Prozess der Austauschstudierenden visualisiert. Sie zeigt wichtige Kontaktpunkte, typische Herausforderungen und die emotionalen Reaktionen der Studierenden während der verschiedenen Phasen. Ziel der User Journey ist es, kritische Berührungspunkte zu identifizieren und potenzielle Optimierungsmöglichkeiten aufzuzeigen.
 
-Die vollständige User Journey Map ist im #link(label("userjourney"))[Anhang] (@userjourney) zu finden. In @userjourneyexcerpt ist ein Ausschnitt der User Journey Map dargestellt, der einen Einblick in die Struktur und die Inhalte gibt.
-der Ausschnitt zeigt Schritte wie die Auswahl der Universität und die damit verbundenen Aktionen zum Beispiel dem Priorisieren der Universitäten. Außerdem werden Kontaktpunkte wie dei Stabstelle Internationales der HTW Dresden und auch weitere Webseiten genannt.
-zusätzlich werden die Emotionen während der Phase dargestellt, so freue sich die Studierenden zuerst einmal auf das Auslandssemester fühlen sich dann aber während der Recherche durch die vielen Informationen und die unterschiedlichen Informationspunkte überfordert.
+Ein vollständiger Überblick über die User Journey Map befindet sich im #link(label("userjourney"))[Anhang] (@userjourney). In @userjourneyexcerpt ist ein exemplarischer Ausschnitt dargestellt, der Schritte wie die Auswahl der Universität und die Priorisierung von Studienorten zeigt. Dabei werden zentrale Kontaktpunkte, wie die Stabsstelle Internationales der HTW Dresden oder externe Webseiten, aufgeführt.
 
-Eine Vollständige Liste aller Kontaktpunkte befindet sich im #link(label("contactpoints"))[Anhang] @interviewsummary.
+Die User Journey bildet auch die emotionalen Höhen und Tiefen der Studierenden ab: Während zu Beginn die Vorfreude auf das Auslandssemester überwiegt, führt die Fülle an Informationen und die Verteilung auf verschiedene Quellen häufig zu Überforderung während der Recherchephase.
 
-
-Im Rahmen dieser Arbeit ist es nur möglich eine App zu entwickeln, die die Studierenden bei den Prozessen unterstützt und ihnen die notwendigen Informationen bereitstellt. Die Optimierung der Prozesse selbst liegt nicht im Rahmen dieser Arbeit.
+Eine vollständige Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints"))[Anhang] (@interviewsummary) dokumentiert.
 
 // ###############################################################################
 // ###############################################################################

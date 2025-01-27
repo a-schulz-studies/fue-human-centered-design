@@ -55,7 +55,7 @@
   caption: [
     User Journey Map der Austauschstudierenden
   ],
-  outlined: false
+  outlined: false,
 )
 #set page(
   paper: "a4",
