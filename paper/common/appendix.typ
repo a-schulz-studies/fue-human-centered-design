@@ -2,21 +2,14 @@
 #heading(numbering: none)[Anhang]
 #counter(heading).update(0)
 #set heading(numbering: "A.1")
-= Ergänzendes Material zu den Interviews
-== Interviewleitfaden
-== Transkripte der Interviews
-== Zusammenfassung der wichtigsten Punkte aus den Interviews
 
-#pagebreak()
-= Ergänzendes Material zur Analyse des Ist-Prozesses
-== Ist-Prozess
+= Ergänzendes Material zur Analyse der Nutzerbedürfnisse
+== Personas <personas>
+== Interviewleitfaden <interviewguide>
+== Transkripte der Interviews <interviewtranscripts>
+== Zusammenfassung der wichtigsten Punkte aus den Interviews <interviewsummary>
 
-#pagebreak()
-= Ergänzendes Material zur User Journey
-== Personas
-== User Journey
-
-*Kontaktpunkte und Informationsquellen:*
+*Kontaktpunkte und Informationsquellen:* <contactpoints>
 - Universitätsportale
 - DAAD
 - Uni-Assist
@@ -24,6 +17,13 @@
 - Persönliche Kontakte und WG-Mitbewohner
 - Studentenorganisationen
 - Webseite der Landeshauptstadt Dresden
+
+
+== User Journey <userjourney>
+
+#pagebreak()
+= Ergänzendes Material zur Analyse des Ist-Prozesses
+== Ist-Prozess
 
 #pagebreak()
 = Ergänzendes Material zum Prototypen

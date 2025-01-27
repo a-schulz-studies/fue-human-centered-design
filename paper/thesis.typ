@@ -2,6 +2,7 @@
 #import "common/metadata.typ": *
 #import "style/style.typ": *
 #import "@preview/oasis-align:0.2.0": *
+#import "@preview/tablem:0.1.0": tablem
 
 
 #titlepage(
@@ -77,6 +78,8 @@ Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen u
   ),
 )
 
+#highlight[Die Grafik könnte auch hotizontal nachgebaut werden, dann könnte man sich die zwei Spalten ersparen.]
+
 #pagebreak()
 Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nutzer und ihrer Anforderungen, um Designentscheidungen zu unterstützen. Hier kommen Werkzeuge wie Personas, Benutzergruppenprofile und User Journey Maps zum Einsatz:
 
@@ -87,7 +90,6 @@ Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nut
 - *User Journey Maps:* User Journey Maps visualisieren die Schritte, die Nutzer durchlaufen, um ein bestimmtes Ziel zu erreichen. Sie erfassen die Erfahrungen, Herausforderungen und Emotionen der Nutzer entlang ihres Weges. Dieses Werkzeug hilft, kritische Berührungspunkte zu identifizieren und Optimierungsmöglichkeiten aufzudecken.
 
 Durch die Kombination dieser Werkzeuge wird ein umfassendes Verständnis der Nutzerperspektive geschaffen, das die Grundlage für effektive und benutzerfreundliche Designlösungen bildet.
-
 Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nutzerakzeptanz zu steigern. Besonders wichtig ist dies bei Werkzeugen, die von Entwicklern genutzt werden, um Effizienz und Benutzerfreundlichkeit sicherzustellen @farooquiImpactHumanCenteredDesign2019.
 
 // ###############################################################################
@@ -100,8 +102,7 @@ Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nut
 #highlight[Es wurden gesamt nur 2 Interviews mit Studierenden aus der Nicht-EU durchgeführt.]
 
 Die Analyse der Nutzerbedürfnisse ist ein zentraler Bestandteil des Designprozesses, um eine benutzerfreundliche und effektive Lösung für internationale Studierende in Deutschland zu entwickeln.
-Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU und Nicht-EU Ländern. Diese Profile wurden durch Interviews mit Austauschstudierenden weiter verfeinert, um die spezifischen Bedürfnisse, Herausforderungen und Ziele der Nutzer zu verstehen.
-Zusätzlich wurden Personas erstellt, um die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp zu konkretisieren. Die Personas repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
+Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU und Nicht-EU Ländern. Diese Profile wurden durch Interviews mit Austauschstudierenden weiter verfeinert und zu Personas #footnote[#link(label("personas"))[Anhang], @personas], umgewandelt. Sie dienen dazu, die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp gezielt zu definieren. Die Personas repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
 
 Der Hauptteil der Analyse basiert auf Interviews mit Austauschstudierenden, um die spezifischen Bedürfnisse, Herausforderungen und Ziele dieser Zielgruppe zu verstehen. Die folgenden Abschnitte fassen die wichtigsten Erkenntnisse aus diesen Analysen zusammen und strukturieren diese für einen klaren Überblick.
 
@@ -112,7 +113,7 @@ Die primäre Zielgruppe dieser Analyse umfasst vorrangig neue Austauschstudieren
 
 *Schwerpunkte der Interviews*
 
-Ein semistrukturierter Interviewleitfaden wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden umfassend zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten:
+Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"))[Anhang], @interviewguide] wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden umfassend zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten:
 
 - Aktivitäten zur Vorbereitung
 - Visa Prozess
@@ -122,6 +123,8 @@ Ein semistrukturierter Interviewleitfaden wurde entwickelt, um die Erfahrungen, 
 - Persönliche Interessen und Ziele mit dem Auslandsstudium
 - Umstände und Umgebung während den Schritten
 - Verbesserungsideen
+
+Die Interviews wurden transkribiert #footnote[#link(label("interviewtranscripts"))[Anhang], @interviewtranscripts] und analysiert, um die wichtigsten Erkenntnisse zu identifizieren und die Bedürfnisse der Studierenden zu verstehen.
 
 == Motivationen und Ziele
 
@@ -174,11 +177,8 @@ Der Übergang in ein Studium in Deutschland ist für viele internationale Studie
 - Die Anerkennung von Vorleistungen und Probleme bei der Konvertierung von ECTS-Punkten erschweren den akademischen Einstieg.
 - Jobmöglichkeiten sind aufgrund von Visabestimmungen stark eingeschränkt.
 
-*Ergebnisse aus der Literatur*
+Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut Beate Apolinarski & Tasso Brandt (2018) und Morris-Lange (2019) zählen Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie Orientierung im deutschen Studiensystem zu den häufigsten Problemen. Besonders die Wohnungssuche gestaltet sich problematisch – 47 % der Studierenden berichten von großen Schwierigkeiten, eine Unterkunft zu finden, während 34 % erhebliche Sprachprobleme angeben. Auch bürokratische Prozesse, wie die Visa- und Anmeldeverfahren, und die Anerkennung von Vorleistungen gehören zu den häufigsten Hindernissen @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
 
-Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut Beate Apolinarski und Tasso Brandt (2018) und Morris-Lange (2019) zählen Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie Orientierung im deutschen Studiensystem zu den häufigsten Problemen. Besonders die Wohnungssuche gestaltet sich problematisch – 47 % der Studierenden berichten von großen Schwierigkeiten, eine Unterkunft zu finden, während 34 % erhebliche Sprachprobleme angeben. Auch bürokratische Prozesse, wie die Visa- und Anmeldeverfahren, und die Anerkennung von Vorleistungen gehören zu den häufigsten Hindernissen @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
-
-\
 Diese Erkenntnisse zeigen, dass die Optimierung bürokratischer Prozesse und die Bereitstellung klarer Informationen entscheidend sind, um den Studierenden den Übergang zu erleichtern.
 
 == Weitere Erkenntnisse aus der Analyse der Nutzerbedürfnisse
@@ -192,41 +192,40 @@ Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sow
 //*Konkrete Beispiele:*
 //  - Schwierigkeiten bei der Umrechnung von ECTS-Punkten stellen eine Herausforderung dar.
 //  - Das APS-Verfahren, insbesondere für Masterstudierende aus Indien, führt zu erheblichen Verzögerungen.
-\
-*Verbesserungsideen:*
+#pagebreak()
+*Verbesserungsvorschläge:*
 
 Auf Nachfrage wurden in den Interviews konkrete Verbesserungsvorschläge genannt, um die bürokratischen Prozesse für internationale Studierende zu erleichtern:
 
-*Optimierung des Visa-Prozesses:*
-- Regelmäßige Verfügbarkeit von Visum-Slots, um Wartezeiten zu minimieren.
-- Vereinfachte und klarere Prozesse für die Beantragung von Visa, mit Fokus auf schnellere Bearbeitung und Terminvergabe.
+- *Optimierung des Visa-Prozesses:*
+    - Regelmäßige Verfügbarkeit von Visum-Slots, um Wartezeiten zu minimieren.
+    - Vereinfachte und klarere Prozesse für die Beantragung von Visa, mit Fokus auf schnellere Bearbeitung und Terminvergabe.
 
-*Frühzeitige Zulassungsbenachrichtigungen:*
-- Universitäten sollten die Ergebnisse von Zulassungen oder Ablehnungen schneller bereitstellen, idealerweise innerhalb kürzerer Fristen (statt 2-3 Monate), um Studierenden mehr Zeit für die weiteren Schritte wie Visum, Unterkunft und Reisevorbereitungen zu geben.
+- *Frühzeitige Zulassungsbenachrichtigungen:*
+    - Universitäten sollten die Ergebnisse von Zulassungen oder Ablehnungen schneller bereitstellen, idealerweise innerhalb kürzerer Fristen (statt 2-3 Monate), um Studierenden mehr Zeit für die weiteren Schritte wie Visum, Unterkunft und Reisevorbereitungen zu geben.
 
-*Digitalisierung der Prozesse:*
-- Ersetzung physischer Dokumenteneinreichungen durch vollständig digitale Prozesse zur Reduzierung von Redundanzen und Steigerung der Effizienz.
-- Entwicklung zentraler Plattformen für die Verwaltung und Einreichung aller notwendigen Dokumente.
+- *Digitalisierung der Prozesse:*
+    - Ersetzung physischer Dokumenteneinreichungen durch vollständig digitale Prozesse zur Reduzierung von Redundanzen und Steigerung der Effizienz.
+    - Entwicklung zentraler Plattformen für die Verwaltung und Einreichung aller notwendigen Dokumente.
 
-*Schritt-für-Schritt-Unterstützung:*
-- Bereitstellung eines digitalen Tools mit:
-  - *Dokumentenchecklisten* für Visa, Krankenversicherung und Aufenthaltsanmeldung.
-  - *Schritt-für-Schritt-Anleitungen* für wichtige Prozesse wie Anmeldung und Aufenthaltsgenehmigungen.
-  - *Erinnerungen und Benachrichtigungen* zu Fristen und Terminen.
+- *Schritt-für-Schritt-Unterstützung:*
+    - Bereitstellung eines digitalen Tools mit:
+      - *Dokumentenchecklisten* für Visa, Krankenversicherung und Aufenthaltsanmeldung.
+      - *Schritt-für-Schritt-Anleitungen* für wichtige Prozesse wie Anmeldung und Aufenthaltsgenehmigungen.
+      - *Erinnerungen und Benachrichtigungen* zu Fristen und Terminen.
 
-*Mehrsprachige Unterstützung:*
-- Tools und Webseiten sollten sowohl in Deutsch als auch Englisch verfügbar sein, um Sprachbarrieren zu überwinden.
+- *Mehrsprachige Unterstützung:*
+    - Tools und Webseiten sollten sowohl in Deutsch als auch Englisch verfügbar sein, um Sprachbarrieren zu überwinden.
 
-*Integration hilfreicher Funktionen:*
-- *Kostenkalkulatoren* zur Budgetplanung.
-- *Terminbuchungs-Tools* für Behörden.
-- Unterstützung bei der Übersetzung von Dokumenten.
-- *Vernetzungsmöglichkeiten* mit anderen internationalen Studierenden.
-- *Notfallkontakte* und Informationen zu Arbeitsmöglichkeiten sowie Karriere- und Aufenthaltsgenehmigungen.
+- *Integration hilfreicher Funktionen:*
+    - *Kostenkalkulatoren* zur Budgetplanung.
+    - *Terminbuchungs-Tools* für Behörden.
+    - *Vernetzungsmöglichkeiten* mit anderen internationalen Studierenden.
+    - *Notfallkontakte* und Informationen zu Arbeitsmöglichkeiten sowie Karriere- und Aufenthaltsgenehmigungen.
 
 Diese Maßnahmen würden nicht nur die Bürokratie vereinfachen, sondern auch eine effizientere Planung und Integration der Studierenden in Deutschland ermöglichen.
 
-
+== Strukturierung der Erkenntnisse als User Journey Map
 
 *User Journey*
 Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. Dies ermöglichte es, die Emotionen und Situationen der Nutzer in bestimmten Phasen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten. Sie wird vollständig im Anhang bereitgestellt.
@@ -235,15 +234,13 @@ Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die Use
 Die Analyse der Nutzerbedürfnisse hat gezeigt, dass internationale Studierende mit einer Vielzahl von Herausforderungen konfrontiert sind, die von bürokratischen Hürden über sprachliche Barrieren bis hin zu sozialen Integrationsschwierigkeiten reichen. Die Entwicklung einer App mit den genannten Features kann dazu beitragen, diese Herausforderungen zu minimieren und den Studierenden einen erfolgreichen und angenehmen Aufenthalt in Deutschland zu ermöglichen.
 
 
-#highlight[Verweis auf den Anhang -> Link]
+Die vollständige User Journey Map ist im #link(label("userjourney"))[Anhang] (@userjourney) zu finden.
 
 #highlight[Ausschnitt einer Phase mit Erklärung zu den Inhalten aus der User Journey]
 
 #highlight[
   - Kontaktpunkte und Informationsquellen
   - Herausforderungen und Probleme
-  - verwendete Geräte
-  - Umstände / Umgebung (mobile Recherche, Desktop)
 ]
 
 
@@ -320,18 +317,18 @@ Mobile Nutzung: Die App sollte responsiv und für die mobile Nutzung optimiert s
 
 Benutzerfreundlichkeit: Die App sollte intuitiv und einfach zu bedienen sein.
 
-
-| **Priorität** | **Beschreibung** | **Nutzergruppe** |
-| ------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| **1** | **Dokumenten-Checkliste** mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung etc. | Alle Austauschstudenten |
-| **1** | **Erinnerung an Deadlines** um wichtige Termine nicht zu verpassen | Alle Austauschstudenten |
-| **1** | **Mehrsprachige Unterstützung**, mindestens in Englisch und Deutsch, für sprachliche Barrieren. | Alle Austauschstudenten |
-| **1** | **Schritt-für-Schritt-Anleitungen** für Visum, Anmeldung, Aufenthaltserlaubnis und andere Prozesse. | Alle Austauschstudenten |
-| **1.1** | **Erasmus-spezifische Informationen** zu Programmen und Schritten. | Erasmus-Studenten |
-| **1.2** | **Informationen zum Visumprozess** mit allen wichtigen Dokumenten | Nicht EU Austauschstudenten |
-| **1.2** | **Informationen zur Krankenversicherung**, mit Vergleich gesetzlicher und privater Optionen. | Nicht EU Austauschstudenten |
-| **1.2** | **Rechner zum Konvertieren von ECTs** um zu prüfen, ob die Anforderungen an den Universitäten erfüllt werden. | Nicht EU Austauschstudenten |
-
+#tablem[
+  | **Priorität** | **Beschreibung** | **Nutzergruppe** |
+  | ------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+  | **1** | **Dokumenten-Checkliste** mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung etc. | Alle Austauschstudenten |
+  | **1** | **Erinnerung an Deadlines** um wichtige Termine nicht zu verpassen | Alle Austauschstudenten |
+  | **1** | **Mehrsprachige Unterstützung**, mindestens in Englisch und Deutsch, für sprachliche Barrieren. | Alle Austauschstudenten |
+  | **1** | **Schritt-für-Schritt-Anleitungen** für Visum, Anmeldung, Aufenthaltserlaubnis und andere Prozesse. | Alle Austauschstudenten |
+  | **1.1** | **Erasmus-spezifische Informationen** zu Programmen und Schritten. | Erasmus-Studenten |
+  | **1.2** | **Informationen zum Visumprozess** mit allen wichtigen Dokumenten | Nicht EU Austauschstudenten |
+  | **1.2** | **Informationen zur Krankenversicherung**, mit Vergleich gesetzlicher und privater Optionen. | Nicht EU Austauschstudenten |
+  | **1.2** | **Rechner zum Konvertieren von ECTs** um zu prüfen, ob die Anforderungen an den Universitäten erfüllt werden. | Nicht EU Austauschstudenten |
+]
 
 Die Funktionen des Prototypen beruhen auf den Erkenntnissen aus den Interviews aus #highlight[Kreuzverweis] Erkenntnissen der Interviews.
 
