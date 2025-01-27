@@ -107,19 +107,9 @@
 
   // --- Table of Contents ---
   show outline.entry.where(level: 1): it => {
-    //if outline.entry != image and it.kind != table{
     //show: strong
     v(1pt, weak: false)
-    let params = it.fields()
-    //if-condition to prevent recursion
-    if it.fill != none {
-      let params = it.fields()
-      params.fill = none
-      outline.entry(..params.values())
-    } else {
-      it
-    }
-    //}
+    it
   }
   //heading(numbering: none)[Inhaltsverzeichnis]
   outline(
