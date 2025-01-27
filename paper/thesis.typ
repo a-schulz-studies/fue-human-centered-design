@@ -232,11 +232,11 @@ Diese Maßnahmen würden nicht nur die Bürokratie vereinfachen, sondern auch ei
 
 Auf Basis der Interviewergebnisse wurde eine User Journey erstellt, die den gesamten Prozess der Austauschstudierenden visualisiert. Sie zeigt wichtige Kontaktpunkte, typische Herausforderungen und die emotionalen Reaktionen der Studierenden während der verschiedenen Phasen. Ziel der User Journey ist es, kritische Berührungspunkte zu identifizieren und potenzielle Optimierungsmöglichkeiten aufzuzeigen.
 
-Ein vollständiger Überblick über die User Journey Map befindet sich im #link(label("userjourney"))[Anhang] (@userjourney). In @userjourneyexcerpt ist ein exemplarischer Ausschnitt dargestellt, der Schritte wie die Auswahl der Universität und die Priorisierung von Studienorten zeigt. Dabei werden zentrale Kontaktpunkte, wie die Stabsstelle Internationales der HTW Dresden oder externe Webseiten, aufgeführt.
+In @userjourneyexcerpt ist ein Ausschnitt der User Journey Map dargestellt, der Schritte wie die Auswahl der Universität und die Priorisierung von Studienorten zeigt. Dabei werden zentrale Kontaktpunkte, wie die Stabsstelle Internationales der HTW Dresden oder externe Webseiten, aufgeführt.
 
 Die User Journey bildet auch die emotionalen Höhen und Tiefen der Studierenden ab: Während zu Beginn die Vorfreude auf das Auslandssemester überwiegt, führt die Fülle an Informationen und die Verteilung auf verschiedene Quellen häufig zu Überforderung während der Recherchephase.
 
-Eine vollständige Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints"))[Anhang] (@interviewsummary) dokumentiert.
+Eine Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints"))[Anhang] (@interviewsummary) dokumentiert. Die vollständige User Journey Map befindet sich ebenfalls im #link(label("userjourney"))[Anhang] unter @userjourney.
 
 // ###############################################################################
 // ###############################################################################
