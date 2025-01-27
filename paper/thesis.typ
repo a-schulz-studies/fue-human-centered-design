@@ -4,7 +4,6 @@
 #import "@preview/oasis-align:0.2.0": *
 #import "@preview/tablem:0.1.0": tablem
 
-
 #titlepage(
   title: title,
   program: program,
@@ -12,7 +11,6 @@
   studentNumber: studentNumber,
   advisors: advisors,
 )
-
 
 #show: style.with(
   title: title,
@@ -245,15 +243,13 @@ Eine Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints
 
 = Ist-Prozess Analyse
 
-Ist Prozess Analyse zum Abgleich mit dem wahrgenommenen Prozess und um den Prototypen sowohl an den Nutzerbedürfnissen auszurichten als auch den konkreten Inhalt des Prozesses zu erfassen, damit eine zugeschnittene und keine generische Lösung entsteht.
+In den Interviews nicht genügend Zeit, um den gesamten Prozess zu verstehen. Daher die Dokumentation auf der Website der Stabstelle Internationales durchgeschaut. Dadurch ist außerdem ein guter Vergleich zwischen dem wahrgenommenen Prozess und dem tatsächlichen Prozess möglich.
 
-Die Prozesse wurden mithilfe von Process Mining analysiert, um Engpässe, Abhängigkeiten und notwendige Dokuemnte zu identifizieren. Ein Knowledge Graph wurde erstellt, um die Verbindungen zwischen einzelnen Schritten zu visualisieren.
+Prototypen sowohl an den Nutzerbedürfnissen auszurichten als auch den konkreten Inhalt des Prozesses zu erfassen, damit eine passende Lösung entsteht.
+ 
+Der Prozess wurde zunächst im JSON Format #footnote[tdb. \<Erklärung was JSON Format ist>] erfasst, damit dieser dann im Anschluss sowohl als Input für den Prototypen genutzer weden kann aber auch, um diesen dann grafisch darzustellen. Vor allem die grafische Darstellung bietet sich an umd die Verbindungen und Abhängigkeiten zwischen den Schritten besser zu verstehen und um Engpässe und die notwendige Dokuemnte zu identifizieren.
 
-Der extrahierte und strukturierte Prozess sollte gleichzeitig als Input für die Anwendung verwendet werden, damit diese noch im zeitlichen Rahmen mit den Interviewpartnern evaluiert werden kann.
-
-#highlight[Kann ich diesen Punkt noch mit zu einem anderden zusammenfassen?]
 #highlight[Verweis auf den Anhang, Bild einfügen?]
-#highlight[Verweis ich kann nichts am Prozess ändern und der lange Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 
 = Konzeption und Design des Prototyps
 
@@ -356,6 +352,7 @@ Sind einfacher zu verstehen als ein riesiger Text.
 
 #highlight[Einfügen einiger Screenshots des finalen Wireframes]
 
+#highlight[Verweis ich kann nichts am Prozess ändern und der lange Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 
 // ###############################################################################
 // ###############################################################################
