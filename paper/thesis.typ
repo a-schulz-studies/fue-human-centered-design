@@ -99,10 +99,8 @@ Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nut
 
 = Analyse der Nutzerbedürfnisse
 
-#highlight[Es wurden gesamt nur 2 Interviews mit Studierenden aus der Nicht-EU durchgeführt.]
-
 Die Analyse der Nutzerbedürfnisse ist ein zentraler Bestandteil des Designprozesses, um eine benutzerfreundliche und effektive Lösung für internationale Studierende in Deutschland zu entwickeln.
-Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU und Nicht-EU Ländern. Diese Profile wurden durch Interviews mit Austauschstudierenden weiter verfeinert und zu Personas #footnote[#link(label("personas"))[Anhang], @personas], umgewandelt. Sie dienen dazu, die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp gezielt zu definieren. Die Personas repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
+Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU- und Nicht-EU-Ländern. Aufgrund begrenzter Teilnehmerverfügbarkeit konnten jedoch nur zwei Interviews geführt werden, beide mit Studierenden aus dem EU-Ausland. Diese Interviews wurden genutzt, um die Profile weiter zu verfeinern und Personas #footnote[#link(label("personas"))[Anhang], @personas] zu entwickeln. Diese Personas dienen dazu, die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp gezielt zu definieren. Sie repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
 
 Der Hauptteil der Analyse basiert auf Interviews mit Austauschstudierenden, um die spezifischen Bedürfnisse, Herausforderungen und Ziele dieser Zielgruppe zu verstehen. Die folgenden Abschnitte fassen die wichtigsten Erkenntnisse aus diesen Analysen zusammen und strukturieren diese für einen klaren Überblick.
 
@@ -113,13 +111,10 @@ Die primäre Zielgruppe dieser Analyse umfasst vorrangig neue Austauschstudieren
 
 *Schwerpunkte der Interviews*
 
-Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"))[Anhang], @interviewguide] wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden umfassend zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten:
+Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"))[Anhang], @interviewguide] wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden umfassend zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten unter anderem:
 
-- Aktivitäten zur Vorbereitung
-- Visa Prozess
-- Krankenversicherung
-- Wohnungssuche
-- Aktivitäten nach der Ankunft
+- Aktivitäten zur Vorbereitung und nach der Ankunft
+- Visa Prozess, Krankenversicherung, Wohnungssuche
 - Persönliche Interessen und Ziele mit dem Auslandsstudium
 - Umstände und Umgebung während den Schritten
 - Verbesserungsideen
@@ -181,6 +176,8 @@ Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut 
 
 Diese Erkenntnisse zeigen, dass die Optimierung bürokratischer Prozesse und die Bereitstellung klarer Informationen entscheidend sind, um den Studierenden den Übergang zu erleichtern.
 
+#highlight[Anhang/Obsidian challenges und Pain Points noch notewendig?]
+
 == Weitere Erkenntnisse aus der Analyse der Nutzerbedürfnisse
 
 Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sowohl die genutzten Geräte als auch konkrete Probleme und mögliche Verbesserungsideen betreffen:
@@ -192,59 +189,58 @@ Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sow
 //*Konkrete Beispiele:*
 //  - Schwierigkeiten bei der Umrechnung von ECTS-Punkten stellen eine Herausforderung dar.
 //  - Das APS-Verfahren, insbesondere für Masterstudierende aus Indien, führt zu erheblichen Verzögerungen.
-#pagebreak()
 *Verbesserungsvorschläge:*
 
 Auf Nachfrage wurden in den Interviews konkrete Verbesserungsvorschläge genannt, um die bürokratischen Prozesse für internationale Studierende zu erleichtern:
 
 - *Optimierung des Visa-Prozesses:*
-    - Regelmäßige Verfügbarkeit von Visum-Slots, um Wartezeiten zu minimieren.
-    - Vereinfachte und klarere Prozesse für die Beantragung von Visa, mit Fokus auf schnellere Bearbeitung und Terminvergabe.
+  - Regelmäßige Verfügbarkeit von Visum-Slots, um Wartezeiten zu minimieren.
+  - Vereinfachte und klarere Prozesse für die Beantragung von Visa, mit Fokus auf schnellere Bearbeitung und Terminvergabe.
 
 - *Frühzeitige Zulassungsbenachrichtigungen:*
-    - Universitäten sollten die Ergebnisse von Zulassungen oder Ablehnungen schneller bereitstellen, idealerweise innerhalb kürzerer Fristen (statt 2-3 Monate), um Studierenden mehr Zeit für die weiteren Schritte wie Visum, Unterkunft und Reisevorbereitungen zu geben.
+  - Universitäten sollten die Ergebnisse von Zulassungen oder Ablehnungen schneller bereitstellen, idealerweise innerhalb kürzerer Fristen (statt 2-3 Monate), um Studierenden mehr Zeit für die weiteren Schritte wie Visum, Unterkunft und Reisevorbereitungen zu geben.
 
 - *Digitalisierung der Prozesse:*
-    - Ersetzung physischer Dokumenteneinreichungen durch vollständig digitale Prozesse zur Reduzierung von Redundanzen und Steigerung der Effizienz.
-    - Entwicklung zentraler Plattformen für die Verwaltung und Einreichung aller notwendigen Dokumente.
+  - Ersetzung physischer Dokumenteneinreichungen durch vollständig digitale Prozesse zur Reduzierung von Redundanzen und Steigerung der Effizienz.
+  - Entwicklung zentraler Plattformen für die Verwaltung und Einreichung aller notwendigen Dokumente.
 
 - *Schritt-für-Schritt-Unterstützung:*
-    - Bereitstellung eines digitalen Tools mit:
-      - *Dokumentenchecklisten* für Visa, Krankenversicherung und Aufenthaltsanmeldung.
-      - *Schritt-für-Schritt-Anleitungen* für wichtige Prozesse wie Anmeldung und Aufenthaltsgenehmigungen.
-      - *Erinnerungen und Benachrichtigungen* zu Fristen und Terminen.
+  - Bereitstellung eines digitalen Tools mit:
+    - *Dokumentenchecklisten* für Visa, Krankenversicherung und Aufenthaltsanmeldung.
+    - *Schritt-für-Schritt-Anleitungen* für wichtige Prozesse wie Anmeldung und Aufenthaltsgenehmigungen.
+    - *Erinnerungen und Benachrichtigungen* zu Fristen und Terminen.
 
 - *Mehrsprachige Unterstützung:*
-    - Tools und Webseiten sollten sowohl in Deutsch als auch Englisch verfügbar sein, um Sprachbarrieren zu überwinden.
+  - Tools und Webseiten sollten sowohl in Deutsch als auch Englisch verfügbar sein, um Sprachbarrieren zu überwinden.
 
 - *Integration hilfreicher Funktionen:*
-    - *Kostenkalkulatoren* zur Budgetplanung.
-    - *Terminbuchungs-Tools* für Behörden.
-    - *Vernetzungsmöglichkeiten* mit anderen internationalen Studierenden.
-    - *Notfallkontakte* und Informationen zu Arbeitsmöglichkeiten sowie Karriere- und Aufenthaltsgenehmigungen.
+  - *Kostenkalkulatoren* zur Budgetplanung.
+  - *Terminbuchungs-Tools* für Behörden.
+  - *Vernetzungsmöglichkeiten* mit anderen internationalen Studierenden.
+  - *Notfallkontakte* und Informationen zu Arbeitsmöglichkeiten sowie Karriere- und Aufenthaltsgenehmigungen.
 
 Diese Maßnahmen würden nicht nur die Bürokratie vereinfachen, sondern auch eine effizientere Planung und Integration der Studierenden in Deutschland ermöglichen.
 
 == Strukturierung der Erkenntnisse als User Journey Map
 
-*User Journey*
-Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. Dies ermöglichte es, die Emotionen und Situationen der Nutzer in bestimmten Phasen nachzuvollziehen und dadurch geeignete Maßnahmen abzuleiten. Sie wird vollständig im Anhang bereitgestellt.
+#figure(
+    image("images/User_Journey_Map_excerpt.png"),
+    caption: [
+      Auschnitt der User Journey Map
+    ],
+  )<userjourneyexcerpt>
 
-\
-Die Analyse der Nutzerbedürfnisse hat gezeigt, dass internationale Studierende mit einer Vielzahl von Herausforderungen konfrontiert sind, die von bürokratischen Hürden über sprachliche Barrieren bis hin zu sozialen Integrationsschwierigkeiten reichen. Die Entwicklung einer App mit den genannten Features kann dazu beitragen, diese Herausforderungen zu minimieren und den Studierenden einen erfolgreichen und angenehmen Aufenthalt in Deutschland zu ermöglichen.
+Aus den Erkenntnissen der Interviews wurde eine User Journey abgeleitet. Die User Journey dient zur Visualisierung der Kontaktpunkte und Herausforderungen der Studierenden während des gesamten Prozesses. kritische Berührungspunkte zu identifizieren und Optimierungsmöglichkeiten aufzudecken.
+
+Die vollständige User Journey Map ist im #link(label("userjourney"))[Anhang] (@userjourney) zu finden. In @userjourneyexcerpt ist ein Ausschnitt der User Journey Map dargestellt, der einen Einblick in die Struktur und die Inhalte gibt.
+der Ausschnitt zeigt Schritte wie die Auswahl der Universität und die damit verbundenen Aktionen zum Beispiel dem Priorisieren der Universitäten. Außerdem werden Kontaktpunkte wie dei Stabstelle Internationales der HTW Dresden und auch weitere Webseiten genannt.
+zusätzlich werden die Emotionen während der Phase dargestellt, so freue sich die Studierenden zuerst einmal auf das Auslandssemester fühlen sich dann aber während der Recherche durch die vielen Informationen und die unterschiedlichen Informationspunkte überfordert.
+
+Eine Vollständige Liste aller Kontaktpunkte befindet sich im #link(label("contactpoints"))[Anhang] @interviewsummary.
 
 
-Die vollständige User Journey Map ist im #link(label("userjourney"))[Anhang] (@userjourney) zu finden.
+Im Rahmen dieser Arbeit ist es nur möglich eine App zu entwickeln, die die Studierenden bei den Prozessen unterstützt und ihnen die notwendigen Informationen bereitstellt. Die Optimierung der Prozesse selbst liegt nicht im Rahmen dieser Arbeit.
 
-#highlight[Ausschnitt einer Phase mit Erklärung zu den Inhalten aus der User Journey]
-
-#highlight[
-  - Kontaktpunkte und Informationsquellen
-  - Herausforderungen und Probleme
-]
-
-
-#highlight[Verweis ich kann nichts am Prozess ändern und der lange Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 // ###############################################################################
 // ###############################################################################
 // ###############################################################################
@@ -260,6 +256,7 @@ Der extrahierte und strukturierte Prozess sollte gleichzeitig als Input für die
 
 #highlight[Kann ich diesen Punkt noch mit zu einem anderden zusammenfassen?]
 #highlight[Verweis auf den Anhang, Bild einfügen?]
+#highlight[Verweis ich kann nichts am Prozess ändern und der lange Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 
 = Konzeption und Design des Prototyps
 
