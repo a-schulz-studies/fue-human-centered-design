@@ -19,7 +19,7 @@ _The below description is ordered chronologically as the artifacts where develop
   - The extracted process is used to generate a mermaid diagram.
   - The visual representation helps to understand dependencies and necessary steps.
   - The process json should later be used as input for the application to add the content to the application.
-    - If the process changes, only the json needs to be adjusted.#
+    - If the process changes, only the json needs to be adjusted.
 - `paper/`
   - The final paper was written in Typst and later compiled to pdf.
   - The source for the paper is found in this directory.

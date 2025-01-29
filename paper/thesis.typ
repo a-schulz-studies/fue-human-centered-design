@@ -241,15 +241,67 @@ Eine Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints
 // ###############################################################################
 // ###############################################################################
 
-= Ist-Prozess Analyse
+= Ideal-Prozess Analyse
 
-In den Interviews nicht genügend Zeit, um den gesamten Prozess zu verstehen. Daher die Dokumentation auf der Website der Stabstelle Internationales durchgeschaut. Dadurch ist außerdem ein guter Vergleich zwischen dem wahrgenommenen Prozess und dem tatsächlichen Prozess möglich.
+Die Analyse des Ideal-Prozesses bildet eine Grundlage, um die tatsächlichen Abläufe der Bürokratie für internationale Studierende zu verstehen und diese mit den wahrgenommenen Herausforderungen aus den Interviews abzugleichen. Aufgrund der zeitlichen Begrenzung der Interviews war es nicht möglich, alle Prozessdetails vollständig zu erfassen. Deshalb, wurden der textuelle Prozesse auf der Website der Stabsstelle Internationales der HTW Dresden untersucht. Dadurch entstand eine wertvolle Vergleichsmöglichkeit zwischen dem ideal beschriebenen Ablauf und den subjektiven Erfahrungen der Studierenden.
 
-Prototypen sowohl an den Nutzerbedürfnissen auszurichten als auch den konkreten Inhalt des Prozesses zu erfassen, damit eine passende Lösung entsteht.
- 
-Der Prozess wurde zunächst im JSON Format #footnote[tdb. \<Erklärung was JSON Format ist>] erfasst, damit dieser dann im Anschluss sowohl als Input für den Prototypen genutzer weden kann aber auch, um diesen dann grafisch darzustellen. Vor allem die grafische Darstellung bietet sich an umd die Verbindungen und Abhängigkeiten zwischen den Schritten besser zu verstehen und um Engpässe und die notwendige Dokuemnte zu identifizieren.
+*Ziel der Analyse*
 
-#highlight[Verweis auf den Anhang, Bild einfügen?]
+Ein zentrales Ziel war es, den Prototyp zusätzlich zur Ausrichtung an den Bedürfnissen der Nutzer:innen, mit den konkreten Inhalten des bürokratischen Prozesses zu füllen. Nur durch eine Kombination beider Ansätze kann eine Lösung entwickelt werden, die sowohl benutzerfreundlich ist als auch die notwendigen Informationen und Schritte präzise abbildet. Außerdem ermöglicht ein mit Inhalt gefüllter Protyp eine realitätsnahe Evaluation und Optimierung, welche im HCD-Prozess essentiell ist.
+
+*Herangehensweise*
+
+Der Prozess wurde zunächst aus den HTML#footnote[Die Hypertext Markup Language ist die Standardauszeichnungssprache für Dokumente, die in einem Webbrowser angezeigt werden sollen.]-Inhalten der Website extrahiert und im JSON-Format#footnote[JavaScript Object Notation ist ein offenes Standard-Dateiformat und Datenaustauschformat, das menschenlesbaren Text zur Speicherung und Übertragung von Datenobjekten verwendet, die aus Name-Wert-Paaren und Arrays bestehen.] dokumentiert.
+Dieses Format wurde gewählt, da es einerseits strukturierte Daten ermöglicht, die flexibel angepasst werden können, und andererseits als Input für die Entwicklung des Prototyps dienen kann.
+
+Um die Prozessdaten besser zu verstehen und zu analysieren, wurde zudem eine grafische Darstellung des Prozesses mit Hilfe des Tools Mermaid erstellt. Diese Visualisierung bietet einen klaren Überblick über:
+- *Schritte und Phasen des Prozesses*, wie z. B. „Antragstellung und Zulassung“ oder „Kursauswahl und Studienplanung“.
+- *Abhängigkeiten zwischen den Schritten*, um kritische Pfade und Engpässe zu identifizieren.
+- *Notwendige Dokumente und Fristen*, die für den Erfolg der einzelnen Schritte erforderlich sind.
+
+#pagebreak()
+Ein Beispiel für den extrahierten Prozess ist in der JSON-Dokumentation enthalten:
+
+#set text(size: 9pt)
+```json
+{
+  "phases": [
+    {
+      "name": "Application and admission procedures",
+      "steps": [
+        {
+          "name": "Application Submission",
+          "description": "Submit application documents to HTW Dresden",
+          "required_documents": [
+            {
+              "name": "Application for admission to studies",
+              "description": "Signed by you and your home university coordinator"
+            },
+            {
+              "name": "(Online) Learning Agreement",
+              "description": "Your course selection approved and signed by ..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+#set text(size: 12pt)
+
+Die JSON-Daten dienen nicht nur als Input für die App, sondern erleichtern auch zukünftige Anpassungen. Sollte sich der Prozess ändern, muss lediglich die JSON-Datei aktualisiert werden, ohne dass größere strukturelle Änderungen an der App notwendig sind.
+
+*Ergebnisse der grafischen Darstellung*
+
+Die erzeugte Mermaid-Darstellung des Prozesses zeigte klar die Verbindungen zwischen den einzelnen Schritten und die Reihenfolge der Aufgaben. Ein Beispielbild der grafischen Darstellung ist im #link(label("idealprocess"))[Anhang] (@mermaidprocess).
+
+
+Diese Visualisierung erwies sich als hilfreich, um:
+- Engpässe im Prozess zu erkennen, wie z. B. lange Wartezeiten auf die Zulassung.
+- Verwendungspunkte der Dokumente zu identifizieren, da Dokumente viele in mehreren Phasen und Schritten benötigt werden.
+
+Die Ergebnisse der Ist-Prozess-Analyse bilden somit die Grundlage für die Entwicklung eines Prototyps.
 
 = Konzeption und Design des Prototyps
 
@@ -374,6 +426,13 @@ bilden und auf andere Hochschulen übertragen werden.
 
 *Ausblick*
 Zukünftige Arbeiten umfassen die technische Implementierung, Validierung und Vernetzung mit Behörden sowie die Anpassung der unterstützenden Prozesse.
+
+*Validierung des Ideal-Prozesses*
+
+Im nächsten Schritt soll der extrahierte Prozess mit der Stabsstelle Internationales validiert werden, um die Richtigkeit und Vollständigkeit der Daten sicherzustellen. Gleichzeitig sind weitere Optimierungen geplant, wie z. B.:
+- Präzisere Angaben zu Fristen, getrennt nach Sommer- und Wintersemester.
+- Vereinheitlichung der Dokumentenbeschreibungen, um Redundanzen zu vermeiden.
+- Hinzufügen detaillierter Anweisungen für einzelne Schritte.
 
 *Weitere Features der Anwendung*
 - Anpassung des Unterstützungsgrads

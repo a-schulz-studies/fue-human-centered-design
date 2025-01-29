@@ -17,7 +17,7 @@
 //
 
 #counter(heading).update(0)
-#set heading(numbering: "A.1")
+#set heading(numbering: "A.1", outlined: false)
 
 = Ergänzendes Material zur Analyse der Nutzerbedürfnisse
 == Personas <personas>
@@ -70,7 +70,14 @@
 
 #pagebreak()
 = Ergänzendes Material zur Analyse des Ist-Prozesses
-== Ist-Prozess
+== Ideal-Prozess <idealprocess>
+
+#figure(
+  image("../images/Mermaid_process.png"),
+  caption: [
+    Auschnitt des Ideal-Prozesses in Mermaid-Darstellung
+  ],
+)<mermaidprocess>
 
 #pagebreak()
 = Ergänzendes Material zum Prototypen
