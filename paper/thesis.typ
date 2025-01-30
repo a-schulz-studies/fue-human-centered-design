@@ -300,14 +300,17 @@ Diese Visualisierung erwies sich als hilfreich, um:
 - Engpässe im Prozess zu erkennen, wie z. B. lange Wartezeiten auf die Zulassung.
 - Verwendungspunkte der Dokumente zu identifizieren, da Dokumente viele in mehreren Phasen und Schritten benötigt werden.
 
-*Ergebnisse aus Gesprächen mit der Stabstelle Internationales der HTW Dresden*
+*Erkenntnisse aus dem Austausch mit der Stabsstelle Internationales*
 
-Studenten müssen das selbst proaktiv machen -> werden aber durch Internationales informiert -> fester Kalender wann welche Mail herausgeht
-Aktuelle Probleme: Website wird nicht gelesen -> Mails aber auch nicht
-Studenten sollten im Idealfall schon alles beantragen, bevor sie in Deutschland sind -> Kommen an und sollen direkt schon alles bekommen
-(Studenten können schon aus dem Ausland alles beantragen)
+Zusätzlich zu der eigenständigen Anlayse des textuellen Prozesses wurde ein Gespräch mit der Stabsstelle Internationales geführt.
+ Dieses habt wertvolle Einblicke in die tatsächliche Organisation und Kommunikation der bürokratischen Abläufe für internationale Studierende geliefert. Ein zentrales Ergebnis war, dass Studierende grundsätzlich selbst und proaktiv für die Erledigung der erforderlichen administrativen Schritte verantwortlich sind. Allerdings werden sie dabei aktiv durch die Stabsstelle unterstützt. Hierzu existiert ein fester Kommunikationsplan, in dem genau festgelegt ist, zu welchem Zeitpunkt welche E-Mails mit relevanten Informationen an die Studierenden versendet werden.
 
-Die Ergebnisse der Ist-Prozess-Analyse bilden somit die Grundlage für die Entwicklung eines Prototyps.
+Ein wesentliches Problem, das sich in der Praxis zeigt, ist die geringe Nutzung der bereitgestellten Informationsquellen. Obwohl die Website der Stabsstelle umfassende Anleitungen und Erklärungen zu den notwendigen Prozessen bietet, wird sie von den Studierenden kaum genutzt. Gleichzeitig besteht auch bei den versendeten E-Mails das Problem, dass viele dieser Nachrichten nicht gelesen oder nicht ausreichend beachtet werden.
+
+Eine weitere zentrale Erkenntnis war, dass der optimale Ablauf vorsieht, dass Studierende bereits vor ihrer Ankunft in Deutschland alle wesentlichen bürokratischen Schritte einleiten. Idealerweise sollten alle notwendigen Anträge bereits aus dem Ausland gestellt werden, sodass die Studierenden nach ihrer Ankunft direkt auf alle erforderlichen Dokumente und Bestätigungen zugreifen können. Die Möglichkeit, viele Formalitäten schon vorab zu erledigen, wird jedoch nicht immer konsequent genutzt. Dadurch entstehen Verzögerungen, die sich negativ auf die gesamte Ankunfts- und Integrationsphase auswirken können.
+
+Diese Erkenntnisse unterstreichen die Notwendigkeit einer verbesserten Bereitstellung und Strukturierung von Informationen sowie einer gezielteren Kommunikation mit den Studierenden. Ein zentraler Aspekt für die Optimierung des Prozesses besteht darin, die Studierenden frühzeitig und auf eine Weise zu erreichen, die sie tatsächlich wahrnehmen und nutzen.
+Die Ergebnisse der Ideal-Prozess-Analyse bilden somit die Grundlage für die Entwicklung eines Prototyps.
 
 = Konzeption und Design des Prototyps
 
