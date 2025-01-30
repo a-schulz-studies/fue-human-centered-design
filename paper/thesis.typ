@@ -253,7 +253,6 @@ Ein zentrales Ziel war es, den Prototyp zusätzlich zur Ausrichtung an den Bedü
 
 Der Prozess wurde zunächst aus den HTML#footnote[Die Hypertext Markup Language ist die Standardauszeichnungssprache für Dokumente, die in einem Webbrowser angezeigt werden sollen.]-Inhalten der Website extrahiert und im JSON-Format#footnote[JavaScript Object Notation ist ein offenes Standard-Dateiformat und Datenaustauschformat, das menschenlesbaren Text zur Speicherung und Übertragung von Datenobjekten verwendet, die aus Name-Wert-Paaren und Arrays bestehen.] dokumentiert.
 Dieses Format wurde gewählt, da es einerseits strukturierte Daten ermöglicht, die flexibel angepasst werden können, und andererseits als Input für die Entwicklung des Prototyps dienen kann.
-
 Um die Prozessdaten besser zu verstehen und zu analysieren, wurde zudem eine grafische Darstellung des Prozesses mit Hilfe des Tools Mermaid erstellt. Diese Visualisierung bietet einen klaren Überblick über:
 - *Schritte und Phasen des Prozesses*, wie z. B. „Antragstellung und Zulassung“ oder „Kursauswahl und Studienplanung“.
 - *Abhängigkeiten zwischen den Schritten*, um kritische Pfade und Engpässe zu identifizieren.
@@ -301,9 +300,20 @@ Diese Visualisierung erwies sich als hilfreich, um:
 - Engpässe im Prozess zu erkennen, wie z. B. lange Wartezeiten auf die Zulassung.
 - Verwendungspunkte der Dokumente zu identifizieren, da Dokumente viele in mehreren Phasen und Schritten benötigt werden.
 
+*Ergebnisse aus Gesprächen mit der Stabstelle Internationales der HTW Dresden*
+
+Studenten müssen das selbst proaktiv machen -> werden aber durch Internationales informiert -> fester Kalender wann welche Mail herausgeht
+Aktuelle Probleme: Website wird nicht gelesen -> Mails aber auch nicht
+Studenten sollten im Idealfall schon alles beantragen, bevor sie in Deutschland sind -> Kommen an und sollen direkt schon alles bekommen
+(Studenten können schon aus dem Ausland alles beantragen)
+
 Die Ergebnisse der Ist-Prozess-Analyse bilden somit die Grundlage für die Entwicklung eines Prototyps.
 
 = Konzeption und Design des Prototyps
+
+Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnissen und den
+
+#highlight[Langer Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 
 Die Entwicklung einer App sollte folgende Ziele verfolgen:
 Schnelle und einfache Orientierung in Deutschland und Bewältigung bürokratischer Prozesse
@@ -311,6 +321,8 @@ Einfacher Zugang zu relevanten Informationen und Ressourcen
 Austausch mit anderen Studenten und Aufbau eines Netzwerks
 Optimale Nutzung des Aufenthalts und der Möglichkeiten des kulturellen Austauschs
 Berücksichtigung der persönlichen Bedürfnisse und Interessen der Studenten
+
+
 Wichtige Features für eine App== Basierend auf den Ergebnissen der Analyse wurden folgende Features als besonders wichtig identifiziert:
 Priorität 1 (Unmittelbar wichtig):
 Dokumenten-Checkliste mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung
@@ -404,7 +416,6 @@ Sind einfacher zu verstehen als ein riesiger Text.
 
 #highlight[Einfügen einiger Screenshots des finalen Wireframes]
 
-#highlight[Verweis ich kann nichts am Prozess ändern und der lange Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
 
 // ###############################################################################
 // ###############################################################################
