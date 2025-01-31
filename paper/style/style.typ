@@ -102,7 +102,7 @@
   show figure.where(kind: image): pic => {
     set text(size: 10pt)
     set align(left)
-    set par(hanging-indent: 2em)
+    set par(first-line-indent: 1em, hanging-indent: 2em)
     pic
     //rect(pic)
   }

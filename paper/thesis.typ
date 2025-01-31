@@ -388,18 +388,18 @@ Fragen zur Konzeption:
 - Kann die Situation oder der Status dynamisch über vorhandene Dokumente verfolgt werden, ohne zusätzliches Zutun der Nutzer?
 
 #figure(
-oasis-align(
-  int-dir: -1,
-  image("images/Prototyp_Pers_Informationen.png", width: 90%),
-  image("images/Prototyp_Akt_Situation.png", width: 118%),
-),
-caption: [
-  Prototyp - Erfassung der persönlichen Informationen
-],
-)<protypelebenslagepersinfo>
-Um die Lebenslage der Studierenden individuell zu erfassen, werden verschiedene Angaben benötigt. Dazu gehören persönliche Daten wie der Name zur Personalisierung der Anwendung sowie das Herkunftsland, das über ein Dropdown-Menü mit Suchfunktion ausgewählt werden kann. Zudem sind Informationen zum geplanten Auslandssemester relevant, darunter die Art des Aufenthalts, die Aufenthaltsdauer, die darüber entscheidet, ob ein Visum erforderlich ist, sowie das Startdatum, das für die Berechnung wichtiger Ereignisse, wie Fristen für Visumanträge oder Wohnungssuche genutzt wird. Weitere notwendige Angaben umfassen das Startsemester, beispielsweise das Wintersemester, und den Studiengang in Dresden. Der Entwurf dieses Formulars ist in @protypelebenslagepersinfo (link) dargestellt.
+  oasis-align(
+    int-dir: -1,
+    image("images/Prototyp_Pers_Informationen.png", width: 90%),
+    image("images/Prototyp_Akt_Situation.png", width: 118%),
+  ),
+  caption: [
+    Prototyp - Erfassung der Lebenslage
+  ],
+)<protypelebenslage>
+Um die Lebenslage der Studierenden individuell zu erfassen, werden verschiedene Angaben benötigt. Dazu gehören persönliche Daten wie der Name zur Personalisierung der Anwendung sowie das Herkunftsland, das über ein Dropdown-Menü mit Suchfunktion ausgewählt werden kann. Zudem sind Informationen zum geplanten Auslandssemester relevant, darunter die Art des Aufenthalts, die Aufenthaltsdauer, die darüber entscheidet, ob ein Visum erforderlich ist, sowie das Startdatum, das für die Berechnung wichtiger Ereignisse, wie Fristen für Visumanträge oder Wohnungssuche genutzt wird. Weitere notwendige Angaben umfassen das Startsemester, beispielsweise das Wintersemester, und den Studiengang in Dresden. Der Entwurf dieses Formulars ist in @protypelebenslage (link) dargestellt.
 
-Darüber hinaus wird in @protypelebenslagepersinfo (rechts) die aktuelle Situation der Studierenden erfasst. Dazu gehört die Angabe der aktuellen Phase ihres Aufenthalts, also ob sie sich vor, während oder nach dem Studienbeginn befinden. Innerhalb dieser Phasen können Studierende schon einige Schritte wie die Einreichung der Bewerbung oder die Beantragung eines Visums durchgeführt haben. Ergänzend dazu werden die bereits vorliegenden Dokumente abgefragt, darunter das (Online) Learning Agreement, der Zulassungsbescheid etc.
+Darüber hinaus wird in @protypelebenslage (rechts) die aktuelle Situation der Studierenden erfasst. Dazu gehört die Angabe der aktuellen Phase ihres Aufenthalts, also ob sie sich vor, während oder nach dem Studienbeginn befinden. Innerhalb dieser Phasen können Studierende schon einige Schritte wie die Einreichung der Bewerbung oder die Beantragung eines Visums durchgeführt haben. Ergänzend dazu werden die bereits vorliegenden Dokumente abgefragt, darunter das (Online) Learning Agreement, der Zulassungsbescheid etc.
 Anhand der bereits durchgeführten Schritte und der vorhandenen Dokumente lässt sich die Lebenslage präzise bestimmen.
 So wird sichergestellt, dass die Anwendung stets auf die individuelle Situation der Studierenden zugeschnittene Informationen und Unterstützung bereitstellt.
 
@@ -409,26 +409,23 @@ Durch diese maßgeschneiderte Bereitstellung relevanter Inhalte wird ein persona
 
 *Statusanzeige*
 
-Verwendung eines Fortschrittsbalkens, um den Studierenden einen Überblick über den aktuellen Stand in der jeweiligen Phase zu geben.
-Anzeige einer Ampel (rot, gelb, grün) für den Status im Gesamten Prozess und falls notwending hinweis, falls Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
-Detailansicht aller vorhanden Phasen als Kanban Board mit ähnlicher farbiger Markierung wie bei den Fortschrittsbalken und der Anzahl der erledigten Schritte und notwendigen Schritte.
+Die Statusanzeige bietet den Studierenden einen klaren Überblick über ihren Fortschritt im gesamten Prozess.
 
-#oasis-align(
-  int-dir: -1,
-  figure(
+Sie umfasst:
+- Fortschrittsbalken: Zeigt den aktuellen Stand in der jeweiligen Phase an @protypelebensstatus (links oben).
+- Ampelsystem (rot, gelb, grün): Gibt Auskunft über den Gesamtstatus und warnt bei drohenden Verzögerungen @protypelebensstatus (links unten).
+- Kanban-Board: Übersicht aller Phasen mit farblicher Markierung der aktuellen Phase und Angabe der erledigten sowie notwendigen Schritte @protypelebensstatus (rechts).
+
+#figure(
+  grid(
+    columns: (3fr, 4fr),
     image("images/Prototyp_Fortschrittsbalken_Ampel.png"),
-    caption: [
-      Prototyp - Statusübersicht als Fortschrittsbalken und Ampel
-    ],
+    image("images/Prototyp_Kanban.png", width: 94%),
   ),
-  figure(
-    image("images/Prototyp_Kanban.png"),
-    caption: [
-      Prototyp - Statusübersicht als Kanban Board
-    ],
-  ),
-)
-
+  caption: [
+    Prototyp - Statusanzeige
+  ],
+)<protypelebensstatus>
 
 *Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenlisten*
 
