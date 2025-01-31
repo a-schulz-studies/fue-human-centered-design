@@ -133,6 +133,12 @@ Netzwerk Möglichkeiten
   | **1.2** | **Rechner zum Konvertieren von ECTs** um zu prüfen, ob die Anforderungen an den Universitäten erfüllt werden. | Nicht EU Austauschstudenten |
 ]
 
+- **Anpassung des Unterstützungsgrads**: Studierende mit unterschiedlichem Vorwissen könnten individuell zugeschnittene Hilfestellungen erhalten.
+- **Erhebung und Nutzung von Feedback**: Die Anwendung selbst könnte zur Datenerhebung genutzt werden, um die Prozesse kontinuierlich zu verbessern.
+- **Analyse von Prozesszeiten**: Die Erfassung realer Nutzungsdaten ermöglicht eine Optimierung der administrativen Abläufe durch bessere Ressourcennutzung.
+
+
+
 == Prototyp <prototype>
 
 == Screenshots des Prototypen

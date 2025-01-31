@@ -469,39 +469,32 @@ Grafiken zu vollständigen Oberflächen des Prototyps sind im #link(label("proto
 = Diskussion und Ausblick
 
 *Zusammenfassung der Ergebnisse*
-Der Prototyp adressiert die Pain Points der Studierenden und bietet personalisierte, proaktive Unterstützung.
+
+Der entwickelte Prototyp adressiert gezielt die zentralen Herausforderungen, mit denen ausländische Studierende im bürokratischen Prozess konfrontiert sind. Durch die Kombination aus personalisierten Informationen, proaktiver Unterstützung und einer klar strukturierten Benutzerführung werden Studierende gezielt durch die erforderlichen administrativen Schritte geleitet. Der Ansatz stellt sicher, dass die relevanten Informationen zur richtigen Zeit bereitgestellt werden und reduziert somit Unsicherheiten sowie mögliche Verzögerungen.
 
 *Validierung und Iterationen*
-Die Funktionen und das Design müssen durch Nutzerfeedback validiert und iterativ verbessert werden.
 
-*Potenzial*
-Der Prototyp könnte die Grundlage für die Entwicklung proaktiver Verwaltungsdienstleistungen
-#footnote[Eine proaktive Verwaltungsleistung ist eine Verwaltungsleistung, die die Verwaltung vollständig oder teilweise erbringt, ohne dass Bürger*innen dies erbitten. @pawlowskiTaxonomyProactivePublic2023]
-bilden und auf andere Hochschulen übertragen werden.
-
-*Ausblick*
-Zukünftige Arbeiten umfassen die technische Implementierung, Validierung und Vernetzung mit Behörden sowie die Anpassung der unterstützenden Prozesse.
+Die Wirksamkeit der entworfenen Funktionen und des Designs muss durch umfassendes Nutzerfeedback überprüft werden. Erst durch eine iterative Weiterentwicklung können potenzielle Schwachstellen identifiziert und behoben werden. Geplante Maßnahmen zur Validierung umfassen Nutzertests mit internationalen Studierenden, Interviews mit Verwaltungsmitarbeitenden sowie die Analyse realer Nutzungsdaten, um die Benutzerfreundlichkeit und Effektivität des Systems weiter zu optimieren.
 
 *Validierung des Ideal-Prozesses*
 
-Im nächsten Schritt soll der extrahierte Prozess mit der Stabsstelle Internationales validiert werden, um die Richtigkeit und Vollständigkeit der Daten sicherzustellen. Gleichzeitig sind weitere Optimierungen geplant, wie z. B.:
-- Präzisere Angaben zu Fristen, getrennt nach Sommer- und Wintersemester.
-- Vereinheitlichung der Dokumentenbeschreibungen, um Redundanzen zu vermeiden.
-- Hinzufügen detaillierter Anweisungen für einzelne Schritte.
+Ein entscheidender nächster Schritt ist die Überprüfung der abgeleiteten Prozessstruktur durch die Stabsstelle Internationales, um sicherzustellen, dass alle erforderlichen Daten korrekt erfasst und verarbeitet werden.
 
-*Weitere Features der Anwendung*
-- Anpassung des Unterstützungsgrads
-- Sammeln von weiterem Feedback durch so eine App
-- Ermitteln von Prozesszeiten durch Nutzerdaten
+*Potenzial und Übertragbarkeit*
+
+Der Prototyp bietet über die Unterstützung ausländischer Studierender hinaus das Potenzial, als Vorlage für die Entwicklung proaktiver Verwaltungsdienstleistungen zu dienen. Der zugrunde liegende Ansatz kann für weitere Hochschulen adaptiert werden, wobei lokale Verwaltungsstrukturen und spezifische Regelungen berücksichtigt werden müssen. Langfristig könnte das System zu einer Standardlösung für digitalisierte Verwaltungsprozesse an Hochschulen werden und möglicherweise auf andere Zielgruppen, wie internationale Fachkräfte, ausgeweitet werden.
+
+*Ausblick*
+
+Zukünftige Arbeiten könnten sich auf die Validierung des entwickelten Prototyps sowie auf die technische Implementierung konzentrieren. Dabei spielen insbesondere die folgenden Aspekte eine wichtige Rolle:
+- *Integration in bestehende Hochschulsysteme*: Anbindung an Portale für Studierende, Austausch mit Verwaltungssystemen und Automatisierung von Prozessen.
+- *Optimierung der Nutzerführung*: Weiterentwicklung der Benutzeroberfläche basierend auf Usability-Tests.
+- *Erweiterung der Funktionalitäten*: Mögliche Erweiterungen umfassen eine dynamische Anpassung des Unterstützungsgrads, basierend auf dem individuellen Informationsbedarf, sowie eine detailliertere Zeitplanung für Studierende.
 
 *Fazit*
-Ein nutzerzentrierter Prototyp kann die bürokratischen Hürden für ausländische Studierende in Deutschland erheblich reduzieren.
 
-Symptombehandlung oder Ursachenforschung:
-- Anwendung hilft bei der Durchführung des Prozesses
-- Anpassungen am Prozess (Antwortzeiten, Vernetzung
-der Behörden)
+Der Prototyp zeigt, dass eine nutzerzentrierte Verwaltungsanwendung einen erheblichen Beitrag zur Reduzierung bürokratischer Hürden für ausländische Studierende leisten kann. Er bietet eine strukturierte Unterstützung bei der Durchführung administrativer Prozesse und trägt dazu bei, Unsicherheiten zu reduzieren und den Studierenden eine bessere Orientierung zu ermöglichen.
 
-Übertragbarkeit: Diskutieren Sie, inwiefern der Prototyp auch für andere Hochschulen oder Städte genutzt werden könnte
+Dabei bleibt die zentrale Frage bestehen, ob es sich lediglich um eine Symptombehandlung handelt oder ob langfristig auch eine Optimierung der zugrundeliegenden Prozesse angestrebt werden sollte. Während die Anwendung den Studierenden hilft, sich effizient durch den bestehenden Prozess zu navigieren, könnte eine weitergehende Vernetzung der Behörden und eine Verkürzung von Antwortzeiten zusätzliche Effekte erzielen.
 
-der Prototyp einen Beitrag zur Vereinfachung der bürokratischen Prozesse für ausländische Studierende leisten kann.
+Letztlich bleibt zu diskutieren, inwiefern der Prototyp auch für andere Hochschulen oder Städte adaptiert werden kann und ob er eine breitere Anwendung in der Vereinfachung bürokratischer Prozesse für ausländische Studierende finden könnte.
