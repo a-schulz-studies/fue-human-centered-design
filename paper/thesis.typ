@@ -41,14 +41,14 @@ Ziel der Arbeit ist die Entwicklung eines Prototyps, der ausländische Studieren
 
 *Vorgehensweise*
 
-Im Rahmen der Arbeit wird die Methode des Human-Centered Design (HCD) angewandt, um die Perspektiven und Bedürfnisse der Zielgruppe in den Mittelpunkt zu stellen. Durch die iterative Einbindung von Nutzerfeedback wird ein praxisnaher und bedarfsgerechter Prototyp entwickelt. Dieser Ansatz gewährleistet, dass die erarbeiteten Lösungen den realen Anforderungen der Studierenden gerecht werden und ihnen die bürokratischen Abläufe erleichtern.
+Im Rahmen der Arbeit wird die Methode des Human-Centered Design angewandt, um die Perspektiven und Bedürfnisse der Zielgruppe in den Mittelpunkt zu stellen. Durch die iterative Einbindung von Nutzerfeedback wird ein praxisnaher und bedarfsgerechter Prototyp entwickelt. Dieser Ansatz gewährleistet, dass die erarbeiteten Lösungen den realen Anforderungen der Studierenden gerecht werden und ihnen die bürokratischen Abläufe erleichtern.
 
 // ###############################################################################
 // ###############################################################################
 // ###############################################################################
 // ###############################################################################
 
-= Methode des Human-Centered Design (HCD)
+= Methode des Human-Centered Design
 
 Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Ziel ist es, benutzerfreundliche Lösungen zu schaffen, die effizient und effektiv sind. HCD basiert auf den Prinzipien @farooquiImpactHumanCenteredDesign2019:
 - *Fokus auf Menschen:* Nutzerbedürfnisse stehen im Vordergrund.
@@ -449,14 +449,14 @@ Für eine bessere Übersicht werden zusätzliche Ansichten bereitgestellt:
 - *Graphenansicht*: Die Abhängigkeiten zwischen einzelnen Schritten werden visualisiert, um Studierenden ein besseres Verständnis für den gesamten Prozess zu ermöglichen. Dies hilft insbesondere bei komplexen Prozessen mit mehreren Abhängigkeiten, wie z. B. dem Zusammenspiel zwischen Visumsantrag und Immatrikulation. In @prototypecalendargraph (rechts) dargestellt.
 
 #figure(
-grid(
+  grid(
     columns: (7fr, 9fr),
-  image("images/Prototyp_Kalender.png"),
-  image("images/Prototyp_Graph.png", width: 80%),
-),
-caption: [
-  Prototyp - Kalender und Graph
-],
+    image("images/Prototyp_Kalender.png"),
+    image("images/Prototyp_Graph.png", width: 80%),
+  ),
+  caption: [
+    Prototyp - Kalender und Graph
+  ],
 )<prototypecalendargraph>
 
 Grafiken zu vollständigen Oberflächen des Prototyps sind im #link(label("prototype"))[Anhang] (@prototype) zu finden.

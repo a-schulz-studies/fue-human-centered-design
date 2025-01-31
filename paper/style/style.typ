@@ -155,12 +155,12 @@
   //print_acronym_listing("")
 
   // List of tables.
-  pagebreak()
-  heading(numbering: none)[Tabellenverzeichnis]
-  outline(
-    title: none,
-    target: figure.where(kind: table),
-  )
+  //pagebreak()
+  //heading(numbering: none)[Tabellenverzeichnis]
+  //outline(
+  //    title: none,
+  //    target: figure.where(kind: table),
+  //)
 
   //pagebreak()
 
