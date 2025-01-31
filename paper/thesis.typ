@@ -374,73 +374,38 @@ Die gewählten Features adressieren die *kritischsten Problemstellen* aus den In
 - *Unsicherheit* (z. B. bei Fristen oder Dokumenten) wird durch Status-Updates und übersichtliche Schritt-für-Schritt-Anleitungen reduziert.
 - *Informationsüberflutung* wird durch Personalisierung und gezielte Filterung vermieden.
 
-Diese Features lassen sich *ohne Prozessänderungen* umsetzen, da sie als übergeordnete Hilfsmittel agieren. Sie ermöglichen es den Studierenden, eigenständiger zu handeln und sich auf ihre Kernziele aus @studentgoals zu konzentrieren, statt in Bürokratie zu versinken.
+Diese Features lassen sich ohne Prozessänderungen umsetzen, da sie als übergeordnete Hilfsmittel agieren. Sie ermöglichen es den Studierenden, eigenständiger zu handeln und sich auf ihre Kernziele aus @studentgoals zu konzentrieren, statt in Bürokratie zu versinken.
 Eine vollständige Liste aller angedachten Features kann im #link(label("features"))[Anhang] (@features) eingesehen werden.
 
 == Konzeption der einzelnen Features
 
-Anpassung des Tools an die aktuelle Situation der Studierenden (Personalisierung)
-*Erfassung der Lebenslage #footnote[Individuellen Situation der Nutzer.]*
+*Anpassung des Tools an die aktuelle Situation der Studierenden (Personalisierung)*
 
-Anwendung nicht für jeden gleich. Selektion der Dienste auf Grundlage der Lebenslage
-Welche Attribute müssen abgefragt werden um die Lebenslage zu identifizieren?
-Danach wird die Lebenslage über erledigte Schritte und erworbene Dokumente verfolgt.
-Kann die Situation/Status über die vorhandenen Dokumente dynamisch ohne weiteres zutun der Nutzer verfolgt werden?
-Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
-Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
-Erste Designs wurden in Miro entwickelt. Diese enthalten Wireframes und einfache Abläufe.
+Die zukünftige Anwendung ist nicht für jeden Nutzer gleich, sondern passt sich individuell an die Lebenslage #footnote[Individuellen Situation der Nutzer.] der Studierenden an. Dies geschieht durch eine Selektion der Prozessschritte und Informationen auf Grundlage von Attributen wie Herkunftsland, Aufenthaltsdauer und Studienziel. Dadurch kann die Anwendung die richtigen Informationen zum richtigen Zeitpunkt bereit stellen und unterstützt die Studierenden so effizient bei der Bewältigung ihrer Aufgaben.
 
-*Erfassung der Lebenslage:*
+Fragen zur Konzeption:
+- Welche Attribute müssen abgefragt werden, um die Lebenslage zu erfassen?
+- Kann die Situation oder der Status dynamisch über vorhandene Dokumente verfolgt werden, ohne zusätzliches Zutun der Nutzer?
 
-Persönliche Daten
-- Name (Personalisierung)
-- Herkunftsland (Select - Search)
-
-Informationen zum geplanten Auslandssemester
-- Art / Zweck des Aufenthalts (Semester, Vollzeitstudium)
-- Aufenthaltsdauer (Visum oder Melden notwendig)
-- Startdatum (Welcome week)
-- Welches Startsemester
-- Studiengang in Dresden
-
-Aktuelle Situation
-- Aktuelle Phase (vor, während, nach)
-  - Universität auswählen
-  - Bewerbung eingereicht
-  - Zulassung erhalten
-  - Visum beantragt
-  - Reise geplant
-- Welche Dokumente sind vorhanden
-  - Nominierung
-  - Zulassung
-  - Visum
-  - Pass
-  - Einwohnermelde
-  - ...
-
-// Liste kann zusammengefasst werden, muss nicht so im Abschlusstext dargestellt werden.
-
-Dargestellt in
-
-#oasis-align(
+#figure(
+oasis-align(
   int-dir: -1,
-  figure(
-    image("images/Prototyp_Pers_Informationen.png"),
-    caption: [
-      Prototyp - Erfassung der persönlichen Informationen
-    ],
-  ),
-  figure(
-    image("images/Prototyp_Akt_Situation.png"),
-    caption: [
-      Prototyp - Erfassung der aktuelle Situation
-    ],
-  ),
-)
+  image("images/Prototyp_Pers_Informationen.png", width: 90%),
+  image("images/Prototyp_Akt_Situation.png", width: 118%),
+),
+caption: [
+  Prototyp - Erfassung der persönlichen Informationen
+],
+)<protypelebenslagepersinfo>
+Um die Lebenslage der Studierenden individuell zu erfassen, werden verschiedene Angaben benötigt. Dazu gehören persönliche Daten wie der Name zur Personalisierung der Anwendung sowie das Herkunftsland, das über ein Dropdown-Menü mit Suchfunktion ausgewählt werden kann. Zudem sind Informationen zum geplanten Auslandssemester relevant, darunter die Art des Aufenthalts, die Aufenthaltsdauer, die darüber entscheidet, ob ein Visum erforderlich ist, sowie das Startdatum, das für die Berechnung wichtiger Ereignisse, wie Fristen für Visumanträge oder Wohnungssuche genutzt wird. Weitere notwendige Angaben umfassen das Startsemester, beispielsweise das Wintersemester, und den Studiengang in Dresden. Der Entwurf dieses Formulars ist in @protypelebenslagepersinfo (link) dargestellt.
+
+Darüber hinaus wird in @protypelebenslagepersinfo (rechts) die aktuelle Situation der Studierenden erfasst. Dazu gehört die Angabe der aktuellen Phase ihres Aufenthalts, also ob sie sich vor, während oder nach dem Studienbeginn befinden. Innerhalb dieser Phasen können Studierende schon einige Schritte wie die Einreichung der Bewerbung oder die Beantragung eines Visums durchgeführt haben. Ergänzend dazu werden die bereits vorliegenden Dokumente abgefragt, darunter das (Online) Learning Agreement, der Zulassungsbescheid etc.
+Anhand der bereits durchgeführten Schritte und der vorhandenen Dokumente lässt sich die Lebenslage präzise bestimmen.
+So wird sichergestellt, dass die Anwendung stets auf die individuelle Situation der Studierenden zugeschnittene Informationen und Unterstützung bereitstellt.
 
 
-Ableiten der Fristen für die Aufgaben ...
-Diese Daten helfen, relevante Informationen, Aufgaben und Features auf die Bedürfnisse und den Fortschritt der Studierenden zuzuschneiden.
+Im weiteren Verlauf soll die Lebenslage durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende irrelevant wären.
+Durch diese maßgeschneiderte Bereitstellung relevanter Inhalte wird ein personalisiertes Nutzererlebnis geschaffen.
 
 *Statusanzeige*
 
