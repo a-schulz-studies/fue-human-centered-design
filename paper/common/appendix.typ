@@ -133,5 +133,6 @@ Netzwerk Möglichkeiten
   | **1.2** | **Rechner zum Konvertieren von ECTs** um zu prüfen, ob die Anforderungen an den Universitäten erfüllt werden. | Nicht EU Austauschstudenten |
 ]
 
+== Prototyp <prototype>
 
 == Screenshots des Prototypen

@@ -429,37 +429,35 @@ Sie umfasst:
 
 *Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenlisten*
 
-Bereiche zum Anzeigen der abgeschlossenen Schritte, der vorhanden Dokumente und übersichtliche Darstellung der nächsten Schritte.
+Die Anwendung bietet verschiedene Elemente um die Komplexität durch die vielen Schritte zu reduzieren, diese sind in @prototypestepsdocs dargestellt:
+- Schritt-für-Schritt-Anleitungen: Übersichtliche Darstellung der nächsten Schritte, wobei nur die aktuell relevanten Schritte angezeigt werden.
+- Dokumentenlisten: Anzeige der vorhandenen Dokumente, um diese in weiteren Schritten zu verwenden.
+- Hinweise bei Wartezeiten: Informationen zur erwarteten Rückmeldedauer, falls auf Dokumente gewartet wird.
 
-Es werden nicht immer alle folgenden Schritte angezeigt, sondern nur die, welche gerade durchgeführt werden können, falls aktuell auf Dokumente gewaretet wird, wird ein Hinweis angezeigt, mit der zu erwartenden Rückmeldedauer.
 #figure(
   image("images/Prototyp_Schritte_Dokumente.png", height: 40%),
   caption: [
     Prototyp - Dokumentenliste und nächste Schritte
   ],
-)
+)<prototypestepsdocs>
 
-Für eine bessere Übersicht wird außerdem eine Kalenderansicht mit Terminen bereitgestellt.
-Eine detaillierte Übersicht über den Prozess wird durch eine Graphenansicht bereitgestellt, bei dem Schritte und Abhängigkeiten im Prozess übersichtlich dargestellt werden. Somit sollen Unsicherheiten und Informationsbedarf gedeckt werden. Sind einfacher zu verstehen als ein langer Text mit verweisen auf andere Schritte.
+Für eine bessere Übersicht werden zusätzliche Ansichten bereitgestellt:
+- Kalenderansicht: Zeigt Fristen, Termine und wichtige Meilensteine übersichtlich an @prototypecalendargraph (link).
+- Graphenansicht: Visualisiert den Prozess und die Abhängigkeiten zwischen den Schritten, um Unsicherheiten zu reduzieren und den Informationsbedarf zu decken @prototypecalendargraph (rechts).
 
-#oasis-align(
+#figure(
+oasis-align(
   int-dir: -1,
-  figure(
-    image("images/Prototyp_Kalender.png"),
-    caption: [
-      Prototyp - Kalenderansicht
-    ],
-  ),
-  figure(
-    image("images/Prototyp_Graph.png"),
-    caption: [
-      Prototyp - Detailansicht als Graph
-    ],
-  ),
-)
+  image("images/Prototyp_Kalender.png"),
+  image("images/Prototyp_Graph.png"),
+),
+caption: [
+  Prototyp - Kalender und Graph
+],
+)<prototypecalendargraph>
 
 
-#highlight[Weitere Grafiken zum Prototyp im Anhang]
+Grafiken zu vollständigen Oberflächen des Protoyps sind im #link(label("prototype"))[Anhang] (@prototype) zu finden.
 
 // ###############################################################################
 // ###############################################################################
