@@ -381,7 +381,7 @@ Eine vollständige Liste aller angedachten Features kann im #link(label("feature
 
 *Anpassung des Tools an die aktuelle Situation der Studierenden (Personalisierung)*
 
-Die zukünftige Anwendung ist nicht für jeden Nutzer gleich, sondern passt sich individuell an die Lebenslage #footnote[Individuellen Situation der Nutzer.] der Studierenden an. Dies geschieht durch eine Selektion der Prozessschritte und Informationen auf Grundlage von Attributen wie Herkunftsland, Aufenthaltsdauer und Studienziel. Dadurch kann die Anwendung die richtigen Informationen zum richtigen Zeitpunkt bereit stellen und unterstützt die Studierenden so effizient bei der Bewältigung ihrer Aufgaben.
+Die zukünftige Anwendung ist nicht für jeden Nutzer gleich, sondern passt sich individuell an die Lebenslage #footnote[Individuellen Situation der Nutzer.] der Studierenden an. Dies geschieht durch eine Selektion der Prozessschritte und Informationen auf Grundlage von Attributen wie Herkunftsland, Aufenthaltsdauer und Studienziel. Dadurch kann die Anwendung die richtigen Informationen zum richtigen Zeitpunkt bereitstellen und unterstützt die Studierenden so effizient bei der Bewältigung ihrer Aufgaben.
 
 Fragen zur Konzeption:
 - Welche Attribute müssen abgefragt werden, um die Lebenslage zu erfassen?
@@ -397,24 +397,23 @@ Fragen zur Konzeption:
     Prototyp - Erfassung der Lebenslage
   ],
 )<protypelebenslage>
+
 Um die Lebenslage der Studierenden individuell zu erfassen, werden verschiedene Angaben benötigt. Dazu gehören persönliche Daten wie der Name zur Personalisierung der Anwendung sowie das Herkunftsland, das über ein Dropdown-Menü mit Suchfunktion ausgewählt werden kann. Zudem sind Informationen zum geplanten Auslandssemester relevant, darunter die Art des Aufenthalts, die Aufenthaltsdauer, die darüber entscheidet, ob ein Visum erforderlich ist, sowie das Startdatum, das für die Berechnung wichtiger Ereignisse, wie Fristen für Visumanträge oder Wohnungssuche genutzt wird. Weitere notwendige Angaben umfassen das Startsemester, beispielsweise das Wintersemester, und den Studiengang in Dresden. Der Entwurf dieses Formulars ist in @protypelebenslage (link) dargestellt.
 
-Darüber hinaus wird in @protypelebenslage (rechts) die aktuelle Situation der Studierenden erfasst. Dazu gehört die Angabe der aktuellen Phase ihres Aufenthalts, also ob sie sich vor, während oder nach dem Studienbeginn befinden. Innerhalb dieser Phasen können Studierende schon einige Schritte wie die Einreichung der Bewerbung oder die Beantragung eines Visums durchgeführt haben. Ergänzend dazu werden die bereits vorliegenden Dokumente abgefragt, darunter das (Online) Learning Agreement, der Zulassungsbescheid etc.
-Anhand der bereits durchgeführten Schritte und der vorhandenen Dokumente lässt sich die Lebenslage präzise bestimmen.
-So wird sichergestellt, dass die Anwendung stets auf die individuelle Situation der Studierenden zugeschnittene Informationen und Unterstützung bereitstellt.
+Darüber hinaus wird in @protypelebenslage (rechts) die aktuelle Situation der Studierenden erfasst. Dazu gehört die Angabe der aktuellen Phase ihres Aufenthalts, also ob sie sich vor, während oder nach dem Studienbeginn befinden. Innerhalb dieser Phasen können Studierende schon einige Schritte wie die Einreichung der Bewerbung oder die Beantragung eines Visums durchgeführt haben. Ergänzend dazu werden die bereits vorliegenden Dokumente abgefragt, darunter das (Online) Learning Agreement, der Zulassungsbescheid etc. Anhand der bereits durchgeführten Schritte und der vorhandenen Dokumente lässt sich die Lebenslage präzise bestimmen. So wird sichergestellt, dass die Anwendung stets auf die individuelle Situation der Studierenden zugeschnittene Informationen und Unterstützung bereitstellt.
 
-
-Im weiteren Verlauf soll die Lebenslage durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende irrelevant wären.
-Durch diese maßgeschneiderte Bereitstellung relevanter Inhalte wird ein personalisiertes Nutzererlebnis geschaffen.
+Im weiteren Verlauf soll die Lebenslage durch die abgeschlossenen Schritte und die erhaltenen Dokumente weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essenziell, da sonst die falschen Informationen angezeigt werden. Beispielsweise benötigen Studierende aus dem EU-Ausland detaillierte Informationen zu Visum und Krankenversicherung, während diese Informationen für EU-Studierende irrelevant wären. Durch diese maßgeschneiderte Bereitstellung relevanter Inhalte wird ein personalisiertes Nutzererlebnis geschaffen.
 
 *Statusanzeige*
 
-Die Statusanzeige bietet den Studierenden einen klaren Überblick über ihren Fortschritt im gesamten Prozess.
+Um Studierenden eine klare Orientierung über ihren Fortschritt im gesamten Prozess zu ermöglichen, bietet die Anwendung eine Statusanzeige mit mehreren Elementen. Diese erlaubt es den Nutzern, sich jederzeit über ihren aktuellen Stand zu informieren und offene Aufgaben frühzeitig zu erkennen.
 
-Sie umfasst:
-- Fortschrittsbalken: Zeigt den aktuellen Stand in der jeweiligen Phase an @protypelebensstatus (links oben).
-- Ampelsystem (rot, gelb, grün): Gibt Auskunft über den Gesamtstatus und warnt bei drohenden Verzögerungen @protypelebensstatus (links unten).
-- Kanban-Board: Übersicht aller Phasen mit farblicher Markierung der aktuellen Phase und Angabe der erledigten sowie notwendigen Schritte @protypelebensstatus (rechts).
+Die Statusanzeige umfasst verschiedene visuelle Darstellungen:
+- *Fortschrittsbalken*: Zeigt den aktuellen Stand innerhalb der jeweiligen Phase an und ermöglicht eine schnelle Einschätzung der verbleibenden Schritte. In @protypelebensstatus (links oben) dargestellt.
+- *Ampelsystem (rot, gelb, grün)*: Gibt eine sofort verständliche Rückmeldung über den Gesamtstatus und warnt bei drohenden Verzögerungen. Warnungen können beispielsweise bei Fristen für Visumanträge oder Einschreibungen helfen. Siehe @protypelebensstatus (links unten).
+- *Kanban-Board*: Bietet eine strukturierte Übersicht über alle Phasen und zeigt farblich markiert die aktuelle Phase sowie bereits abgeschlossene und noch ausstehende Schritte. In @protypelebensstatus (rechts) dargestellt.
+
+Durch diese unterschiedlichen Darstellungsformen wird die Komplexität des Prozesses reduziert, und Studierende können sich gezielt auf ihre nächsten Aufgaben konzentrieren.
 
 #figure(
   grid(
@@ -429,10 +428,14 @@ Sie umfasst:
 
 *Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenlisten*
 
-Die Anwendung bietet verschiedene Elemente um die Komplexität durch die vielen Schritte zu reduzieren, diese sind in @prototypestepsdocs dargestellt:
-- Schritt-für-Schritt-Anleitungen: Übersichtliche Darstellung der nächsten Schritte, wobei nur die aktuell relevanten Schritte angezeigt werden.
-- Dokumentenlisten: Anzeige der vorhandenen Dokumente, um diese in weiteren Schritten zu verwenden.
-- Hinweise bei Wartezeiten: Informationen zur erwarteten Rückmeldedauer, falls auf Dokumente gewartet wird.
+Um die Komplexität des Verwaltungsprozesses weiter zu reduzieren, bietet die Anwendung strukturierte Schritt-für-Schritt-Anleitungen und eine zentrale Dokumentenverwaltung. Diese Funktionen erleichtern es den Studierenden, sich auf die wesentlichen Aufgaben zu konzentrieren und notwendige Dokumente griffbereit zu haben.
+
+Folgende Elemente sind enthalten:
+- *Schritt-für-Schritt-Anleitungen*: Die Studierenden erhalten eine dynamische Übersicht über die nächsten Schritte, wobei jeweils nur die für ihre aktuelle Situation relevanten Aufgaben angezeigt werden. So wird vermieden, dass Nutzer mit irrelevanten Informationen überflutet werden.
+- *Dokumentenlisten*: Eine zentrale Verwaltung der bereits hochgeladenen oder erhaltenen Dokumente ermöglicht es, diese bei weiteren Schritten direkt zu verwenden. So kann beispielsweise ein bereits hochgeladenes Visum-Dokument automatisch für die nächste Phase berücksichtigt werden.
+- *Hinweise bei Wartezeiten*: Falls Studierende auf bestimmte Dokumente warten müssen (z. B. Zulassungsbescheid oder Visum), gibt die Anwendung eine Einschätzung zur erwarteten Bearbeitungsdauer und informiert darüber, wenn Verzögerungen auftreten könnten.
+
+Diese strukturierten Anleitungen und Dokumentenlisten helfen, Unsicherheiten zu reduzieren und den Prozess klarer zu gestalten.
 
 #figure(
   image("images/Prototyp_Schritte_Dokumente.png", height: 40%),
@@ -442,22 +445,21 @@ Die Anwendung bietet verschiedene Elemente um die Komplexität durch die vielen 
 )<prototypestepsdocs>
 
 Für eine bessere Übersicht werden zusätzliche Ansichten bereitgestellt:
-- Kalenderansicht: Zeigt Fristen, Termine und wichtige Meilensteine übersichtlich an @prototypecalendargraph (link).
-- Graphenansicht: Visualisiert den Prozess und die Abhängigkeiten zwischen den Schritten, um Unsicherheiten zu reduzieren und den Informationsbedarf zu decken @prototypecalendargraph (rechts).
+- *Kalenderansicht*: Diese zeigt alle relevanten Fristen, Termine und Meilensteine übersichtlich an. So behalten Studierende ihre Deadlines im Blick und können sich frühzeitig auf kommende Aufgaben vorbereiten. In @prototypecalendargraph (links) dargestellt.
+- *Graphenansicht*: Die Abhängigkeiten zwischen einzelnen Schritten werden visualisiert, um Studierenden ein besseres Verständnis für den gesamten Prozess zu ermöglichen. Dies hilft insbesondere bei komplexen Prozessen mit mehreren Abhängigkeiten, wie z. B. dem Zusammenspiel zwischen Visumsantrag und Immatrikulation. In @prototypecalendargraph (rechts) dargestellt.
 
 #figure(
-oasis-align(
-  int-dir: -1,
+grid(
+    columns: (7fr, 9fr),
   image("images/Prototyp_Kalender.png"),
-  image("images/Prototyp_Graph.png"),
+  image("images/Prototyp_Graph.png", width: 80%),
 ),
 caption: [
   Prototyp - Kalender und Graph
 ],
 )<prototypecalendargraph>
 
-
-Grafiken zu vollständigen Oberflächen des Protoyps sind im #link(label("prototype"))[Anhang] (@prototype) zu finden.
+Grafiken zu vollständigen Oberflächen des Prototyps sind im #link(label("prototype"))[Anhang] (@prototype) zu finden.
 
 // ###############################################################################
 // ###############################################################################
