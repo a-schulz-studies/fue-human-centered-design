@@ -314,59 +314,113 @@ Die Ergebnisse der Ideal-Prozess-Analyse bilden somit die Grundlage für die Ent
 // ###############################################################################
 
 = Konzeption und Design des Prototyps
+//  Nutzungskontext und Ziele der Studierenden als Grundlagen des Prototypen
+== Grundlagen des Prototypen
 
-== Auswahl der wichtigesten Features
-
-Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnissen und dem Verständins für den Ideal-Prozess
-
-Nicht-Funktionale Anforderungen
+Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnisse und dem Verständnis für den Ideal-Prozess wurden die wichtigsten Features für den Prototypen identifiziert. Diese sollen die größten Herausforderungen der internationalen Studierenden adressieren und ihre Ziele bestmöglich unterstützen.
 
 *Berücksichtigung von Nutzungskontexten*
-Wichtig bei der Entwicklung des Prototypen ist vorallem der Nutzungskontext, beschrieben in @situation-improvemnent. In diesem Fall soll eine zukünftige Anwendung sowohl auf mobilen als auch auf Desktop Geräten funktionieren.
 
-Mobile Nutzung: Die App sollte responsiv und für die mobile Nutzung optimiert sein, mit weniger Text und der Möglichkeit, Sitzungen zu unterbrechen
+Die Entwicklung des Prototyps muss den Nutzungskontext der Zielgruppe berücksichtigen, wie in @situation-improvemnent beschrieben. Da internationale Studierende sowohl mobile als auch Desktop-Geräte nutzen, sollte die Anwendung auf beiden Plattformen optimal funktionieren:
 
-Benutzerfreundlichkeit: Die App sollte intuitiv und einfach zu bedienen sein.
+- *Mobile Nutzung:* Die App sollte responsiv und für die mobile Nutzung optimiert sein. Dies umfasst eine klare, reduzierte Darstellung von Informationen, die Möglichkeit, Sitzungen zu unterbrechen und später fortzusetzen, sowie eine intuitive Navigation.
+- *Desktop-Nutzung:* Auf Desktop-Geräten sollte die Anwendung mehr Details und umfangreiche Funktionen bieten, wie z. B. die Möglichkeit, Dokumente hochzuladen oder längere Checklisten zu bearbeiten.
 
-Ableitend von den  analysiert wurde, sollte die Entwicklung einer App sollte folgende Ziele verfolgen:
-Schnelle und einfache Orientierung in Deutschland und Bewältigung bürokratischer Prozesse
-Einfacher Zugang zu relevanten Informationen und Ressourcen
-Austausch mit anderen Studenten und Aufbau eines Netzwerks
-Optimale Nutzung des Aufenthalts und der Möglichkeiten des kulturellen Austauschs
+*Benutzerfreundlichkeit*
 
-Basierend auf den identifizierten Herausforderungen @studentproblems und den geäußerten Bedürfnissen der Studierenden könnten folgende **digitale Werkzeuge** besonders hilfreich sein, um die Ziele der Studierenden (@studentgoals) bestmöglich zu unterstützen:
+Die Anwendung sollte intuitiv und einfach zu bedienen sein, um die Akzeptanz und Nutzung durch die Studierenden zu maximieren. Dazu gehören:
+- Klare, verständliche Sprache und visuelle Hierarchien.
+- Minimierung von Klicks und Schritten, um Aufgaben zu erledigen.
+- Barrierefreie Gestaltung, um auch Nutzer mit geringen Deutsch- oder Englischkenntnissen zu unterstützen.
 
-*Top 3 prioritäre Features:*
+*Ziele der Anwendung*
 
-*Statusanzeige*
-- Schneller Überblick, wie gut man im Prozess steht, ob man eine Verzögerung zu befürchten hat oder ob alles gut im zeitlichen Rahmen liegt.
-- Echtzeit-Erinnerungen für Fristen und Termine.
+Die Entwicklung der App sollte folgende Ziele verfolgen, um den Studierenden bestmöglich zu helfen:
+1. *Schnelle und einfache Orientierung in Deutschland:* Unterstützung bei der Bewältigung bürokratischer Prozesse wie Visum, Krankenversicherung und Stadtregistrierung.
+2. *Einfacher Zugang zu relevanten Informationen und Ressourcen:* Bereitstellung von zentralisierten, leicht verständlichen Informationen zu Studienabläufen, Wohnungssuche und kulturellen Angeboten.
+3. *Austausch mit anderen Studierenden und Aufbau eines Netzwerks:* Förderung der sozialen Integration durch Vernetzungsmöglichkeiten.
+4. *Optimale Nutzung des Aufenthalts und des kulturellen Austauschs:* Unterstützung bei der Planung von Freizeitaktivitäten und Reisen innerhalb Deutschlands und Europas.
 
-*Anpassung des Tools an die aktuelle Situation der Studierenden -> personalisierung*
-- Nur die richtigen Informationen, damit Studierende nicht durch zu viele Informationen überfordert werden.
-- Berücksichtigung der persönlichen Bedürfnisse und Interessen der Studenten
+== Priorisierung der wichtigsten Features
 
-*Zentrales Schritt-für-Schritt-Tool mit Dokumentenchecklisten*
-   - Ein digitaler Assistent, der **personalisiert** durch alle bürokratischen Prozesse (Visum, Krankenversicherung, Anmeldung) führt:
-     - Automatisierte Checklisten für jeden Schritt, angepasst an Herkunftsland (EU/Nicht-EU).
+Basierend auf den identifizierten Herausforderungen (@studentproblems) und den geäußerten Bedürfnissen der Studierenden wurden folgende Features als besonders wichtig eingestuft:
+
+1. *Statusanzeige*
+   - *Funktion:* Eine übersichtliche Darstellung des aktuellen Stands im Bewerbungs- und Anmeldeprozess, einschließlich Fristen, Terminen und offenen Aufgaben.
+   - *Vorteile:*
+     - Schneller Überblick, ob Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
+     - Echtzeit-Erinnerungen für Fristen und Termine, um Prokrastination und Versäumnisse zu vermeiden.
+   - *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse und fehlende Rückmeldungen.
+
+2. *Anpassung des Tools an die aktuelle Situation der Studierenden (Personalisierung)*
+   - *Funktion:* Das Tool passt sich den individuellen Bedürfnissen der Studierenden an, indem es nur relevante Informationen und Schritte anzeigt.
+   - *Vorteile:*
+     - Vermeidung von Informationsüberflutung durch gezielte Filterung.
+     - Berücksichtigung von Faktoren wie Herkunftsland (EU/Nicht-EU), Studiengang und persönlichen Interessen.
+   - *Relevanz:* Erhöht die Benutzerfreundlichkeit und Effizienz, indem es den Fokus auf das Wesentliche lenkt.
+
+3. *Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenchecklisten*
+   - *Funktion:* Ein digitaler Kompass, der die Studierenden durch alle bürokratischen Prozesse führt, von der Visumbeantragung bis zur Anmeldung an der Universität.
+   - *Vorteile:*
+     - Checklisten für jeden Schritt, angepasst an Herkunftsland und Studienziel.
      - Integrierte Vorlagen für Anträge und Links zu offiziellen Formularen.
-   - **Warum prioritär?** Die größten Schmerzpunkte liegen in der Unübersichtlichkeit von Prozessen und physischen Dokumenten. Dieses Feature reduziert Fehler, spart Zeit und mindert Unsicherheit.
+   - *Relevanz:* Reduziert Fehler, spart Zeit und mindert Unsicherheit bei der Bewältigung bürokratischer Hürden.
 
+*Begründung der Priorisierung*
 
-*Begründung der Priorisierung:*
-Die gewählten Features adressieren die **kritischsten Schmerzpunkte** aus den Interviews:
-- **Bürokratie** (häufigste Beschwerde) wird durch klare Anleitungen und Terminmanagement entschärft.
-- **Unsicherheit** (z. B. bei Fristen oder Dokumenten) wird durch Automatisierung reduziert.
-- Beide Tools lassen sich **ohne Prozessänderungen** umsetzen, da sie als übergeordnete Hilfsmittel agieren.
+Die gewählten Features adressieren die *kritischsten Problemstellen* aus den Interviews:
+- *Bürokratie* (häufigste Beschwerde) wird durch klare Anleitungen und Terminmanagement entschärft.
+- *Unsicherheit* (z. B. bei Fristen oder Dokumenten) wird durch Status-Updates und übersichtliche Schritt-für-Schritt-Anleitungen reduziert.
+- *Informationsüberflutung* wird durch Personalisierung und gezielte Filterung vermieden.
 
-Mit diesen Features könnten Studierende eigenständiger handeln und sich auf Kernziele (Studium, Integration) konzentrieren, statt in Bürokratie zu versinken.
-Eine vollständige Liste alle angedachten Features kann im #link(label("features"))[Anhang] (@features) eingesehen werden.
+Diese Features lassen sich *ohne Prozessänderungen* umsetzen, da sie als übergeordnete Hilfsmittel agieren. Sie ermöglichen es den Studierenden, eigenständiger zu handeln und sich auf ihre Kernziele aus @studentgoals zu konzentrieren, statt in Bürokratie zu versinken.
 
-#highlight[Langer Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
+#highlight[Ein langer Visaprozess ist nicht per se problematisch, sondern erst dann, wenn er den Studienstart verzögert. Daher ist es entscheidend, dass das Tool frühzeitig auf mögliche Verzögerungen hinweist und alternative Lösungen vorschlägt.]
+
+Eine vollständige Liste aller angedachten Features kann im #link(label("features"))[Anhang] (@features) eingesehen werden.
 
 == Konzeption der einzelnen Features
 
 *Erfassung der Lebenslage #footnote[Individuellen Situation der Nutzer.]*
+
+Entwurf:
+Anwendung nicht für jeden gleich. Selektion der Dienste auf Grundlage der Lebenslage (Herkunftsland, Aufenthaltsdauer, ...)
+Welche Attribute müssen abgefragt werden?
+Kann die Situation/Status über die vorhandenen Dokumente dynamisch ohne weiteres zutun der Nutzer verfolgt werden?
+
+**Identifikation der Lebenslage:**
+Formularfelder:
+
+- Name (Personalisierung)
+- Herkunftsland (Select - Search)
+- Art / Zweck des Aufenthalts (Semester, Vollzeitstudium)
+- Aufenthaltsdauer (Visum oder Melden notwendig)
+- Startdatum (Welcome week)
+- Welches Startsemester
+- Studiengang in Dresden
+
+- Aktuelle Phase (vor, während, nach)
+	- Universität auswählen
+	- Bewerbung eingereicht
+	- Zulassung erhalten
+	- Visum beantragt
+	- Reise geplant
+- Welche Dokumente sind vorhanden
+	- Nominierung
+	- Zulassung
+	- Visum
+	- Pass
+	- Einwohnermelde
+	- ...
+
+Ableiten der Fristen für die Aufgaben ...
+
+Diese Daten helfen, relevante Informationen, Aufgaben und Features auf die Bedürfnisse und den Fortschritt der Studierenden zuzuschneiden.
+
+Danach wird die Lebenslage über erledigte Schritte und erworbene Dokumente verfolgt.
+
+
+
 Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
 
 Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
