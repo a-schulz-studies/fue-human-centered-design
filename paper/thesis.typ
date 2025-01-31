@@ -299,7 +299,7 @@ Diese Visualisierung erwies sich als hilfreich, um:
 *Erkenntnisse aus dem Austausch mit der Stabsstelle Internationales*
 
 Zusätzlich zu der eigenständigen Anlayse des textuellen Prozesses wurde ein Gespräch mit der Stabsstelle Internationales geführt.
- Dieses habt wertvolle Einblicke in die tatsächliche Organisation und Kommunikation der bürokratischen Abläufe für internationale Studierende geliefert. Ein zentrales Ergebnis war, dass Studierende grundsätzlich selbst und proaktiv für die Erledigung der erforderlichen administrativen Schritte verantwortlich sind. Allerdings werden sie dabei aktiv durch die Stabsstelle unterstützt. Hierzu existiert ein fester Kommunikationsplan, in dem genau festgelegt ist, zu welchem Zeitpunkt welche E-Mails mit relevanten Informationen an die Studierenden versendet werden.
+Dieses habt wertvolle Einblicke in die tatsächliche Organisation und Kommunikation der bürokratischen Abläufe für internationale Studierende geliefert. Ein zentrales Ergebnis war, dass Studierende grundsätzlich selbst und proaktiv für die Erledigung der erforderlichen administrativen Schritte verantwortlich sind. Allerdings werden sie dabei aktiv durch die Stabsstelle unterstützt. Hierzu existiert ein fester Kommunikationsplan, in dem genau festgelegt ist, zu welchem Zeitpunkt welche E-Mails mit relevanten Informationen an die Studierenden versendet werden.
 
 Ein wesentliches Problem, das sich in der Praxis zeigt, ist die geringe Nutzung der bereitgestellten Informationsquellen. Obwohl die Website der Stabsstelle umfassende Anleitungen und Erklärungen zu den notwendigen Prozessen bietet, wird sie von den Studierenden kaum genutzt. Gleichzeitig besteht auch bei den versendeten E-Mails das Problem, dass viele dieser Nachrichten nicht gelesen oder nicht ausreichend beachtet werden.
 
@@ -346,25 +346,26 @@ Die Entwicklung der App sollte folgende Ziele verfolgen, um den Studierenden bes
 Basierend auf den identifizierten Herausforderungen (@studentproblems) und den geäußerten Bedürfnissen der Studierenden wurden folgende Features als besonders wichtig eingestuft:
 
 1. *Statusanzeige*
-   - *Funktion:* Eine übersichtliche Darstellung des aktuellen Stands im Bewerbungs- und Anmeldeprozess, einschließlich Fristen, Terminen und offenen Aufgaben.
-   - *Vorteile:*
-     - Schneller Überblick, ob Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
-     - Echtzeit-Erinnerungen für Fristen und Termine, um Prokrastination und Versäumnisse zu vermeiden.
-   - *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse und fehlende Rückmeldungen.
+  - *Funktion:* Eine übersichtliche Darstellung des aktuellen Stands im Bewerbungs- und Anmeldeprozess, einschließlich Fristen, Terminen und offenen Aufgaben.
+  - *Vorteile:*
+    - Schneller Überblick, ob Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
+    - Echtzeit-Erinnerungen für Fristen und Termine, um Prokrastination und Versäumnisse zu vermeiden.
+    // Ein langer Visaprozess ist nicht per se problematisch, sondern erst dann, wenn er den Studienstart verzögert. Daher ist es entscheidend, dass das Tool frühzeitig auf mögliche Verzögerungen hinweist und alternative Lösungen vorschlägt.
+  - *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse und fehlende Rückmeldungen.
 
 2. *Anpassung des Tools an die aktuelle Situation der Studierenden (Personalisierung)*
-   - *Funktion:* Das Tool passt sich den individuellen Bedürfnissen der Studierenden an, indem es nur relevante Informationen und Schritte anzeigt.
-   - *Vorteile:*
-     - Vermeidung von Informationsüberflutung durch gezielte Filterung.
-     - Berücksichtigung von Faktoren wie Herkunftsland (EU/Nicht-EU), Studiengang und persönlichen Interessen.
-   - *Relevanz:* Erhöht die Benutzerfreundlichkeit und Effizienz, indem es den Fokus auf das Wesentliche lenkt.
+  - *Funktion:* Das Tool passt sich den individuellen Bedürfnissen der Studierenden an, indem es nur relevante Informationen und Schritte anzeigt.
+  - *Vorteile:*
+    - Vermeidung von Informationsüberflutung durch gezielte Filterung.
+    - Berücksichtigung von Faktoren wie Herkunftsland (EU/Nicht-EU), Studiengang und persönlichen Interessen.
+  - *Relevanz:* Erhöht die Benutzerfreundlichkeit und Effizienz, indem es den Fokus auf das Wesentliche lenkt.
 
-3. *Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenchecklisten*
-   - *Funktion:* Ein digitaler Kompass, der die Studierenden durch alle bürokratischen Prozesse führt, von der Visumbeantragung bis zur Anmeldung an der Universität.
-   - *Vorteile:*
-     - Checklisten für jeden Schritt, angepasst an Herkunftsland und Studienziel.
-     - Integrierte Vorlagen für Anträge und Links zu offiziellen Formularen.
-   - *Relevanz:* Reduziert Fehler, spart Zeit und mindert Unsicherheit bei der Bewältigung bürokratischer Hürden.
+3. *Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenliste*
+  - *Funktion:* Ein digitaler Kompass, der die Studierenden durch alle bürokratischen Prozesse führt, von der Visumbeantragung bis zur Anmeldung an der Universität.
+  - *Vorteile:*
+    - Checklisten für jeden Schritt, angepasst an Herkunftsland und Studienziel.
+    - Integrierte Vorlagen für Anträge und Links zu offiziellen Formularen.
+  - *Relevanz:* Reduziert Fehler, spart Zeit und mindert Unsicherheit bei der Bewältigung bürokratischer Hürden.
 
 *Begründung der Priorisierung*
 
@@ -374,70 +375,129 @@ Die gewählten Features adressieren die *kritischsten Problemstellen* aus den In
 - *Informationsüberflutung* wird durch Personalisierung und gezielte Filterung vermieden.
 
 Diese Features lassen sich *ohne Prozessänderungen* umsetzen, da sie als übergeordnete Hilfsmittel agieren. Sie ermöglichen es den Studierenden, eigenständiger zu handeln und sich auf ihre Kernziele aus @studentgoals zu konzentrieren, statt in Bürokratie zu versinken.
-
-#highlight[Ein langer Visaprozess ist nicht per se problematisch, sondern erst dann, wenn er den Studienstart verzögert. Daher ist es entscheidend, dass das Tool frühzeitig auf mögliche Verzögerungen hinweist und alternative Lösungen vorschlägt.]
-
 Eine vollständige Liste aller angedachten Features kann im #link(label("features"))[Anhang] (@features) eingesehen werden.
 
 == Konzeption der einzelnen Features
 
+Anpassung des Tools an die aktuelle Situation der Studierenden (Personalisierung)
 *Erfassung der Lebenslage #footnote[Individuellen Situation der Nutzer.]*
 
-Entwurf:
-Anwendung nicht für jeden gleich. Selektion der Dienste auf Grundlage der Lebenslage (Herkunftsland, Aufenthaltsdauer, ...)
-Welche Attribute müssen abgefragt werden?
+Anwendung nicht für jeden gleich. Selektion der Dienste auf Grundlage der Lebenslage
+Welche Attribute müssen abgefragt werden um die Lebenslage zu identifizieren?
+Danach wird die Lebenslage über erledigte Schritte und erworbene Dokumente verfolgt.
 Kann die Situation/Status über die vorhandenen Dokumente dynamisch ohne weiteres zutun der Nutzer verfolgt werden?
+Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
+Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
+Erste Designs wurden in Miro entwickelt. Diese enthalten Wireframes und einfache Abläufe.
 
-**Identifikation der Lebenslage:**
-Formularfelder:
+*Erfassung der Lebenslage:*
 
+Persönliche Daten
 - Name (Personalisierung)
 - Herkunftsland (Select - Search)
+
+Informationen zum geplanten Auslandssemester
 - Art / Zweck des Aufenthalts (Semester, Vollzeitstudium)
 - Aufenthaltsdauer (Visum oder Melden notwendig)
 - Startdatum (Welcome week)
 - Welches Startsemester
 - Studiengang in Dresden
 
+Aktuelle Situation
 - Aktuelle Phase (vor, während, nach)
-	- Universität auswählen
-	- Bewerbung eingereicht
-	- Zulassung erhalten
-	- Visum beantragt
-	- Reise geplant
+  - Universität auswählen
+  - Bewerbung eingereicht
+  - Zulassung erhalten
+  - Visum beantragt
+  - Reise geplant
 - Welche Dokumente sind vorhanden
-	- Nominierung
-	- Zulassung
-	- Visum
-	- Pass
-	- Einwohnermelde
-	- ...
+  - Nominierung
+  - Zulassung
+  - Visum
+  - Pass
+  - Einwohnermelde
+  - ...
+
+// Liste kann zusammengefasst werden, muss nicht so im Abschlusstext dargestellt werden.
+
+Dargestellt in
+
+#oasis-align(
+  int-dir: -1,
+  figure(
+    image("images/Prototyp_Pers_Informationen.png"),
+    caption: [
+      Prototyp - Erfassung der persönlichen Informationen
+    ],
+  ),
+  figure(
+    image("images/Prototyp_Akt_Situation.png"),
+    caption: [
+      Prototyp - Erfassung der aktuelle Situation
+    ],
+  ),
+)
+
 
 Ableiten der Fristen für die Aufgaben ...
-
 Diese Daten helfen, relevante Informationen, Aufgaben und Features auf die Bedürfnisse und den Fortschritt der Studierenden zuzuschneiden.
 
-Danach wird die Lebenslage über erledigte Schritte und erworbene Dokumente verfolgt.
+*Statusanzeige*
+
+Verwendung eines Fortschrittsbalkens, um den Studierenden einen Überblick über den aktuellen Stand in der jeweiligen Phase zu geben.
+Anzeige einer Ampel (rot, gelb, grün) für den Status im Gesamten Prozess und falls notwending hinweis, falls Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
+Detailansicht aller vorhanden Phasen als Kanban Board mit ähnlicher farbiger Markierung wie bei den Fortschrittsbalken und der Anzahl der erledigten Schritte und notwendigen Schritte.
+
+#oasis-align(
+  int-dir: -1,
+  figure(
+    image("images/Prototyp_Fortschrittsbalken_Ampel.png"),
+    caption: [
+      Prototyp - Statusübersicht als Fortschrittsbalken und Ampel
+    ],
+  ),
+  figure(
+    image("images/Prototyp_Kanban.png"),
+    caption: [
+      Prototyp - Statusübersicht als Kanban Board
+    ],
+  ),
+)
 
 
+*Zentrale Schritt-für-Schritt-Anleitungen und Dokumentenlisten*
 
-Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
+Bereiche zum Anzeigen der abgeschlossenen Schritte, der vorhanden Dokumente und übersichtliche Darstellung der nächsten Schritte.
 
-Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
+Es werden nicht immer alle folgenden Schritte angezeigt, sondern nur die, welche gerade durchgeführt werden können, falls aktuell auf Dokumente gewaretet wird, wird ein Hinweis angezeigt, mit der zu erwartenden Rückmeldedauer.
+#figure(
+  image("images/Prototyp_Schritte_Dokumente.png", height: 40%),
+  caption: [
+    Prototyp - Dokumentenliste und nächste Schritte
+  ],
+)
+
+Für eine bessere Übersicht wird außerdem eine Kalenderansicht mit Terminen bereitgestellt.
+Eine detaillierte Übersicht über den Prozess wird durch eine Graphenansicht bereitgestellt, bei dem Schritte und Abhängigkeiten im Prozess übersichtlich dargestellt werden. Somit sollen Unsicherheiten und Informationsbedarf gedeckt werden. Sind einfacher zu verstehen als ein langer Text mit verweisen auf andere Schritte.
+
+#oasis-align(
+  int-dir: -1,
+  figure(
+    image("images/Prototyp_Kalender.png"),
+    caption: [
+      Prototyp - Kalenderansicht
+    ],
+  ),
+  figure(
+    image("images/Prototyp_Graph.png"),
+    caption: [
+      Prototyp - Detailansicht als Graph
+    ],
+  ),
+)
 
 
-*Low-Fidelity Prototyp*
-Erste Designs wurden in Miro entwickelt. Diese enthalten Wireframes und einfache Abläufe.
-
-Wie unterstützt welche Ansicht den Studenten
-
-Kalenderansicht
-Graphenansicht
-
-Sind einfacher zu verstehen als ein riesiger Text.
-
-#highlight[Einfügen einiger Screenshots des finalen Wireframes oder nur Verweis auf den Anhang?]
-
+#highlight[Weitere Grafiken zum Prototyp im Anhang]
 
 // ###############################################################################
 // ###############################################################################

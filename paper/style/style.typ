@@ -100,10 +100,14 @@
 
   // --- Figures ---
   show figure.where(kind: image): pic => {
-    //set text(size: 0.85em)
+    set text(size: 10pt)
+    set align(left)
+    set par(hanging-indent: 2em)
     pic
     //rect(pic)
   }
+
+  show figure: set block(inset: (left: 1em, right: 1em))
 
   // --- Table of Contents ---
   show outline.entry.where(level: 1): it => {
