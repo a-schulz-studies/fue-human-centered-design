@@ -2,7 +2,6 @@
 #import "common/metadata.typ": *
 #import "style/style.typ": *
 #import "@preview/oasis-align:0.2.0": *
-#import "@preview/tablem:0.1.0": tablem
 
 #titlepage(
   title: title,
@@ -119,7 +118,7 @@ Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"
 
 Die Interviews wurden transkribiert #footnote[#link(label("interviewtranscripts"))[Anhang], @interviewtranscripts] und analysiert, um die wichtigsten Erkenntnisse zu identifizieren und die Bedürfnisse der Studierenden zu verstehen.
 
-== Motivationen und Ziele der Studierenden
+== Motivationen und Ziele der Studierenden <studentgoals>
 
 Die Interviews mit Austauschstudierenden haben eine Vielzahl von Motivationen und Zielen aufgezeigt, die ihre Entscheidung für ein Studium in Deutschland beeinflussen. Diese lassen sich wie folgt zusammenfassen:
 
@@ -134,7 +133,7 @@ Die Interviews mit Austauschstudierenden haben eine Vielzahl von Motivationen un
 
 Diese Erkenntnisse stimmen mit den Ergebnissen aus der Literatur überein: Studienbezogene Gründe wie bessere Berufsaussichten, innovative Studienangebote und forschungsorientierte Lehrmethoden sind zentrale Entscheidungskriterien für ein Studium in Deutschland @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen. Ebenso tragen landesbezogene Faktoren wie die hohe Lebensqualität, Sicherheit und finanzielle Erschwinglichkeit dazu bei, dass Deutschland ein attraktives Ziel für Studierende weltweit ist.
 
-== Herausforderungen und aktuelle Probleme der Studierenden
+== Herausforderungen und aktuelle Probleme der Studierenden <studentproblems>
 
 Der Übergang in ein Studium in Deutschland ist für viele internationale Studierende mit zahlreichen Herausforderungen verbunden. Die Interviews haben gezeigt, dass die Schwierigkeiten in verschiedenen Bereichen auftreten:
 
@@ -176,7 +175,7 @@ Diese Erkenntnisse zeigen, dass die Optimierung bürokratischer Prozesse und die
 
 #highlight[Anhang/Obsidian challenges und Pain Points noch notewendig?]
 
-== Weitere Erkenntnisse aus der Analyse der Nutzerbedürfnisse
+== Weitere Erkenntnisse aus der Analyse der Nutzerbedürfnisse <situation-improvemnent>
 
 Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sowohl die genutzten Geräte als auch konkrete Probleme und mögliche Verbesserungsideen betreffen:
 
@@ -184,9 +183,6 @@ Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sow
 - Laptops sind das bevorzugte Gerät für Recherchen, insbesondere bei komplexeren Aufgaben.
 - Mobilgeräte werden ergänzend genutzt, um mobil kleinere Recherchen durchzuführen.
 
-//*Konkrete Beispiele:*
-//  - Schwierigkeiten bei der Umrechnung von ECTS-Punkten stellen eine Herausforderung dar.
-//  - Das APS-Verfahren, insbesondere für Masterstudierende aus Indien, führt zu erheblichen Verzögerungen.
 *Verbesserungsvorschläge:*
 
 Auf Nachfrage wurden in den Interviews konkrete Verbesserungsvorschläge genannt, um die bürokratischen Prozesse für internationale Studierende zu erleichtern:
@@ -312,100 +308,69 @@ Eine weitere zentrale Erkenntnis war, dass der optimale Ablauf vorsieht, dass St
 Diese Erkenntnisse unterstreichen die Notwendigkeit einer verbesserten Bereitstellung und Strukturierung von Informationen sowie einer gezielteren Kommunikation mit den Studierenden. Ein zentraler Aspekt für die Optimierung des Prozesses besteht darin, die Studierenden frühzeitig und auf eine Weise zu erreichen, die sie tatsächlich wahrnehmen und nutzen.
 Die Ergebnisse der Ideal-Prozess-Analyse bilden somit die Grundlage für die Entwicklung eines Prototyps.
 
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+// ###############################################################################
+
 = Konzeption und Design des Prototyps
 
-Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnissen und den
+== Auswahl der wichtigesten Features
 
-#highlight[Langer Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
+Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnissen und dem Verständins für den Ideal-Prozess
 
-Die Entwicklung einer App sollte folgende Ziele verfolgen:
-Schnelle und einfache Orientierung in Deutschland und Bewältigung bürokratischer Prozesse
-Einfacher Zugang zu relevanten Informationen und Ressourcen
-Austausch mit anderen Studenten und Aufbau eines Netzwerks
-Optimale Nutzung des Aufenthalts und der Möglichkeiten des kulturellen Austauschs
-Berücksichtigung der persönlichen Bedürfnisse und Interessen der Studenten
+Nicht-Funktionale Anforderungen
 
+*Berücksichtigung von Nutzungskontexten*
+Wichtig bei der Entwicklung des Prototypen ist vorallem der Nutzungskontext, beschrieben in @situation-improvemnent. In diesem Fall soll eine zukünftige Anwendung sowohl auf mobilen als auch auf Desktop Geräten funktionieren.
 
-Wichtige Features für eine App== Basierend auf den Ergebnissen der Analyse wurden folgende Features als besonders wichtig identifiziert:
-Priorität 1 (Unmittelbar wichtig):
-Dokumenten-Checkliste mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung
-Erinnerung an Deadlines
-Mehrsprachige Unterstützung (Englisch, Deutsch)
-Schritt-für-Schritt-Anleitungen für Visum, Anmeldung, Aufenthaltserlaubnis
-Erasmus-spezifische Informationen
-Informationen zum Visumprozess mit allen wichtigen Dokumenten
-
-Informationen zur Krankenversicherung mit Vergleich gesetzlicher und privater Optionen
-. *   Rechner für ECTS-Konvertierung. * Informationen zum Sperrkonto
-
-Priorität 2 (Planung und Sicherheit):
-◦
-Informationen zu Kultur und Orientierung (ÖPNV, Unterschiede)
-Integration studentischer Hilfsorganisationen mit Kontaktdaten
-Notfallkontakte wie Polizei, Krankenwagen, Botschaften
-Seriöse Links zu Wohnungsportalen
-
-Priorität 3 (Soziale und berufliche Integration):
-◦
-Kostenrechner zur Planung von Semestergebühren, Miete und Versicherungen
-Terminbuchungsfunktion für Behörden
-Vernetzungsfunktionen für Studenten
-Dokumentenübersetzung für behördliche Kommunikation
-Feedback-Funktion für Verbesserungsvorschläge
-Informationen zu Teilzeitjobs
-Unterstützung bei der Arbeitserlaubnis
-
-Priorität 4 (Erweiterte Funktionen):
-◦
-Integration von Behörden-APIs zur Abfrage des Antragsstatus
-
-Priorität 5 (Zusätzliche Funktionen):
-•
-Reduzierung von Papierkram durch digitale Dokumenteneinreichung
-
-Multi-Language Support
-
-Netzwerk Möglichkeiten
-. * Notfallkontakte. * Karriere und Arbeitserlaubnisberatung
-.
-==Nicht-Funktionale Anforderungen==
-•
 Mobile Nutzung: Die App sollte responsiv und für die mobile Nutzung optimiert sein, mit weniger Text und der Möglichkeit, Sitzungen zu unterbrechen
 
 Benutzerfreundlichkeit: Die App sollte intuitiv und einfach zu bedienen sein.
 
-#tablem[
-  | **Priorität** | **Beschreibung** | **Nutzergruppe** |
-  | ------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-  | **1** | **Dokumenten-Checkliste** mit Deadlines für Visa, Krankenversicherung, Meldebescheinigung etc. | Alle Austauschstudenten |
-  | **1** | **Erinnerung an Deadlines** um wichtige Termine nicht zu verpassen | Alle Austauschstudenten |
-  | **1** | **Mehrsprachige Unterstützung**, mindestens in Englisch und Deutsch, für sprachliche Barrieren. | Alle Austauschstudenten |
-  | **1** | **Schritt-für-Schritt-Anleitungen** für Visum, Anmeldung, Aufenthaltserlaubnis und andere Prozesse. | Alle Austauschstudenten |
-  | **1.1** | **Erasmus-spezifische Informationen** zu Programmen und Schritten. | Erasmus-Studenten |
-  | **1.2** | **Informationen zum Visumprozess** mit allen wichtigen Dokumenten | Nicht EU Austauschstudenten |
-  | **1.2** | **Informationen zur Krankenversicherung**, mit Vergleich gesetzlicher und privater Optionen. | Nicht EU Austauschstudenten |
-  | **1.2** | **Rechner zum Konvertieren von ECTs** um zu prüfen, ob die Anforderungen an den Universitäten erfüllt werden. | Nicht EU Austauschstudenten |
-]
+Ableitend von den  analysiert wurde, sollte die Entwicklung einer App sollte folgende Ziele verfolgen:
+Schnelle und einfache Orientierung in Deutschland und Bewältigung bürokratischer Prozesse
+Einfacher Zugang zu relevanten Informationen und Ressourcen
+Austausch mit anderen Studenten und Aufbau eines Netzwerks
+Optimale Nutzung des Aufenthalts und der Möglichkeiten des kulturellen Austauschs
 
-Die Funktionen des Prototypen beruhen auf den Erkenntnissen aus den Interviews aus #highlight[Kreuzverweis] Erkenntnissen der Interviews.
+Basierend auf den identifizierten Herausforderungen @studentproblems und den geäußerten Bedürfnissen der Studierenden könnten folgende **digitale Werkzeuge** besonders hilfreich sein, um die Ziele der Studierenden (@studentgoals) bestmöglich zu unterstützen:
 
-Priorisierung der Features nach Wichtigkeit für die Studierenden
+*Top 3 prioritäre Features:*
 
-*Funktionen und Features*
-Die wichtigsten Funktionen des Prototyps umfassen:
-- *Dokumenten-Checkliste*: Alle benötigten Unterlagen auf einen Blick.
-- *Erinnerungsfunktion*: Warnungen bei nahenden Deadlines.
-- *Mehrsprachige Unterstützung*: Englisch und Deutsch als Grundsprachen.
-- *Schritt-für-Schritt-Anleitungen*: Klare Anweisungen für komplexe Prozesse ohne überfordernd zu wirken.
-- *Indikator für den Fortschritt:* Ampelsystem und Fortschrittsbalken zur Übersicht.
+*Statusanzeige*
+- Schneller Überblick, wie gut man im Prozess steht, ob man eine Verzögerung zu befürchten hat oder ob alles gut im zeitlichen Rahmen liegt.
+- Echtzeit-Erinnerungen für Fristen und Termine.
 
-*Berücksichtigung von Nutzungskontexten*
-Der Prototyp ist responsiv und sowohl für mobile Geräte als auch Desktopanwendungen optimiert.
+*Anpassung des Tools an die aktuelle Situation der Studierenden -> personalisierung*
+- Nur die richtigen Informationen, damit Studierende nicht durch zu viele Informationen überfordert werden.
+- Berücksichtigung der persönlichen Bedürfnisse und Interessen der Studenten
+
+*Zentrales Schritt-für-Schritt-Tool mit Dokumentenchecklisten*
+   - Ein digitaler Assistent, der **personalisiert** durch alle bürokratischen Prozesse (Visum, Krankenversicherung, Anmeldung) führt:
+     - Automatisierte Checklisten für jeden Schritt, angepasst an Herkunftsland (EU/Nicht-EU).
+     - Integrierte Vorlagen für Anträge und Links zu offiziellen Formularen.
+   - **Warum prioritär?** Die größten Schmerzpunkte liegen in der Unübersichtlichkeit von Prozessen und physischen Dokumenten. Dieses Feature reduziert Fehler, spart Zeit und mindert Unsicherheit.
+
+
+*Begründung der Priorisierung:*
+Die gewählten Features adressieren die **kritischsten Schmerzpunkte** aus den Interviews:
+- **Bürokratie** (häufigste Beschwerde) wird durch klare Anleitungen und Terminmanagement entschärft.
+- **Unsicherheit** (z. B. bei Fristen oder Dokumenten) wird durch Automatisierung reduziert.
+- Beide Tools lassen sich **ohne Prozessänderungen** umsetzen, da sie als übergeordnete Hilfsmittel agieren.
+
+Mit diesen Features könnten Studierende eigenständiger handeln und sich auf Kernziele (Studium, Integration) konzentrieren, statt in Bürokratie zu versinken.
+Eine vollständige Liste alle angedachten Features kann im #link(label("features"))[Anhang] (@features) eingesehen werden.
+
+#highlight[Langer Visaprozess ist erstmal nichts schlechtes, sondern erst, wenn sich dadurch dann der Studienstart verzögert.]
+
+== Konzeption der einzelnen Features
 
 *Erfassung der Lebenslage #footnote[Individuellen Situation der Nutzer.]*
 Die Lebenslage muss einmalig über Eingabe in ein Formular erfasst werden. Im Verlauf soll diese durch die abgeschlossenen Schritte und die erhaltenen Dokumenete weiterverfolgt werden. Das korrekte Erfassen der Lebenslage ist essentiell, da sonst die falschen Informationen angezeigt werden. Beispielweise benötigen Studierende aus dem EU-Ausland weitere Informationen zu Visum und Krankenversicherung während diese Informationen für EU-Studierende obsolet wären.
 
 Dadurch wird ein personalisiertes Erlebnis geschafft. Bereitstellen der richtigen Informationen zum richtigen Zeipunkt.
+
 
 *Low-Fidelity Prototyp*
 Erste Designs wurden in Miro entwickelt. Diese enthalten Wireframes und einfache Abläufe.
@@ -417,7 +382,7 @@ Graphenansicht
 
 Sind einfacher zu verstehen als ein riesiger Text.
 
-#highlight[Einfügen einiger Screenshots des finalen Wireframes]
+#highlight[Einfügen einiger Screenshots des finalen Wireframes oder nur Verweis auf den Anhang?]
 
 
 // ###############################################################################
