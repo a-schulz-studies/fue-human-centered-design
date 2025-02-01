@@ -355,11 +355,8 @@ Interviewpartner: Austauschstudierender (B)
 
 #include ("../common/appendix/2_interview_transcript.typ")
 
-== Zusammenfassung der Erkenntnisse aus den Interviews <interviewsummary>
-
-#highlight[Brauche ich das überhaupt? Motivationen und Probleme sind schon detailliert im Hauptteil vorhanden]
-
-*Kontaktpunkte und Informationsquellen:* <contactpoints>
+== Kontaktpunkte und Informationsquellen der Studierenden <contactpoints>
+- Kontaktpersonen and der Heimuniversität
 - Universitätsportale
 - DAAD
 - Uni-Assist
@@ -367,6 +364,7 @@ Interviewpartner: Austauschstudierender (B)
 - Persönliche Kontakte und WG-Mitbewohner
 - Studentenorganisationen
 - Webseite der Landeshauptstadt Dresden
+- Vermittler
 
 
 #set page(

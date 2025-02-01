@@ -52,7 +52,7 @@ Im Rahmen der Arbeit wird die Methode des Human-Centered Design angewandt, um di
 
 Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen und seine Bedürfnisse in den Mittelpunkt stellt. Ziel ist es, benutzerfreundliche Lösungen zu schaffen, die effizient und effektiv sind. HCD basiert auf den Prinzipien @farooquiImpactHumanCenteredDesign2019:
 - *Fokus auf Menschen:* Nutzerbedürfnisse stehen im Vordergrund.
-- *Partizipation:* Nutzer*innen sind aktiv am Designprozess beteiligt.
+- *Partizipation:* Nutzer:innen sind aktiv am Designprozess beteiligt.
 - *Iterativer Ansatz:* Entwicklung in Zyklen von Beobachten, Testen und Verbessern.
 - *Kontext:* Soziale, kulturelle und technische Faktoren werden berücksichtigt.
 \
@@ -135,31 +135,31 @@ Diese Erkenntnisse stimmen mit den Ergebnissen aus der Literatur überein: Studi
 
 == Herausforderungen und aktuelle Probleme der Studierenden <studentproblems>
 
-Der Übergang in ein Studium in Deutschland ist für viele internationale Studierende mit zahlreichen Herausforderungen verbunden. Die Interviews haben gezeigt, dass die Schwierigkeiten in verschiedenen Bereichen auftreten:
+Der Übergang in ein Studium in Deutschland ist für viele internationale Studierende mit zahlreichen Herausforderungen verbunden. Die Interviews haben gezeigt, dass Schwierigkeiten in verschiedenen Bereichen auftreten:
 
 *Bewerbungsprozess:*
 - Verzögerungen bei Rückmeldungen der Universitäten führen zu Unsicherheiten und Ängsten.
-- Die Handhabung und Einreichung physischer Dokumente wird als unnötig kompliziert und zeitaufwändig empfunden, wobei auch die Sorge vor dem Verlust originaler Unterlagen besteht.
-- Der Bewerbungsprozess umfasst viele Schritte und erfordert einen erheblichen Zeitaufwand.
+- Die Einreichung physischer Dokumente wird als unnötig umständlich und zeitaufwändig empfunden und ist mit der Sorge vor dem Verlust originaler Unterlagen verbunden.
+- Der Bewerbungsprozess umfasst viele Schrittem, Dokumente und erfordert einen erheblichen Zeitaufwand.
+- Viele Studierende ziehen die Unterstützung durch Vermittler in Betracht, sind jedoch aufgrund hoher Kosten und Vertrauensprobleme oft unsicher.
 
 *Visaprozess:*
-- Lange Bearbeitungszeiten und unklare Verzögerungen im System erschweren die Visumerteilung.
-- Schwierigkeiten bei der Terminvereinbarung und bürokratische Hindernisse wie das neue APS-Verfahren erhöhen die Komplexität.
-- Probleme entstehen, wenn das Visum an den falschen Aufenthaltsort gebunden ist.
+- Lange Bearbeitungszeiten und unklare Verzögerungen im Visumverfahren führen zu erheblichen Unsicherheiten und Planungsproblemen.
+- Die Terminvergabe für Visaangelegenheiten gestaltet sich aufgrund begrenzter Visa-Slots schwierig, und bürokratische Hürden wie das neue APS-Verfahren erhöhen die Komplexität.
+- Probleme entstehen, wenn das Visum an eine falsche oder frühere Hochschulzulassung gebunden ist.
 
 *Unterkunft:*
-- Die Wohnungssuche gestaltet sich als große Herausforderung, insbesondere durch die begrenzte Verfügbarkeit von Wohnheimen und die Unsicherheit bei der Verifizierung von Angeboten.
-- Studierende mit einem zweiten Master stehen vor zusätzlichen Hindernissen bei der Wohnraumbeschaffung.
+- Die begrenzte Verfügbarkeit von Wohnheimplätzen macht die Wohnungssuche besonders herausfordernd.
+- Die Verifizierung privater Wohnungsangebote aus dem Ausland ist oft schwierig, was die Gefahr von Betrug erhöht.
 
 *Kulturelle und bürokratische Hürden:*
 - Sprachbarrieren in Ämtern und im Alltag erschweren die Kommunikation, da Englisch oft nicht ausreichend unterstützt wird.
-- Unübersichtliche und sich ändernde Vorschriften, insbesondere bei der Stadtregistrierung, führen zu Verwirrung.
-- Soziale Integration bleibt schwierig, da Kontakte zu deutschen Kommilitonen oft limitiert sind.
-- Es fehlt an klaren Informationen über Vergünstigungen oder Anmeldeverfahren.
+- Unübersichtliche und sich ändernde Vorschriften führen zu Verwirrung.
+- Die soziale Integration bleibt herausfordernd, da der Austausch mit deutschen Kommiliton:innen oft begrenzt ist.
 
 *Finanzielle Aspekte:*
-- Hohe Vorauszahlungen für Vermittler, Visa und Unterkünfte belasten viele Studierende finanziell.
-- Einschränkungen im finanziellen Spielraum stellen für einige eine erhebliche Hürde dar.
+- Hohe Vorauszahlungen für Vermittler, Visa und Unterkünfte stellen eine erhebliche finanzielle Herausforderung dar.
+- Hohe Mindesteinzahlungen auf das Sperrkonto #footnote[Im Rahmen des Visumverfahrens dient ein Sperrkonto als Nachweis zur Lebensunterhaltsfinanzierung in Deutschland. (https://www.auswaertiges-amt.de/de/sperrkonto-375488)] sowie die begrenzte Verfügbarkeit der monatlichen Auszahlungen verringern die finanzielle Flexibilität und können in unvorhergesehenen Situationen zu finanziellen Engpässen führen.
 
 *Orientierung und Information:*
 - Viele Studierende fühlen sich nach der Ankunft orientierungslos und erhalten unzureichende Informationen über die nächsten Schritte.
@@ -172,8 +172,6 @@ Der Übergang in ein Studium in Deutschland ist für viele internationale Studie
 Die genannten Herausforderungen decken sich mit Erkenntnissen aus Studien: Laut Beate Apolinarski & Tasso Brandt (2018) und Morris-Lange (2019) zählen Sprachbarrieren, finanzielle Einschränkungen, Schwierigkeiten bei der sozialen Integration sowie Orientierung im deutschen Studiensystem zu den häufigsten Problemen. Besonders die Wohnungssuche gestaltet sich problematisch – 47 % der Studierenden berichten von großen Schwierigkeiten, eine Unterkunft zu finden, während 34 % erhebliche Sprachprobleme angeben. Auch bürokratische Prozesse, wie die Visa- und Anmeldeverfahren, und die Anerkennung von Vorleistungen gehören zu den häufigsten Hindernissen @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen.
 
 Diese Erkenntnisse zeigen, dass die Optimierung bürokratischer Prozesse und die Bereitstellung klarer Informationen entscheidend sind, um den Studierenden den Übergang zu erleichtern.
-
-#highlight[Anhang/Obsidian challenges und Pain Points noch notewendig?]
 
 == Weitere Erkenntnisse aus der Analyse der Nutzerbedürfnisse <situation-improvemnent>
 
@@ -230,7 +228,7 @@ In @userjourneyexcerpt ist ein Ausschnitt der User Journey Map dargestellt, der 
 
 Die User Journey bildet auch die emotionalen Höhen und Tiefen der Studierenden ab: Während zu Beginn die Vorfreude auf das Auslandssemester überwiegt, führt die Fülle an Informationen und die Verteilung auf verschiedene Quellen häufig zu Überforderung während der Recherchephase.
 
-Eine Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints"))[Anhang] (@interviewsummary) dokumentiert. Die vollständige User Journey Map befindet sich ebenfalls im #link(label("userjourney"))[Anhang] unter @userjourney.
+Eine Liste aller identifizierten Kontaktpunkte ist im #link(label("contactpoints"))[Anhang] (@contactpoints) dokumentiert. Die vollständige User Journey Map befindet sich ebenfalls im #link(label("userjourney"))[Anhang] unter @userjourney.
 
 // ###############################################################################
 // ###############################################################################
