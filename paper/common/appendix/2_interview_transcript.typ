@@ -1,0 +1,173 @@
+*I*: Okay, then let's get started. You are here for two years already. Do you still remember the steps you took at the beginning, like before arriving in Dresden and searching for universities? Do you think you could tell me about those?
+
+*B*: Yeah, I can tell you about it. um actually you know there are different ways of applying to a university right so i don't know whether you have an experience or people here like germans or students who are applying from germany to a university have a experience of doing through it a middle person like you all do it directly right you do you search by yourself and do it but actually people, students from abroad, not everyone, but mostly students in India would be having a middle person in between the university. Like there would be an agent who would have a better idea who is here and who would have a better idea about the university, the place and everything.
+
+*I*: So you have a direct contact person in India that's like referring you to some university?
+
+*B*: No, I had someone to help me from Germany so that he knows a better place in India so in Germany which which place is better like you know for example Ingolstadt is not similar to Dresden yeah like when you go to Ingolstadt it is little bit I feel like it's little bit uh not so much populated like Dresden right so he he was he was here for almost four years and he was there to support me like which is the best university or which area is good like where it is more populated there are more more students such such things so he was there to help me to apply and for me the process was actually easier because he was there to help me you understand what i mean uh the only issue i faced was that some universities won't give you a proper reply like whether you are accepted or rejected that was the only issue I had during the application process and after the process when you apply for a visa there was a delay like especially from HTW Dresden and I applied for visa with actually i got admission to tu ilmenau and i applied for visa with the application of tu ilmenau and i began in the year and it i started application uh for visa i submitted the application for visa on june in the year 2022 and i received the visa in august like it was almost 90 days so you know and you uh and the the problem was like acceptance from HTW Dresden was received on like august 19th and someone who is receiving the first admission of a university in the in in like in that year for example if i'm i didn't have any any other uh universities accepted and i received the first acceptance letter from HTW Dresden in the in the month of august then only i can start my visa procedures so when i started it would take again 90 90 days for example it is said like 40 to 49 to 90 days that's expected visa application or visa um like what do you say whether you accept or reject you you get a visa so you know for from for example i and to get a appointment for visa it's very difficult it's very difficult you don't get a date very easily in the office appointment office so you know like if for example if i'm getting it on august 19th then i have to wait again maybe two or three weeks for an appointment or i should i should have someone who is in high power so that he can he she can give me an appointment like ask for me on behalf of me then um then probably the classes in hattay would start on september 27th or 29th right so again i wouldn't be able to join if i didn't have any other admission so it's quite a delay like in that sense yeah i heard it already yeah Yeah, I had some friends who came to HTW Dresden in the month of November. And from HTW Dresden, like from international office, there is a deadline of arrival. Like you come in person and enroll in the university. So for them, it was like around November 30. and there was one guy who arrived in the on november 29th or on the on the just day the just the day before his deadline and he arrived he he arrived in frankfurt after a 18 hours flight he traveled from frankfurt to drosten for maybe six to eight hours then he he i think he didn't have a proper sleep he directly went to the office on the next day and enrolled like the tension is so much like you have so much tension on that time so i think i think i have heard i don't know how the exact procedure goes when you submit an application i think it comes to germany the city uh looks after your admission everything is okay your documents is okay and they seal the visa for you that's what i have heard and it comes back to india like post oh yeah so i think that delay is happening here like in in maybe in germany that delay is happening i don't know where exactly the delay occurs of course you know what i mean
+
+*I*: yeah yeah the visa process is just too
+
+*B*: long and yeah yeah yeah yeah that's what i understood this is two years back okay i don't know how it has changed so far yeah
+
+*I*: but you said you could apply for the visa before you get the acceptance letter at the university?
+
+*B*: HTW Yeah, because I got admission already in other university. Some other university.
+
+*I*: Okay. That makes sense. Yeah. Okay.
+
+*B*: So, originally in my visa, it's like I am accepted to TU Ilmenau. Like, literally, I am accepted to that Bundesland and not in Saxony. You know what I mean? So, when I was looking for part-time job, also, it was quite difficult for me because in that visa it's written like that so but then I went to the slander office I said I have an issue like this so they wrote a another letter for me or she okay she's she has done her city registration here her university is here and her study period is for this much time so that she doesn't have any restriction in working in Dresden or Saxony and yeah like that
+
+*I*: okay but i mean it it's good for you that you could start applying for the visa earlier so
+
+*B*: yeah yeah for me it was so lucky yeah
+
+*I*: you had a little bit of time yeah um so let's let's take a step back um how did you find out about all these steps you steps you need to take for the visa application
+
+*B*: so it there are different people who are like influencers from india or maybe any other part of asia i say especially asia because i think from country to country there are different norms for people applying right yeah for application so from india itself there were there were many influencers here and they used to do detailed videos in youtube so and and also there are some websites i don't remember which websites i i used to go through that and also this person who was helping me he also said to me this is how things work and in and i was also working for a education consultancy who who who taught where they taught german and also were helping students to apply for fsj au pair and Ausbildung and also for masters so i since i was in the administration i was also able to know about this is how things work
+
+*I*: so so many different sources of information
+
+*B*: yeah that's how i i understood yeah
+
+*I*: okay so but what was there a point where you were quite confused and you didn't know what what to do or did you still had your agent or personal contact that helped you out a lot
+
+*B*: yeah there was a person helping me but uh at one point i i was like uh because there are there there were other students who were applying all by themselves all by themselves because i didn't take that step because you know um because i had a fear whether it won't work the way i want or whether i will lose the documents all those fear was there because obviously i have to send it from India to Germany. And it was quite, even if it's a small thing, I was a little bit afraid with all those things. So I thought, okay, I will do it with someone who is already in Germany because it's easier for me. And because that person was also visiting India on the time when I wanted to start my application. So I was able to actually see that person in person so that I can give my documents in hand and I don't lose it because we are giving most of our original certificates and all those things right so like yeah so at one point when I started working at the education consultancy I felt like oh this is not a big process all of this I can do it by myself and obviously I have to pay some money to this agent also so I thought okay I will do it by myself then I started and I applied to two or three universities And that when I didn't start getting any reply from the university like whether you're accepted or rejected. So that was something I felt, oh, this is giving me tension, that feeling. Otherwise, it was fine.
+
+*I*: Understandable. I probably would have done the same.
+
+*B*: yeah yeah well i think i think most of them done it does that because you know it's easy like you don't have to take all the tension
+
+*I*: yeah that's true okay um you said you you applied at many different universities yeah how did you evaluate it which universities to apply to or how did you create the list from of universities
+
+*B*: uh i did i i did my background is economics so uh business and economics so i i went through everyone says that DAAD the website dad oh yeah and there is one more website i don't remember uh i don't exactly remember but on that site also you can use the it's very user friendly and like you can give filters what what field you want to study like the course the medium of instruction it's english or german or it's mix or how many duration do you want to study and how much fees do you want to pay in the university and in which location all those things when you give you in the initial time i didn't i didn't i was not concerned about the location so i just gave the field the what graduation i should have like masters then which stream and how many years it should be so yeah so then dad sorted out all the list of the courses and i went through each of it and you know you can access the website of the university also and also a curriculum would not curriculum what is what what is the objective of the course is also described in DAAD so and and the requirements is also given so i thought yeah that's that's what i used and i made an excel sheet which all universities i want to apply to and i send it to this person and this person was sorting it out and suggesting me okay this place would be nice um there are some contacts I have on that place where you can even ask about how was the course all such things that's how I search for the courses
+
+*I*: it would be great if you could send me a link of this website after the interview you don't have to search now but this would be great as a reference for maybe the prototype I'm developing to maybe integrate or at least link to this website because it's so helpful. Yes, okay, so we talked about visa and about a university search and application. Was there a difficulty to gathering all the necessary documents for you?
+
+*B*: um no not really i didn't have any difficulty i think application to germany i felt is when i talk with people who have gone to usa canada australia uk because these are all the places where students usually go from india for higher education when i compare with them i feel it was so much easier for me because when you come to india for masters i don't think you need some vaccination or something for the visa application like you have to declare that you have taken for example um what would i say for example measles vaccine or hepatitis b vaccine so such things so i don't know exactly which is there because i didn't have to do that people who are coming to germany for master's degree they don't have to do but for Ausbildung i'm not sure whether they have to do it so but uh my friends who are going to uk canada and all they have to go through a medical examination okay yeah so it's not so much like they have to uh declare that they have taken all this vaccination in their life and yeah something like that yeah all those things they have to do it but for me i didn't have to so uh i would say for germany it's the easiest like application to germany is very easy yeah but uh after that after i came in the year 2022 right after that in the year 2023 yeah yeah towards the end of 2022 the indian um indian and the german embassy something they decided that all the students who want to apply for a master's degree they have to do a certification like it's called aps and i didn't go through that luckily but the people who went through that it was so much they said it was so much delayed like it took six months to get a aps certification it means that i i feel like uh they are evaluating your certificates are uh original and it's not fake because there has been several several um issues with students who are applying from india who produce uh fake certificates like they don't pass the bachelors and they produce the fake one so uh something like that so so to make sure that you are uh applying with original certificates and also uh like you are you're really really eligible for higher education for example if you're bachelors you're eligible for masters like that so you they have to do ap certification and my juniors my like who came after my course uh and like after my semester they said to me they it took six six or five or six months to get a result of that like get a but right now it has been speeded up like it now it takes only one month or something but for them like what happened for them the visa was issued for six months something but people who came for the winter semester 2023 they received a visa for one year for me yeah for me it's six months uh then the people who came after me a few of them i i only know a few of them for them also it was six months but people who came after that they received for one year oh okay yeah and right now who is coming they also say that they receive it only for six months because aps aps has been speeded up and they receive it for i don't know what what does that um calculation but they say like that
+
+*I*: interesting
+
+*B*: yeah there is so much how they there are so much regulation changes all those things happened in two years that's why i specified to you that i came in the year 2022 because things have changed yeah like even with the city registration i think when i came i didn't knew that no one said to me that every tuesday and thursday there is a free slot to go like you don't have to book a term in to do a city registration in Dresden but right now you have tuesday and thursday without you can go without an appointment
+
+*I*: oh yeah i guess that was still something of the corona pandemic
+
+*B*: ah okay okay i i no one said so i thought oh there there has been a lot of changes happening.
+
+*I*: Okay, I know that it's a requirement in Dresden to have a health insurance when you start studying. Could you tell me something about the health insurance process?
+
+*B*: Yeah, for us it is obviously necessary to produce a health insurance and travel insurance document so I all before coming to Dresden and I already had a health insurance registered
+
+*I*: okay yeah so you could use your original health insurance also in Dresden
+
+*B*: yeah yeah yeah but I did one thing I changed the company like from you know TK to Barmer oh yeah that's that that's the only thing I did but otherwise i already had it so i didn't and and they are like from barmer itself they are very friendly when i compare with tk my friends say most of my friends have tk and they say oh they are not so much uh friendly or they don't give you proper answers but for me i feel like barmer is giving you good answers and they respond to what what is your needs so
+
+*I*: are there any language barriers when you
+
+*B*: No, like Barmer is very English friendly even they are calling like a toll number, they also have an English version.
+
+*I*: Ah, okay, that's nice.
+
+*B*: The customer service is having English version and they also have an app and like if there is any updation they would send a mail sometimes even post also. that's what I felt it's really but in the office not everyone speaks German English so they use translators to communicate so it's fine
+
+*I*: okay so they find a way to help you
+
+*B*: yeah yeah the only thing is that their rate is little bit higher than TK like if it's for TK if it's 1.30 euro for Barmer it's 1.35 or 1.37 euro that's the thing but I don't think that's a big friends.
+
+*I*: Okay. Thanks for your input. Maybe I should consider changing my health insurance as well.
+
+*B*: I don't know anything else, any other companies. But this is what I experienced and I hear from people who have other insurances.
+
+*I*: Okay. One one important part also accommodation have you applied at the students domitory?
+
+*B*: yeah I already did it before because uh that a good question like when i was when i thought i won get into any other university other than tu ilmenau i started looking for accommodation because in tu il mino it was not easy to get an accommodation and the person who was helping me he also tried his best but you know there was nothing like student dormitory something so i was looking outside in ... but when it came to dresden but that's a good surprise like uh ilmenau was smaller than dresden but they don't have place in dormitory but dresden on that time dresden had a lot of spaces in dormitory and i was easily accepted but i didn't get into the place which i applied for but i got a place in the student elementary and it was easy the page was really user friendly you can apply easily read understand everything and apply and but i hear right now it's very very difficult for students to get a place in student dormitory and something which i felt which is not good is that they don't give space to students who already have a masters like if they have it's if it's this is their second masters they don't give space in student geometry but it's only from international students that i've heard but i don't know if it's for others like a few of my friends it's their second masters in germany and they don't they didn't get the space in student dormitory so actually it was struck some struggles for them to find a place outside because you know you're applying from india you don't see the place in person you don't know whether they are existing or not and you're like blindly like trusting them and uh giving all the money or everything right that was an issue i think still now it's a big issue uh because luckily from comparing to berlin or such big cities uh dresden is very less in scams i feel so because right now when i moved out of the student geometry also it was like i felt there is less scam but there is scam but the very less uh like i would all if you are developing an app i would really help suggest you to put all the links of the places or app websites or anything where students can look for accommodation if they don't get the space in student dormitory because right at the right moment like many people like Like we have a WhatsApp group where all the, I come from India and from a state and there are, we made a WhatsApp group where people who are coming from that same state can communicate or ask for help or anything. So in that group every day, there is some person who is asking, Oh, is there an apartment to sublet? Is there a place to sublet? Do you know any leads like that? Because, and when we ask them in person, they say that they're, it's their first masters and they got a mail from the dormitory that there is no place anymore to accommodate. So, sorry, we have to look out. Like, they have to look outside. So, you know, like, it's quite difficult if you're coming as a first person. First time, if you're in Germany, it's difficult. So, in my time, it was not difficult, but right now, I feel it's very difficult for students to find an accommodation outside.
+
+*I*: Yeah, I think so. it's uh everything is full there are so many students already
+
+*B*: yeah but then also they are doing their best like uh the Studentenwerk is doing their best i think so because i have heard some people say um that um in the initial they said they don't have space but then they had some spaces and i think they have some waiting list schedule also so that if you are in the first or second place maybe if they have two spaces that came up maybe they write to you or in this dormitory we got a space maybe you can if you pay the caution deposit today you can take that room like that i think they do that because i i know with Hochschule because you know there are some demanded uh student dormitories in dresden like wohnstrasse hochschule strasse and all petersburg so to get into that you are in a waiting list so i think the similar system is also there to give a room and it's full yeah yeah
+
+*I*: i just checked the time we are actually already over the interview time do you still have some time i still have some
+
+*B*: you said to me till 7 45 right
+
+*I*: ah yeah you're right yeah okay so good good okay um yeah so then let's talk about some steps after your arrival um do you still remember the steps you took to officially register like the einwohnermeldeamt and
+
+*B*: yeah yeah yeah i remember because uh when i arrived i already got a message from student dormitory that i arrived in night and they said i said to them i will be arriving at night so uh can you how can you give me the keys for the room so what they did is that they put it in the box in the entrance like with the code you have to open and you get the key so uh do you want it from there or from the air from the airport like from what's
+
+*I*: from the airport would be better actually
+
+*B*: yeah ah okay so um like uh i know it is germany so you have to be prepared like if they ask you anything because it's immigration obviously even it's like even if you see a police you will get a you'll get some even if you don't do any crime you get a scare you you will be fearing me so uh and i was little bit uh anxious whether they speak english also that also that was also my anxiety and i had a relative who was living here in germany for past 30 or 35 years and they are living in the this is east side right they are living in the west side like near to holland oh yeah yeah yeah and when i said to them like i'm coming all those things um like um what they said is that oh it's east germany like people are not very friendly all such things so i was a little bit afraid and anxious about it So I was expecting, I thought, you know, it's our perspective. I was thinking it would be the same thing everywhere in Germany. And I already know Germans are very straightforward. They sound rude, but they are not rude. So I was a little bit, everything was a mixed feeling when I was in the immigration. So, but I think it was a male officer. I don't exactly remember. He said, oh, in which city do you, did you get admission? I said, this is it. but anyway it's a it's t-will minnow it's fine uh it was quite friendly then we came out i took the luggage then uh i had a friend to help me to catch the ic to trust and then i already have a cousin living in russian so uh he helped me uh with um like picking me up from the uh station to dropping me at student dormitory because it was very near and then i collected the key because i said they already had written me a mail with a code okay this is the code uh this is how you collect it i got i got the room and i already made friends in the dormitory because um it was seven sharing and three of two of them were um uh from um my own place no four or five of them were from my own state and three of them i already two of them i already knew before coming here because i kept up my mind i asked in the in that group which i said or did anyone get into good scout stress like that and they messaged me oh i got into good scout stress said this is my room number and they arrived uh two weeks earlier than me so they are familiar with the place so like uh they were also i was able to easily adapt to it so it's fine then uh on the next day i they said to me the what you have to do next is that you have to go for a collection of your accommodation contract and even i got the message from a student elementary that in this time you have to come for a student like contract signing then i went um and you know um actually there in google map google map gives you a straight way to go to the office but there are different other ways also so that That was a little bit confusing for me. But I went there, signed the contract. Yeah, the officer was a little bit old and she didn't speak good English. But since I learned a little bit German, I understood something what she said. And which I didn't understand, she translated. So it was fine for me. Then when I was waiting for her appointment, I met someone else from the place I'm coming from, India. and she she was helping a new girl so i asked her what is the next procedures what you have to do i have heard you have to do the city registration and this girl helped me to get an appointment in one of the auslander office for city registration and i saved and i saved the appointment i got a then on that day I went with a passport everything for the city registration yeah all that was quite easy for me I feel so that's nice that's a good
+
+*I*: that's nice that's a good feedback
+
+*B*: yeah yeah that's what I remember actually
+
+*I*: okay perfect that sounds good. What about some personal interests? We talked a lot about some bureaucratic steps and all those formal things, but I also did the exchange one year ago and for me it was also about learning the culture and traveling some neighboring countries. Do you have some similar goals or was it for you mainly the studying and also i don't know tell me something about it
+
+*B*: for me um the main thing the other main thing which i forgot to add to choose Dresden and was that in my course there was an erasmus semester it was a compulsory erasmus semester so i thought okay why not this course because it's offering you erasmus you are not applying you it offering you so why not so I that why I chose it and when I throughout my life in dresden i feel um it has um actually um it a life lesson too like um everything that you perceive is not in real like the perspective perception or perception what you have in life is not actually it shouldn't be real every time right so i felt people here are more friendly and there are more international people in dresden too like many like from different different countries and i was able to do my exchange and it was quite a learning lesson in germany and also i went to poland so it was different in poland too but i learned like people in dresden um i i had a contact with people dresden more so germans think that uh oh polish people are not really good like that they have a perspective like that but so i was also like oh my god is it going to be worst when i be there uh such feeling but it was the total opposite they were super friendly uh and they're i feel they are more open-minded people they are they are ready to have a open conversation but here it's difficult because it in general it said that germans are not ready for small talks right
+
+*I*: yes
+
+*B*: yeah so it's quite difficult to get into your uh like a be a friend with your uh um how do i say um i i don't know how to explain it but yeah it's like that uh even because i i tried it with my classmates because you know you are you are in a different environment you have to try it only then you can have a cultural exchange to you know what is different from your country and only if you have a conversation so for me it always existed in the classroom and even in classroom itself it was we didn't actually get time to have a good conversation with our German classmates and all yeah that that was something difficult for me but after all I felt it was really a good learning lesson yeah yeah that's that's i have to say
+
+*I*: and and some some other research you did like for hobbies fitness studio some other interests
+
+*B*: yeah when i compare to india like being a student in germany is the best thing that you can get in your life because um the fees the first thing is the fees that you are going to pay for your education here is very very very less literally you're not paying educate paying fees it's like administration or the travel expenses all that thing you're paying as fees uh that's one good thing and student discounts it's so much like you get so much of student discounts and i i feel like i i i was actually a fool who didn't use all the coupons that were received in my um that package the student the welcome bag yeah that i i later only i decided one thing is that everything is in german so you don't um you don't put enough time to read it or uh go through everything or translate so because i already have so much stuff in the university to do so if it's in english okay you will read it right this one you don't read that was one fault i did from my side because there was so much offers everywhere most of the libraries or museums and also it was really good then the student organization i should really really appreciate it because all of the student organizations are doing a lot of lot of good things so that you are supporting the students who are coming it's it's quite a welcoming approach to the students who are new to this place. That's what I feel.
+
+*I*: Okay, nice. I have one more important question my professor told me to ask. So for all these steps you took, what was the situation where you used let me repeat again yeah in what situation did you search for universities and for the health insurance and visa and stuff was it in the morning, evening, while traveling and what devices did you use so do you use your mobile phone, a laptop a desktop device
+
+*B*: i mostly for all this uh time where i research something i always use my laptop because it's wider screen you don't have to zoom or zoom in so i always use laptop and mostly from morning to evening
+
+*I*: um so you were not in in a rush some somewhere in between that's why i asked because while traveling on the mobile phones maybe not the the most convenient way to research such important topic
+
+*B*: yeah so i i always kept the time to do that so yeah that's and the some things would be like if you want to call something it's not literally possible to do that because you know you're calling from india to germany and if you are doing with normal phone conversation it would be really costly the only thing that you can do is write mail and the time difference is also a like you have to if you're i didn't have such an experience but i heard some people had a desperate situation even for taking a visa appointment they have to sit in the midnight to get a slot to apply yeah that's that's something that's because of the time difference i think so nothing else
+
+*I*: yeah that's true office times are not not not always the best ones
+
+*B*: yeah yeah yeah that's what i think and uh mostly like uh moreover it like over a conclusion i feel like when you said about the application or the that uh helping material i feel everything in dresden is like provided into your hands it's there everywhere the only thing that you have to do that you have to do a little bit of research like i have few friends who have been repeatedly asking oh where can i take an appointment for a city registration these that and but it's clearly given in the landeshauptstadt of dresden page what you can do where you can get an appointment what you should take where all those things but i feel like some people don't put an effort to read it some people put yeah that's the only thing i feel then then the main thing is that the accommodation it's very difficult to get a feasible accommodation for students that's the only thing that I feel challenging at the moment
+
+*I*: okay with an eye on the time one last question do you have any suggestions for improvement or some positive examples from your home country something that could make the process easier from your perspective?
+
+*B*: In my experience, I don't think in general, I would say like some universities can take steps to reply to you whether your application is accepted or rejected. But that's nothing that like everyone can do. But it changes from universities to university, right? Otherwise, all the things that I have experienced is good but there are some people who say like some procedures or the reply that they get from the office like the ausländer office or some offices it's delaying like appointments are also delaying but so far I have felt everything is on time for me so I actually I don't have anything to say like that but yes but there are I had a classmate who came from Hamburg and he said to me, like for visa extension, uh, he didn't get an appointment until the end of his visa. Yeah. It, it happens. I think it happens in big cities like Munich, Hamburg, where people, there are more people. I think it was like that. Yeah.
+
+*I*: Okay. Great. Um, we're already a little bit over the time. I don't want to steal some more of your time. I guess you're pretty busy as well.
+
+*B*: Yeah.
+
+*I*: So thank you so much for sharing your experience. I guess this was a very, very helpful interview. It will help me a lot. Yeah.
+
+*B*: And I can also share the websites with you.
+
+*I*: Yeah, this would be great. Yeah.
+
+*B*: Yeah.
+
+*I*: And I wish you the best for the upcoming semester. You're still studying, right?
+
+*B*: Yeah, I'm still studying.
+
+*I*: And when is your master thesis time?
+
+*B*: It should be actually finishing in October, but I extend it for one more year.
+
+*I*: Ah, okay. It's actually quite similar for me because of my exchange, I also have to do my master's thesis one semester later.
+
+*B*: yeah yeah and i think sometimes like the courses are a little bit difficult to manage every course so you have to do your compulsory modules and electives later
+
+*I*: yeah that's true yeah okay so i think
+
+*B*: i i just uh cut my video because i don't have charging my laptop.
+
+*I*: Oh, okay, yeah. No worries. Yeah. So I will probably write you again for some follow-up questions. There are always some gaps in between my interview guide and the topics we talked about.
+
+*B*: Yeah, no problem.
+
+*I*: It would be great if you sent me the website you use for the researching the university.
+
+*B*: Sure, I will write to you.
+
+*I*: Yeah, and then I wish you the best for the current semester and all the other semesters coming
+
+*B*: and I wish you the same
+
+*I*: so thanks for your help and bye bye
