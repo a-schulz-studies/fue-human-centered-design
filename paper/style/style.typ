@@ -107,7 +107,13 @@
     //rect(pic)
   }
 
-  show figure: set block(inset: (left: 1em, right: 1em))
+  show figure: set block(inset: (left: 0em, right: 1em))
+
+  show figure.where(kind: table): table => {
+    set figure.caption(position: top)
+    set align(left)
+    table
+  }
 
   // --- Table of Contents ---
   show outline.entry.where(level: 1): it => {
@@ -161,6 +167,7 @@
   //    title: none,
   //    target: figure.where(kind: table),
   //)
+
 
   //pagebreak()
 
