@@ -85,7 +85,7 @@ Die frühzeitige Einbindung von HCD hilft, Designfehler zu vermeiden und die Nut
 = Analyse der Nutzerbedürfnisse
 
 Die Analyse der Nutzerbedürfnisse ist ein zentraler Bestandteil des Designprozesses, um eine benutzerfreundliche und effektive Lösung für internationale Studierende in Deutschland zu entwickeln.
-Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU- und Nicht-EU-Ländern. Aufgrund der begrenzten Verfügbarkeit von Teilnehmenden konnten lediglich zwei Interviews durchgeführt werden, beide mit Studierenden aus dem Nicht-EU-Ausland. Diese Interviews wurden genutzt, um die Profile weiter zu verfeinern und Personas #footnote[#link(label("personas"))[Anhang], @personas] zu entwickeln. Diese Personas dienen dazu, die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp gezielt zu definieren. Sie repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
+Im Vorfeld wurde der Prozess der Austauschstudierenden grob analysiert. Daraus haben sich zwei Benutzergruppenprofile ergeben: Austauschstudierende aus EU- und Nicht-EU-Ländern. Aufgrund der begrenzten Verfügbarkeit von Teilnehmenden konnten lediglich zwei Interviews durchgeführt werden, beide mit Studierenden aus dem Nicht-EU-Ausland. Diese Interviews wurden genutzt, um die Profile weiter zu verfeinern und Personas #footnote[@personas] zu entwickeln. Diese Personas dienen dazu, die Zielgruppe zu charakterisieren und die Anforderungen an den Prototyp gezielt zu definieren. Sie repräsentieren typische Nutzerprofile und helfen, die Designentscheidungen auf die Bedürfnisse der Zielgruppe auszurichten.
 
 Der Hauptteil der Analyse basiert auf Interviews mit Austauschstudierenden, um die spezifischen Bedürfnisse, Herausforderungen und Ziele dieser Zielgruppe zu verstehen. Die folgenden Abschnitte fassen die wichtigsten Erkenntnisse aus diesen Analysen zusammen.
 
@@ -96,7 +96,7 @@ Die primäre Zielgruppe dieser Analyse umfasst vorrangig neue Austauschstudieren
 
 *Schwerpunkte der Interviews*
 
-Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"))[Anhang], @interviewguide] wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten unter anderem:
+Ein semistrukturierter Interviewleitfaden #footnote[@interviewguide] wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten unter anderem:
 
 - Aktivitäten zur Vorbereitung und nach der Einreise in Deutschland
 - Visa Prozess, Krankenversicherung, Wohnungssuche
@@ -104,7 +104,7 @@ Ein semistrukturierter Interviewleitfaden #footnote[#link(label("interviewguide"
 - Kontext, Umstände und Umgebung, in denen Aktionen ausgeführt wurden
 - Verbesserungsideen
 
-Die Interviews wurden transkribiert #footnote[Vollständige Transkripte im #link(label("interviewtranscripts"))[Anhang] (@interviewtranscripts)] und analysiert, um die wichtigsten Erkenntnisse zu identifizieren und die Bedürfnisse der Studierenden zu verstehen.
+Die Interviews wurden transkribiert #footnote[Vollständige Transkripte im @interviewtranscripts] und analysiert, um die wichtigsten Erkenntnisse zu identifizieren und die Bedürfnisse der Studierenden zu verstehen.
 
 == Motivationen und Ziele der Studierenden <studentgoals>
 
@@ -229,7 +229,7 @@ In @userjourneyexcerpt ist ein Ausschnitt der User Journey Map dargestellt, welc
 Der Ausschnitt zeigt zwei Schritte: die Wahl der Universität und die anschließende Bewerbung.
 Dabei werden durchgeführte Aktionen und zentrale Kontaktpunkte, wie die Stabsstelle Internationales der HTW Dresden oder externe Webseiten, aufgeführt.
 Zusätzlich bildet die User Journey auch die emotionalen Höhen und Tiefen der Studierenden ab: Während zu Beginn die Vorfreude auf das Auslandssemester überwiegt, führt die Fülle an Informationen und die Verteilung auf verschiedene Quellen häufig zu Überforderung während der Recherchephase.
-Die vollständige User Journey Map befindet sich im #link(label("userjourney"))[Anhang] unter @userjourney und visualisiert den gesamten Prozess der Austauschstudierenden bis zur Ankunft in Deutschland.
+Die vollständige User Journey Map befindet sich im @userjourney und visualisiert den gesamten Prozess der Austauschstudierenden bis zur Ankunft in Deutschland.
 
 // ###############################################################################
 // ###############################################################################
@@ -248,7 +248,7 @@ Ein zentrales Ziel war es, den Prototyp zusätzlich zur Ausrichtung an den Bedü
 
 Der Prozess wurde zunächst aus den HTML#footnote[Die Hypertext Markup Language ist die Standardauszeichnungssprache für Dokumente, die in einem Webbrowser angezeigt werden sollen.]-Inhalten der Website extrahiert und im JSON-Format#footnote[JavaScript Object Notation ist ein offenes Standard-Dateiformat und Datenaustauschformat, das menschenlesbaren Text zur Speicherung und Übertragung von Datenobjekten verwendet, die aus Name-Wert-Paaren und Arrays bestehen.] dokumentiert.
 Dieses Format wurde gewählt, da es strukturierte Daten ermöglicht, die flexibel angepasst werden können und als Grundlage für die Entwicklung des Prototyps dienen kann. Die JSON-Struktur enthält zentrale Elemente wie Phasen, die verschiedene Schritte umfassen, sowie spezifische Anforderungen, darunter erforderliche Dokumente mit Name und Beschreibung.
-Der vollständige Prozess in der JSON-Strukur befindet sich im #link(label("jsonprocess"))[Anhang] (@jsonprocess).
+Der vollständige Prozess in der JSON-Strukur befindet sich im @jsonprocess.
 Da dieser als Input für die App dient, erleichtert er auch zukünftige Anpassungen. Sollte sich der Prozess ändern, muss lediglich die JSON-Datei aktualisiert werden, ohne dass größere strukturelle Änderungen an der App notwendig sind.
 
 #pagebreak()
@@ -358,7 +358,7 @@ Die gewählten Features adressieren die *kritischsten Problemstellen* aus den In
 - *Informationsüberflutung* wird durch Personalisierung und gezielte Filterung vermieden.
 
 Diese Features lassen sich ohne Prozessänderungen umsetzen, da sie als übergeordnete Hilfsmittel agieren. Sie ermöglichen es den Studierenden, eigenständiger zu handeln und sich auf ihre Kernziele aus @studentgoals zu konzentrieren, statt in Bürokratie zu versinken.
-Eine vollständige Liste aller angedachten Features kann im #link(label("features"))[Anhang] (@features) eingesehen werden.
+Eine vollständige Liste aller angedachten Features kann im @features eingesehen werden.
 
 == Konzeption der einzelnen Features
 
@@ -454,7 +454,7 @@ Zur besseren Übersicht von Abhängigkeiten und Zeitplanung dient @prototypecale
 - *Kalenderansicht*: Diese zeigt alle relevanten Fristen, Termine und Meilensteine übersichtlich an. So behalten Studierende ihre Deadlines im Blick und können sich frühzeitig auf kommende Aufgaben vorbereiten. In @prototypecalendargraph (links) dargestellt.
 - *Graphenansicht*: Die Abhängigkeiten zwischen einzelnen Schritten werden visualisiert, um Studierenden ein besseres Verständnis für den gesamten Prozess zu ermöglichen. Dies hilft insbesondere bei komplexen Prozessen mit mehreren Abhängigkeiten, wie z. B. dem Zusammenspiel zwischen Visumsantrag und Immatrikulation. In @prototypecalendargraph (rechts) dargestellt.
 
-Grafiken zu vollständigen Oberflächen des Prototyps sind im #link(label("prototype"))[Anhang] (@prototype) zu finden.
+Grafiken zu vollständigen Oberflächen des Prototyps sind im @prototype zu finden.
 
 // ###############################################################################
 // ###############################################################################

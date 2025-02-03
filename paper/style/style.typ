@@ -121,8 +121,9 @@
     v(1pt, weak: false)
     it
   }
-  //heading(numbering: none)[Inhaltsverzeichnis]
+
   outline(
+    target: heading.where(supplement: [Abschnitt]),
     title: "Inhaltsverzeichnis",
     fill: repeat([.] + h(0.5em)),
     indent: auto,

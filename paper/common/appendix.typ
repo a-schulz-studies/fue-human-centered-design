@@ -3,23 +3,11 @@
 
 #pagebreak()
 #heading(numbering: none)[Anhang]<appendix>
-
-#highlight[ANHANGSVERZEICHNIS]
-
-//#show outline.entry.where(page.text: 19): it => {
-//if it.page.text == "19" {
-//  it.page.text
-//} else{
-//}}
-//
-//#outline(
-//    title: "Anhangsverzeichnis",
-//  )
-//
-//
+//https://github.com/typst/typst/discussions/4031
+#outline(target: heading.where(supplement: [Anhang]), title: [Anhangsverzeichnis], indent: auto,)
 
 #counter(heading).update(0)
-#set heading(numbering: "A.1", outlined: false)
+#set heading(numbering: "A.1", supplement: [Anhang])
 
 = Ergänzendes Material zur Analyse der Nutzerbedürfnisse
 == Personas <personas>
