@@ -9,8 +9,10 @@ Develop a prototype to help international students with bureaucratic processes i
 _Generated using https://recraft.ai._
 
 ## Final paper
-<iframe src="https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/paper/thesis.pdf" width="100%" height="600px">
-</iframe>
+
+<object data="https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/paper/thesis.pdf" type="application/pdf" width="100%" height="600px">
+  <p>Your browser does not support PDFs. <a href="https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/paper/thesis.pdf">Download the PDF</a> instead.</p>
+</object>
 
 ## Repository structure
 
