@@ -355,17 +355,6 @@ Interviewpartner: Austauschstudierender (B)
 
 #include ("../common/appendix/2_interview_transcript.typ")
 
-== Kontaktpunkte und Informationsquellen der Studierenden <contactpoints>
-- Kontaktpersonen and der Heimuniversität
-- Universitätsportale
-- DAAD
-- Uni-Assist
-- Websites wie mastersportal.com, studying-in-germany.org
-- Persönliche Kontakte und WG-Mitbewohner
-- Studentenorganisationen
-- Webseite der Landeshauptstadt Dresden
-- Vermittler
-
 
 #set page(
   paper: "a4",
@@ -399,16 +388,37 @@ Interviewpartner: Austauschstudierender (B)
 )
 
 #pagebreak()
-= Ergänzendes Material zur Analyse des Ist-Prozesses
-== Ideal-Prozess <idealprocess>
+= Ergänzendes Material zur Analyse des Ideal-Prozesses
+== JSON-Struktur <jsonprocess>
 
-#figure(
-  image("../images/Mermaid_process.png"),
-  caption: [
-    Auschnitt des Ideal-Prozesses in Mermaid-Darstellung
-  ],
-  outlined: false,
-)<mermaidprocess>
+#highlight[process.json einfügen]
+```json
+{
+  "phases": [
+    {
+      "name": "Application and admission procedures",
+      "steps": [
+        {
+          "name": "Application Submission",
+          "description": "Submit application documents to HTW Dresden",
+          "required_documents": [
+            {
+              "name": "Application for admission to studies",
+              "description": "Signed by you and your home university coordinator"
+            },
+            {
+              "name": "(Online) Learning Agreement",
+              "description": "Your course selection approved and signed by ..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+#highlight[diagram.mmd einfügen]
 
 #pagebreak()
 

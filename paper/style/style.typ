@@ -191,7 +191,8 @@
   ) //, style: "../literature/my_ieee.csl")
 
   //Selbstständigkeitserklärung
-  set page(numbering: none)
+  //set page(numbering: none)
+  pagebreak()
   heading(numbering: none)[Selbstständigkeitserklärung]
   [Ich versichere, dass ich die vorliegende Arbeit selbständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.]
   v(3cm)
