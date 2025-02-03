@@ -9,10 +9,11 @@
 #counter(heading).update(0)
 #set heading(numbering: "A.1", supplement: [Anhang])
 
+#pagebreak()
 = Ergänzendes Material zur Analyse der Nutzerbedürfnisse
 == Personas <personas>
-
-*Persona 1: Lukas Nowak (EU-Ausland)*
+=== Persona EU-Ausland
+*Persona 1: Lukas Nowak*
 
 - Alter: 23 Jahre
 - Herkunft: Polen
@@ -43,7 +44,8 @@ Verhalten und Herausforderungen:
 - Die deutsche Bürokratie wirkt im Vergleich zu Polen komplizierter.
 - Er hat Probleme mit der Wohnsituation, da kurzfristige Mietverträge für Studierende schwer zu finden sind.
 
-*Persona 2: Zhang Wei (Nicht-EU-Ausland)*
+=== Persona Nicht-EU-Ausland
+*Persona 2: Zhang Wei*
 
 - Alter: 24 Jahre
 - Herkunft: China
@@ -254,7 +256,7 @@ Verhalten und Herausforderungen:
 #pagebreak()
 == Transkripte der Interviews <interviewtranscripts>
 
-*Erstes Interview*
+=== Erstes Interview
 
 Datum: 21.10.2024\
 Zeit: 10.00 - 10.30 Uhr\
@@ -265,7 +267,7 @@ Interviewpartner: Austauschstudierender (B)
 #include ("../common/appendix/1_interview_transcript.typ")
 
 #pagebreak()
-*Folgefragen zum ersten Interview*
+=== Folgefragen zum ersten Interview
 
 Dieser Fragebogen wurde nach dem Interview and den Interviewpartner gesendet, um weitere Informationen zu erhalten. Die Antworten wurden per E-Mail übermittelt und zur übersichtlichen Darstellung in diesem Dokument zusammengefasst.
 
@@ -333,7 +335,7 @@ Dieser Fragebogen wurde nach dem Interview and den Interviewpartner gesendet, um
 
 
 #pagebreak()
-*Transkription des zweiten Interviews*
+=== Transkription des zweiten Interviews
 
 Datum: 14.11.2024\
 Zeit: 07:00 - 07:45 Uhr\
@@ -377,36 +379,16 @@ Interviewpartner: Austauschstudierender (B)
 
 #pagebreak()
 = Ergänzendes Material zur Analyse des Ideal-Prozesses
-== JSON-Struktur <jsonprocess>
 
-#highlight[process.json einfügen]
-```json
-{
-  "phases": [
-    {
-      "name": "Application and admission procedures",
-      "steps": [
-        {
-          "name": "Application Submission",
-          "description": "Submit application documents to HTW Dresden",
-          "required_documents": [
-            {
-              "name": "Application for admission to studies",
-              "description": "Signed by you and your home university coordinator"
-            },
-            {
-              "name": "(Online) Learning Agreement",
-              "description": "Your course selection approved and signed by ..."
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
+== Prozesses in Mermaid Syntax <mermaid>
 
-#highlight[diagram.mmd einfügen]
+Kann zum Beispiel unter `https://mermaid.live/` gerendert werden.
+
+#include ("../common/appendix/process_diagram.typ")
+
+== Prozess in JSON-Struktur <jsonprocess>
+
+#include ("../common/appendix/htw_process.typ")
 
 #pagebreak()
 
@@ -548,7 +530,7 @@ Interviewpartner: Austauschstudierender (B)
 #pagebreak()
 == Darstellung des Prototyp <prototype>
 
-*Erfassung der Lebenslage*
+=== Erfassung der Lebenslage
 
 #figure(
   image("../images/Protoyp_Identifikation_Lebenslage.png"),
@@ -559,7 +541,7 @@ Interviewpartner: Austauschstudierender (B)
 )
 
 #pagebreak()
-*Dashboard*
+=== Dashboard
 
 #figure(
   image("../images/Prototyp_Dashboard.png", height: 92%),
@@ -569,7 +551,7 @@ Interviewpartner: Austauschstudierender (B)
   outlined: false,
 )
 #pagebreak()
-*Prozessablauf*
+=== Prozessablauf
 
 #figure(
   image("../images/Prototyp_Ablauf.png"),
