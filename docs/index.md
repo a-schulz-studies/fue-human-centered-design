@@ -1,10 +1,10 @@
-# FuE - Human Centered Design - Exchange students in Germany
+# [FuE - Human Centered Design - Exchange students in Germany](https://github.com/a-schulz-studies/fue-human-centered-design)
 
 ## Goal
 
 Develop a prototype to help international students with bureaucratic processes in Germany. The prototype should be developed using human centered design.
 
-![study-helper.png](https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/img/study-helper.png)
+<img src="https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/img/study-helper.png" alt="study-helper.png">
 
 _Generated using https://recraft.ai._
 
@@ -13,6 +13,10 @@ _Generated using https://recraft.ai._
 <object data="https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/paper/thesis.pdf" type="application/pdf" width="100%" height="600px">
   <p>Your browser does not support PDFs. <a href="https://github.com/a-schulz-studies/fue-human-centered-design/blob/main/paper/thesis.pdf">Download the PDF</a> instead.</p>
 </object>
+
+## Main repository
+
+[Repository](https://github.com/a-schulz-studies/fue-human-centered-design)
 
 ## Repository structure
 

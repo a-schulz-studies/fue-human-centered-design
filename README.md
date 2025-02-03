@@ -8,6 +8,10 @@ Develop a prototype to help international students with bureaucratic processes i
 
 _Generated using https://recraft.ai._
 
+## Final paper
+
+[Paper](paper/thesis.pdf)
+
 ## Repository structure
 
 _The below description is ordered chronologically as the artifacts where developed during the project._
