@@ -99,7 +99,7 @@ Die primäre Zielgruppe dieser Analyse umfasst vorrangig neue Austauschstudieren
 Ein semistrukturierter Interviewleitfaden #footnote[@interviewguide] wurde entwickelt, um die Erfahrungen, Motivationen, Ziele und Herausforderungen der Austauschstudierenden zu erfassen. Dabei wurden sowohl bürokratische als auch persönliche Aspekte beleuchtet. Zu den thematisierten Bereichen gehörten unter anderem:
 
 - Aktivitäten zur Vorbereitung und nach der Einreise in Deutschland
-- Visa Prozess, Krankenversicherung, Wohnungssuche
+- Visa-Prozess, Krankenversicherung, Wohnungssuche
 - Persönliche Interessen und Ziele mit dem Auslandsstudium
 - Kontext, Umstände und Umgebung, in denen Aktionen ausgeführt wurden
 - Verbesserungsideen
@@ -117,7 +117,7 @@ Die Interviews mit den Austauschstudierenden haben eine Vielzahl von Motivatione
 - *Persönliche Weiterentwicklung:* Das Auslandsstudium wird als Möglichkeit gesehen, neue Erfahrungen zu sammeln und sich persönlich weiterzuentwickeln.
 - *Reisen:* Die zentrale Lage Deutschlands in Europa bietet die Gelegenheit, während des Studiums andere europäische Länder zu bereisen.
 - *Erfolgreicher Studienabschluss:* Im Mittelpunkt der Ziele steht für die meisten Studierenden der erfolgreiche Abschluss ihres Studiums.
-- *Verbesserung der Sprachkenntnisse:* Viele Studierende streben an, ihre Deutschkenntnisse während ihres Aufenthalts zu vertiefen und somit ihre Integration und beruflichen Perspektiven zu fördern.
+- *Verbesserung der Sprachkenntnisse:* Viele Studierende streben an, ihre Deutschkenntnisse während ihres Aufenthalts zu vertiefen und somit ihre Integration und berufliche Perspektiven zu fördern.
 
 Diese Erkenntnisse stimmen mit den Ergebnissen aus der Literatur überein: Studienbezogene Gründe wie bessere Berufsaussichten, innovative Studienangebote und forschungsorientierte Lehrmethoden sind zentrale Entscheidungskriterien für ein Studium in Deutschland @beateapolinarskiAuslaendischeStudierendeDeutschland2018 @morris2019demografischen. Ebenso tragen landesbezogene Faktoren wie die hohe Lebensqualität, Sicherheit und finanzielle Erschwinglichkeit dazu bei, dass Deutschland ein attraktives Ziel für Studierende weltweit ist.
 
@@ -147,7 +147,7 @@ Der Übergang in ein Studium in Deutschland ist für viele internationale Studie
 
 *Finanzielle Aspekte:*
 - Hohe Vorauszahlungen für Vermittler, Visa und Unterkünfte stellen eine erhebliche finanzielle Herausforderung dar.
-- Hohe Mindesteinzahlungen auf das Sperrkonto #footnote[Im Rahmen des Visumverfahrens dient ein Sperrkonto als Nachweis zur Lebensunterhaltsfinanzierung in Deutschland. (https://www.auswaertiges-amt.de/de/sperrkonto-375488)], sowie unflexible monatlichen Auszahlungen können in unvorhergesehenen Situationen zu finanziellen Engpässen führen.
+- Hohe Mindesteinzahlungen auf das Sperrkonto #footnote[Im Rahmen des Visumverfahrens dient ein Sperrkonto als Nachweis zur Lebensunterhaltsfinanzierung in Deutschland. (https://www.auswaertiges-amt.de/de/sperrkonto-375488)], sowie unflexible monatliche Auszahlungen können in unvorhergesehenen Situationen zu finanziellen Engpässen führen.
 
 *Orientierung und Information:*
 - Viele Studierende fühlen sich nach der Ankunft orientierungslos und erhalten unzureichende Informationen über die nächsten Schritte.
@@ -173,7 +173,7 @@ Die Analyse der Nutzerbedürfnisse hat zusätzliche Einblicke geliefert, die sow
 
 *Kontaktpunkte und Informationsquellen der Studierenden*
 - Kontaktpersonen und Verantwortliche an der Heimuniversität
-- Deutscher Akademischer Austauschdienst e.V. (DAAD)
+- Deutscher Akademischer Austauschdienst e. V. (DAAD)
 - Uni-Assist
 - Universitätsportale
 - Websites wie mastersportal.com, studying-in-germany.org
@@ -221,7 +221,7 @@ In @userjourneyexcerpt ist ein Ausschnitt der User Journey Map dargestellt, welc
 #figure(
   image("images/User_Journey_Map_excerpt.png"),
   caption: [
-    Auschnitt der User Journey Map
+    Ausschnitt der User Journey Map
   ],
 )<userjourneyexcerpt>
 
@@ -236,31 +236,31 @@ Die vollständige User Journey Map befindet sich im @userjourney und visualisier
 // ###############################################################################
 // ###############################################################################
 
-= Ideal-Prozess Analyse
+= Ideal-Prozess-Analyse
 
-Die Analyse des Ideal-Prozesses bildet eine Grundlage, um die tatsächlichen Abläufe der Bürokratie für internationale Studierende zu verstehen und diese mit den wahrgenommenen Herausforderungen aus den Interviews abzugleichen. Aufgrund der zeitlichen Begrenzung dieser Arbeit war es nicht möglich, Interviews mit detaillierten Fragen zu allen Prozessschritten zu stellen. Deshalb, wurden der textuelle Prozesse auf der Website der Stabsstelle Internationales der HTW Dresden untersucht. Dadurch entstand eine wertvolle Vergleichsmöglichkeit zwischen dem ideal beschriebenen Ablauf und den subjektiven Erfahrungen der Studierenden.
+Die Analyse des Ideal-Prozesses bildet eine Grundlage, um die tatsächlichen Abläufe der Bürokratie für internationale Studierende zu verstehen und diese mit den wahrgenommenen Herausforderungen aus den Interviews abzugleichen. Aufgrund der zeitlichen Begrenzung dieser Arbeit war es nicht möglich, Interviews mit detaillierten Fragen zu allen Prozessschritten zu stellen. Deshalb wurden die textuellen Prozesse auf der Website der Stabsstelle Internationales der HTW Dresden untersucht. Dadurch entstand eine wertvolle Vergleichsmöglichkeit zwischen dem ideal beschriebenen Ablauf und den subjektiven Erfahrungen der Studierenden.
 
 *Ziel der Analyse*
 
-Ein zentrales Ziel war es, den Prototyp zusätzlich zur Ausrichtung an den Bedürfnissen der Nutzer:innen, mit den konkreten Inhalten des bürokratischen Prozesses zu füllen. Nur durch eine Kombination beider Ansätze kann eine Lösung entwickelt werden, die sowohl benutzerfreundlich ist als auch die notwendigen Informationen und Schritte präzise abbildet. Außerdem ermöglicht ein mit Inhalt gefüllter Protyp eine realitätsnahe Evaluation und Optimierung, welche im HCD-Prozess essentiell ist.
+Ein zentrales Ziel war es, den Prototyp zusätzlich zur Ausrichtung an den Bedürfnissen der Nutzer:innen mit den konkreten Inhalten des bürokratischen Prozesses zu füllen. Nur durch eine Kombination beider Ansätze kann eine Lösung entwickelt werden, die sowohl benutzerfreundlich ist als auch die notwendigen Informationen und Schritte präzise abbildet. Außerdem ermöglicht ein mit Inhalt gefüllter Prototyp eine realitätsnahe Evaluation und Optimierung, welche im HCD-Prozess essenziell ist.
 
 *Extraktion des Ideal-Prozesses*
 
 Der Prozess wurde zunächst aus den HTML#footnote[Die Hypertext Markup Language ist die Standardauszeichnungssprache für Dokumente, die in einem Webbrowser angezeigt werden sollen.]-Inhalten der Website extrahiert und im JSON-Format#footnote[JavaScript Object Notation ist ein offenes Standard-Dateiformat und Datenaustauschformat, das menschenlesbaren Text zur Speicherung und Übertragung von Datenobjekten verwendet, die aus Name-Wert-Paaren und Arrays bestehen.] dokumentiert.
 Dieses Format wurde gewählt, da es strukturierte Daten ermöglicht, die flexibel angepasst werden können und als Grundlage für die Entwicklung des Prototyps dienen kann. Die JSON-Struktur enthält zentrale Elemente wie Phasen, die verschiedene Schritte umfassen, sowie spezifische Anforderungen, darunter erforderliche Dokumente mit Name und Beschreibung.
-Der vollständige Prozess in der JSON-Strukur befindet sich im @jsonprocess.
+Der vollständige Prozess in der JSON-Struktur befindet sich im @jsonprocess.
 Da dieser als Input für die App dient, erleichtert er auch zukünftige Anpassungen. Sollte sich der Prozess ändern, muss lediglich die JSON-Datei aktualisiert werden, ohne dass größere strukturelle Änderungen an der App notwendig sind.
 
 #pagebreak()
-*Grafischen Darstellung des Ideal-Prozesses*
+*Grafische Darstellung des Ideal-Prozesses*
 
-Um den Prozess besser zu verstehen und zu analysieren, wurde zudem eine grafische Darstellung des Prozesses mit Hilfe des Tools Mermaid erstellt.
+Um den Prozess besser zu verstehen und zu analysieren, wurde zudem eine grafische Darstellung des Prozesses mithilfe des Tools Mermaid erstellt.
 Ein Ausschnitt dieser ist in @mermaidprocess dargestellt.
 
 #figure(
   image("images/Mermaid_process.png"),
   caption: [
-    Auschnitt des Ideal-Prozesses in Mermaid-Darstellung
+    Ausschnitt des Ideal-Prozesses in Mermaid-Darstellung
   ],
   outlined: false,
 )<mermaidprocess>
@@ -280,8 +280,8 @@ Diese Visualisierung erwies sich als hilfreich, um:
 
 *Erkenntnisse aus dem Austausch mit der Stabsstelle Internationales*
 
-Zusätzlich zu der eigenständigen Anlayse des textuellen Prozesses wurde ein Gespräch mit der Stabsstelle Internationales geführt.
-Dieses hat wertvolle Einblicke in die tatsächliche Organisation und Kommunikation der bürokratischen Abläufe für internationale Studierende geliefert. Die Stabstelle betonte, dass Studierende grundsätzlich selbst und proaktiv für die Erledigung der erforderlichen administrativen Schritte verantwortlich sind. Allerdings werden sie dabei aktiv durch die Stabsstelle unterstützt. Hierzu existiert ein fester Kommunikationsplan, in dem genau festgelegt ist, zu welchem Zeitpunkt welche E-Mails mit relevanten Informationen an die Studierenden versendet werden.
+Zusätzlich zu der eigenständigen Analyse des textuellen Prozesses wurde ein Gespräch mit der Stabsstelle Internationales geführt.
+Dieses hat wertvolle Einblicke in die tatsächliche Organisation und Kommunikation der bürokratischen Abläufe für internationale Studierende geliefert. Die Stabsstelle betonte, dass Studierende grundsätzlich selbst und proaktiv für die Erledigung der erforderlichen administrativen Schritte verantwortlich sind. Allerdings werden sie dabei aktiv durch die Stabsstelle unterstützt. Hierzu existiert ein fester Kommunikationsplan, in dem genau festgelegt ist, zu welchem Zeitpunkt welche E-Mails mit relevanten Informationen an die Studierenden versendet werden.
 
 Ein wesentliches Problem, das sich in der Praxis zeigt, ist die geringe Nutzung der bereitgestellten Informationsquellen. Obwohl die Website der Stabsstelle umfassende Anleitungen und Erklärungen zu den notwendigen Prozessen bietet, wird sie von den Studierenden kaum genutzt. Gleichzeitig besteht auch bei den versendeten E-Mails das Problem, dass viele dieser Nachrichten nicht gelesen oder nicht ausreichend beachtet werden.
 
@@ -296,14 +296,14 @@ Die Ergebnisse der Ideal-Prozess-Analyse bilden somit die Grundlage für die Ent
 // ###############################################################################
 
 = Konzeption und Design des Prototyps
-//  Nutzungskontext und Ziele der Studierenden als Grundlagen des Prototypen
-== Grundlagen des Prototypen
+//  Nutzungskontext und Ziele der Studierenden als Grundlagen des Prototyps
+== Grundlagen des Prototyps
 
-Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnisse und dem Verständnis für den Ideal-Prozess wurden die wichtigsten Features für den Prototypen identifiziert. Diese sollen die größten Herausforderungen der internationalen Studierenden adressieren und ihre Ziele bestmöglich unterstützen.
+Anhand der Erkenntnisse aus der Analyse der Nutzerbedürfnisse und dem Verständnis für den Ideal-Prozess wurden die wichtigsten Features des Prototyps identifiziert. Diese sollen die größten Herausforderungen der internationalen Studierenden adressieren und ihre Ziele bestmöglich unterstützen.
 
 *Berücksichtigung von Nutzungskontexten*
 
-Bei der Entwicklung des Prototyps muss den Nutzungskontext der Zielgruppe berücksichtigen werden beschrieben. Da internationale Studierende sowohl mobile als auch Desktop-Geräte nutzen, vgl. @situation-improvemnent, sollte die Anwendung auf beiden Plattformen optimal funktionieren:
+Bei der Entwicklung des Prototyps muss der Nutzungskontext der Zielgruppe berücksichtigt werden. Da internationale Studierende sowohl mobile als auch Desktop-Geräte nutzen, vgl. @situation-improvemnent, sollte die Anwendung auf beiden Plattformen optimal funktionieren:
 
 - *Mobile Nutzung:* Die App sollte responsiv und für die mobile Nutzung optimiert sein. Dies umfasst eine klare, reduzierte Darstellung von Informationen, die Möglichkeit, Sitzungen zu unterbrechen und später fortzusetzen, sowie eine intuitive Navigation.
 - *Desktop-Nutzung:* Auf Desktop-Geräten sollte die Anwendung mehr Details und umfangreiche Funktionen bieten, wie z. B. die Möglichkeit, Dokumente hochzuladen oder längere Checklisten zu bearbeiten.
@@ -328,13 +328,13 @@ Die Anwendung sollte intuitiv und einfach zu bedienen sein, um die Akzeptanz und
 Basierend auf den identifizierten Herausforderungen (@studentproblems) und den geäußerten Bedürfnissen der Studierenden wurden folgende Features als besonders wichtig eingestuft:
 
 1. *Statusanzeige*
-  - *Funktion:* Eine übersichtliche Darstellung des aktuellen Fortschritts und eine klarer Indikator zur Dringlichkeit von Terminen und offenen Aufgaben.
+  - *Funktion:* Eine übersichtliche Darstellung des aktuellen Fortschritts und ein klarer Indikator zur Dringlichkeit von Terminen und offenen Aufgaben.
 #pagebreak()
 - *Vorteile:*
   - Schneller Überblick, ob Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
   - Echtzeit-Erinnerungen für Fristen und Termine, um Prokrastination und Versäumnisse zu vermeiden.
   // Ein langer Visaprozess ist nicht per se problematisch, sondern erst dann, wenn er den Studienstart verzögert. Daher ist es entscheidend, dass das Tool frühzeitig auf mögliche Verzögerungen hinweist und alternative Lösungen vorschlägt.
-- *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse, fehlendes Zeitgefüht und späte Rückmeldungen.
+- *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse, fehlendes Zeitgefühl und späte Rückmeldungen.
 
 2. *Anpassung des Tools an die aktuelle Situation der Studierenden*
   - *Funktion:* Das Tool passt sich den individuellen Bedürfnissen der Studierenden an, indem es nur relevante Informationen und Schritte anzeigt.
@@ -372,7 +372,7 @@ Fragen zur Konzeption:
 - Welche Attribute müssen abgefragt werden, um die Lebenslage zu erfassen?
 - Kann die Situation oder der Status dynamisch über vorhandene Dokumente verfolgt werden, ohne zusätzliches Zutun der Nutzer?
 
-Um die Lebenslage der Studierenden individuell zu erfassen, werden verschiedene Angaben benötigt. Diese können beispielsweise duch ein Formular, wie in @protypelebenslage dargestellt, erfasst werden.
+Um die Lebenslage der Studierenden individuell zu erfassen, werden verschiedene Angaben benötigt. Diese können beispielsweise durch ein Formular, wie in @protypelebenslage dargestellt, erfasst werden.
 
 #figure(
   oasis-align(
@@ -432,7 +432,7 @@ Der Entwurf für diese Funktionen ist in @prototypestepsdocs abgebildet.
 \
 Folgende Elemente sind enthalten:
 - *Schritt-für-Schritt-Anleitungen*: Die Studierenden erhalten eine dynamische Übersicht über die nächsten Schritte, wobei jeweils nur die für ihre aktuelle Situation relevanten Aufgaben angezeigt werden. So wird vermieden, dass Nutzer mit irrelevanten Informationen überflutet werden, dargestellt in @prototypestepsdocs (unten).
-- *Dokumentenlisten*: Eine zentrale Verwaltung der bereits hochgeladenen oder erhaltenen Dokumente ermöglicht es, diese bei weiteren Schritten direkt zu verwenden. So kann beispielsweise ein bereits hochgeladenes Visum-Dokument automatisch für die nächste Phase berücksichtigt werden, siehe (@prototypestepsdocs (mitte)).
+- *Dokumentenlisten*: Eine zentrale Verwaltung der bereits hochgeladenen oder erhaltenen Dokumente ermöglicht es, diese bei weiteren Schritten direkt zu verwenden. So kann beispielsweise ein bereits hochgeladenes Visum-Dokument automatisch für die nächste Phase berücksichtigt werden, siehe (@prototypestepsdocs (mittig)).
 - *Hinweise bei Wartezeiten*: Falls Studierende auf bestimmte Dokumente warten müssen (z. B. Zulassungsbescheid oder Visum), gibt die Anwendung eine Einschätzung zur erwarteten Bearbeitungsdauer und informiert darüber, wenn Verzögerungen auftreten könnten, dargestellt in @prototypestepsdocs (unten) .
 
 Diese strukturierten Anleitungen und Dokumentenlisten helfen, Unsicherheiten zu reduzieren und den Prozess klarer zu gestalten.
@@ -454,7 +454,7 @@ Zur besseren Übersicht von Abhängigkeiten und Zeitplanung dient @prototypecale
 - *Kalenderansicht*: Diese zeigt alle relevanten Fristen, Termine und Meilensteine übersichtlich an. So behalten Studierende ihre Deadlines im Blick und können sich frühzeitig auf kommende Aufgaben vorbereiten. In @prototypecalendargraph (links) dargestellt.
 - *Graphenansicht*: Die Abhängigkeiten zwischen einzelnen Schritten werden visualisiert, um Studierenden ein besseres Verständnis für den gesamten Prozess zu ermöglichen. Dies hilft insbesondere bei komplexen Prozessen mit mehreren Abhängigkeiten, wie z. B. dem Zusammenspiel zwischen Visumsantrag und Immatrikulation. In @prototypecalendargraph (rechts) dargestellt.
 
-Grafiken zu vollständigen Oberflächen des Prototyps sind im @prototype zu finden.
+Grafiken zu den vollständigen Oberflächen des Prototyps sind im @prototype zu finden.
 
 // ###############################################################################
 // ###############################################################################
@@ -466,7 +466,7 @@ Grafiken zu vollständigen Oberflächen des Prototyps sind im @prototype zu find
 *Zusammenfassung der Ergebnisse*
 
 Der entwickelte Prototyp adressiert gezielt die zentralen Herausforderungen, mit denen ausländische Studierende im bürokratischen Prozess konfrontiert sind.
-Durch die Kombination aus personalisierten Informationen, zentraler Statusanzeige und klar strukturierten Schritt-für-Schritt Anleitungen werden Studierende gezielt durch die erforderlichen administrativen Schritte geleitet. Der Ansatz stellt sicher, dass die relevanten Informationen zur richtigen Zeit bereitgestellt werden und reduziert somit Unsicherheiten sowie mögliche Verzögerungen.
+Durch die Kombination aus personalisierten Informationen, zentraler Statusanzeige und klar strukturierten Schritt-für-Schritt-Anleitungen werden Studierende gezielt durch die erforderlichen administrativen Schritte geleitet. Der Ansatz stellt sicher, dass die relevanten Informationen zur richtigen Zeit bereitgestellt werden und reduziert somit Unsicherheiten sowie mögliche Verzögerungen.
 
 *Validierung und Iterationen*
 
