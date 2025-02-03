@@ -58,13 +58,13 @@ Human-Centered Design (HCD) ist ein nutzerzentrierter Ansatz, der den Menschen u
 \
 *HCD-Prozess*
 Der HCD-Prozess ist iterativ und umfasst folgende Phasen @farooquiImpactHumanCenteredDesign2019:
-    - *Planung:* Definition von Zielen und Einbindung der Stakeholder.
-    - *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
-    - *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
-    - *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
-    #footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
-    und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
-    - *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.
+- *Planung:* Definition von Zielen und Einbindung der Stakeholder.
+- *Analyse des Nutzungskontexts:* Untersuchung von Aufgaben, Umgebung und Zielen der Nutzer.
+- *Ermittlung der Nutzerbedürfnisse:* Interviews, Beobachtungen und Workshops zur Identifikation von Anforderungen.
+- *Entwicklung von Prototypen:* Gestaltung und Testen von Designlösungen in Low-
+#footnote[Low-Fidelity bedeutet, dass der Prototyp nur ein Minimum an visuellen Details und Funktionalität aufweist, aber genug Inhalt hat, um das Konzept mit anderen zu teilen.]
+und High-Fidelity #footnote[High-Fidelity ist eine detaillierte Darstellung eines Produkts, die in Funktion, Aussehen, Verhalten oder Bewegung dem geplanten Endprodukt so nahe wie möglich kommt.].
+- *Evaluierung:* Nutzerfeedback und Usability-Tests zur Optimierung der Lösung.
 
 Ein zentraler Aspekt des HCD-Prozesses ist die systematische Darstellung der Nutzer und ihrer Anforderungen, um Designentscheidungen zu unterstützen. Hier kommen Werkzeuge wie zum Beispiel Personas, Benutzergruppenprofile und User Journey Maps zum Einsatz:
 
@@ -330,11 +330,11 @@ Basierend auf den identifizierten Herausforderungen (@studentproblems) und den g
 1. *Statusanzeige*
   - *Funktion:* Eine übersichtliche Darstellung des aktuellen Fortschritts und eine klarer Indikator zur Dringlichkeit von Terminen und offenen Aufgaben.
 #pagebreak()
-  - *Vorteile:*
-    - Schneller Überblick, ob Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
-    - Echtzeit-Erinnerungen für Fristen und Termine, um Prokrastination und Versäumnisse zu vermeiden.
-    // Ein langer Visaprozess ist nicht per se problematisch, sondern erst dann, wenn er den Studienstart verzögert. Daher ist es entscheidend, dass das Tool frühzeitig auf mögliche Verzögerungen hinweist und alternative Lösungen vorschlägt.
-  - *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse, fehlendes Zeitgefüht und späte Rückmeldungen.
+- *Vorteile:*
+  - Schneller Überblick, ob Verzögerungen drohen oder alles im zeitlichen Rahmen liegt.
+  - Echtzeit-Erinnerungen für Fristen und Termine, um Prokrastination und Versäumnisse zu vermeiden.
+  // Ein langer Visaprozess ist nicht per se problematisch, sondern erst dann, wenn er den Studienstart verzögert. Daher ist es entscheidend, dass das Tool frühzeitig auf mögliche Verzögerungen hinweist und alternative Lösungen vorschlägt.
+- *Relevanz:* Adressiert die Unsicherheit und Überforderung durch komplexe Prozesse, fehlendes Zeitgefüht und späte Rückmeldungen.
 
 2. *Anpassung des Tools an die aktuelle Situation der Studierenden*
   - *Funktion:* Das Tool passt sich den individuellen Bedürfnissen der Studierenden an, indem es nur relevante Informationen und Schritte anzeigt.

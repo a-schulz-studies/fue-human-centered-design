@@ -1,4 +1,4 @@
-#set text(size:9pt)
+#set text(size: 9pt)
 ```json
 {
   "meta": {
@@ -1029,4 +1029,4 @@
   "documents": []
 }
 ```
-#set text(size:12pt)
+#set text(size: 12pt)

@@ -1,4 +1,4 @@
-#set text(size:9pt)
+#set text(size: 9pt)
 ```text
 flowchart TD
     doc_Proofofsecuredlivelihood["Document: Proof of secured livelihood"]
@@ -173,4 +173,4 @@ flowchart TD
     classDef document fill:#006680,stroke:#333,stroke-width:1px
     class doc_Proofofsecuredlivelihood,doc_ResumeCV,doc_Residencepermitapplication,doc_Confirmationofpaymentoftheadministrativechargeattheimmigrationoffice,doc_EnrolmentcertificatefromHTWDresden,doc_SignedrequestforHTWlogin,doc_LetterofAdmission,doc_Residencepermitforstudypurposes,doc_RentalAgreement,doc_Visaforstudypurposes,doc_TranscriptofRecordsofyourhomeuniversity,doc_ProofofHealthInsuranceRecognizedinGermany,doc_TranscriptofRecordsofHTWDresden,doc_RegistrationCertificateCitizensOfficeDresden,doc_Residencypermitforacademicpurposes,doc_OnlineLearningAgreement,doc_Proofofavalidstudyvisa,doc_PersonalHTWDLogin,doc_ConfirmationofpaymentoftheSemesterContribution,doc_Proofoflanguageproficiency,doc_Germantaxidentificationnumber,doc_Currentbiometricphoto,doc_Confirmationofpaymentoftheadministrativechargeforvisa,doc_Applicationforadmissiontostudies,doc_CopyofpassportorID document
 ```
-#set text(size:12pt)
+#set text(size: 12pt)
